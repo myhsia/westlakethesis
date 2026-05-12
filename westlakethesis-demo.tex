@@ -1,0 +1,105 @@
+\documentclass{westlakethesis}
+
+\usepackage{hologo}
+% \geometry{showframe}
+
+\westlakeset{
+  id        = 20250000000,
+  school    = sls,
+  title     = 西湖大学学位论文模板 (基于 \hologo{LaTeX3} 开发)/
+              Westlake University Thesis Template Constructed with
+              \hologo{LaTeX3},
+  subject   = 生物学/Biology,
+  author    = 鼠小西/West Mouse,
+  PI        = 果小蝇/Fruit Fly,
+  % master  = false,
+  bibsource = reference,
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}[cn]
+  随着 XXXXX 的发展，XXX 问题日益突出。本文提出了一种新型算法模型，融合了三项关键技术，
+  通过实验设计，在数据集上验证了方法的有效性，取得了指标的性能提升。研究表明，
+  该方法能够明显优势，为该问题提供了新的解决方法。
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX。
+  \keywords{关键词 1, 关键词 2, 关键词 3, 关键词 4, 关键词 5（不超过 5 个）}
+\end{abstract}
+
+\begin{abstract}[en]
+  With the rapid development of financial technology (FinTech), traditional
+  credit risk assessment models face challenges in processing large-scale,
+  heterogeneous data. This study proposes a novel ensemble learning framework
+  that combines deep neural networks with interpretable machine learning models
+  to improve prediction accuracy while maintaining transparency.
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX.
+  \keywords{Keywords 1, Keywords 2, Keywords 3}
+\end{abstract}
+
+\tableofcontents
+\tikz[remember picture, overlay]
+  \node [opacity = .4] at (current page.center)
+    {\includegraphics[width = \paperwidth, page = 6]{source/3-研发〔2025〕14号西湖大学研究生学位论文编写指南（附件2-学位论文参考模板）.pdf}};
+
+\clearpage
+
+\chapter{章标题（三号居中黑体）}
+
+学位论文正文内容（小四号字，宋体，Times New Roman 体，两端对齐书写，
+段落首行左缩进 2 个汉字符）。
+
+\section{一级节标题（四号居左黑体）}
+
+学位论文正文内容（小四号字，宋体，Times New Roman 体，两端对齐书写，
+段落首行左缩进 2 个汉字符）。
+
+XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+XXX XXX XXX XXX XXX。
+
+\subsection{二级节标题（\textbf{\texttt{13pt}} 字居左黑体）}
+
+学位论文正文内容。
+
+XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+XXX XXX XXX XXX XXX。
+
+\subsubsection{三级标题（小四号字居左黑体）}
+
+学位论文正文内容。
+
+XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+XXX XXX XXX XXX XXX。
+
+\chapter{章标题}
+
+\section{一级节标题}
+
+学位论文正文内容。
+
+XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+XXX XXX XXX XXX XXX。
+
+\subsection{二级节标题（\textbf{\texttt{13pt}} 字居左黑体）}
+
+学位论文正文内容。
+
+XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+XXX XXX XXX XXX XXX。
+
+\nocite{*}
+
+\printbibliography
+
+\tikz[remember picture, overlay]
+  \node [opacity = .4] at (current page.center)
+    {\includegraphics[width = \paperwidth, page = 10]{source/3-研发〔2025〕14号西湖大学研究生学位论文编写指南（附件2-学位论文参考模板）.pdf}};
+
+
+
+\end{document}

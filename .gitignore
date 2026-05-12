@@ -1,4 +1,10 @@
+# macOS Desktop Service
+*.DS_Store
+# Unnecessary Paths
 /source
+/build
 /*.pdf
-
+# LaTeX Auxiliary Files
 *.synctex.gz
+*.bbl
+*-BSTcontrol.bib
