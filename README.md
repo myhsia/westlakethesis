@@ -5,7 +5,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
 The `WestlakeThesis` LaTeX bundle
-================================
+=================================
 
 The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
 including Ph.D. thesis and Beamer theme.

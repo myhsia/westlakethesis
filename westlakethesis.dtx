@@ -46,7 +46,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
 The `WestlakeThesis` LaTeX bundle
-================================
+=================================
 
 The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
 including Ph.D. thesis and Beamer theme.
@@ -102,8 +102,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*driver>
-\documentclass[11pt, letterpaper, cs-break = true]{l3doc}
-\usepackage[fontset = lxgw]{ctex}
+\documentclass[11pt, cs-break = true]{l3doc}
+\ExplSyntaxOn
+\msg_redirect_module:nnn { l3doc } { warning } { none }
+\ExplSyntaxOff
+\usepackage[scheme = plain, fontset = lxgw, linespread = 1.2]{ctex}
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
 \newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
@@ -114,11 +117,39 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \fi
 %
 % \begin{documentation}
+%
+% \title{^^A
+%   The \cls{WestlakeThesis} Class\thanks{^^A
+%     \url{https://ctan.org/pkg/westlakethesis},\
+%     \url{https://github.com/myhsia/westlakethesis}^^A
+%   }\\
+%   Westlake University Dissertation \LaTeX\ Template
+% }
+% \author{Mingyu Xia\thanks{\mail{xiamingyu@westlake.edu.cn}}}
+% \maketitle
+%
+% \begin{function}{\westlakeset}
+%   \begin{syntax}
+%     \cs{westlakeset} \marg{key-value list}
+%   \end{syntax}
+% \end{function} 
+%
 % \end{documentation}
 %
 % \begin{documentation}
-% \end{documentation}
 %
+% \title{^^A
+%   \cls{WestlakeThesis} 文档类\thanks{^^A
+%     \url{https://ctan.org/pkg/westlakethesis},\
+%     \url{https://github.com/myhsia/westlakethesis}^^A
+%   }\\
+%   西湖大学学位论文 \LaTeX\ 模板
+% }
+% \author{夏明宇\thanks{\mail{xiamingyu@westlake.edu.cn}}}
+% \maketitle
+%
+% \end{documentation}
+% \clearpage
 % \begin{implementation}
 % \section{The source code}
 %    \begin{macrocode}
@@ -135,6 +166,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \ProvidesExplClass {westlakethesis} {\wlu@date} {\wlu@version}
   {LaTeX Template Bundle for Westlake University}
 %    \end{macrocode}
+% \begin{macro}
+%   {
+%     \@@_msg_new:nn,
+%     \@@_msg_error:nn,
+%     \@@_msg_warning:nn,
+%     \@@_msg_info:nn,
+%   }
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_msg_new:nn #1#2
   { \msg_new:nnn     { WestlakeThesis } {#1} {#2} }
@@ -144,8 +182,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
   { \msg_warning:nnn { WestlakeThesis } {#1} {#2} }
 \cs_new_protected:Npn \@@_msg_info:nn #1#2
   { \msg_info:nnn    { WestlakeThesis } {#1} {#2} }
+%    \end{macrocode}
+% \end{macro}
+%    \begin{macrocode}
 \@@_msg_new:nn { not found module }
   { The ~ WestlakeThesis ~ module ~ `#1' ~ not ~ found. }
+%    \end{macrocode}
+% \begin{macro}{\@@_load_module:n, \@@_provide_module:n}
+%    \begin{macrocode}
 \cs_new_protected_nopar:Npn \@@_load_module:n #1
   {
     \clist_map_inline:nn {#1}
@@ -160,34 +204,51 @@ The Current Maintainer of this work is **Mingyu Xia**.
       {WestlakeThesis ~ \text_titlecase:n {#1} ~ Module}
   }
 %    \end{macrocode}
+% \end{macro}
 %    \begin{macrocode}
 \@@_load_module:n { driver, kernel, params, layout, }
 %    \end{macrocode}
+% \begin{macro}{\westlakeset}
 %    \begin{macrocode}
 \@onlypreamble \westlakeset
 \NewDocumentCommand \westlakeset { m }
   {
-    \keys_set:nn { @@ / westlakeset } {#1}
+    \keys_set:nn { @@ / set } {#1}
     \clist_map_inline:nn { title, school, subject, author, PI }
-      { \@@_parse_slash_ab:c { l_@@_westlakeset_##1_tl } }
-    \str_if_empty:NF \l_@@_westakeset_bib_str
+      { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
+    \str_if_empty:NF \l_@@_set_bib_str
       { \bool_gset_true:N \l_@@_load_bib_bool }
   }
-\keys_define:nn { @@ / westlakeset }
+%    \end{macrocode}
+% \begin{variable}
+%   {
+%     \l_@@_set_id_tl,
+%     \l_@@_set_title_tl,
+%     \l_@@_set_school_tl,
+%     \l_@@_set_subject_tl,
+%     \l_@@_set_author_tl,
+%     \l_@@_set_PI_tl,
+%     \l_@@_set_master_bool,
+%     \l_@@_set_bib_str,
+%   }
+%    \begin{macrocode}
+\keys_define:nn { @@ / set }
   {
-    id        .tl_set:N   = \l_@@_westlakeset_id_tl,
+    id        .tl_set:N   = \l_@@_set_id_tl,
       id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
-    title     .tl_set:N   = \l_@@_westlakeset_title_tl,
-    school    .tl_set:N   = \l_@@_westlakeset_school_tl,
-    subject   .tl_set:N   = \l_@@_westlakeset_subject_tl,
-    author    .tl_set:N   = \l_@@_westlakeset_author_tl,
-    PI        .tl_set:N   = \l_@@_westlakeset_PI_tl,
-    master    .bool_set:N = \l_@@_westlakeset_master_bool,
+    title     .tl_set:N   = \l_@@_set_title_tl,
+    school    .tl_set:N   = \l_@@_set_school_tl,
+    subject   .tl_set:N   = \l_@@_set_subject_tl,
+    author    .tl_set:N   = \l_@@_set_author_tl,
+    PI        .tl_set:N   = \l_@@_set_PI_tl,
+    master    .bool_set:N = \l_@@_set_master_bool,
       master  .initial:n  = false,
       master  .default:n  = true,
-    bibsource .str_set:N  = \l_@@_westakeset_bib_str,
+    bibsource .str_set:N  = \l_@@_set_bib_str,
   }
 %    \end{macrocode}
+% \end{variable}
+% \end{macro}
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
@@ -249,12 +310,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     \tl_clear_new:c { #1_a }
     \tl_clear_new:c { #1_b }
-    \seq_clear:N \l_@@_westlakeset_tmpa_seq
-    \seq_set_split:Nne \l_@@_westlakeset_tmpa_seq { / } { \cs:w #1 \cs_end: }
-    \seq_get_left:Nc  \l_@@_westlakeset_tmpa_seq { #1_a }
-    \seq_get_right:Nc \l_@@_westlakeset_tmpa_seq { #1_b }
+    \seq_clear:N \l_@@_set_tmpa_seq
+    \seq_set_split:Nne \l_@@_set_tmpa_seq { / } { \cs:w #1 \cs_end: }
+    \seq_get_left:Nc  \l_@@_set_tmpa_seq { #1_a }
+    \seq_get_right:Nc \l_@@_set_tmpa_seq { #1_b }
   }
-\seq_clear_new:N \l_@@_westlakeset_tmpa_seq
+\seq_clear_new:N \l_@@_set_tmpa_seq
 \cs_generate_variant:Nn \seq_get_left:NN  { Nc }
 \cs_generate_variant:Nn \seq_get_right:NN { Nc }
 %    \end{macrocode}
@@ -342,7 +403,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
             \group_begin:
               \dim_set:Nn \bibsep {1pt}
               \linespread{1.85}\selectfont \zihao{5}
-              \bibliography { \l_@@_westakeset_bib_str }
+              \bibliography { \l_@@_set_bib_str }
             \group_end:
           }
       } { \newcommand \printbibliography { \chapter* { 参考文献 } } }
@@ -456,7 +517,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
                                             { \l_@@_cover_affilid_tl }      \\
         \@@_cover_spread_box:nn  { 4\ccwd } { 学号                         } &
         \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-                                            { \l_@@_westlakeset_id_tl      }\\
+                                            { \l_@@_set_id_tl      }\\
       \end{tabular}
       \par \group_end:
       \vspace{1.2\baselineskip}
@@ -464,12 +525,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \includegraphics[height = 1.63cm]{westlake-badge-cn.pdf}
         \par \vspace{.65\baselineskip}
         \LARGE
-        \bool_if:NTF \l_@@_westlakeset_master_bool { 硕士 } { 博士 }
+        \bool_if:NTF \l_@@_set_master_bool { 硕士 } { 博士 }
         学位论文
         \par \vspace{1.15\baselineskip}
         \group_begin:
           \linespread{1.5}\selectfont \Huge \sffamily
-          \parbox { 10\ccwd } { \centering \l_@@_westlakeset_title_tl_a }
+          \parbox { 10\ccwd } { \centering \l_@@_set_title_tl_a }
         \group_end:
       \end{center}
       \vspace{4.35\baselineskip}
@@ -479,16 +540,16 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \@@_cover_spread_box:nn  { 4\ccwd } { 培养单位 } &
           \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
                                    { \prop_item:No \l_@@_cover_cn_prop
-                                       { \l_@@_westlakeset_school_tl } }\\
+                                       { \l_@@_set_school_tl } }\\
           \@@_cover_spread_box:nn  { 4\ccwd } { 学科     } &
           \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \l_@@_westlakeset_subject_tl_a   }\\
+                                   { \l_@@_set_subject_tl_a   }\\
           \@@_cover_spread_box:nn  { 4\ccwd } { 研究生   } &
           \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \l_@@_westlakeset_author_tl_a    }\\
+                                   { \l_@@_set_author_tl_a    }\\
           \@@_cover_spread_box:nn  { 4\ccwd } { 指导教师 } &
           \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \l_@@_westlakeset_PI_tl_a        }\\
+                                   { \l_@@_set_PI_tl_a        }\\
         \end{tabular}
         \par\vspace{3.15\baselineskip}
         \zihao{3}
@@ -510,7 +571,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
                                  { \l_@@_cover_affilid_tl        }\\
         Student ~ ID:  &
         \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-                                 { \l_@@_westlakeset_id_tl       }\\
+                                 { \l_@@_set_id_tl       }\\
       \end{tabular}
       \par \group_end:
       \vspace{1.2\baselineskip}
@@ -522,7 +583,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \parbox { .9\linewidth }
             {
               \centering \@@_fontsize:n { 20 } \selectfont \bfseries \sffamily
-              \l_@@_westlakeset_title_tl_b
+              \l_@@_set_title_tl_b
             }
         \group_end:
         \par \vspace{1.1\baselineskip}
@@ -530,7 +591,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \zihao{4}\sffamily \bfseries
           (
             Degree ~ of ~
-            \bool_if:NTF \l_@@_westlakeset_master_bool { Master } { Doctor }
+            \bool_if:NTF \l_@@_set_master_bool { Master } { Doctor }
           )
         \group_end:
       \end{center}
@@ -545,16 +606,16 @@ The Current Maintainer of this work is **Mingyu Xia**.
           School: &
           \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
                                    { \prop_item:No \l_@@_cover_en_prop
-                                       { \l_@@_westlakeset_school_tl } }\\
+                                       { \l_@@_set_school_tl } }\\
           Discipline: &
           \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \l_@@_westlakeset_subject_tl_b   }\\
+                                   { \l_@@_set_subject_tl_b   }\\
           Candidate: &
           \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \l_@@_westlakeset_author_tl_b    }\\
+                                   { \l_@@_set_author_tl_b    }\\
           Supervisor: &
           \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \l_@@_westlakeset_PI_tl_b        }\\
+                                   { \l_@@_set_PI_tl_b        }\\
         \end{tabular}
         \par \vspace{3.9\baselineskip}
         \zihao{3}

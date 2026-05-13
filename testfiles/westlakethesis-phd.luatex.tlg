@@ -1,0 +1,127 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+TEST 1: Basic Usage of WestlakeThesis: Abstract
+============================================================
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line ....
+LaTeX Font Warning: Font shape `TU/ptm/m/sl' undefined
+(Font)              using `TU/ptm/m/n' instead on input line ....
+LaTeX Font Info:    Font shape `LTJY3/LXGWNeoZhiSong(0)/m/sl' in size <12.045> not available
+(Font)              Font shape `LTJY3/LXGWNeoZhiSong(0)/m/it' tried instead on input line ....
+Completed box being shipped out [1]
+\vbox(730.50687+0.0)x434.90039, direction TLT
+.\whatsit4=[]
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\whatsit4=[]
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\whatsit4=[]
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\whatsit4=[]
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\whatsit4=[]
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil, direction TLT
+..\whatsit4=[]
+..\kern0.0
+..\kern-37.0
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil, direction TLT
+...\whatsit4=[]
+...\kern0.0
+...\kern18.0675
+...\kern-1.00374
+...\pdfdest name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.0)x434.90039, direction TLT
+..\whatsit4=[]
+..\glue -37.0
+..\vbox(767.50687+0.0)x416.83289, shifted 18.0675, direction TLT
+...\whatsit4=[]
+...\vbox(12.0+0.0)x416.83289, glue set 3.99008fil, direction TLT
+....\whatsit4=[]
+....\glue 0.0 plus 1.0fil
+....\hbox(8.00992+0.0)x416.83289, direction TLT
+.....\whatsit4=[]
+.....\hbox(8.00992+0.0)x416.83289, glue set 410.93085fil, direction TLT
+......\whatsit4=[]
+......\glue 0.0 plus 1.0fil
+......\TU/ptm/m/n/12.045 1
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 622.4721fil, direction TLT
+....\whatsit4=[]
+....\write-{}
+....\pdfdest name{Doc-Start} xyz
+....\write-{}
+....\glue(\topskip) 12.0
+....\hbox(0.0+0.0)x0.0, direction TLT
+.....\whatsit4=[]
+....\glue 42.4082
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 12.96048
+....\hbox(10.5996+1.4454)x416.83289, glue set 302.4054fil, direction TLT
+.....\whatsit4=[]
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/b/n/12.045 摘
+.....\glue 0.0 plus 0.60463
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/b/n/12.045 要
+.....\penalty 10000
+.....\glue 0.0 plus 0.60463
+.....\hbox(10.5996+1.4454)x6.0225, direction TLT
+......\LTJY3/LXGWNeoZhiSong(0)/b/n/12.045 ：
+.....\kern0.0 (italic)
+.....\write3{\protect \BOOKMARK [0][-]{Doc-Start}{\376\377\144\130\211\201}{}% 1}
+.....\write1{\@writefile{toc}{\protect \contentsline {chapter}{摘要}{\thepage }{Doc-Start}\protected@file@percent }}
+.....\glue 6.0225 minus 6.0225
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 中
+.....\glue 0.0 plus 0.60463
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 摘
+.....\glue 0.0 plus 0.60463
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 要
+.....\glue 0.0 plus 0.60463
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 内
+.....\penalty 500
+.....\glue 0.0 plus 0.60463
+.....\norule(10.5996+1.4454)x0.0
+.....\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 容
+.....\penalty 10000
+.....\glue 0.0 plus 0.60463
+.....\hbox(10.5996+1.4454)x6.0225, direction TLT
+......\LTJY3/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue -1.4454
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 30.0
+...\hbox(0.0+0.0)x416.83289, direction TLT
+....\whatsit4=[]
+....\hbox(0.0+0.0)x416.83289, direction TLT
+.....\whatsit4=[]
+.\kern0.0
+.\kern0.0
+============================================================

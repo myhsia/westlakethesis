@@ -1,0 +1,94 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+TEST 1: Basic Usage of WestlakeThesis: Abstract
+============================================================
+Completed box being shipped out [1]
+\vbox(730.50687+0.0)x434.90039
+.\hbox(0.0+0.0)x0.0
+..\special{pdf:docinfo<</Title()/Subject()/Creator(LaTeX with hyperref)/Author()/Keywords()>>}
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil
+..\kern 0.0
+..\kern -37.0
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil
+...\kern 0.0
+...\kern 18.0675
+...\kern -1.00374
+...\special{pdf:dest (page.1) [@thispage /XYZ @xpos @ypos null]}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.0)x434.90039
+..\glue -37.0
+..\vbox(767.50687+0.0)x416.83289, shifted 18.0675
+...\vbox(12.0+0.0)x416.83289, glue set 3.8336fil
+....\glue 0.0 plus 1.0fil
+....\hbox(8.1664+0.0)x416.83289
+.....\hbox(8.1664+0.0)x416.83289, glue set 410.8104fil
+......\glue 0.0 plus 1.0fil
+......\T1/ptm/m/n/12.045 1
+......\kern -0.0002
+......\kern 0.0002
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 622.4721fil
+....\write-{}
+....\special{pdf:majorversion 1}
+....\special{pdf:minorversion 7}
+....\special{pdf:docview<</OpenAction[@page1/Fit]/PageMode/UseOutlines>>}
+....\special{pdf:dest (Doc-Start) [@thispage /XYZ @xpos @ypos null]}
+....\write-{}
+....\glue(\topskip) 12.0
+....\hbox(0.0+0.0)x0.0
+....\glue 42.4082
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 13.42064
+....\hbox(10.13943+0.95276)x416.83289, glue set 296.3829fil
+.....\TU/LXGWNeoZhiSong(0)/b/n/12.045 摘
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/b/n/12.045 要
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/b/n/12.045 ：
+.....\rule(0.0+0.0)x-8.27505
+.....\kern 0.0005
+.....\kern -0.0005
+.....\kern -0.99649
+.....\kern 0.99649
+.....\glue 8.27505 minus 6.02249
+.....\write3{\protect \BOOKMARK [0][-]{Doc-Start}{\376\377\144\130\211\201}{}% 1}
+.....\write1{\@writefile{toc}{\protect \contentsline {chapter}{摘要}{\thepage }{Doc-Start}\protected@file@percent }}
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 中
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 摘
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 要
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 内
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 容
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\rule(0.0+0.0)x-8.53972
+.....\kern 0.00052
+.....\kern -0.00052
+.....\kern -0.18753
+.....\kern 0.18753
+.....\glue 8.53972 minus 8.04568
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue -0.95276
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 30.0
+...\hbox(0.0+0.0)x416.83289
+....\hbox(0.0+0.0)x416.83289
+.\kern 0.0
+============================================================

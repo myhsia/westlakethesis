@@ -1,0 +1,24 @@
+\input regression-test.tex
+\documentclass{westlakethesis} 
+
+\westlakeset{}
+
+\begin{document}
+
+\START
+
+\loggingoutput
+
+\BEGINTEST{Basic Usage of WestlakeThesis: Abstract}
+  \begin{abstract}[cn]
+    中文摘要内容。
+  \end{abstract}
+
+  \begin{abstract}[en]
+    Abstract Context in English.
+  \end{abstract}
+\ENDTEST
+
+\END
+
+\end{document}
