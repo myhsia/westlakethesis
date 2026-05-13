@@ -12,13 +12,13 @@
 \seq_clear_new:N \l_@@_westlakeset_tmpa_seq
 \cs_generate_variant:Nn \seq_get_left:NN  { Nc }
 \cs_generate_variant:Nn \seq_get_right:NN { Nc }
+
 \cs_new_protected:Npn \@@_cover_spread_box:nn #1#2
   {
     \mode_leave_vertical:
     \hbox_to_wd:nn {#1}
     { \exp_args:Nee \tl_map_inline:nn {#2} { ##1 \hfil } \unskip }
   }
-
 \cs_new_protected:Npn \@@_cover_center_box:nnn #1#2#3
   {
     \mode_leave_vertical:
@@ -47,8 +47,20 @@
     \group_end:
     \tex_box:D 1
   }
+\cs_new:Npn \@@_signature_inline:n #1
+  {
+    \box_move_down:nn { \fp_eval:n { .9 * \f@size } \p@ }
+      {
+        \hbox:n
+          {
+            \includegraphics
+              [height = \fp_eval:n { 2.4 * \f@size } \p@] {#1}
+          }
+      }
+  }
 \cs_new_nopar:Npn \@@_fontsize:n #1
   { \fontsize {#1} { \fp_eval:n { #1 * 6 / 5 }} \selectfont }
+
 \cs_new_protected_nopar:Npn \@@_kernel_month:n #1
   {
     \@@_kernel_bilingual:nnn {#1}
@@ -70,5 +82,21 @@
   }
 \cs_new_nopar:Npn \@@_kernel_bilingual:nnn #1#2#3
   { \str_case:on {#1} { { cn } { #2 } { en } { #3 } } }
+
+\hook_gput_code:nnn { env / document / before } { . }
+  {
+    \bool_if:NTF \l_@@_load_bib_bool
+      {
+        \DeclareDocumentCommand \printbibliography {}
+          {
+            \addcontentsline{toc}{chapter}{参考文献}
+            \group_begin:
+              \dim_set:Nn \bibsep {1pt}
+              \linespread{1.85}\selectfont \zihao{5}
+              \bibliography { \l_@@_westakeset_bib_str }
+            \group_end:
+          }
+      } { \newcommand \printbibliography { \chapter* { 参考文献 } } }
+  }
 
 \file_input_stop:

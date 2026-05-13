@@ -1,0 +1,29 @@
+\@@_provide_module:n { driver }
+
+\sys_if_engine_xetex:T
+  { \PassOptionsToPackage { quiet } { xeCJK } }
+\LoadClass [ a4paper, zihao = -4, linespread = 1.5, fontset = lxgw ]
+  { ctexrep }
+\RequirePackage { graphicx, hyperref, lmodern, times, lipsum, zhlipsum }
+\graphicspath { {./media} }
+\hypersetup { hidelinks }
+\bool_lazy_any:nT
+  { \sys_if_engine_pdftex_p: \sys_if_engine_luatex_p: \sys_if_engine_xetex_p: }
+  { \RequirePackage { microtype } }
+\sys_if_engine_uptex:T
+  {
+    \DeclareFontShape{JY2}{zhrm}{m}{sl}{<-> upzhserif-h}{}
+    \DeclareFontShape{JT2}{zhrm}{m}{sl}{<-> upzhserif-v}{}
+  }
+\sys_if_engine_xetex:T { \RequirePackage [ T1 ] { fontenc } }
+
+\hook_gput_code:nnn { env / document / before } { . }
+  {
+    \bool_if:NT \l_@@_load_bib_bool
+      {
+        \RequirePackage [ sort, uppercasefamily = false ] { gbt7714 }
+        \bibliographystyle { gbt7714-numeric }
+      }
+  }
+
+\file_input_stop:

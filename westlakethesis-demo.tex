@@ -15,18 +15,21 @@
   % master  = false,
   bibsource = reference,
 }
+\RequirePackage{tikz, tikzpagenodes}
 
 \begin{document}
 
 \maketitle
 
+\frontmatter
 \begin{abstract}[cn]
   随着 XXXXX 的发展，XXX 问题日益突出。本文提出了一种新型算法模型，融合了三项关键技术，
   通过实验设计，在数据集上验证了方法的有效性，取得了指标的性能提升。研究表明，
   该方法能够明显优势，为该问题提供了新的解决方法。
   XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
   XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX。
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XX.\par
+  \zhlipsum[1]
   \keywords{关键词 1, 关键词 2, 关键词 3, 关键词 4, 关键词 5（不超过 5 个）}
 \end{abstract}
 
@@ -38,64 +41,90 @@
   to improve prediction accuracy while maintaining transparency.
   XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
   XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX.
+  XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XX.\par
+  % \lipsum[1]
   \keywords{Keywords 1, Keywords 2, Keywords 3}
 \end{abstract}
 
 \tableofcontents
-\tikz[remember picture, overlay]
-  \node [opacity = .4] at (current page.center)
-    {\includegraphics[width = \paperwidth, page = 6]{source/3-研发〔2025〕14号西湖大学研究生学位论文编写指南（附件2-学位论文参考模板）.pdf}};
+\mainmatter
 
-\chapter{章标题（三号居中黑体）}
+\chapter{章标题}
 
 学位论文正文内容（小四号字，宋体，Times New Roman 体，两端对齐书写，
 段落首行左缩进 2 个汉字符）\cite{yang2009cernet}。
 
-\section{一级节标题（四号居左黑体）}
+\section{一级节标题}
 
 学位论文正文内容（小四号字，宋体，Times New Roman 体，两端对齐书写，
 段落首行左缩进 2 个汉字符）。
 
 XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX\cite{bonjour2009minerals}。
+XXX XXX XXX XXX XX\cite{bonjour2009minerals}.
 
-\subsection{二级节标题（\textbf{\texttt{13pt}} 字居左黑体）}
-
-学位论文正文内容。
-
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX。
-
-\subsubsection{三级标题（小四号字居左黑体）}
+\subsection{二级节标题}
 
 学位论文正文内容。
 
 XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX。
+XXX XXX XXX XXX XX.
+
+\subsubsection{三级标题}
+
+学位论文正文内容。
+
+XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
+XXX XXX XXX XXX XX.
+
+\section{本文研究主要内容}
+
+\section{本文研究意义}
+
+\section{本章小结}
 
 \chapter{章标题}
 
-\section{一级节标题}
+\section{论文正文}
 
 学位论文正文内容。
 
 XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX。
+XXX XXX XXX XXX XX.
 
-\subsection{二级节标题（\textbf{\texttt{13pt}} 字居左黑体）}
+\section{字数要求}
 
-学位论文正文内容。
+\subsection{硕士论文要求}
 
-XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX XXX
-XXX XXX XXX XXX XXX。
+\subsection{博士论文要求}
+
+\section{其他要求}
+
+\subsection{页面设置}
+
+\section{本章小结}
+
+\chapter{章标题}
+
+\section{图表格式}
+
+\section{公式格式}
+
+\section{本章小结}
+
+\chapter{章标题}
+
+\section{主要结论}
+
+\section{研究展望}
 
 \printbibliography
 
+\chapter*{致谢}
+
 \commitment[
-  example-image-a, 2026 年 5 月 20 日,
-  example-image-a, 2026 年 5 月 21 日,
-  example-image-b, 2026 年 5 月 21 日,
+  example-image-a.pdf, 2026 年 5 月 20 日,
+  example-image-a.pdf, 2026 年 5 月 21 日,
+  example-image-b.pdf, 2026 年 5 月 21 日,
 ]
 
 \end{document}

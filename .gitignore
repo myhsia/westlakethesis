@@ -5,6 +5,7 @@
 /build
 /*.pdf
 # LaTeX Auxiliary Files
+*.dvi
 *.synctex.gz
 *.bbl
 *-BSTcontrol.bib
