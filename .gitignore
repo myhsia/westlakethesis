@@ -5,7 +5,14 @@
 /build
 /*.pdf
 # LaTeX Auxiliary Files
-*.dvi
-*.synctex.gz
+*.aux
 *.bbl
 *-BSTcontrol.bib
+*.dvi
+*.fdb_latexmk
+*.fls
+*.hd
+*.glo
+*.log
+*.synctex.gz
+*.synctex(busy)

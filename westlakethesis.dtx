@@ -1,0 +1,708 @@
+% \iffalse meta-comment
+%
+% File: westlakethesis.dtx
+% -----------------------------------------------------------------------
+%   Copyright (C) 2026 by Mingyu Xia <myhsia@outlook.com>               *
+% -----------------------------------------------------------------------
+%   This work may be distributed and/or modified under the conditions   *
+%   of the LaTeX Project Public License (LPPL), either version 1.3c of  *
+%   this license or (at your option) any later version.                 *
+%   The latest version of this license is in                            *
+%                                                                       *
+%       http://www.latex-project.org/lppl.txt                           *
+%                                                                       *
+%   and version 1.3c or later is part of all distributions of LaTeX     *
+%   version 2008 or later.                                              *
+%                                                                       *
+%   This work has the LPPL maintenance status `maintained'.             *
+%                                                                       *
+%   The Current Maintainer of this work is Mingyu Xia.                  *
+% -----------------------------------------------------------------------
+%   This work consists of the files westlakethesis.dtx,                 *
+%                                   westlakethesis.ins,                 *
+%                 the derived files westlakethesis.cls,                 *
+%                                   wlu-driver.code.tex,                *
+%                                   wlu-kernel.code.tex,                *
+%                                   wlu-params.code.tex,                *
+%                                   wlu-layout.code.tex,                *
+%           the documentation files westlakethesis.pdf,                 *
+%                               and README.md.                          *
+% -----------------------------------------------------------------------
+%                                                                       *
+%   Any modification of this file should ensure that the copyright and  *
+%   license information is placed in the derived files.                 *
+%                                                                       *
+% -----------------------------------------------------------------------
+%
+%<*internal>
+\iffalse
+%</internal>
+%
+%<*readme>
+[![CTAN Version](https://img.shields.io/ctan/v/westlakethesis)](https://ctan.org/pkg/westlakethesis)
+[![GitHub Release](https://img.shields.io/github/v/release/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis/releases/latest)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis/commits)
+[![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
+[![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
+
+The `WestlakeThesis` LaTeX bundle
+================================
+
+The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
+including Ph.D. thesis and Beamer theme.
+
+Overview
+--------
+
+To load this template, write the line
+
+    \documentclass[<options>]{westlakethesis}
+
+to set the theme color and graphics.
+
+See `westlakethesis.pdf` for more. Happy TeXing!
+
+Issues
+------
+
+The issue tracker for `westlakethesis` is currently located
+[on GitHub](https://github.com/myhsia/westlakethesis/issues).
+
+Build status
+------------
+
+This project uses [GitHub Actions](https://github.com/features/actions)
+as a hosted continuous integration service. For each commit, the build status
+is tested using the current release of TeX Live.
+
+_Current build status:_ ![build status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)
+
+Copyright and License
+---------------------
+
+Copyright (C) 2026 by Mingyu Xia \<xiamingyu@westlake.edu.cn\>
+
+This work may be distributed and/or modified under the conditions
+of the LaTeX Project Public License (LPPL), either version 1.3c of
+this license or (at your option) any later version.
+The latest version of this license is in
+
+    http://www.latex-project.org/lppl.txt
+
+and version 1.3c or later is part of all distributions of LaTeX
+version 2008 or later.
+
+This work has the LPPL maintenance status `maintained`.
+
+The Current Maintainer of this work is **Mingyu Xia**.
+%</readme>
+%
+%<*internal>
+\fi
+%</internal>
+%
+%<*driver>
+\documentclass[11pt, letterpaper, cs-break = true]{l3doc}
+\usepackage[fontset = lxgw]{ctex}
+\usepackage[osf, mono = false]{libertine}
+\usepackage{pdfpages}
+\newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
+\begin{document}
+  \DocInput{\jobname.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+% \begin{documentation}
+% \end{documentation}
+%
+% \begin{documentation}
+% \end{documentation}
+%
+% \begin{implementation}
+% \section{The source code}
+%    \begin{macrocode}
+%<@@=wlu>
+%    \end{macrocode}
+% \subsection{\texttt{westlakethesis.cls}}
+%    \begin{macrocode}
+%<*wlu-class>
+%    \end{macrocode}
+%    \begin{macrocode}
+\def \wlu@date         {2026-05-12}
+\def \wlu@version      {0.0.1}
+\def \wlu@maintainerid {myhsia}
+\ProvidesExplClass {westlakethesis} {\wlu@date} {\wlu@version}
+  {LaTeX Template Bundle for Westlake University}
+%    \end{macrocode}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_msg_new:nn #1#2
+  { \msg_new:nnn     { WestlakeThesis } {#1} {#2} }
+\cs_new_protected:Npn \@@_msg_error:nn #1#2
+  { \msg_error:nnn   { WestlakeThesis } {#1} {#2} }
+\cs_new_protected:Npn \@@_msg_warning:nn #1#2
+  { \msg_warning:nnn { WestlakeThesis } {#1} {#2} }
+\cs_new_protected:Npn \@@_msg_info:nn #1#2
+  { \msg_info:nnn    { WestlakeThesis } {#1} {#2} }
+\@@_msg_new:nn { not found module }
+  { The ~ WestlakeThesis ~ module ~ `#1' ~ not ~ found. }
+\cs_new_protected_nopar:Npn \@@_load_module:n #1
+  {
+    \clist_map_inline:nn {#1}
+      {
+        \file_if_exist_input:nF { wlu-##1.code.tex }
+          { \@@_msg_error:nn { not found module } { ##1 } }
+      }
+  }
+\cs_new_protected_nopar:Npn \@@_provide_module:n #1
+  {
+    \ProvidesExplFile { wlu-#1.code.tex} { \wlu@date } { \wlu@version }
+      {WestlakeThesis ~ \text_titlecase:n {#1} ~ Module}
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\@@_load_module:n { driver, kernel, params, layout, }
+%    \end{macrocode}
+%    \begin{macrocode}
+\@onlypreamble \westlakeset
+\NewDocumentCommand \westlakeset { m }
+  {
+    \keys_set:nn { @@ / westlakeset } {#1}
+    \clist_map_inline:nn { title, school, subject, author, PI }
+      { \@@_parse_slash_ab:c { l_@@_westlakeset_##1_tl } }
+    \str_if_empty:NF \l_@@_westakeset_bib_str
+      { \bool_gset_true:N \l_@@_load_bib_bool }
+  }
+\keys_define:nn { @@ / westlakeset }
+  {
+    id        .tl_set:N   = \l_@@_westlakeset_id_tl,
+      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
+    title     .tl_set:N   = \l_@@_westlakeset_title_tl,
+    school    .tl_set:N   = \l_@@_westlakeset_school_tl,
+    subject   .tl_set:N   = \l_@@_westlakeset_subject_tl,
+    author    .tl_set:N   = \l_@@_westlakeset_author_tl,
+    PI        .tl_set:N   = \l_@@_westlakeset_PI_tl,
+    master    .bool_set:N = \l_@@_westlakeset_master_bool,
+      master  .initial:n  = false,
+      master  .default:n  = true,
+    bibsource .str_set:N  = \l_@@_westakeset_bib_str,
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\file_input_stop:
+%    \end{macrocode}
+%    \begin{macrocode}
+%</wlu-class>
+%    \end{macrocode}
+% \subsection{\texttt{wlu-driver.code.tex}}
+%    \begin{macrocode}
+%<*wlu-driver>
+%    \end{macrocode}
+%    \begin{macrocode}
+\@@_provide_module:n { driver }
+%    \end{macrocode}
+%    \begin{macrocode}
+\sys_if_engine_xetex:T
+  { \PassOptionsToPackage { quiet } { xeCJK } }
+\LoadClass [ a4paper, zihao = -4, linespread = 1.5, fontset = lxgw ]
+  { ctexrep }
+\RequirePackage { graphicx, hyperref, geometry, array,
+                  lmodern, times, lipsum, zhlipsum }
+\RequirePackage [ titles ] {tocloft}
+\graphicspath { {./media} }
+\hypersetup { hidelinks }
+\bool_lazy_any:nT
+  { \sys_if_engine_pdftex_p: \sys_if_engine_luatex_p: \sys_if_engine_xetex_p: }
+  { \RequirePackage { microtype } }
+\sys_if_engine_uptex:T
+  {
+    \DeclareFontShape{JY2}{zhrm}{m}{sl}{<-> upzhserif-h}{}
+    \DeclareFontShape{JT2}{zhrm}{m}{sl}{<-> upzhserif-v}{}
+  }
+\sys_if_engine_xetex:T { \RequirePackage [ T1 ] { fontenc } }
+%    \end{macrocode}
+%    \begin{macrocode}
+\hook_gput_code:nnn { env / document / before } { . }
+  {
+    \bool_if:NT \l_@@_load_bib_bool
+      {
+        \RequirePackage [ sort, uppercasefamily = false ] { gbt7714 }
+        \bibliographystyle { gbt7714-numeric }
+      }
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\file_input_stop:
+%    \end{macrocode}
+%    \begin{macrocode}
+%</wlu-driver>
+%    \end{macrocode}
+% \subsection{\texttt{wlu-kernel.code.tex}}
+%    \begin{macrocode}
+%<*wlu-kernel>
+%    \end{macrocode}
+%    \begin{macrocode}
+\@@_provide_module:n { kernel }
+%    \end{macrocode}
+%    \begin{macrocode}
+\cs_new:Npn \@@_parse_slash_ab:c #1
+  {
+    \tl_clear_new:c { #1_a }
+    \tl_clear_new:c { #1_b }
+    \seq_clear:N \l_@@_westlakeset_tmpa_seq
+    \seq_set_split:Nne \l_@@_westlakeset_tmpa_seq { / } { \cs:w #1 \cs_end: }
+    \seq_get_left:Nc  \l_@@_westlakeset_tmpa_seq { #1_a }
+    \seq_get_right:Nc \l_@@_westlakeset_tmpa_seq { #1_b }
+  }
+\seq_clear_new:N \l_@@_westlakeset_tmpa_seq
+\cs_generate_variant:Nn \seq_get_left:NN  { Nc }
+\cs_generate_variant:Nn \seq_get_right:NN { Nc }
+%    \end{macrocode}
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_cover_spread_box:nn #1#2
+  {
+    \mode_leave_vertical:
+    \hbox_to_wd:nn {#1}
+    { \exp_args:Nee \tl_map_inline:nn {#2} { ##1 \hfil } \unskip }
+  }
+\cs_new_protected:Npn \@@_cover_center_box:nnn #1#2#3
+  {
+    \mode_leave_vertical:
+    \dim_set:Nn \l_tmpa_dim {#1}
+    \box_gset_eq_drop:NN 1\voidb@x
+    \group_begin:
+    \vbox_set:Nn 0
+      {
+        \dim_set:Nn  \parindent   { 0pt            }
+        \skip_set:Nn \leftskip    { 0pt plus 1fil  }
+        \skip_set:Nn \rightskip   { 0pt plus -1fil }
+        \skip_set:Nn \parfillskip { 0pt plus 2fil  }
+        #3 \par
+        \loop
+        \box_set_to_last:N 2
+        \reverse_if:N \if_box_empty:N 2
+        \vbox_gset_top:Nn 1
+          {
+            \hbox_to_wd:nn {#1} { \strut \hbox_unpack_drop:N 2 }
+            \skip_vertical:n {#2}
+            \__box_rule_horizontal:nn { .5pt } { \c_zero_dim }
+            \skip_vertical:n { 9.6pt } \vbox_unpack_drop:N 1
+          }
+        \unskip \unpenalty
+        \repeat
+      }
+    \group_end:
+    \tex_box:D 1
+  }
+\cs_new:Npn \@@_signature_inline:n #1
+  {
+    \box_move_down:nn { \fp_eval:n { .9 * \f@size } \p@ }
+      {
+        \hbox:n
+          {
+            \includegraphics
+              [height = \fp_eval:n { 2.4 * \f@size } \p@] {#1}
+          }
+      }
+  }
+\cs_new_nopar:Npn \@@_fontsize:n #1
+  { \fontsize {#1} { \fp_eval:n { #1 * 6 / 5 }} \selectfont }
+%    \end{macrocode}
+%    \begin{macrocode}
+\cs_new_protected_nopar:Npn \@@_kernel_month:n #1
+  {
+    \@@_kernel_bilingual:nnn {#1}
+      { \zhdigits { \int_value:w \c_sys_month_int } 月 }
+      {
+        \if_case:w \int_value:w \c_sys_month_int
+          \or: January \or: February \or: March
+          \or: April   \or: May      \or: June
+          \or: July    \or: August   \or: September
+          \or: October \or: November \or: December
+        \fi:
+      }
+  }
+\cs_new_protected_nopar:Npn \@@_kernel_year:n #1
+  {
+    \@@_kernel_bilingual:nnn {#1}
+      { \zhdigits { \int_value:w \c_sys_year_int  } 年 }
+      { \int_value:w \c_sys_year_int }
+  }
+\cs_new_nopar:Npn \@@_kernel_bilingual:nnn #1#2#3
+  { \str_case:on {#1} { { cn } { #2 } { en } { #3 } } }
+%    \end{macrocode}
+%    \begin{macrocode}
+\hook_gput_code:nnn { env / document / before } { . }
+  {
+    \bool_if:NTF \l_@@_load_bib_bool
+      {
+        \DeclareDocumentCommand \printbibliography {}
+          {
+            \addcontentsline{toc}{chapter}{参考文献}
+            \group_begin:
+              \dim_set:Nn \bibsep {1pt}
+              \linespread{1.85}\selectfont \zihao{5}
+              \bibliography { \l_@@_westakeset_bib_str }
+            \group_end:
+          }
+      } { \newcommand \printbibliography { \chapter* { 参考文献 } } }
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\file_input_stop:
+%    \end{macrocode}
+%    \begin{macrocode}
+%</wlu-kernel>
+%    \end{macrocode}
+% \subsection{\texttt{wlu-params.code.tex}}
+%    \begin{macrocode}
+%<*wlu-params>
+%    \end{macrocode}
+%    \begin{macrocode}
+\@@_provide_module:n { params }
+%    \end{macrocode}
+%    \begin{macrocode}
+\prop_new:N \l_@@_cover_en_prop
+\prop_new:N \l_@@_cover_cn_prop
+\prop_set_from_keyval:Nn \l_@@_cover_cn_prop
+  {
+    science     = 理学院,
+    sci         = 理学院,
+    engineering = 工学院,
+    eng         = 工学院,
+    sls         = 生命科学学院,
+    medicine    = 医学院,
+    med         = 医学院,
+  }
+\prop_set_from_keyval:Nn \l_@@_cover_en_prop
+  {
+    science     = Science,
+    sci         = Science,
+    engineering = Engineering,
+    eng         = Engineering,
+    sls         = Life ~ Sciences,
+    medicine    = Medicine,
+    med         = Medicine,
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\tl_const:Nn \l_@@_cover_affilid_tl { 14626 }
+\box_new:N \l_@@_cover_id_box
+\box_new:N \l_@@_cover_code_box
+\box_new:N \l_@@_cover_en_table_box
+\hbox_gset:Nn \l_@@_cover_id_box { 0 }
+\hbox_gset:Nn \l_@@_cover_code_box { School ~ Code: }
+\hbox_gset:Nn \l_@@_cover_en_table_box { \zihao{3}\sffamily Supervisor: }
+\dim_const:Nn \l_@@_cover_id_dim
+  { 13 \box_wd:N \l_@@_cover_id_box }
+\dim_const:Nn \l_@@_cover_code_dim
+  { \box_wd:N \l_@@_cover_code_box }
+\dim_const:Nn \l_@@_cover_en_table_dim
+  { \box_wd:N \l_@@_cover_en_table_box }
+%    \end{macrocode}
+%    \begin{macrocode}
+\tl_const:Nn \l_@@_commitment_a_title_tl
+  { 西湖大学研究生学位论文独创性声明 }
+\tl_const:Nn \l_@@_commitment_a_body_tl
+  {
+    本人声明：所呈交的学位论文是本人在导师指导下进行的研究工作及取得的研究成果。
+    除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究成果。
+    与本人一同参与本研究工作的合作者所做的任何贡献均已在论文中作了明确的说明并表示谢意。
+    本声明的法律结果由本人承担。
+  }
+\tl_const:Nn \l_@@_commitment_b_title_tl
+  { 西湖大学研究生学位论文版权使用授权书 }
+\tl_const:Nn \l_@@_commitment_b_body_tl
+  {
+    本学位论文作者完全了解\ \underline{\kaishu 西湖大学}\ 有关收藏和利用博士、
+    硕士学位论文的规定，即：学校有权收藏、
+    使用并向国家有关部门或机构送交论文的印刷本和电子版本；
+    允许论文被查阅和借阅；学校可以公布论文的全部或部分内容，
+    可以采用影印、缩印或其它复制手段保存论文。
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\bool_new:N \l_@@_load_bib_bool
+%    \end{macrocode}
+%    \begin{macrocode}
+\file_input_stop:
+%    \end{macrocode}
+%    \begin{macrocode}
+%</wlu-params>
+%    \end{macrocode}
+% \subsection{\texttt{wlu-layout.code.tex}}
+%    \begin{macrocode}
+%<*wlu-layout>
+%    \end{macrocode}
+%    \begin{macrocode}
+\@@_provide_module:n { layout }
+%    \end{macrocode}
+%    \begin{macrocode}
+\geometry{a4paper, hmargin = 1.25in, vmargin = 1in}
+\RenewDocumentCommand \maketitle {}
+  {
+    \begin{titlepage}
+      \group_begin:
+      \raggedleft \noindent
+      \fangsong
+      \linespread{1.0}\selectfont
+      \begin{tabular}
+        {
+          p { 4\ccwd } @{：}
+          p \l_@@_cover_id_dim
+        }
+        \@@_cover_spread_box:nn  { 4\ccwd } { 单位代码                     } &
+        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+                                            { \l_@@_cover_affilid_tl }      \\
+        \@@_cover_spread_box:nn  { 4\ccwd } { 学号                         } &
+        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+                                            { \l_@@_westlakeset_id_tl      }\\
+      \end{tabular}
+      \par \group_end:
+      \vspace{1.2\baselineskip}
+      \begin{center}
+        \includegraphics[height = 1.63cm]{westlake-badge-cn.pdf}
+        \par \vspace{.65\baselineskip}
+        \LARGE
+        \bool_if:NTF \l_@@_westlakeset_master_bool { 硕士 } { 博士 }
+        学位论文
+        \par \vspace{1.15\baselineskip}
+        \group_begin:
+          \linespread{1.5}\selectfont \Huge \sffamily
+          \parbox { 10\ccwd } { \centering \l_@@_westlakeset_title_tl_a }
+        \group_end:
+      \end{center}
+      \vspace{4.35\baselineskip}
+      \begin{center}
+        \zihao{3}\linespread{1.35}\selectfont
+        \begin{tabular} { p { 4\ccwd } @{：} p { 15ex } }
+          \@@_cover_spread_box:nn  { 4\ccwd } { 培养单位 } &
+          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
+                                   { \prop_item:No \l_@@_cover_cn_prop
+                                       { \l_@@_westlakeset_school_tl } }\\
+          \@@_cover_spread_box:nn  { 4\ccwd } { 学科     } &
+          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
+                                   { \l_@@_westlakeset_subject_tl_a   }\\
+          \@@_cover_spread_box:nn  { 4\ccwd } { 研究生   } &
+          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
+                                   { \l_@@_westlakeset_author_tl_a    }\\
+          \@@_cover_spread_box:nn  { 4\ccwd } { 指导教师 } &
+          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
+                                   { \l_@@_westlakeset_PI_tl_a        }\\
+        \end{tabular}
+        \par\vspace{3.15\baselineskip}
+        \zihao{3}
+        \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
+      \end{center}
+    \end{titlepage}
+    \begin{titlepage}
+      \group_begin:
+      \raggedleft \noindent
+      \fangsong
+      \linespread{1.0}\selectfont
+      \begin{tabular}
+        {
+          p \l_@@_cover_code_dim @{~}
+          p \l_@@_cover_id_dim
+        }
+        School ~ Code: &
+        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+                                 { \l_@@_cover_affilid_tl        }\\
+        Student ~ ID:  &
+        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+                                 { \l_@@_westlakeset_id_tl       }\\
+      \end{tabular}
+      \par \group_end:
+      \vspace{1.2\baselineskip}
+      \begin{center}
+        \includegraphics[height = 1.63cm]{westlake-badge-cn.pdf}
+        \par \vspace{2.5\baselineskip}
+        \group_begin:
+          \linespread{1.3}\selectfont \Huge \sffamily
+          \parbox { .9\linewidth }
+            {
+              \centering \@@_fontsize:n { 20 } \selectfont \bfseries \sffamily
+              \l_@@_westlakeset_title_tl_b
+            }
+        \group_end:
+        \par \vspace{1.1\baselineskip}
+        \group_begin:
+        \zihao{4}\sffamily \bfseries
+          (
+            Degree ~ of ~
+            \bool_if:NTF \l_@@_westlakeset_master_bool { Master } { Doctor }
+          )
+        \group_end:
+      \end{center}
+      \vspace{5.15\baselineskip}
+      \begin{center}
+        \zihao{3}\sffamily \linespread{1.35}\selectfont
+        \begin{tabular}
+          {
+            p \l_@@_cover_en_table_dim @{~}
+            p { 15ex }
+          }
+          School: &
+          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+                                   { \prop_item:No \l_@@_cover_en_prop
+                                       { \l_@@_westlakeset_school_tl } }\\
+          Discipline: &
+          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+                                   { \l_@@_westlakeset_subject_tl_b   }\\
+          Candidate: &
+          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+                                   { \l_@@_westlakeset_author_tl_b    }\\
+          Supervisor: &
+          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+                                   { \l_@@_westlakeset_PI_tl_b        }\\
+        \end{tabular}
+        \par \vspace{3.9\baselineskip}
+        \zihao{3}
+        \@@_kernel_month:n { en }, \space
+        \@@_kernel_year:n  { en }
+      \end{center}
+    \end{titlepage}
+  }
+\NewDocumentCommand \makespine {}
+  {
+    \begin{tikzpicture}[remember ~ picture, overlay]
+      % \node [opacity = .4] at ([xshift = -4.65cm, yshift = .87cm]current ~ page.center)
+      %   {\includegraphics[width = \paperwidth, page = 3]{source/3-研发〔2025〕14号西湖大学研究生学位论文编写指南（附件2-学位论文参考模板）.pdf}};
+      \node [minimum ~ width = 2.3cm,        inner ~ sep = 0pt, draw,
+             minimum ~ height = \textheight, outer ~ sep = 0pt, right]
+            (spine-cn) at (current ~ page ~ text ~ area.west) {};
+    \end{tikzpicture}
+  }
+\RenewDocumentEnvironment {abstract} { O{cn} }
+  {
+    \cleardoublepage
+    \tl_set:Nn \l_@@_abstract_language_tl {#1}
+    \null \vspace{1.8\baselineskip}
+    \@beginparpenalty\@lowpenalty
+    \noindent
+    \@@_kernel_bilingual:nnn {#1}
+      {
+        \textbf { 摘要： }
+        \addcontentsline { toc } { chapter } { 摘要     }
+      }
+      {
+        \textbf { Abstract:~ }
+        \addcontentsline { toc } { chapter } { Abstract }
+      }
+    \ignorespaces
+  } { \@endparpenalty\@M }
+\hook_gput_code:nnn { env / abstract / before } { . }
+  { \linespread{1.63}\selectfont }
+\NewDocumentCommand \keywords { m }
+  {
+    \par \noindent
+    \@@_kernel_bilingual:nnn { \l_@@_abstract_language_tl }
+      { \textbf { 关键词：    } \clist_use:nn {#1} { ； } }
+      { \textbf { Keywords: ~ } \clist_use:nn {#1} { ;~ } }
+  }
+\newif\if@mainmatter \@mainmattertrue
+\newcommand \frontmatter
+  {\cleardoublepage \@mainmatterfalse \pagenumbering {roman}}
+\newcommand \mainmatter
+  {
+    \cleardoublepage \@mainmattertrue \pagenumbering {arabic}
+  }
+% \hook_gput_code:nnn { cmd / @schapter / after } { . }
+%   { \addcontentsline{toc}{chapter}{\CTEX@chaptername} }
+\NewDocumentCommand \commitment { O{} }
+  {
+    \begin{titlepage}
+      \null \vspace{1.2\baselineskip}
+      \begin{center}
+        \zihao{3}\sffamily
+        \l_@@_commitment_a_title_tl
+      \end{center}
+      \par \vspace{.5\baselineskip}
+      \l_@@_commitment_a_body_tl
+      \par \vspace{2\baselineskip} \smallskip
+      \begin{minipage} { \dim_eval:n { .5\linewidth - 3\ccwd } }
+        学位论文作者签名：
+        \@@_signature_inline:n { \clist_item:nn {#1} { 1 } }
+      \end{minipage} \hfill
+      \begin{minipage} { \dim_eval:n { .5\linewidth - 3\ccwd } }
+      签字日期：{ \clist_item:nn {#1} { 2 } }
+      \end{minipage}
+      \hspace*{2\ccwd}
+      \par \vspace{3.25\baselineskip}
+      \begin{center}
+        \zihao{3}\sffamily
+        \l_@@_commitment_b_title_tl
+      \end{center}
+      \par \vspace{.5\baselineskip}
+      \l_@@_commitment_b_body_tl
+      \par \vspace{2\baselineskip} \smallskip
+      \begin{minipage} { \dim_eval:n { .5\linewidth - 3\ccwd } }
+        学位论文作者签名：
+        \@@_signature_inline:n { \clist_item:nn {#1} { 3 } }
+        \par \vspace{\baselineskip}
+        签字日期：{ \clist_item:nn {#1} { 4 } }
+      \end{minipage}\hfill
+      \begin{minipage} { \dim_eval:n { .5\linewidth - 3\ccwd }}
+        导师签名：
+        \@@_signature_inline:n { \clist_item:nn {#1} { 5 } }
+        \par \vspace{\baselineskip}
+        签字日期：{ \clist_item:nn {#1} { 6 } }
+      \end{minipage}
+      \hspace*{2\ccwd}
+    \end{titlepage}
+  }
+%    \end{macrocode}
+%    \begin{macrocode}
+\ctex_set:n
+  {
+    chapter =
+      {
+        format+    = \zihao{3} \sffamily \mdseries,
+        number     = \arabic{chapter},
+        beforeskip = 40pt, afterskip = 30pt,
+        aftername  = \enspace, fixskip,
+        tocline    = \CTEXnumberline{#1}#2
+      },
+    section =
+      {
+        format+    = \zihao{4} \sffamily \mdseries \raggedright,
+        beforeskip = 18pt, afterskip = 15pt,
+        aftername  = \enspace, fixskip,
+      },
+    subsection =
+      {
+        format+    = \@@_fontsize:n { 13 } \sffamily \mdseries \raggedright,
+        beforeskip = 15.5pt, afterskip = 13.5pt,
+        aftername = \quad, fixskip
+      },
+    subsubsection =
+      {
+        format+ = \zihao{ -4 } \sffamily \mdseries \raggedright,
+        beforeskip = 13pt, afterskip = 12pt,
+        aftername = \quad, fixskip
+      },
+    contentsname = 目\quad 录, secnumdepth = 3,
+  }
+\renewcommand \cftchapfont     { \sffamily                  }
+\renewcommand \cftchappagefont { \mdseries                  }
+\renewcommand \cftchapleader   { \cftdotfill { \cftdotsep } }
+\dim_set:Nn \cftbeforechapskip { \c_zero_dim                }
+\dim_set:Nn \cftbeforesecskip  { \c_zero_dim                }
+\dim_set:Nn \cftsecindent      { \ccwd                      }
+\dim_set:Nn \cftsubsecindent   { 2\ccwd                     }
+\dim_set:Nn \cftsecnumwidth    { \ccwd                      }
+\dim_set:Nn \cftsubsecnumwidth { 2\ccwd                     }
+\renewcommand \cftdotsep       { .5                         }
+\renewcommand \@pnumwidth      { 2ex                        }
+%    \end{macrocode}
+%    \begin{macrocode}
+\file_input_stop:
+%    \end{macrocode}
+%    \begin{macrocode}
+%</wlu-layout>
+%    \end{macrocode}
+%    \begin{macrocode}
+%<@@=>
+%    \end{macrocode}
+% \end{implementation}
+% 
