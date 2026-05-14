@@ -25,7 +25,7 @@ description         = "The `WestlakeThesis` is a LaTeX bundle for Westlake Unive
          Do not Modify Unless Necessary
 --]==========================================]--
 
-checkengines        = {"xetex", "uptex", "luatex"}
+checkengines        = {"xetex", "uptex"}
 ctanzip             = module
 cleanfiles          = {"*.log", "*.pdf", "*.zip", "*.curlopt"}
 excludefiles        = {"*~"}
