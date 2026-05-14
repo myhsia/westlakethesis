@@ -25,11 +25,12 @@ description         = "The `WestlakeThesis` is a LaTeX bundle for Westlake Unive
          Do not Modify Unless Necessary
 --]==========================================]--
 
-checkengines        = {"xetex", "uptex", "luatex"}
+checkengines        = {"xetex", "uptex", "ptex", "luatex"}
 ctanzip             = module
 cleanfiles          = {"*.log", "*.pdf", "*.zip", "*.curlopt"}
 excludefiles        = {"*~"}
 installfiles        = {"*.sty", "*.cls", "*.code.tex"}
+suppdir             = {"./media"}
 textfiles           = {"README.md", "LICENSE", "*.lua"}
 typesetdemofiles    = {module .. "-demo.tex"}
 typesetexe          = "latexmk -pdfxe"
@@ -72,6 +73,11 @@ end
 --[== "Hacks" to `l3build` | Do not Modify ==]--
 
 function docinit_hook()
+  for _, subdir in pairs(suppdir) do
+    local dest = typesetdir .. "/" .. subdir
+    mkdir(dest)
+    cp("*", subdir, dest)
+  end
   cp(ctanreadme, unpackdir, currentdir)
   return 0
 end
@@ -81,11 +87,11 @@ function tex(file,dir,cmd)
   if os.getenv("WINDIR") ~= nil or os.getenv("COMSPEC") ~= nil then
     upretex_aux = "-usepretex=\"" .. typesetcmds .. "\""
     makeidx_aux = "-e \"$makeindex=q/makeindex -s " .. indexstyle .. " %O %S/\""
-    sandbox_aux = "set \"TEXINPUTS=../unpacked;%TEXINPUTS%;\" &&"
+    sandbox_aux = "set \"TEXINPUTS=../local;%TEXINPUTS%;\" &&"
   else
     upretex_aux = "-usepretex=\'" .. typesetcmds .. "\'"
     makeidx_aux = "-e \'$makeindex=q/makeindex -s " .. indexstyle .. " %O %S/\'"
-    sandbox_aux = "TEXINPUTS=\"../unpacked:$(kpsewhich -var-value=TEXINPUTS):\""
+    sandbox_aux = "TEXINPUTS=\"../local:$(kpsewhich -var-value=TEXINPUTS):\""
   end
   return run(dir, sandbox_aux .. " " .. cmd         .. " " ..
                   upretex_aux .. " " .. makeidx_aux .. " " .. file)
