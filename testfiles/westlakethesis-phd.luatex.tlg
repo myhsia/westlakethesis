@@ -1,5 +1,8 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+============================================================
+TEST 1: Basic Usage of WestlakeThesis: Cover
+============================================================
 (load cache: extra_zhuquefangsong-regular.luc)
 Package fontspec Info: 
 (fontspec)             Font family 'LXGWZhuqueFangsong-Regular(0)' created for font 'LXGWZhuqueFangsong-Regular' with options [NFSSEncoding=LTJY3,JFM=zh_CN/quanjiao,Extension={.ttf},AutoFakeBold,LTJFONTUID=6].
@@ -1836,7 +1839,8 @@ Completed box being shipped out [1]
 .....\whatsit4=[]
 .\kern0.0
 ============================================================
-TEST 1: Basic Usage of WestlakeThesis: Abstract
+============================================================
+TEST 2: Basic Usage of WestlakeThesis: Abstract
 ============================================================
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
 (Font)              using `TU/ptm/m/n' instead on input line ....

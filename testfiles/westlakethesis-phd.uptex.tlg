@@ -1,5 +1,8 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+============================================================
+TEST 1: Basic Usage of WestlakeThesis: Cover
+============================================================
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line ....
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line ....
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line ....
@@ -1190,7 +1193,8 @@ Completed box being shipped out [1]
 ...\hbox(0.0+0.0)x416.83289
 ....\hbox(0.0+0.0)x416.83289
 ============================================================
-TEST 1: Basic Usage of WestlakeThesis: Abstract
+============================================================
+TEST 2: Basic Usage of WestlakeThesis: Abstract
 ============================================================
 Completed box being shipped out [1]
 \vbox(730.50687+0.0)x434.90039

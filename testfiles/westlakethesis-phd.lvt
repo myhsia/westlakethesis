@@ -20,6 +20,7 @@
 
 \loggingoutput
 
+\TEST{Basic Usage of WestlakeThesis: Cover}
   {
     \maketitle
   }
