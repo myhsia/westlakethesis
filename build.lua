@@ -25,12 +25,12 @@ description         = "The `WestlakeThesis` is a LaTeX bundle for Westlake Unive
          Do not Modify Unless Necessary
 --]==========================================]--
 
-checkengines        = {"xetex", "uptex", "ptex", "luatex"}
+checkengines        = {"xetex", "uptex", "luatex"}
 ctanzip             = module
 cleanfiles          = {"*.log", "*.pdf", "*.zip", "*.curlopt"}
 excludefiles        = {"*~"}
-installfiles        = {"*.sty", "*.cls", "*.code.tex"}
-suppdir             = {"./media"}
+installfiles        = {"*.sty", "*.cls", "*.code.tex", "*.pdf", "*.png"}
+sourcefiles         = {"*.dtx", "*.ins", "./media/*.pdf", "./media/*.png"}
 textfiles           = {"README.md", "LICENSE", "*.lua"}
 typesetdemofiles    = {module .. "-demo.tex"}
 typesetexe          = "latexmk -pdfxe"
@@ -73,11 +73,6 @@ end
 --[== "Hacks" to `l3build` | Do not Modify ==]--
 
 function docinit_hook()
-  for _, subdir in pairs(suppdir) do
-    local dest = typesetdir .. "/" .. subdir
-    mkdir(dest)
-    cp("*", subdir, dest)
-  end
   cp(ctanreadme, unpackdir, currentdir)
   return 0
 end

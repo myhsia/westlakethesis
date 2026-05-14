@@ -1,12 +1,1376 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line ....
+File: mt-LatinModernRoman.cfg ....-..-.. v... microtype config. file: Latin Modern Roman (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmr' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line ....
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line ....
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12.045> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line ....
+File: westlake-badge-cn.pdf Graphic file (type pdf)
+<use westlake-badge-cn.pdf>
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <26.09749> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <22.08249> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <16.06> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.05249> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.53937> on input line ....
+Completed box being shipped out [1]
+\vbox(730.50687+0.0)x434.90039
+.\hbox(0.0+0.0)x0.0
+..\special{pdf:docinfo<</Title()/Subject()/Creator(LaTeX with hyperref)/Author()/Keywords()>>}
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil
+..\kern 0.0
+..\kern -37.0
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil
+...\kern 0.0
+...\kern 18.0675
+...\kern -1.00374
+...\special{pdf:dest (page.1) [@thispage /XYZ @xpos @ypos null]}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.0)x434.90039
+..\glue -37.0
+..\vbox(767.50687+0.0)x416.83289, shifted 18.0675
+...\vbox(12.0+0.0)x416.83289, glue set 12.0fil
+....\glue 0.0 plus 1.0fil
+....\hbox(0.0+0.0)x416.83289
+.....\hbox(0.0+0.0)x416.83289
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 32.18102fil
+....\write-{}
+....\special{pdf:majorversion 1}
+....\special{pdf:minorversion 7}
+....\special{pdf:docview<</OpenAction[@page1/Fit]/PageMode/UseOutlines>>}
+....\special{pdf:dest (Doc-Start) [@thispage /XYZ @xpos @ypos null]}
+....\glue(\topskip) 0.0
+....\hbox(26.06523+20.04274)x416.83289, glue set 266.3155fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(26.06523+20.04274)x150.51738
+......\mathon
+......\vbox(26.06523+20.04274)x150.51738
+.......\hbox(10.11775+12.93623)x150.51738
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x66.22499
+.........\rule(10.11775+4.33623)x0.0
+.........\glue 6.0
+.........\vbox(10.11775+4.33623)x48.18
+..........\hbox(10.11775+4.33623)x48.18
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\hbox(9.82872+1.43333)x48.18
+............\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 单
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 位
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 代
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 码
+............\kern -0.00017
+............\kern 0.00017
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\penalty 10000
+.........\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 ：
+.........\rule(0.0+0.0)x-8.32309
+.........\kern 0.0005
+.........\kern -0.0005
+.........\kern -0.99649
+.........\kern 0.99649
+.........\glue 8.32309 minus 6.03455
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x84.29239
+.........\vbox(10.11775+12.93623)x78.29239
+..........\hbox(10.11775+12.93623)x78.29239
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\vbox(10.11775+12.93623)x78.29239
+............\hbox(10.11775+4.33623)x78.29239, glue set 24.08997fil
+.............\rule(10.11775+4.33623)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/ptm/m/n/12.045 1
+.............\T1/ptm/m/n/12.045 4
+.............\T1/ptm/m/n/12.045 6
+.............\T1/ptm/m/n/12.045 2
+.............\T1/ptm/m/n/12.045 6
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -1.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(10.11775+12.93623)x150.51738
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x66.22499
+.........\rule(10.11775+4.33623)x0.0
+.........\glue 6.0
+.........\vbox(10.11775+4.33623)x48.18
+..........\hbox(10.11775+4.33623)x48.18
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\hbox(9.73236+1.2888)x48.18, glue set 24.09fil
+............\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 学
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 号
+............\kern -0.00017
+............\kern 0.00017
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\penalty 10000
+.........\TU/LXGWZhuqueFangsong-Regular(0)/m/n/12.045 ：
+.........\rule(0.0+0.0)x-8.32309
+.........\kern 0.0005
+.........\kern -0.0005
+.........\kern -0.99649
+.........\kern 0.99649
+.........\glue 8.32309 minus 6.03455
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x84.29239
+.........\vbox(10.11775+12.93623)x78.29239
+..........\hbox(10.11775+12.93623)x78.29239
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\vbox(10.11775+12.93623)x78.29239
+............\hbox(10.11775+4.33623)x78.29239, glue set 6.02249fil
+.............\rule(10.11775+4.33623)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/ptm/m/n/12.045 2
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 2
+.............\T1/ptm/m/n/12.045 5
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -1.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+......\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0
+....\glue 26.0171
+....\glue 0.0
+....\penalty -51
+....\glue 13.0 plus 7.0 minus 8.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(46.37813+0.0)x416.83289, glue set 131.1479fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+......\glue 0.0
+......\glue 0.0
+......\glue -6.0
+......\hbox(0.0+0.0)x0.0
+......\glue 6.0
+.....\penalty 0
+.....\hbox(46.37813+0.0)x154.53708
+......\hbox(46.3735+0.0)x154.53745
+.......\hbox(46.3735+0.0)x154.53745
+........\hbox(46.3735+0.0)x0.0
+.........\special{pdf:btrans}
+.........\special{x:scale 0.04074 0.04074}
+.........\hbox(1138.25244+0.0)x0.0, glue set - 3793.17114fil
+..........\hbox(1138.25244+0.0)x3793.17114
+...........\XeTeXpdffile "./westlake-badge-cn.pdf"
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\special{pdf:etrans}
+........\kern 154.53745
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 14.0925
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 21.31047
+....\hbox(18.43802+1.585)x416.83289, glue set 142.16898fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\TU/LXGWNeoZhiSong(0)/m/n/22.08249 博
+.....\glue 0.0 plus 2.58942
+.....\TU/LXGWNeoZhiSong(0)/m/n/22.08249 士
+.....\glue 0.0 plus 2.58942
+.....\TU/LXGWNeoZhiSong(0)/m/n/22.08249 学
+.....\glue 0.0 plus 2.58942
+.....\TU/LXGWNeoZhiSong(0)/m/n/22.08249 位
+.....\glue 0.0 plus 2.58942
+.....\TU/LXGWNeoZhiSong(0)/m/n/22.08249 论
+.....\glue 0.0 plus 2.58942
+.....\TU/LXGWNeoZhiSong(0)/m/n/22.08249 文
+.....\kern -0.00017
+.....\kern 0.00017
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 45.71051
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(44.25581+31.20708)x416.83289, glue set 77.929fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\mathon
+.....\vbox(44.25581+31.20708)x260.97488
+......\hbox(21.66295+2.16628)x260.97488
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 西
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 湖
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 大
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 学
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 学
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 位
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 论
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 文
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 模
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 板
+.......\glue(\rightskip) 0.0 plus 1.0fil
+......\penalty 300
+......\glue(\baselineskip) 23.14626
+......\hbox(21.66295+6.82446)x260.97488, glue set 25.98495fil
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\kern-0.86122 (left margin)
+.......\T1/phv/m/n/26.09749 (
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 基
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 于
+.......\kern -0.00018
+.......\kern 0.00018
+.......\glue 7.25484 plus 4.33194 minus 1.7222
+.......\T1/phv/m/n/26.09749 L
+.......\kern -0.0002
+.......\kern 0.0002
+.......\kern -9.39511
+.......\vbox(18.5943+0.0)x14.72884, glue set 2.86067fil
+........\hbox(15.73363+0.0)x14.72884
+.........\T1/phv/m/n/22.08249 A
+.........\kern -0.0002
+.........\kern 0.0002
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern -3.91446
+.......\T1/phv/m/n/26.09749 T
+.......\kern -0.0002
+.......\kern 0.0002
+.......\kern -4.35051
+.......\hbox(18.5943+0.0)x17.40681, shifted 6.82446
+........\T1/phv/m/n/26.09749 E
+........\kern -0.0002
+........\kern 0.0002
+.......\kern -3.26218
+.......\T1/phv/m/n/26.09749 X
+.......\kern -0.0002
+.......\kern 0.0002
+.......\T1/phv/m/n/26.09749 3
+.......\kern -0.0002
+.......\kern 0.0002
+.......\glue 7.25484 plus 4.33194 minus 1.7222
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 开
+.......\glue 0.0 plus 3.95908
+.......\TU/LXGWNeoXiHei(0)/m/n/26.09749 发
+.......\T1/phv/m/n/26.09749 )
+.......\kern -0.0002
+.......\kern 0.0002
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 1.0fil
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 94.31241
+....\glue 0.0
+....\penalty -51
+....\glue 13.0 plus 7.0 minus 8.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(67.24962+59.21962)x416.83289, glue set 108.06403fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+......\glue 0.0
+......\glue 0.0
+......\glue -6.0
+......\hbox(0.0+0.0)x0.0
+......\glue 6.0
+.....\penalty 0
+.....\hbox(67.24962+59.21962)x200.70483
+......\mathon
+......\vbox(67.24962+59.21962)x200.70483
+.......\hbox(18.21204+13.40527)x200.70483
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x86.29999
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x64.23999
+..........\hbox(18.21204+7.80527)x64.23999
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\hbox(13.42516+1.22331)x64.23999
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 培
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 养
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 单
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 位
+............\kern -0.00017
+............\kern 0.00017
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\penalty 10000
+.........\TU/LXGWNeoZhiSong(0)/m/n/16.06 ：
+.........\rule(0.0+0.0)x-11.0334
+.........\kern 0.00067
+.........\kern -0.00067
+.........\kern -0.99649
+.........\kern 0.99649
+.........\glue 11.0334 minus 8.03
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x114.40485
+.........\vbox(18.21204+13.40527)x108.40485
+..........\hbox(18.21204+13.40527)x108.40485
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.40527)x108.40485
+............\hbox(18.21204+7.80527)x108.40485, glue set 6.02243fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 生
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 命
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 科
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 学
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 学
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 院
+.............\kern -0.00017
+.............\kern 0.00017
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(18.21204+13.40527)x200.70483
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x86.29999
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x64.23999
+..........\hbox(18.21204+7.80527)x64.23999
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\hbox(13.40947+1.15273)x64.23999, glue set 32.12fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 学
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 科
+............\kern -0.00017
+............\kern 0.00017
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\penalty 10000
+.........\TU/LXGWNeoZhiSong(0)/m/n/16.06 ：
+.........\rule(0.0+0.0)x-11.0334
+.........\kern 0.00067
+.........\kern -0.00067
+.........\kern -0.99649
+.........\kern 0.99649
+.........\glue 11.0334 minus 8.03
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x114.40485
+.........\vbox(18.21204+13.40527)x108.40485
+..........\hbox(18.21204+13.40527)x108.40485
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.40527)x108.40485
+............\hbox(18.21204+7.80527)x108.40485, glue set 30.11243fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 生
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 物
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 学
+.............\kern -0.00017
+.............\kern 0.00017
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(18.21204+13.40527)x200.70483
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x86.29999
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x64.23999
+..........\hbox(18.21204+7.80527)x64.23999
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\hbox(13.35458+1.25467)x64.23999, glue set 8.03fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 研
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 究
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 生
+............\kern -0.00017
+............\kern 0.00017
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\penalty 10000
+.........\TU/LXGWNeoZhiSong(0)/m/n/16.06 ：
+.........\rule(0.0+0.0)x-11.0334
+.........\kern 0.00067
+.........\kern -0.00067
+.........\kern -0.99649
+.........\kern 0.99649
+.........\glue 11.0334 minus 8.03
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x114.40485
+.........\vbox(18.21204+13.40527)x108.40485
+..........\hbox(18.21204+13.40527)x108.40485
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.40527)x108.40485
+............\hbox(18.21204+7.80527)x108.40485, glue set 30.11243fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 鼠
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 小
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 西
+.............\kern -0.00017
+.............\kern 0.00017
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(18.21204+13.40527)x200.70483
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x86.29999
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x64.23999
+..........\hbox(18.21204+7.80527)x64.23999
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\hbox(13.27615+1.16841)x64.23999
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 指
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 导
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 教
+............\kern -0.00017
+............\kern 0.00017
+............\glue 0.0 plus 1.0fil
+............\TU/LXGWNeoZhiSong(0)/m/n/16.06 师
+............\kern -0.00017
+............\kern 0.00017
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\penalty 10000
+.........\TU/LXGWNeoZhiSong(0)/m/n/16.06 ：
+.........\rule(0.0+0.0)x-11.0334
+.........\kern 0.00067
+.........\kern -0.00067
+.........\kern -0.99649
+.........\kern 0.99649
+.........\glue 11.0334 minus 8.03
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.40527)x114.40485
+.........\vbox(18.21204+13.40527)x108.40485
+..........\hbox(18.21204+13.40527)x108.40485
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.40527)x108.40485
+............\hbox(18.21204+7.80527)x108.40485, glue set 30.11243fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 果
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 小
+.............\glue 0.0 plus 1.36491
+.............\TU/LXGWNeoZhiSong(0)/m/n/16.06 蝇
+.............\kern -0.00017
+.............\kern 0.00017
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+......\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 81.95439
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(13.31537+1.16841)x416.83289, glue set 152.20645fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 二
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 〇
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 一
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 六
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 年
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 五
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoZhiSong(0)/m/n/16.06 月
+.....\kern -0.00017
+.....\kern 0.00017
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 30.0
+...\hbox(0.0+0.0)x416.83289
+....\hbox(0.0+0.0)x416.83289
+.\kern 0.0
+File: westlake-badge-cn.pdf Graphic file (type pdf)
+<use westlake-badge-cn.pdf>
+LaTeX Font Info:    Calculating math sizes for size <20> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <20> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <13.99994> on input line ....
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line ....
+Completed box being shipped out [1]
+\vbox(730.50687+0.0)x434.90039
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil
+..\kern 0.0
+..\kern -37.0
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil
+...\kern 0.0
+...\kern 18.0675
+...\kern -1.00374
+...\special{pdf:dest (page.1) [@thispage /XYZ @xpos @ypos null]}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.0)x434.90039
+..\glue -37.0
+..\vbox(767.50687+0.0)x416.83289, shifted 18.0675
+...\vbox(12.0+0.0)x416.83289, glue set 12.0fil
+....\glue 0.0 plus 1.0fil
+....\hbox(0.0+0.0)x416.83289
+.....\hbox(0.0+0.0)x416.83289
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 29.2444fil
+....\glue(\topskip) 0.0
+....\hbox(26.06523+20.04274)x416.83289, glue set 258.28212fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(26.06523+20.04274)x158.55077
+......\mathon
+......\vbox(26.06523+20.04274)x158.55077
+.......\hbox(10.11775+12.93623)x158.55077
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x74.25838
+.........\rule(10.11775+4.33623)x0.0
+.........\glue 6.0
+.........\vbox(10.11775+4.33623)x65.24713
+..........\hbox(10.11775+4.33623)x65.24713
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\T1/ptm/m/n/12.045 S
+...........\T1/ptm/m/n/12.045 c
+...........\T1/ptm/m/n/12.045 h
+...........\T1/ptm/m/n/12.045 o
+...........\T1/ptm/m/n/12.045 o
+...........\T1/ptm/m/n/12.045 l
+...........\glue 3.01125 plus 1.80673 minus 0.72267
+...........\T1/ptm/m/n/12.045 C
+...........\T1/ptm/m/n/12.045 o
+...........\T1/ptm/m/n/12.045 d
+...........\T1/ptm/m/n/12.045 e
+...........\T1/ptm/m/n/12.045 :
+...........\kern -0.0002
+...........\kern 0.0002
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 3.01125 plus 1.80673 minus 0.72267
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x84.29239
+.........\vbox(10.11775+12.93623)x78.29239
+..........\hbox(10.11775+12.93623)x78.29239
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\vbox(10.11775+12.93623)x78.29239
+............\hbox(10.11775+4.33623)x78.29239, glue set 24.08997fil
+.............\rule(10.11775+4.33623)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/ptm/m/n/12.045 1
+.............\T1/ptm/m/n/12.045 4
+.............\T1/ptm/m/n/12.045 6
+.............\T1/ptm/m/n/12.045 2
+.............\T1/ptm/m/n/12.045 6
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -1.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(10.11775+12.93623)x158.55077
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x74.25838
+.........\rule(10.11775+4.33623)x0.0
+.........\glue 6.0
+.........\vbox(10.11775+4.33623)x65.24713
+..........\hbox(10.11775+4.33623)x65.24713, glue set 9.37102fil
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\T1/ptm/m/n/12.045 S
+...........\T1/ptm/m/n/12.045 t
+...........\T1/ptm/m/n/12.045 u
+...........\T1/ptm/m/n/12.045 d
+...........\T1/ptm/m/n/12.045 e
+...........\T1/ptm/m/n/12.045 n
+...........\T1/ptm/m/n/12.045 t
+...........\glue 3.01125 plus 1.80673 minus 0.72267
+...........\T1/ptm/m/n/12.045 I
+...........\T1/ptm/m/n/12.045 D
+...........\T1/ptm/m/n/12.045 :
+...........\kern -0.0002
+...........\kern 0.0002
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 3.01125 plus 1.80673 minus 0.72267
+........\glue(\tabskip) 0.0
+........\hbox(10.11775+12.93623)x84.29239
+.........\vbox(10.11775+12.93623)x78.29239
+..........\hbox(10.11775+12.93623)x78.29239
+...........\hbox(0.0+0.0)x0.0
+...........\rule(10.11775+*)x0.0
+...........\vbox(10.11775+12.93623)x78.29239
+............\hbox(10.11775+4.33623)x78.29239, glue set 6.02249fil
+.............\rule(10.11775+4.33623)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/ptm/m/n/12.045 2
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 2
+.............\T1/ptm/m/n/12.045 5
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\T1/ptm/m/n/12.045 0
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -1.5
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+4.33623)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+......\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0
+....\glue 26.0171
+....\glue 0.0
+....\penalty -51
+....\glue 13.0 plus 7.0 minus 8.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(46.37813+0.0)x416.83289, glue set 131.1479fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+......\glue 0.0
+......\glue 0.0
+......\glue -6.0
+......\hbox(0.0+0.0)x0.0
+......\glue 6.0
+.....\penalty 0
+.....\hbox(46.37813+0.0)x154.53708
+......\hbox(46.3735+0.0)x154.53745
+.......\hbox(46.3735+0.0)x154.53745
+........\hbox(46.3735+0.0)x0.0
+.........\special{pdf:btrans}
+.........\special{x:scale 0.04074 0.04074}
+.........\hbox(1138.25244+0.0)x0.0, glue set - 3793.17114fil
+..........\hbox(1138.25244+0.0)x3793.17114
+...........\XeTeXpdffile "./westlake-badge-cn.pdf"
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\special{pdf:etrans}
+........\kern 154.53745
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 54.20245
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(32.07936+19.03062)x416.83289, glue set 20.84293fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\mathon
+.....\vbox(32.07936+19.03062)x375.14705
+......\hbox(14.58997+4.1399)x375.14705, glue set 13.52563fil
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\kern-0.94 (left margin)
+.......\hbox(0.0+0.0)x0.0
+.......\T1/phv/b/n/20 W
+.......\kern-0.69997
+.......\T1/phv/b/n/20 e
+.......\T1/phv/b/n/20 s
+.......\T1/phv/b/n/20 t
+.......\T1/phv/b/n/20 l
+.......\T1/phv/b/n/20 a
+.......\T1/phv/b/n/20 k
+.......\T1/phv/b/n/20 e
+.......\glue 5.5598 plus 3.31981 minus 1.31982
+.......\T1/phv/b/n/20 U
+.......\T1/phv/b/n/20 n
+.......\T1/phv/b/n/20 i
+.......\T1/phv/b/n/20 v
+.......\T1/phv/b/n/20 e
+.......\T1/phv/b/n/20 r
+.......\kern-0.2998
+.......\T1/phv/b/n/20 s
+.......\T1/phv/b/n/20 i
+.......\T1/phv/b/n/20 t
+.......\T1/phv/b/n/20 y
+.......\glue 5.5598 plus 3.31981 minus 1.31982
+.......\T1/phv/b/n/20 T
+.......\T1/phv/b/n/20 h
+.......\T1/phv/b/n/20 e
+.......\T1/phv/b/n/20 s
+.......\T1/phv/b/n/20 i
+.......\T1/phv/b/n/20 s
+.......\glue 5.5598 plus 3.31981 minus 1.31982
+.......\T1/phv/b/n/20 T
+.......\kern-1.19998
+.......\T1/phv/b/n/20 e
+.......\T1/phv/b/n/20 m
+.......\T1/phv/b/n/20 p
+.......\T1/phv/b/n/20 l
+.......\T1/phv/b/n/20 a
+.......\T1/phv/b/n/20 t
+.......\T1/phv/b/n/20 e
+.......\glue(\rightskip) 0.0 plus 1.0fil
+......\penalty 300
+......\glue(\baselineskip) 12.47021
+......\hbox(14.58997+5.31995)x375.14705, glue set 74.9677fil
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\T1/phv/b/n/20 C
+.......\T1/phv/b/n/20 o
+.......\T1/phv/b/n/20 n
+.......\T1/phv/b/n/20 s
+.......\T1/phv/b/n/20 t
+.......\T1/phv/b/n/20 r
+.......\T1/phv/b/n/20 u
+.......\T1/phv/b/n/20 c
+.......\T1/phv/b/n/20 t
+.......\T1/phv/b/n/20 e
+.......\T1/phv/b/n/20 d
+.......\glue 5.5598 plus 3.31981 minus 1.31982
+.......\T1/phv/b/n/20 w
+.......\T1/phv/b/n/20 i
+.......\T1/phv/b/n/20 t
+.......\T1/phv/b/n/20 h
+.......\glue 5.5598 plus 3.31981 minus 1.31982
+.......\T1/phv/b/n/20 L
+.......\kern -0.0002
+.......\kern 0.0002
+.......\kern -7.20001
+.......\vbox(14.1599+0.0)x10.10791, glue set 4.24802fil
+........\hbox(9.91188+0.0)x10.10791
+.........\T1/phv/b/n/13.99994 A
+.........\kern -0.0002
+.........\kern 0.0002
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern -2.99988
+.......\T1/phv/b/n/20 T
+.......\kern -0.0002
+.......\kern 0.0002
+.......\kern -3.33405
+.......\hbox(14.1599+0.0)x13.33984, shifted 5.31995
+........\T1/phv/b/n/20 E
+........\kern -0.0002
+........\kern 0.0002
+.......\kern -2.5
+.......\T1/phv/b/n/20 X
+.......\kern -0.0002
+.......\kern 0.0002
+.......\T1/phv/b/n/20 3
+.......\kern -0.0002
+.......\kern 0.0002
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 1.0fil
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 23.84921
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(10.25127+3.12654)x416.83289, glue set 146.9726fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\kern -0.46373
+.....\T1/phv/b/n/14.05249 (
+.....\T1/phv/b/n/14.05249 D
+.....\T1/phv/b/n/14.05249 e
+.....\T1/phv/b/n/14.05249 g
+.....\T1/phv/b/n/14.05249 r
+.....\T1/phv/b/n/14.05249 e
+.....\T1/phv/b/n/14.05249 e
+.....\glue 3.90645 plus 2.33258 minus 0.92734
+.....\T1/phv/b/n/14.05249 o
+.....\T1/phv/b/n/14.05249 f
+.....\glue 3.90645 plus 2.33258 minus 0.92734
+.....\T1/phv/b/n/14.05249 D
+.....\T1/phv/b/n/14.05249 o
+.....\T1/phv/b/n/14.05249 c
+.....\T1/phv/b/n/14.05249 t
+.....\T1/phv/b/n/14.05249 o
+.....\T1/phv/b/n/14.05249 r
+.....\T1/phv/b/n/14.05249 )
+.....\kern -0.0002
+.....\kern 0.0002
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 111.65694
+....\glue 0.0
+....\penalty -51
+....\glue 13.0 plus 7.0 minus 8.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(66.64961+58.61961)x416.83289, glue set 96.1002fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+......\glue 0.0
+......\glue 0.0
+......\glue -6.0
+......\hbox(0.0+0.0)x0.0
+......\glue 6.0
+.....\penalty 0
+.....\hbox(66.64961+58.61961)x224.63248
+......\mathon
+......\vbox(66.64961+58.61961)x224.63248
+.......\hbox(18.21204+13.10527)x224.63248
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x92.64241
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x82.17789
+..........\hbox(18.21204+7.80527)x82.17789, glue set 28.61844fil
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\T1/phv/m/n/16.06 S
+...........\T1/phv/m/n/16.06 c
+...........\T1/phv/m/n/16.06 h
+...........\T1/phv/m/n/16.06 o
+...........\T1/phv/m/n/16.06 o
+...........\T1/phv/m/n/16.06 l
+...........\T1/phv/m/n/16.06 :
+...........\kern -0.0002
+...........\kern 0.0002
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 4.46452 plus 2.6658 minus 1.05981
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x131.99007
+.........\vbox(18.21204+13.10527)x125.99007
+..........\hbox(18.21204+13.10527)x125.99007
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.10527)x125.99007
+............\hbox(18.21204+7.80527)x125.99007, glue set 15.48201fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/phv/m/n/16.06 L
+.............\T1/phv/m/n/16.06 i
+.............\T1/phv/m/n/16.06 f
+.............\kern-0.48169
+.............\T1/phv/m/n/16.06 e
+.............\glue 4.46452 plus 2.6658 minus 1.05981
+.............\T1/phv/m/n/16.06 S
+.............\T1/phv/m/n/16.06 c
+.............\T1/phv/m/n/16.06 i
+.............\T1/phv/m/n/16.06 e
+.............\T1/phv/m/n/16.06 n
+.............\T1/phv/m/n/16.06 c
+.............\T1/phv/m/n/16.06 e
+.............\T1/phv/m/n/16.06 s
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.8
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(18.21204+13.10527)x224.63248
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x92.64241
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x82.17789
+..........\hbox(18.21204+7.80527)x82.17789, glue set 9.00928fil
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\T1/phv/m/n/16.06 D
+...........\T1/phv/m/n/16.06 i
+...........\T1/phv/m/n/16.06 s
+...........\T1/phv/m/n/16.06 c
+...........\T1/phv/m/n/16.06 i
+...........\T1/phv/m/n/16.06 p
+...........\T1/phv/m/n/16.06 l
+...........\T1/phv/m/n/16.06 i
+...........\T1/phv/m/n/16.06 n
+...........\T1/phv/m/n/16.06 e
+...........\T1/phv/m/n/16.06 :
+...........\kern -0.0002
+...........\kern 0.0002
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 4.46452 plus 2.6658 minus 1.05981
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x131.99007
+.........\vbox(18.21204+13.10527)x125.99007
+..........\hbox(18.21204+13.10527)x125.99007
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.10527)x125.99007
+............\hbox(18.21204+7.80527)x125.99007, glue set 36.66495fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/phv/m/n/16.06 B
+.............\T1/phv/m/n/16.06 i
+.............\T1/phv/m/n/16.06 o
+.............\T1/phv/m/n/16.06 l
+.............\T1/phv/m/n/16.06 o
+.............\T1/phv/m/n/16.06 g
+.............\T1/phv/m/n/16.06 y
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.8
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(18.21204+13.10527)x224.63248
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x92.64241
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x82.17789
+..........\hbox(18.21204+7.80527)x82.17789, glue set 4.51276fil
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\T1/phv/m/n/16.06 C
+...........\T1/phv/m/n/16.06 a
+...........\T1/phv/m/n/16.06 n
+...........\T1/phv/m/n/16.06 d
+...........\T1/phv/m/n/16.06 i
+...........\T1/phv/m/n/16.06 d
+...........\T1/phv/m/n/16.06 a
+...........\T1/phv/m/n/16.06 t
+...........\T1/phv/m/n/16.06 e
+...........\T1/phv/m/n/16.06 :
+...........\kern -0.0002
+...........\kern 0.0002
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 4.46452 plus 2.6658 minus 1.05981
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x131.99007
+.........\vbox(18.21204+13.10527)x125.99007
+..........\hbox(18.21204+13.10527)x125.99007
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.10527)x125.99007
+............\hbox(18.21204+7.80527)x125.99007, glue set 18.61362fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/phv/m/n/16.06 W
+.............\kern-0.48169
+.............\T1/phv/m/n/16.06 e
+.............\T1/phv/m/n/16.06 s
+.............\T1/phv/m/n/16.06 t
+.............\glue 4.46452 plus 2.6658 minus 1.05981
+.............\T1/phv/m/n/16.06 M
+.............\T1/phv/m/n/16.06 o
+.............\T1/phv/m/n/16.06 u
+.............\T1/phv/m/n/16.06 s
+.............\T1/phv/m/n/16.06 e
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.8
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+.......\glue(\lineskip) 0.0
+.......\hbox(18.21204+13.10527)x224.63248
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x92.64241
+.........\rule(18.21204+7.80527)x0.0
+.........\glue 6.0
+.........\vbox(18.21204+7.80527)x82.17789
+..........\hbox(18.21204+7.80527)x82.17789
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\T1/phv/m/n/16.06 S
+...........\T1/phv/m/n/16.06 u
+...........\T1/phv/m/n/16.06 p
+...........\T1/phv/m/n/16.06 e
+...........\T1/phv/m/n/16.06 r
+...........\kern0.48167
+...........\T1/phv/m/n/16.06 v
+...........\T1/phv/m/n/16.06 i
+...........\T1/phv/m/n/16.06 s
+...........\T1/phv/m/n/16.06 o
+...........\T1/phv/m/n/16.06 r
+...........\kern0.48167
+...........\T1/phv/m/n/16.06 :
+...........\kern -0.0002
+...........\kern 0.0002
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 4.46452 plus 2.6658 minus 1.05981
+........\glue(\tabskip) 0.0
+........\hbox(18.21204+13.10527)x131.99007
+.........\vbox(18.21204+13.10527)x125.99007
+..........\hbox(18.21204+13.10527)x125.99007
+...........\hbox(0.0+0.0)x0.0
+...........\rule(18.21204+*)x0.0
+...........\vbox(18.21204+13.10527)x125.99007
+............\hbox(18.21204+7.80527)x125.99007, glue set 34.23997fil
+.............\rule(18.21204+7.80527)x0.0
+.............\glue(\leftskip) 0.0 plus 1.0fil
+.............\hbox(0.0+0.0)x0.0
+.............\T1/phv/m/n/16.06 F
+.............\kern-0.72263
+.............\T1/phv/m/n/16.06 r
+.............\kern0.24072
+.............\T1/phv/m/n/16.06 u
+.............\T1/phv/m/n/16.06 i
+.............\T1/phv/m/n/16.06 t
+.............\glue 4.46452 plus 2.6658 minus 1.05981
+.............\T1/phv/m/n/16.06 F
+.............\T1/phv/m/n/16.06 l
+.............\T1/phv/m/n/16.06 y
+.............\kern -0.0002
+.............\kern 0.0002
+.............\penalty 10000
+.............\glue(\parfillskip) 0.0 plus 2.0fil
+.............\glue(\rightskip) 0.0 plus -1.0fil
+............\glue -4.8
+............\rule(0.5+0.0)x*
+............\glue 9.6
+...........\penalty 10000
+...........\rule(0.0+7.80527)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0
+.........\glue 0.0 plus 1.0fil
+.........\glue 6.0
+........\glue(\tabskip) 0.0
+......\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 101.46738
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(11.44264+3.3805)x416.83289, glue set 171.96867fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+.....\T1/phv/m/n/16.06 M
+.....\T1/phv/m/n/16.06 a
+.....\kern-0.48169
+.....\T1/phv/m/n/16.06 y
+.....\kern-1.60602
+.....\T1/phv/m/n/16.06 ,
+.....\glue 4.46452 plus 3.33224 minus 0.84784
+.....\T1/phv/m/n/16.06 2
+.....\T1/phv/m/n/16.06 0
+.....\T1/phv/m/n/16.06 1
+.....\T1/phv/m/n/16.06 6
+.....\kern -0.0002
+.....\kern 0.0002
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 30.0
+...\hbox(0.0+0.0)x416.83289
+....\hbox(0.0+0.0)x416.83289
 ============================================================
 TEST 1: Basic Usage of WestlakeThesis: Abstract
 ============================================================
 Completed box being shipped out [1]
 \vbox(730.50687+0.0)x434.90039
-.\hbox(0.0+0.0)x0.0
-..\special{pdf:docinfo<</Title()/Subject()/Creator(LaTeX with hyperref)/Author()/Keywords()>>}
 .\vbox(0.0+0.0)x0.0, glue set 38.00374fil
 ..\kern 0.0
 ..\kern -37.0
@@ -34,11 +1398,6 @@ Completed box being shipped out [1]
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
 ...\vbox(700.50687+0.0)x416.83289, glue set 622.4721fil
-....\write-{}
-....\special{pdf:majorversion 1}
-....\special{pdf:minorversion 7}
-....\special{pdf:docview<</OpenAction[@page1/Fit]/PageMode/UseOutlines>>}
-....\special{pdf:dest (Doc-Start) [@thispage /XYZ @xpos @ypos null]}
 ....\write-{}
 ....\glue(\topskip) 12.0
 ....\hbox(0.0+0.0)x0.0
@@ -90,5 +1449,4 @@ Completed box being shipped out [1]
 ...\glue(\baselineskip) 30.0
 ...\hbox(0.0+0.0)x416.83289
 ....\hbox(0.0+0.0)x416.83289
-.\kern 0.0
 ============================================================

@@ -1,13 +1,28 @@
 \input regression-test.tex
-\documentclass{westlakethesis} 
+\documentclass{westlakethesis}
 
-\westlakeset{}
+\usepackage{hologo}
+
+\westlakeset{
+  id        = 20250000000,
+  school    = sls,
+  title     = 西湖大学学位论文模板 (基于 \hologo{LaTeX3} 开发)/
+              Westlake University Thesis Template Constructed with
+              \hologo{LaTeX3},
+  subject   = 生物学/Biology,
+  author    = 鼠小西/West Mouse,
+  PI        = 果小蝇/Fruit Fly,
+}
 
 \begin{document}
 
 \START
 
 \loggingoutput
+
+  {
+    \maketitle
+  }
 
 \BEGINTEST{Basic Usage of WestlakeThesis: Abstract}
   \begin{abstract}[cn]
