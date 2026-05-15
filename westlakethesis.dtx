@@ -373,8 +373,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
           }
       }
   }
-\cs_new_nopar:Npn \@@_fontsize:n #1
-  { \fontsize {#1} { \fp_eval:n { #1 * 6 / 5 }} \selectfont }
+\cs_new_nopar:Npn \@@_fontsize:nn #1#2
+  {
+    \@@_kernel_bilingual:nnn {#1}
+      { \ctex_zihao:n {#2}                                          }
+      { \fontsize     {#2} { \fp_eval:n { #2 * 6 / 5 }} \selectfont }
+  }
 %    \end{macrocode}
 %    \begin{macrocode}
 \cs_new_protected_nopar:Npn \@@_kernel_month:n #1
@@ -409,7 +413,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
             \addcontentsline{toc}{chapter}{参考文献}
             \group_begin:
               \dim_set:Nn \bibsep {1pt}
-              \linespread{1.85} \ctex_zihao:n { 5 }
+              \linespread{1.85} \@@_fontsize:nn { cn } { 5 }
               \bibliography { \l_@@_set_bib_str }
             \group_end:
           }
@@ -461,7 +465,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \hbox_gset:Nn \l_@@_cover_id_box { 0 }
 \hbox_gset:Nn \l_@@_cover_code_box { School ~ Code: }
 \hbox_gset:Nn \l_@@_cover_en_table_box
-  { \ctex_zihao:n { 3 } \sffamily Supervisor: }
+  { \@@_fontsize:nn { cn } { 3 } \sffamily Supervisor: }
 \dim_const:Nn \l_@@_cover_id_dim
   { 13 \box_wd:N \l_@@_cover_id_box }
 \dim_const:Nn \l_@@_cover_code_dim
@@ -543,7 +547,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \end{center}
       \vspace{4.35\baselineskip}
       \begin{center}
-        \linespread{1.35} \ctex_zihao:n { 3 }
+        \linespread{1.35} \@@_fontsize:nn { cn } { 3 }
         \begin{tabular} { p { 4\ccwd } @{：} p { 15ex } }
           \@@_cover_spread_box:nn  { 4\ccwd } { 培养单位 } &
           \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
@@ -560,7 +564,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
                                    { \l_@@_set_PI_tl_a        }\\
         \end{tabular}
         \par\vspace{3.15\baselineskip}
-        \ctex_zihao:n { 3 } \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
+        \@@_fontsize:nn { cn } { 3 }
+        \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
       \end{center}
     \end{titlepage}
     \begin{titlepage}
@@ -589,13 +594,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \linespread{1.3}\selectfont \Huge \sffamily
           \parbox { .9\linewidth }
             {
-              \centering \@@_fontsize:n { 20 } \selectfont \bfseries \sffamily
+              \centering
+              \@@_fontsize:nn { en } { 20 } \selectfont \bfseries \sffamily
               \l_@@_set_title_tl_b
             }
         \group_end:
         \par \vspace{1.1\baselineskip}
         \group_begin:
-        \ctex_zihao:n { 4 } \sffamily \bfseries
+        \@@_fontsize:nn { cn } { 4 } \sffamily \bfseries
           (
             Degree ~ of ~
             \bool_if:NTF \l_@@_set_master_bool { Master } { Doctor }
@@ -604,7 +610,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \end{center}
       \vspace{5.15\baselineskip}
       \begin{center}
-        \linespread{1.35} \ctex_zihao:n { 3 } \sffamily \selectfont
+        \linespread{1.35} \@@_fontsize:nn { cn } { 3 } \sffamily \selectfont
         \begin{tabular}
           {
             p \l_@@_cover_en_table_dim @{~}
@@ -625,7 +631,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
                                    { \l_@@_set_PI_tl_b        }\\
         \end{tabular}
         \par \vspace{3.9\baselineskip}
-        \ctex_zihao:n { 3 }
+        \@@_fontsize:nn { cn } { 3 }
         \@@_kernel_month:n { en }, \space
         \@@_kernel_year:n  { en }
       \end{center}
@@ -682,7 +688,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \begin{titlepage}
       \null \vspace{1.2\baselineskip}
       \begin{center}
-        \ctex_zihao:n { 3 } \sffamily
+        \@@_fontsize:nn { cn } { 3 } \sffamily
         \l_@@_commitment_a_title_tl
       \end{center}
       \par \vspace{.5\baselineskip}
@@ -698,7 +704,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \hspace*{2\ccwd}
       \par \vspace{3.25\baselineskip}
       \begin{center}
-        \ctex_zihao:n { 3 } \sffamily
+        \@@_fontsize:nn { cn } { 3 } \sffamily
         \l_@@_commitment_b_title_tl
       \end{center}
       \par \vspace{.5\baselineskip}
@@ -724,7 +730,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \ctex_set:nn { chapter }
   {
-    format+    = \ctex_zihao:n { 3 } \sffamily \mdseries,
+    format+    = \@@_fontsize:nn { cn } { 3 } \sffamily \mdseries,
     number     = \arabic{chapter},
     beforeskip = 40pt, afterskip = 30pt,
     aftername  = \enspace, fixskip,
@@ -735,7 +741,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \ctex_set:nn { section }
   {
-    format+    = \ctex_zihao:n { 4 } \sffamily \mdseries \raggedright,
+    format+    = \@@_fontsize:nn { cn } { 4 } \sffamily \mdseries \raggedright,
     beforeskip = 18pt, afterskip = 15pt,
     aftername  = \enspace, fixskip,
   }
@@ -744,7 +750,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \ctex_set:nn { subsection }
   {
-    format+    = \@@_fontsize:n { 13 } \sffamily \mdseries \raggedright,
+    format+    = \@@_fontsize:nn { en } { 13 } \sffamily \mdseries \raggedright,
     beforeskip = 15.5pt, afterskip = 13.5pt,
     aftername = \quad, fixskip
   }
