@@ -327,13 +327,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \cs_generate_variant:Nn \seq_get_right:NN { Nc }
 %    \end{macrocode}
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_cover_spread_box:nn #1#2
+\cs_new_protected:Npn \@@_spread_box:nn #1#2
   {
     \mode_leave_vertical:
     \hbox_to_wd:nn {#1}
     { \exp_args:Nee \tl_map_inline:nn {#2} { ##1 \hfil } \unskip }
   }
-\cs_new_protected:Npn \@@_cover_center_box:nnn #1#2#3
+\cs_new_protected:Npn \@@_center_box:nnn #1#2#3
   {
     \mode_leave_vertical:
     \dim_set:Nn \l_tmpa_dim {#1}
@@ -524,12 +524,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
           p { 4\ccwd } @{：}
           p \l_@@_cover_id_dim
         }
-        \@@_cover_spread_box:nn  { 4\ccwd } { 单位代码                     } &
-        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-                                            { \l_@@_cover_affilid_tl }      \\
-        \@@_cover_spread_box:nn  { 4\ccwd } { 学号                         } &
-        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-                                            { \l_@@_set_id_tl      }\\
+        \@@_spread_box:nn  { 4\ccwd } { 单位代码 } &
+        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+          { \l_@@_cover_affilid_tl  } \\
+        \@@_spread_box:nn  { 4\ccwd } { 学号     } &
+        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+          { \l_@@_set_id_tl         } \\
       \end{tabular}
       \par \group_end:
       \vspace{1.2\baselineskip}
@@ -549,19 +549,21 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \begin{center}
         \linespread{1.35} \@@_fontsize:nn { cn } { 3 }
         \begin{tabular} { p { 4\ccwd } @{：} p { 15ex } }
-          \@@_cover_spread_box:nn  { 4\ccwd } { 培养单位 } &
-          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \prop_item:No \l_@@_cover_cn_prop
-                                       { \l_@@_set_school_tl } }\\
-          \@@_cover_spread_box:nn  { 4\ccwd } { 学科     } &
-          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \l_@@_set_subject_tl_a   }\\
-          \@@_cover_spread_box:nn  { 4\ccwd } { 研究生   } &
-          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \l_@@_set_author_tl_a    }\\
-          \@@_cover_spread_box:nn  { 4\ccwd } { 指导教师 } &
-          \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
-                                   { \l_@@_set_PI_tl_a        }\\
+          \@@_spread_box:nn  { 4\ccwd } { 培养单位 } &
+          \@@_center_box:nnn {  15ex  } { -4.5pt   }
+            {
+              \prop_item:No \l_@@_cover_cn_prop
+                { \l_@@_set_school_tl }
+            } \\
+          \@@_spread_box:nn  { 4\ccwd } { 学科     } &
+          \@@_center_box:nnn {  15ex  } { -4.5pt   }
+            { \l_@@_set_subject_tl_a  } \\
+          \@@_spread_box:nn  { 4\ccwd } { 研究生   } &
+          \@@_center_box:nnn {  15ex  } { -4.5pt   }
+            { \l_@@_set_author_tl_a   } \\
+          \@@_spread_box:nn  { 4\ccwd } { 指导教师 } &
+          \@@_center_box:nnn {  15ex  } { -4.5pt   }
+            { \l_@@_set_PI_tl_a       } \\
         \end{tabular}
         \par\vspace{3.15\baselineskip}
         \@@_fontsize:nn { cn } { 3 }
@@ -579,14 +581,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
           p \l_@@_cover_id_dim
         }
         School ~ Code: &
-        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-                                 { \l_@@_cover_affilid_tl        }\\
+        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+          { \l_@@_cover_affilid_tl    } \\
         Student ~ ID:  &
-        \@@_cover_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-                                 { \l_@@_set_id_tl       }\\
+        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+          { \l_@@_set_id_tl           } \\
       \end{tabular}
-      \par \group_end:
-      \vspace{1.2\baselineskip}
+      \group_end:
+      \par \vspace{1.2\baselineskip}
       \begin{center}
         \includegraphics[height = 1.63cm]{westlake-badge-cn.pdf}
         \par \vspace{2.5\baselineskip}
@@ -616,24 +618,23 @@ The Current Maintainer of this work is **Mingyu Xia**.
             p \l_@@_cover_en_table_dim @{~}
             p { 15ex }
           }
-          School: &
-          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \prop_item:No \l_@@_cover_en_prop
-                                       { \l_@@_set_school_tl } }\\
+          School:     &
+          \@@_center_box:nnn {  15ex  } { -4.8pt   }
+            { \prop_item:No
+                \l_@@_cover_en_prop { \l_@@_set_school_tl }   }\\
           Discipline: &
-          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+          \@@_center_box:nnn {  15ex  } { -4.8pt   }
                                    { \l_@@_set_subject_tl_b   }\\
-          Candidate: &
-          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+          Candidate:  &
+          \@@_center_box:nnn {  15ex  } { -4.8pt   }
                                    { \l_@@_set_author_tl_b    }\\
           Supervisor: &
-          \@@_cover_center_box:nnn {  15ex  } { -4.8pt   }
+          \@@_center_box:nnn {  15ex  } { -4.8pt   }
                                    { \l_@@_set_PI_tl_b        }\\
         \end{tabular}
         \par \vspace{3.9\baselineskip}
         \@@_fontsize:nn { cn } { 3 }
-        \@@_kernel_month:n { en }, \space
-        \@@_kernel_year:n  { en }
+        \@@_kernel_month:n { en }, \space \@@_kernel_year:n  { en }
       \end{center}
     \end{titlepage}
   }
