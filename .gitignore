@@ -4,6 +4,7 @@
 /source
 /build
 /*.pdf
+*.pdf
 # LaTeX Auxiliary Files
 *.aux
 *.bbl

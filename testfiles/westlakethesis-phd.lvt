@@ -35,6 +35,32 @@
   \end{abstract}
 \ENDTEST
 
+\BEGINTEST{Basic Usage of WestlakeThesis: Body}
+  \chapter{浙江省 Zhejiang}
+
+  杭州市 Hangzhou
+
+  \section{西湖区 Xihu District}
+
+  三墩镇 Sandun Town
+
+  \subsection{墩余路 600 号 No.600, Dunyu Rd.}
+
+  西湖大学（云谷校区）Westlake University (Yungu Campus)
+
+  \subsubsection{公共交通 Public Transport}
+
+  \begin{enumerate}
+    \item 西湖大学站（在建​）Westlake University Station
+    \item 349 路 / 349 路（留石高架快线）
+          No.349 Bus / No.349 Fast Bus (Running on Liushi Highway)
+    \begin{itemize}
+      \item 前往「地铁三墩站」Towards Sandun Metro Station: 5:00 -- 21:30 AM
+      \item 前往「火车西站」Towards West Railway Station: 6:00 -- 19:30 AM
+    \end{itemize}
+  \end{enumerate}
+\ENDTEST
+
 \END
 
 \end{document}

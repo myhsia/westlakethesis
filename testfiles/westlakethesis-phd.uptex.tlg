@@ -15,12 +15,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line ....
 File: westlake-badge-cn.pdf Graphic file (type pdf)
 <westlake-badge-cn.pdf>
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 22.08249pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 26.09749pt on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <26.09749> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <22.08249> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <16.06> on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 16.06pt on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.05249> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -61,14 +67,18 @@ Completed box being shipped out [1]
 ...\vbox(12.0+0.0)x416.83289, glue set 12.0fil
 ....\glue 0.0 plus 1.0fil
 ....\hbox(0.0+0.0)x416.83289
+.....\special{color push gray 0}
 .....\hbox(0.0+0.0)x416.83289
+.....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 27.27393fil
+...\vbox(700.50687+0.0)x416.83289, glue set 27.5959fil
 ....\write-{}
 ....\special{pdf:majorversion 1}
 ....\special{pdf:minorversion 7}
+....\special{color push gray 0}
 ....\special{pdf:outline 0<</Title(\376\377\144\130\211\201)/A<</S/GoTo/D(Doc-Start)>>>>}
+....\special{pdf:outline 0<</Title(\376\377\000A\000b\000s\000t\000r\000a\000c\000t)/A<</S/GoTo/D(Doc-Start)>>>>}
 ....\special{pdf:docview<</OpenAction[@page1/Fit]/PageMode/UseOutlines>>}
 ....\special{pdf:dest (Doc-Start) [@thispage /XYZ @xpos @ypos null]}
 ....\special{pdf:docview <</PageLabels<</Nums[0<</S/D>>1<</S/D>>2<</S/D>>]>>>>}
@@ -116,11 +126,11 @@ Completed box being shipped out [1]
 .............\rule(10.11775+4.33623)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/ptm/m/n/12.045 1
-.............\OT1/ptm/m/n/12.045 4
-.............\OT1/ptm/m/n/12.045 6
-.............\OT1/ptm/m/n/12.045 2
-.............\OT1/ptm/m/n/12.045 6
+.............\OT1/ntxtlf/m/n/12.045 1
+.............\OT1/ntxtlf/m/n/12.045 4
+.............\OT1/ntxtlf/m/n/12.045 6
+.............\OT1/ntxtlf/m/n/12.045 2
+.............\OT1/ntxtlf/m/n/12.045 6
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -170,17 +180,17 @@ Completed box being shipped out [1]
 .............\rule(10.11775+4.33623)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/ptm/m/n/12.045 2
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 2
-.............\OT1/ptm/m/n/12.045 5
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 2
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 2
+.............\OT1/ntxtlf/m/n/12.045 5
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -213,6 +223,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\glue -5.87494
 ......\hbox(0.0+0.0)x0.0
+.......\special{color push gray 0}
+.......\special{color pop}
 ......\glue 5.87494
 .....\penalty 0
 .....\hbox(46.37813+0.0)x154.53746
@@ -242,12 +254,12 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(44.90724+31.85849)x416.83289, glue set 77.929fil
+....\hbox(44.74623+31.6975)x416.83289, glue set 77.929fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
 .....\hbox(0.0+0.0)x0.0
 .....\mathon
-.....\vbox(44.90724+31.85849)x260.97488
+.....\vbox(44.74623+31.6975)x260.97488
 ......\hbox(22.96579+3.13168)x260.97488
 .......\glue(\leftskip) 0.0 plus 1.0fil
 .......\hbox(0.0+0.0)x0.0
@@ -264,34 +276,34 @@ Completed box being shipped out [1]
 .......\glue(\rightskip) 0.0 plus 1.0fil
 ......\penalty 300
 ......\glue(\baselineskip) 20.878
-......\hbox(22.96579+6.82446)x260.97488, glue set 25.55435fil
+......\hbox(22.96579+6.50246)x260.97488, glue set 26.90805fil
 .......\glue(\leftskip) 0.0 plus 1.0fil
-.......\OT1/phv/m/n/26.09749 (
+.......\OT1/lmss/m/n/26.09749 (
 .......\penalty 10000(for kinsoku)
 .......\JY2/zhsf/m/n/26.09749 基
 .......\JY2/zhsf/m/n/26.09749 于
-.......\glue 7.25484 plus 4.33194 minus 1.7222
-.......\OT1/phv/m/n/26.09749 L
-.......\kern -9.39511
-.......\vbox(18.8552+0.0)x14.72884, glue set 2.9008fil
-........\hbox(15.95439+0.0)x14.72884
-.........\OT1/phv/m/n/22.08249 A
+.......\glue 8.18054 plus 4.09027 minus 2.72685
+.......\OT1/lmss/m/n/26.09749 L
+.......\kern -8.835
+.......\vbox(18.3913+0.0)x13.79005, glue set 2.82942fil
+........\hbox(15.56187+0.0)x13.79005
+.........\OT1/lmss/m/n/22.08249 A
 ........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern -3.91446
-.......\OT1/phv/m/n/26.09749 T
-.......\kern -4.35051
-.......\hbox(18.8552+0.0)x17.40681, shifted 6.82446
-........\OT1/phv/m/n/26.09749 E
-.......\kern -3.26218
-.......\OT1/phv/m/n/26.09749 X
-.......\OT1/phv/m/n/26.09749 3
-.......\glue 7.25484 plus 4.33194 minus 1.7222
+.......\kern -3.68109
+.......\OT1/lmss/m/n/26.09749 T
+.......\kern -4.09114
+.......\hbox(18.3913+0.0)x14.64055, shifted 5.61745
+........\OT1/lmss/m/n/26.09749 E
+.......\kern -3.0677
+.......\OT1/lmss/m/n/26.09749 X
+.......\OT1/lmss/m/n/26.09749 3
+.......\glue 8.18054 plus 4.09027 minus 2.72685
 .......\JY2/zhsf/m/n/26.09749 开
 .......\penalty 500(for \jcharwidowpenalty)
 .......\glue(\kanjiskip) 0.0 plus 3.95908
 .......\JY2/zhsf/m/n/26.09749 发
 .......\penalty 10000(for kinsoku)
-.......\OT1/phv/m/n/26.09749 )
+.......\OT1/lmss/m/n/26.09749 )
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0
 .......\glue(\rightskip) 0.0 plus 1.0fil
@@ -316,6 +328,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\glue -5.87494
 ......\hbox(0.0+0.0)x0.0
+.......\special{color push gray 0}
+.......\special{color pop}
 ......\glue 5.87494
 .....\penalty 0
 .....\hbox(67.24962+59.21962)x196.68983
@@ -572,10 +586,14 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 30.0
 ...\hbox(0.0+0.0)x416.83289
+....\special{color push gray 0}
 ....\hbox(0.0+0.0)x416.83289
+....\special{color pop}
 .\kern 0.0
 File: westlake-badge-cn.pdf Graphic file (type pdf)
 <westlake-badge-cn.pdf>
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <20> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line ....
 LaTeX Font Info:    Calculating math sizes for size <20> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <20> on input line ....
@@ -583,6 +601,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <13.99994> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line ....
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <13.99994> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.05249pt on input line ....
 Completed box being shipped out [1]
 \vbox(730.50687+0.0)x434.90039
 .\vbox(0.0+0.0)x0.0, glue set 38.00374fil
@@ -604,10 +626,12 @@ Completed box being shipped out [1]
 ...\vbox(12.0+0.0)x416.83289, glue set 12.0fil
 ....\glue 0.0 plus 1.0fil
 ....\hbox(0.0+0.0)x416.83289
+.....\special{color push gray 0}
 .....\hbox(0.0+0.0)x416.83289
+.....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 29.10495fil
+...\vbox(700.50687+0.0)x416.83289, glue set 30.57861fil
 ....\glue(\topskip) 0.0
 ....\hbox(26.06523+20.04274)x416.83289, glue set 258.00136fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
@@ -620,28 +644,29 @@ Completed box being shipped out [1]
 .........\rule(10.11775+4.33623)x0.0
 .........\glue 6.0
 .........\vbox(10.11775+4.33623)x67.15984
-..........\hbox(10.11775+4.33623)x67.15984, glue set 1.9127fil
+..........\hbox(10.11775+4.33623)x67.15984, glue set 2.09286fil
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(10.11775+*)x0.0
-...........\OT1/ptm/m/n/12.045 S
-...........\OT1/ptm/m/n/12.045 c
-...........\OT1/ptm/m/n/12.045 h
-...........\OT1/ptm/m/n/12.045 o
-...........\OT1/ptm/m/n/12.045 o
-...........\OT1/ptm/m/n/12.045 l
-...........\glue 3.01125 plus 1.80673 minus 0.72267
-...........\OT1/ptm/m/n/12.045 C
-...........\OT1/ptm/m/n/12.045 o
-...........\OT1/ptm/m/n/12.045 d
-...........\OT1/ptm/m/n/12.045 e
-...........\OT1/ptm/m/n/12.045 :
+...........\OT1/ntxtlf/m/n/12.045 S
+...........\OT1/ntxtlf/m/n/12.045 c
+...........\kern-0.18068
+...........\OT1/ntxtlf/m/n/12.045 h
+...........\OT1/ntxtlf/m/n/12.045 o
+...........\OT1/ntxtlf/m/n/12.045 o
+...........\OT1/ntxtlf/m/n/12.045 l
+...........\glue 3.01125 plus 2.40895 minus 1.20456
+...........\OT1/ntxtlf/m/n/12.045 C
+...........\OT1/ntxtlf/m/n/12.045 o
+...........\OT1/ntxtlf/m/n/12.045 d
+...........\OT1/ntxtlf/m/n/12.045 e
+...........\OT1/ntxtlf/m/n/12.045 :
 ...........\penalty 10000
 ...........\rule(0.0+4.33623)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0
 .........\glue 0.0 plus 1.0fil
-.........\glue 3.01125 plus 1.80673 minus 0.72267
+.........\glue 3.01125 plus 2.40895 minus 1.20456
 ........\glue(\tabskip) 0.0
 ........\hbox(10.11775+12.93623)x82.66045
 .........\vbox(10.11775+12.93623)x76.66045
@@ -653,11 +678,11 @@ Completed box being shipped out [1]
 .............\rule(10.11775+4.33623)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/ptm/m/n/12.045 1
-.............\OT1/ptm/m/n/12.045 4
-.............\OT1/ptm/m/n/12.045 6
-.............\OT1/ptm/m/n/12.045 2
-.............\OT1/ptm/m/n/12.045 6
+.............\OT1/ntxtlf/m/n/12.045 1
+.............\OT1/ntxtlf/m/n/12.045 4
+.............\OT1/ntxtlf/m/n/12.045 6
+.............\OT1/ntxtlf/m/n/12.045 2
+.............\OT1/ntxtlf/m/n/12.045 6
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -679,27 +704,28 @@ Completed box being shipped out [1]
 .........\rule(10.11775+4.33623)x0.0
 .........\glue 6.0
 .........\vbox(10.11775+4.33623)x67.15984
-..........\hbox(10.11775+4.33623)x67.15984, glue set 11.28372fil
+..........\hbox(10.11775+4.33623)x67.15984, glue set 11.52408fil
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(10.11775+*)x0.0
-...........\OT1/ptm/m/n/12.045 S
-...........\OT1/ptm/m/n/12.045 t
-...........\OT1/ptm/m/n/12.045 u
-...........\OT1/ptm/m/n/12.045 d
-...........\OT1/ptm/m/n/12.045 e
-...........\OT1/ptm/m/n/12.045 n
-...........\OT1/ptm/m/n/12.045 t
-...........\glue 3.01125 plus 1.80673 minus 0.72267
-...........\OT1/ptm/m/n/12.045 I
-...........\OT1/ptm/m/n/12.045 D
-...........\OT1/ptm/m/n/12.045 :
+...........\OT1/ntxtlf/m/n/12.045 S
+...........\kern-0.2409
+...........\OT1/ntxtlf/m/n/12.045 t
+...........\OT1/ntxtlf/m/n/12.045 u
+...........\OT1/ntxtlf/m/n/12.045 d
+...........\OT1/ntxtlf/m/n/12.045 e
+...........\OT1/ntxtlf/m/n/12.045 n
+...........\OT1/ntxtlf/m/n/12.045 t
+...........\glue 3.01125 plus 2.40895 minus 1.20456
+...........\OT1/ntxtlf/m/n/12.045 I
+...........\OT1/ntxtlf/m/n/12.045 D
+...........\OT1/ntxtlf/m/n/12.045 :
 ...........\penalty 10000
 ...........\rule(0.0+4.33623)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0
 .........\glue 0.0 plus 1.0fil
-.........\glue 3.01125 plus 1.80673 minus 0.72267
+.........\glue 3.01125 plus 2.40895 minus 1.20456
 ........\glue(\tabskip) 0.0
 ........\hbox(10.11775+12.93623)x82.66045
 .........\vbox(10.11775+12.93623)x76.66045
@@ -711,17 +737,17 @@ Completed box being shipped out [1]
 .............\rule(10.11775+4.33623)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/ptm/m/n/12.045 2
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 2
-.............\OT1/ptm/m/n/12.045 5
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
-.............\OT1/ptm/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 2
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 2
+.............\OT1/ntxtlf/m/n/12.045 5
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
+.............\OT1/ntxtlf/m/n/12.045 0
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -754,6 +780,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\glue -5.87494
 ......\hbox(0.0+0.0)x0.0
+.......\special{color push gray 0}
+.......\special{color pop}
 ......\glue 5.87494
 .....\penalty 0
 .....\hbox(46.37813+0.0)x154.53746
@@ -766,89 +794,90 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(32.07936+19.03062)x416.83289, glue set 20.84293fil
+....\hbox(31.36058+18.31183)x416.83289, glue set 20.84293fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
 .....\hbox(0.0+0.0)x0.0
 .....\mathon
-.....\vbox(32.07936+19.03062)x375.14705
-......\hbox(14.58997+4.20984)x375.14705, glue set 13.05563fil
+.....\vbox(31.36058+18.31183)x375.14705
+......\hbox(13.889+3.88885)x375.14705, glue set 18.2502fil
 .......\glue(\leftskip) 0.0 plus 1.0fil
 .......\hbox(0.0+0.0)x0.0
-.......\OT1/phv/b/n/20 W
-.......\kern-0.69997
-.......\OT1/phv/b/n/20 e
-.......\OT1/phv/b/n/20 s
-.......\OT1/phv/b/n/20 t
-.......\OT1/phv/b/n/20 l
-.......\OT1/phv/b/n/20 a
-.......\OT1/phv/b/n/20 k
-.......\OT1/phv/b/n/20 e
-.......\glue 5.5598 plus 3.31981 minus 1.31982
-.......\OT1/phv/b/n/20 U
-.......\OT1/phv/b/n/20 n
-.......\OT1/phv/b/n/20 i
-.......\OT1/phv/b/n/20 v
-.......\OT1/phv/b/n/20 e
-.......\OT1/phv/b/n/20 r
-.......\kern-0.2998
-.......\OT1/phv/b/n/20 s
-.......\OT1/phv/b/n/20 i
-.......\OT1/phv/b/n/20 t
-.......\OT1/phv/b/n/20 y
-.......\glue 5.5598 plus 3.31981 minus 1.31982
-.......\OT1/phv/b/n/20 T
-.......\OT1/phv/b/n/20 h
-.......\OT1/phv/b/n/20 e
-.......\OT1/phv/b/n/20 s
-.......\OT1/phv/b/n/20 i
-.......\OT1/phv/b/n/20 s
-.......\glue 5.5598 plus 3.31981 minus 1.31982
-.......\OT1/phv/b/n/20 T
-.......\kern-1.19998
-.......\OT1/phv/b/n/20 e
-.......\OT1/phv/b/n/20 m
-.......\OT1/phv/b/n/20 p
-.......\OT1/phv/b/n/20 l
-.......\OT1/phv/b/n/20 a
-.......\OT1/phv/b/n/20 t
-.......\OT1/phv/b/n/20 e
+.......\OT1/lmss/bx/n/20 W
+.......\kern-0.61111
+.......\OT1/lmss/bx/n/20 e
+.......\OT1/lmss/bx/n/20 s
+.......\OT1/lmss/bx/n/20 t
+.......\OT1/lmss/bx/n/20 l
+.......\OT1/lmss/bx/n/20 a
+.......\OT1/lmss/bx/n/20 k
+.......\kern-0.61111
+.......\OT1/lmss/bx/n/20 e
+.......\glue 7.33333 plus 3.66664 minus 2.44446
+.......\OT1/lmss/bx/n/20 U
+.......\OT1/lmss/bx/n/20 n
+.......\OT1/lmss/bx/n/20 i
+.......\OT1/lmss/bx/n/20 v
+.......\OT1/lmss/bx/n/20 e
+.......\OT1/lmss/bx/n/20 r
+.......\OT1/lmss/bx/n/20 s
+.......\OT1/lmss/bx/n/20 i
+.......\OT1/lmss/bx/n/20 t
+.......\kern-0.61111
+.......\OT1/lmss/bx/n/20 y
+.......\glue 7.33333 plus 3.66664 minus 2.44446
+.......\OT1/lmss/bx/n/20 T
+.......\OT1/lmss/bx/n/20 h
+.......\OT1/lmss/bx/n/20 e
+.......\OT1/lmss/bx/n/20 s
+.......\OT1/lmss/bx/n/20 i
+.......\OT1/lmss/bx/n/20 s
+.......\glue 7.33333 plus 3.66664 minus 2.44446
+.......\OT1/lmss/bx/n/20 T
+.......\kern-1.83334
+.......\OT1/lmss/bx/n/20 e
+.......\OT1/lmss/bx/n/20 m
+.......\OT1/lmss/bx/n/20 p
+.......\OT1/lmss/bx/n/20 l
+.......\OT1/lmss/bx/n/20 a
+.......\OT1/lmss/bx/n/20 t
+.......\OT1/lmss/bx/n/20 e
 .......\glue(\rightskip) 0.0 plus 1.0fil
 ......\penalty 300
-......\glue(\baselineskip) 12.17029
-......\hbox(14.81995+5.31995)x375.14705, glue set 74.9677fil
+......\glue(\baselineskip) 13.42221
+......\hbox(13.889+4.58333)x375.14705, glue set 76.50148fil
 .......\glue(\leftskip) 0.0 plus 1.0fil
-.......\OT1/phv/b/n/20 C
-.......\OT1/phv/b/n/20 o
-.......\OT1/phv/b/n/20 n
-.......\OT1/phv/b/n/20 s
-.......\OT1/phv/b/n/20 t
-.......\OT1/phv/b/n/20 r
-.......\OT1/phv/b/n/20 u
-.......\OT1/phv/b/n/20 c
-.......\OT1/phv/b/n/20 t
-.......\OT1/phv/b/n/20 e
-.......\OT1/phv/b/n/20 d
-.......\glue 5.5598 plus 3.31981 minus 1.31982
-.......\OT1/phv/b/n/20 w
-.......\OT1/phv/b/n/20 i
-.......\OT1/phv/b/n/20 t
-.......\OT1/phv/b/n/20 h
-.......\glue 5.5598 plus 3.31981 minus 1.31982
-.......\OT1/phv/b/n/20 L
-.......\kern -7.20001
-.......\vbox(14.31995+0.0)x10.10791, glue set 4.29604fil
-........\hbox(10.02391+0.0)x10.10791
-.........\OT1/phv/b/n/13.99994 A
+.......\OT1/lmss/bx/n/20 C
+.......\OT1/lmss/bx/n/20 o
+.......\OT1/lmss/bx/n/20 n
+.......\OT1/lmss/bx/n/20 s
+.......\OT1/lmss/bx/n/20 t
+.......\OT1/lmss/bx/n/20 r
+.......\OT1/lmss/bx/n/20 u
+.......\OT1/lmss/bx/n/20 c
+.......\OT1/lmss/bx/n/20 t
+.......\OT1/lmss/bx/n/20 e
+.......\OT1/lmss/bx/n/20 d
+.......\glue 7.33333 plus 3.66664 minus 2.44446
+.......\OT1/lmss/bx/n/20 w
+.......\OT1/lmss/bx/n/20 i
+.......\OT1/lmss/bx/n/20 t
+.......\OT1/lmss/bx/n/20 h
+.......\glue 7.33333 plus 3.66664 minus 2.44446
+.......\OT1/lmss/bx/n/20 L
+.......\kern -7.92001
+.......\vbox(13.889+0.0)x10.26614, glue set 4.16675fil
+........\hbox(9.72226+0.0)x10.26614
+.........\OT1/lmss/bx/n/13.99994 A
 ........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern -2.99988
-.......\OT1/phv/b/n/20 T
-.......\kern -3.33405
-.......\hbox(14.31995+0.0)x13.33984, shifted 5.31995
-........\OT1/phv/b/n/20 E
-.......\kern -2.5
-.......\OT1/phv/b/n/20 X
-.......\OT1/phv/b/n/20 3
+.......\kern -3.29987
+.......\OT1/lmss/bx/n/20 T
+.......\kern -3.66745
+.......\hbox(13.889+0.0)x12.83401, shifted 4.58333
+........\OT1/lmss/bx/n/20 E
+.......\kern -2.75
+.......\OT1/lmss/bx/n/20 X
+.......\OT1/lmss/bx/n/20 3
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0
 .......\glue(\rightskip) 0.0 plus 1.0fil
@@ -862,27 +891,29 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(10.25127+3.04927)x416.83289, glue set 146.74072fil
+....\hbox(10.34964+3.51312)x416.83289, glue set 145.99008fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\OT1/phv/b/n/14.05249 (
-.....\OT1/phv/b/n/14.05249 D
-.....\OT1/phv/b/n/14.05249 e
-.....\OT1/phv/b/n/14.05249 g
-.....\OT1/phv/b/n/14.05249 r
-.....\OT1/phv/b/n/14.05249 e
-.....\OT1/phv/b/n/14.05249 e
-.....\glue 3.90645 plus 2.33258 minus 0.92734
-.....\OT1/phv/b/n/14.05249 o
-.....\OT1/phv/b/n/14.05249 f
-.....\glue 3.90645 plus 2.33258 minus 0.92734
-.....\OT1/phv/b/n/14.05249 D
-.....\OT1/phv/b/n/14.05249 o
-.....\OT1/phv/b/n/14.05249 c
-.....\OT1/phv/b/n/14.05249 t
-.....\OT1/phv/b/n/14.05249 o
-.....\OT1/phv/b/n/14.05249 r
-.....\OT1/phv/b/n/14.05249 )
+.....\OT1/lmss/bx/n/14.05249 (
+.....\OT1/lmss/bx/n/14.05249 D
+.....\OT1/lmss/bx/n/14.05249 e
+.....\OT1/lmss/bx/n/14.05249 g
+.....\OT1/lmss/bx/n/14.05249 r
+.....\OT1/lmss/bx/n/14.05249 e
+.....\OT1/lmss/bx/n/14.05249 e
+.....\glue 5.15257 plus 2.57626 minus 1.71753
+.....\OT1/lmss/bx/n/14.05249 o
+.....\OT1/lmss/bx/n/14.05249 f
+.....\glue 5.15257 plus 2.57626 minus 1.71753
+.....\OT1/lmss/bx/n/14.05249 D
+.....\OT1/lmss/bx/n/14.05249 o
+.....\kern0.42938
+.....\OT1/lmss/bx/n/14.05249 c
+.....\OT1/lmss/bx/n/14.05249 t
+.....\OT1/lmss/bx/n/14.05249 o
+.....\kern-0.4294
+.....\OT1/lmss/bx/n/14.05249 r
+.....\OT1/lmss/bx/n/14.05249 )
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -895,66 +926,68 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(66.64961+58.61961)x416.83289, glue set 96.1002fil
+....\hbox(66.64961+58.61961)x416.83289, glue set 113.55847fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
 ......\glue 0.0
 ......\glue 0.0
 ......\glue -5.87494
 ......\hbox(0.0+0.0)x0.0
+.......\special{color push gray 0}
+.......\special{color pop}
 ......\glue 5.87494
 .....\penalty 0
-.....\hbox(66.64961+58.61961)x224.63248
+.....\hbox(66.64961+58.61961)x189.71594
 ......\mathon
-......\vbox(66.64961+58.61961)x224.63248
-.......\hbox(18.21204+13.10527)x224.63248
+......\vbox(66.64961+58.61961)x189.71594
+.......\hbox(18.21204+13.10527)x189.71594
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x92.64241
+........\hbox(18.21204+13.10527)x80.00935
 .........\rule(18.21204+7.80527)x0.0
 .........\glue 6.0
-.........\vbox(18.21204+7.80527)x82.17789
-..........\hbox(18.21204+7.80527)x82.17789, glue set 28.61844fil
+.........\vbox(18.21204+7.80527)x68.97517
+..........\hbox(18.21204+7.80527)x68.97517, glue set 22.80888fil
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\OT1/phv/m/n/16.06 S
-...........\OT1/phv/m/n/16.06 c
-...........\OT1/phv/m/n/16.06 h
-...........\OT1/phv/m/n/16.06 o
-...........\OT1/phv/m/n/16.06 o
-...........\OT1/phv/m/n/16.06 l
-...........\OT1/phv/m/n/16.06 :
+...........\OT1/lmss/m/n/16.06 S
+...........\OT1/lmss/m/n/16.06 c
+...........\OT1/lmss/m/n/16.06 h
+...........\OT1/lmss/m/n/16.06 o
+...........\kern0.41951
+...........\OT1/lmss/m/n/16.06 o
+...........\OT1/lmss/m/n/16.06 l
+...........\OT1/lmss/m/n/16.06 :
 ...........\penalty 10000
 ...........\rule(0.0+7.80527)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0
 .........\glue 0.0 plus 1.0fil
-.........\glue 4.46452 plus 2.6658 minus 1.05981
+.........\glue 5.03418 plus 2.51709 minus 1.67805
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x131.99007
-.........\vbox(18.21204+13.10527)x125.99007
-..........\hbox(18.21204+13.10527)x125.99007
+........\hbox(18.21204+13.10527)x109.70659
+.........\vbox(18.21204+13.10527)x103.70659
+..........\hbox(18.21204+13.10527)x103.70659
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\vbox(18.21204+13.10527)x125.99007
-............\hbox(18.21204+7.80527)x125.99007, glue set 15.48201fil
+...........\vbox(18.21204+13.10527)x103.70659
+............\hbox(18.21204+7.80527)x103.70659, glue set 11.61244fil
 .............\rule(18.21204+7.80527)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/phv/m/n/16.06 L
-.............\OT1/phv/m/n/16.06 i
-.............\OT1/phv/m/n/16.06 f
-.............\kern-0.48169
-.............\OT1/phv/m/n/16.06 e
-.............\glue 4.46452 plus 2.6658 minus 1.05981
-.............\OT1/phv/m/n/16.06 S
-.............\OT1/phv/m/n/16.06 c
-.............\OT1/phv/m/n/16.06 i
-.............\OT1/phv/m/n/16.06 e
-.............\OT1/phv/m/n/16.06 n
-.............\OT1/phv/m/n/16.06 c
-.............\OT1/phv/m/n/16.06 e
-.............\OT1/phv/m/n/16.06 s
+.............\OT1/lmss/m/n/16.06 L
+.............\OT1/lmss/m/n/16.06 i
+.............\OT1/lmss/m/n/16.06 f
+.............\OT1/lmss/m/n/16.06 e
+.............\glue 5.03418 plus 2.51709 minus 1.67805
+.............\OT1/lmss/m/n/16.06 S
+.............\OT1/lmss/m/n/16.06 c
+.............\OT1/lmss/m/n/16.06 i
+.............\OT1/lmss/m/n/16.06 e
+.............\OT1/lmss/m/n/16.06 n
+.............\OT1/lmss/m/n/16.06 c
+.............\OT1/lmss/m/n/16.06 e
+.............\OT1/lmss/m/n/16.06 s
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -970,51 +1003,51 @@ Completed box being shipped out [1]
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
 .......\glue(\lineskip) 0.0
-.......\hbox(18.21204+13.10527)x224.63248
+.......\hbox(18.21204+13.10527)x189.71594
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x92.64241
+........\hbox(18.21204+13.10527)x80.00935
 .........\rule(18.21204+7.80527)x0.0
 .........\glue 6.0
-.........\vbox(18.21204+7.80527)x82.17789
-..........\hbox(18.21204+7.80527)x82.17789, glue set 9.00928fil
+.........\vbox(18.21204+7.80527)x68.97517
+..........\hbox(18.21204+7.80527)x68.97517, glue set 4.83469fil
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\OT1/phv/m/n/16.06 D
-...........\OT1/phv/m/n/16.06 i
-...........\OT1/phv/m/n/16.06 s
-...........\OT1/phv/m/n/16.06 c
-...........\OT1/phv/m/n/16.06 i
-...........\OT1/phv/m/n/16.06 p
-...........\OT1/phv/m/n/16.06 l
-...........\OT1/phv/m/n/16.06 i
-...........\OT1/phv/m/n/16.06 n
-...........\OT1/phv/m/n/16.06 e
-...........\OT1/phv/m/n/16.06 :
+...........\OT1/lmss/m/n/16.06 D
+...........\OT1/lmss/m/n/16.06 i
+...........\OT1/lmss/m/n/16.06 s
+...........\OT1/lmss/m/n/16.06 c
+...........\OT1/lmss/m/n/16.06 i
+...........\OT1/lmss/m/n/16.06 p
+...........\OT1/lmss/m/n/16.06 l
+...........\OT1/lmss/m/n/16.06 i
+...........\OT1/lmss/m/n/16.06 n
+...........\OT1/lmss/m/n/16.06 e
+...........\OT1/lmss/m/n/16.06 :
 ...........\penalty 10000
 ...........\rule(0.0+7.80527)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0
 .........\glue 0.0 plus 1.0fil
-.........\glue 4.46452 plus 2.6658 minus 1.05981
+.........\glue 5.03418 plus 2.51709 minus 1.67805
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x131.99007
-.........\vbox(18.21204+13.10527)x125.99007
-..........\hbox(18.21204+13.10527)x125.99007
+........\hbox(18.21204+13.10527)x109.70659
+.........\vbox(18.21204+13.10527)x103.70659
+..........\hbox(18.21204+13.10527)x103.70659
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\vbox(18.21204+13.10527)x125.99007
-............\hbox(18.21204+7.80527)x125.99007, glue set 36.66495fil
+...........\vbox(18.21204+13.10527)x103.70659
+............\hbox(18.21204+7.80527)x103.70659, glue set 28.46085fil
 .............\rule(18.21204+7.80527)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/phv/m/n/16.06 B
-.............\OT1/phv/m/n/16.06 i
-.............\OT1/phv/m/n/16.06 o
-.............\OT1/phv/m/n/16.06 l
-.............\OT1/phv/m/n/16.06 o
-.............\OT1/phv/m/n/16.06 g
-.............\OT1/phv/m/n/16.06 y
+.............\OT1/lmss/m/n/16.06 B
+.............\OT1/lmss/m/n/16.06 i
+.............\OT1/lmss/m/n/16.06 o
+.............\OT1/lmss/m/n/16.06 l
+.............\OT1/lmss/m/n/16.06 o
+.............\OT1/lmss/m/n/16.06 g
+.............\OT1/lmss/m/n/16.06 y
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -1030,54 +1063,54 @@ Completed box being shipped out [1]
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
 .......\glue(\lineskip) 0.0
-.......\hbox(18.21204+13.10527)x224.63248
+.......\hbox(18.21204+13.10527)x189.71594
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x92.64241
+........\hbox(18.21204+13.10527)x80.00935
 .........\rule(18.21204+7.80527)x0.0
 .........\glue 6.0
-.........\vbox(18.21204+7.80527)x82.17789
-..........\hbox(18.21204+7.80527)x82.17789, glue set 4.51276fil
+.........\vbox(18.21204+7.80527)x68.97517
+..........\hbox(18.21204+7.80527)x68.97517, glue set 1.59483fil
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\OT1/phv/m/n/16.06 C
-...........\OT1/phv/m/n/16.06 a
-...........\OT1/phv/m/n/16.06 n
-...........\OT1/phv/m/n/16.06 d
-...........\OT1/phv/m/n/16.06 i
-...........\OT1/phv/m/n/16.06 d
-...........\OT1/phv/m/n/16.06 a
-...........\OT1/phv/m/n/16.06 t
-...........\OT1/phv/m/n/16.06 e
-...........\OT1/phv/m/n/16.06 :
+...........\OT1/lmss/m/n/16.06 C
+...........\OT1/lmss/m/n/16.06 a
+...........\OT1/lmss/m/n/16.06 n
+...........\OT1/lmss/m/n/16.06 d
+...........\OT1/lmss/m/n/16.06 i
+...........\OT1/lmss/m/n/16.06 d
+...........\OT1/lmss/m/n/16.06 a
+...........\OT1/lmss/m/n/16.06 t
+...........\OT1/lmss/m/n/16.06 e
+...........\OT1/lmss/m/n/16.06 :
 ...........\penalty 10000
 ...........\rule(0.0+7.80527)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0
 .........\glue 0.0 plus 1.0fil
-.........\glue 4.46452 plus 2.6658 minus 1.05981
+.........\glue 5.03418 plus 2.51709 minus 1.67805
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x131.99007
-.........\vbox(18.21204+13.10527)x125.99007
-..........\hbox(18.21204+13.10527)x125.99007
+........\hbox(18.21204+13.10527)x109.70659
+.........\vbox(18.21204+13.10527)x103.70659
+..........\hbox(18.21204+13.10527)x103.70659
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\vbox(18.21204+13.10527)x125.99007
-............\hbox(18.21204+7.80527)x125.99007, glue set 18.61362fil
+...........\vbox(18.21204+13.10527)x103.70659
+............\hbox(18.21204+7.80527)x103.70659, glue set 12.96118fil
 .............\rule(18.21204+7.80527)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/phv/m/n/16.06 W
-.............\kern-0.48169
-.............\OT1/phv/m/n/16.06 e
-.............\OT1/phv/m/n/16.06 s
-.............\OT1/phv/m/n/16.06 t
-.............\glue 4.46452 plus 2.6658 minus 1.05981
-.............\OT1/phv/m/n/16.06 M
-.............\OT1/phv/m/n/16.06 o
-.............\OT1/phv/m/n/16.06 u
-.............\OT1/phv/m/n/16.06 s
-.............\OT1/phv/m/n/16.06 e
+.............\OT1/lmss/m/n/16.06 W
+.............\kern-0.41953
+.............\OT1/lmss/m/n/16.06 e
+.............\OT1/lmss/m/n/16.06 s
+.............\OT1/lmss/m/n/16.06 t
+.............\glue 5.03418 plus 2.51709 minus 1.67805
+.............\OT1/lmss/m/n/16.06 M
+.............\OT1/lmss/m/n/16.06 o
+.............\OT1/lmss/m/n/16.06 u
+.............\OT1/lmss/m/n/16.06 s
+.............\OT1/lmss/m/n/16.06 e
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -1093,57 +1126,56 @@ Completed box being shipped out [1]
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
 .......\glue(\lineskip) 0.0
-.......\hbox(18.21204+13.10527)x224.63248
+.......\hbox(18.21204+13.10527)x189.71594
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x92.64241
+........\hbox(18.21204+13.10527)x80.00935
 .........\rule(18.21204+7.80527)x0.0
 .........\glue 6.0
-.........\vbox(18.21204+7.80527)x82.17789
-..........\hbox(18.21204+7.80527)x82.17789
+.........\vbox(18.21204+7.80527)x68.97517
+..........\hbox(18.21204+7.80527)x68.97517
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\OT1/phv/m/n/16.06 S
-...........\OT1/phv/m/n/16.06 u
-...........\OT1/phv/m/n/16.06 p
-...........\OT1/phv/m/n/16.06 e
-...........\OT1/phv/m/n/16.06 r
-...........\kern0.48167
-...........\OT1/phv/m/n/16.06 v
-...........\OT1/phv/m/n/16.06 i
-...........\OT1/phv/m/n/16.06 s
-...........\OT1/phv/m/n/16.06 o
-...........\OT1/phv/m/n/16.06 r
-...........\kern0.48167
-...........\OT1/phv/m/n/16.06 :
+...........\OT1/lmss/m/n/16.06 S
+...........\OT1/lmss/m/n/16.06 u
+...........\OT1/lmss/m/n/16.06 p
+...........\kern0.41951
+...........\OT1/lmss/m/n/16.06 e
+...........\OT1/lmss/m/n/16.06 r
+...........\OT1/lmss/m/n/16.06 v
+...........\OT1/lmss/m/n/16.06 i
+...........\OT1/lmss/m/n/16.06 s
+...........\OT1/lmss/m/n/16.06 o
+...........\kern-0.41953
+...........\OT1/lmss/m/n/16.06 r
+...........\OT1/lmss/m/n/16.06 :
 ...........\penalty 10000
 ...........\rule(0.0+7.80527)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0
 .........\glue 0.0 plus 1.0fil
-.........\glue 4.46452 plus 2.6658 minus 1.05981
+.........\glue 5.03418 plus 2.51709 minus 1.67805
 ........\glue(\tabskip) 0.0
-........\hbox(18.21204+13.10527)x131.99007
-.........\vbox(18.21204+13.10527)x125.99007
-..........\hbox(18.21204+13.10527)x125.99007
+........\hbox(18.21204+13.10527)x109.70659
+.........\vbox(18.21204+13.10527)x103.70659
+..........\hbox(18.21204+13.10527)x103.70659
 ...........\hbox(0.0+0.0)x0.0
 ...........\rule(18.21204+*)x0.0
-...........\vbox(18.21204+13.10527)x125.99007
-............\hbox(18.21204+7.80527)x125.99007, glue set 34.23997fil
+...........\vbox(18.21204+13.10527)x103.70659
+............\hbox(18.21204+7.80527)x103.70659, glue set 24.73013fil
 .............\rule(18.21204+7.80527)x0.0
 .............\glue(\leftskip) 0.0 plus 1.0fil
 .............\hbox(0.0+0.0)x0.0
-.............\OT1/phv/m/n/16.06 F
-.............\kern-0.72263
-.............\OT1/phv/m/n/16.06 r
-.............\kern0.24072
-.............\OT1/phv/m/n/16.06 u
-.............\OT1/phv/m/n/16.06 i
-.............\OT1/phv/m/n/16.06 t
-.............\glue 4.46452 plus 2.6658 minus 1.05981
-.............\OT1/phv/m/n/16.06 F
-.............\OT1/phv/m/n/16.06 l
-.............\OT1/phv/m/n/16.06 y
+.............\OT1/lmss/m/n/16.06 F
+.............\kern-0.41953
+.............\OT1/lmss/m/n/16.06 r
+.............\OT1/lmss/m/n/16.06 u
+.............\OT1/lmss/m/n/16.06 i
+.............\OT1/lmss/m/n/16.06 t
+.............\glue 5.03418 plus 2.51709 minus 1.67805
+.............\OT1/lmss/m/n/16.06 F
+.............\OT1/lmss/m/n/16.06 l
+.............\OT1/lmss/m/n/16.06 y
 .............\penalty 10000
 .............\glue(\parfillskip) 0.0 plus 2.0fil
 .............\glue(\rightskip) 0.0 plus -1.0fil
@@ -1167,20 +1199,20 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(11.6032+3.43668)x416.83289, glue set 171.96867fil
+....\hbox(11.31772+3.12369)x416.83289, glue set 175.86823fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
-.....\OT1/phv/m/n/16.06 M
-.....\OT1/phv/m/n/16.06 a
-.....\kern-0.48169
-.....\OT1/phv/m/n/16.06 y
-.....\kern-1.60602
-.....\OT1/phv/m/n/16.06 ,
-.....\glue 4.46452 plus 3.33224 minus 0.84784
-.....\OT1/phv/m/n/16.06 2
-.....\OT1/phv/m/n/16.06 0
-.....\OT1/phv/m/n/16.06 1
-.....\OT1/phv/m/n/16.06 6
+.....\OT1/lmss/m/n/16.06 M
+.....\OT1/lmss/m/n/16.06 a
+.....\kern-0.41953
+.....\OT1/lmss/m/n/16.06 y
+.....\kern-1.25853
+.....\OT1/lmss/m/n/16.06 ,
+.....\glue 5.03418 plus 3.14636 minus 1.34244
+.....\OT1/lmss/m/n/16.06 2
+.....\OT1/lmss/m/n/16.06 0
+.....\OT1/lmss/m/n/16.06 1
+.....\OT1/lmss/m/n/16.06 6
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -1191,11 +1223,17 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 30.0
 ...\hbox(0.0+0.0)x416.83289
+....\special{color push gray 0}
 ....\hbox(0.0+0.0)x416.83289
+....\special{color pop}
 ============================================================
 ============================================================
 TEST 2: Basic Usage of WestlakeThesis: Abstract
 ============================================================
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.045pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sl' will be
+(Font)              scaled to size 12.045pt on input line ....
 Completed box being shipped out [1]
 \vbox(730.50687+0.0)x434.90039
 .\vbox(0.0+0.0)x0.0, glue set 38.00374fil
@@ -1214,12 +1252,14 @@ Completed box being shipped out [1]
 .\vbox(730.50687+0.0)x434.90039
 ..\glue -37.0
 ..\vbox(767.50687+0.0)x416.83289, shifted 18.0675
-...\vbox(12.0+0.0)x416.83289, glue set 3.78546fil
+...\vbox(12.0+0.0)x416.83289, glue set 3.86964fil
 ....\glue 0.0 plus 1.0fil
-....\hbox(8.21454+0.0)x416.83289
-.....\hbox(8.21454+0.0)x416.83289, glue set 410.8104fil
+....\hbox(8.13036+0.0)x416.83289
+.....\special{color push gray 0}
+.....\hbox(8.13036+0.0)x416.83289, glue set 410.8104fil
 ......\glue 0.0 plus 1.0fil
-......\OT1/ptm/m/n/12.045 1
+......\OT1/ntxtlf/m/n/12.045 1
+.....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
 ...\vbox(700.50687+0.0)x416.83289, glue set 621.02687fil
@@ -1261,5 +1301,137 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 30.0
 ...\hbox(0.0+0.0)x416.83289
+....\special{color push gray 0}
 ....\hbox(0.0+0.0)x416.83289
+....\special{color pop}
+============================================================
+============================================================
+TEST 3: Basic Usage of WestlakeThesis: Body
+============================================================
+Completed box being shipped out [2]
+\vbox(730.50687+0.0)x434.90039
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil
+..\kern 0.0
+..\kern -37.0
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil
+...\kern 0.0
+...\kern 18.0675
+...\kern -1.00374
+...\special{pdf:dest (page.2) [@thispage /XYZ @xpos @ypos null]}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.0)x434.90039
+..\glue -37.0
+..\vbox(767.50687+0.0)x416.83289, shifted 18.0675
+...\vbox(12.0+0.0)x416.83289, glue set 3.86964fil
+....\glue 0.0 plus 1.0fil
+....\hbox(8.13036+0.0)x416.83289
+.....\special{color push gray 0}
+.....\hbox(8.13036+0.0)x416.83289, glue set 410.8104fil
+......\glue 0.0 plus 1.0fil
+......\OT1/ntxtlf/m/n/12.045 2
+.....\special{color pop}
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 621.72546fil
+....\write-{}
+....\glue(\topskip) 12.0
+....\hbox(0.0+0.0)x0.0
+....\glue 42.4082
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 13.38802
+....\hbox(8.29297+2.62581)x416.83289, glue set 223.33028fil
+.....\OT1/ntxtlf/b/n/12.045 A
+.....\kern-0.2409
+.....\OT1/ntxtlf/b/n/12.045 b
+.....\OT1/ntxtlf/b/n/12.045 s
+.....\OT1/ntxtlf/b/n/12.045 t
+.....\OT1/ntxtlf/b/n/12.045 r
+.....\OT1/ntxtlf/b/n/12.045 a
+.....\OT1/ntxtlf/b/n/12.045 c
+.....\OT1/ntxtlf/b/n/12.045 t
+.....\kern-0.12045
+.....\OT1/ntxtlf/b/n/12.045 :
+.....\kern 0.0
+.....\glue 4.34824 plus 4.8179 minus 0.60228
+.....\write3{\protect \BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 2}
+.....\write1{\@writefile{toc}{\protect \contentsline {chapter}{Abstract}{\thepage }{Doc-Start}\protected@file@percent }}
+.....\OT1/ntxtlf/m/n/12.045 A
+.....\kern-0.2409
+.....\OT1/ntxtlf/m/n/12.045 b
+.....\OT1/ntxtlf/m/n/12.045 s
+.....\kern-0.18068
+.....\OT1/ntxtlf/m/n/12.045 t
+.....\OT1/ntxtlf/m/n/12.045 r
+.....\OT1/ntxtlf/m/n/12.045 a
+.....\OT1/ntxtlf/m/n/12.045 c
+.....\OT1/ntxtlf/m/n/12.045 t
+.....\glue 3.01125 plus 2.40895 minus 1.20456
+.....\OT1/ntxtlf/m/n/12.045 C
+.....\OT1/ntxtlf/m/n/12.045 o
+.....\OT1/ntxtlf/m/n/12.045 n
+.....\OT1/ntxtlf/m/n/12.045 t
+.....\OT1/ntxtlf/m/n/12.045 e
+.....\kern-0.42159
+.....\OT1/ntxtlf/m/n/12.045 x
+.....\OT1/ntxtlf/m/n/12.045 t
+.....\glue 3.01125 plus 2.40895 minus 1.20456
+.....\OT1/ntxtlf/m/n/12.045 i
+.....\OT1/ntxtlf/m/n/12.045 n
+.....\glue 3.01125 plus 2.40895 minus 1.20456
+.....\OT1/ntxtlf/m/n/12.045 E
+.....\OT1/ntxtlf/m/n/12.045 n
+.....\OT1/ntxtlf/m/n/12.045 g
+.....\OT1/ntxtlf/m/n/12.045 l
+.....\OT1/ntxtlf/m/n/12.045 i
+.....\OT1/ntxtlf/m/n/12.045 s
+.....\OT1/ntxtlf/m/n/12.045 h
+.....\OT1/ntxtlf/m/n/12.045 .
+.....\glue 4.34824 plus 7.22685 minus 0.40152
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 30.0
+...\hbox(0.0+0.0)x416.83289
+....\special{color push gray 0}
+....\hbox(0.0+0.0)x416.83289
+....\special{color pop}
+第1章
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 24.09pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 24.09pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 16.06pt on input line ....
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <16.06> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 18.06749pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 18.06749pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.05249pt on input line ....
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <14.05249> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 15.05624pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 15.05624pt on input line ....
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 13.0pt on input line ....
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <13> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <12.045> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line ....
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line ....
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.045pt on input line ....
 ============================================================
