@@ -112,6 +112,7 @@ Completed box being shipped out [1]
 .........\kern -0.99649
 .........\kern 0.99649
 .........\glue 8.32309 minus 6.03455
+.........\penalty 0
 ........\glue(\tabskip) 0.0
 ........\hbox(10.11775+12.93623)x84.29239
 .........\vbox(10.11775+12.93623)x78.29239
@@ -176,6 +177,7 @@ Completed box being shipped out [1]
 .........\kern -0.99649
 .........\kern 0.99649
 .........\glue 8.32309 minus 6.03455
+.........\penalty 0
 ........\glue(\tabskip) 0.0
 ........\hbox(10.11775+12.93623)x84.29239
 .........\vbox(10.11775+12.93623)x78.29239
@@ -316,8 +318,6 @@ Completed box being shipped out [1]
 .......\TU/LXGWNeoXiHei(0)/m/n/26.09749 基
 .......\glue 0.0 plus 3.95908
 .......\TU/LXGWNeoXiHei(0)/m/n/26.09749 于
-.......\kern -0.00018
-.......\kern 0.00018
 .......\glue 7.25484 plus 4.33194 minus 1.7222
 .......\T1/phv/m/n/26.09749 L
 .......\kern -0.0002
@@ -419,6 +419,7 @@ Completed box being shipped out [1]
 .........\kern -0.99649
 .........\kern 0.99649
 .........\glue 11.0334 minus 8.03
+.........\penalty 0
 ........\glue(\tabskip) 0.0
 ........\hbox(18.21204+13.40527)x114.40485
 .........\vbox(18.21204+13.40527)x108.40485
@@ -489,6 +490,7 @@ Completed box being shipped out [1]
 .........\kern -0.99649
 .........\kern 0.99649
 .........\glue 11.0334 minus 8.03
+.........\penalty 0
 ........\glue(\tabskip) 0.0
 ........\hbox(18.21204+13.40527)x114.40485
 .........\vbox(18.21204+13.40527)x108.40485
@@ -557,6 +559,7 @@ Completed box being shipped out [1]
 .........\kern -0.99649
 .........\kern 0.99649
 .........\glue 11.0334 minus 8.03
+.........\penalty 0
 ........\glue(\tabskip) 0.0
 ........\hbox(18.21204+13.40527)x114.40485
 .........\vbox(18.21204+13.40527)x108.40485
@@ -629,6 +632,7 @@ Completed box being shipped out [1]
 .........\kern -0.99649
 .........\kern 0.99649
 .........\glue 11.0334 minus 8.03
+.........\penalty 0
 ........\glue(\tabskip) 0.0
 ........\hbox(18.21204+13.40527)x114.40485
 .........\vbox(18.21204+13.40527)x108.40485
@@ -1410,7 +1414,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 13.42064
-....\hbox(10.13943+0.95276)x416.83289, glue set 296.3829fil
+....\hbox(10.13943+0.95276)x416.83289, glue set 292.4709fil
 .....\TU/LXGWNeoZhiSong(0)/b/n/12.045 摘
 .....\glue 0.0 plus 0.60463
 .....\TU/LXGWNeoZhiSong(0)/b/n/12.045 要
@@ -1424,6 +1428,7 @@ Completed box being shipped out [1]
 .....\glue 8.27505 minus 6.02249
 .....\write3{\protect \BOOKMARK [0][-]{Doc-Start}{\376\377\144\130\211\201}{}% 1}
 .....\write1{\@writefile{toc}{\protect \contentsline {chapter}{摘要}{\thepage }{Doc-Start}\protected@file@percent }}
+.....\glue 3.912 plus 1.956 minus 1.304
 .....\TU/LXGWNeoZhiSong(0)/m/n/12.045 中
 .....\glue 0.0 plus 0.60463
 .....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文

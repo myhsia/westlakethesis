@@ -410,7 +410,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
             \addcontentsline{toc}{chapter}{参考文献}
             \group_begin:
               \dim_set:Nn \bibsep {1pt}
-              \linespread{1.85}\selectfont \zihao{5}
+              \linespread{1.85} \ctex_zihao:n { 5 }
               \bibliography { \l_@@_set_bib_str }
             \group_end:
           }
@@ -461,7 +461,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \box_new:N \l_@@_cover_en_table_box
 \hbox_gset:Nn \l_@@_cover_id_box { 0 }
 \hbox_gset:Nn \l_@@_cover_code_box { School ~ Code: }
-\hbox_gset:Nn \l_@@_cover_en_table_box { \zihao{3}\sffamily Supervisor: }
+\hbox_gset:Nn \l_@@_cover_en_table_box
+  { \ctex_zihao:n { 3 } \sffamily Supervisor: }
 \dim_const:Nn \l_@@_cover_id_dim
   { 13 \box_wd:N \l_@@_cover_id_box }
 \dim_const:Nn \l_@@_cover_code_dim
@@ -543,7 +544,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \end{center}
       \vspace{4.35\baselineskip}
       \begin{center}
-        \zihao{3}\linespread{1.35}\selectfont
+        \linespread{1.35} \ctex_zihao:n { 3 }
         \begin{tabular} { p { 4\ccwd } @{：} p { 15ex } }
           \@@_cover_spread_box:nn  { 4\ccwd } { 培养单位 } &
           \@@_cover_center_box:nnn {  15ex  } { -4.5pt   }
@@ -560,8 +561,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
                                    { \l_@@_set_PI_tl_a        }\\
         \end{tabular}
         \par\vspace{3.15\baselineskip}
-        \zihao{3}
-        \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
+        \ctex_zihao:n { 3 } \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
       \end{center}
     \end{titlepage}
     \begin{titlepage}
@@ -596,7 +596,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \group_end:
         \par \vspace{1.1\baselineskip}
         \group_begin:
-        \zihao{4}\sffamily \bfseries
+        \ctex_zihao:n { 4 } \sffamily \bfseries
           (
             Degree ~ of ~
             \bool_if:NTF \l_@@_set_master_bool { Master } { Doctor }
@@ -605,7 +605,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \end{center}
       \vspace{5.15\baselineskip}
       \begin{center}
-        \zihao{3}\sffamily \linespread{1.35}\selectfont
+        \linespread{1.35} \ctex_zihao:n { 3 } \sffamily \selectfont
         \begin{tabular}
           {
             p \l_@@_cover_en_table_dim @{~}
@@ -626,7 +626,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
                                    { \l_@@_set_PI_tl_b        }\\
         \end{tabular}
         \par \vspace{3.9\baselineskip}
-        \zihao{3}
+        \ctex_zihao:n { 3 }
         \@@_kernel_month:n { en }, \space
         \@@_kernel_year:n  { en }
       \end{center}
@@ -683,7 +683,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \begin{titlepage}
       \null \vspace{1.2\baselineskip}
       \begin{center}
-        \zihao{3}\sffamily
+        \ctex_zihao:n { 3 } \sffamily
         \l_@@_commitment_a_title_tl
       \end{center}
       \par \vspace{.5\baselineskip}
@@ -699,7 +699,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \hspace*{2\ccwd}
       \par \vspace{3.25\baselineskip}
       \begin{center}
-        \zihao{3}\sffamily
+        \ctex_zihao:n { 3 } \sffamily
         \l_@@_commitment_b_title_tl
       \end{center}
       \par \vspace{.5\baselineskip}
@@ -721,37 +721,47 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \end{titlepage}
   }
 %    \end{macrocode}
+% Chapter (|Heading 1|) format.
 %    \begin{macrocode}
-\ctex_set:n
+\ctex_set:nn { chapter }
   {
-    chapter =
-      {
-        format+    = \zihao{3} \sffamily \mdseries,
-        number     = \arabic{chapter},
-        beforeskip = 40pt, afterskip = 30pt,
-        aftername  = \enspace, fixskip,
-        tocline    = \CTEXnumberline{#1}#2
-      },
-    section =
-      {
-        format+    = \zihao{4} \sffamily \mdseries \raggedright,
-        beforeskip = 18pt, afterskip = 15pt,
-        aftername  = \enspace, fixskip,
-      },
-    subsection =
-      {
-        format+    = \@@_fontsize:n { 13 } \sffamily \mdseries \raggedright,
-        beforeskip = 15.5pt, afterskip = 13.5pt,
-        aftername = \quad, fixskip
-      },
-    subsubsection =
-      {
-        format+ = \zihao{ -4 } \sffamily \mdseries \raggedright,
-        beforeskip = 13pt, afterskip = 12pt,
-        aftername = \quad, fixskip
-      },
-    contentsname = 目\quad 录, secnumdepth = 3,
+    format+    = \ctex_zihao:n { 3 } \sffamily \mdseries,
+    number     = \arabic{chapter},
+    beforeskip = 40pt, afterskip = 30pt,
+    aftername  = \enspace, fixskip,
+    tocline    = \CTEXnumberline{#1}#2
   }
+%    \end{macrocode}
+% Section (|Heading 2|) format.
+%    \begin{macrocode}
+\ctex_set:nn { section }
+  {
+    format+    = \ctex_zihao:n { 4 } \sffamily \mdseries \raggedright,
+    beforeskip = 18pt, afterskip = 15pt,
+    aftername  = \enspace, fixskip,
+  }
+%    \end{macrocode}
+% Subsection (|Heading 3|) format.
+%    \begin{macrocode}
+\ctex_set:nn { subsection }
+  {
+    format+    = \@@_fontsize:n { 13 } \sffamily \mdseries \raggedright,
+    beforeskip = 15.5pt, afterskip = 13.5pt,
+    aftername = \quad, fixskip
+  }
+%    \end{macrocode}
+% Susubsection (|Heading 4|) format.
+%    \begin{macrocode}
+\ctex_set:nn { subsubsection }
+  {
+    format+ = \ctex_zihao:n { -4 } \sffamily \mdseries \raggedright,
+    beforeskip = 13pt, afterskip = 12pt,
+    aftername = \quad, fixskip
+  }
+%    \end{macrocode}
+% Table of contents format.
+%    \begin{macrocode}
+\ctex_set:n { contentsname = 目\quad 录, secnumdepth = 3 }
 \renewcommand \cftchapfont     { \sffamily                  }
 \renewcommand \cftchappagefont { \mdseries                  }
 \renewcommand \cftchapleader   { \cftdotfill { \cftdotsep } }
