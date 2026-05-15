@@ -102,7 +102,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*driver>
-\documentclass[11pt, cs-break = true]{l3doc}
+\documentclass[11pt, cs-break = true, lm-default = false]{l3doc}
 \ExplSyntaxOn
 \msg_redirect_module:nnn { l3doc } { warning } { none }
 \ExplSyntaxOff
@@ -281,7 +281,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \graphicspath { {./media} }
 \hypersetup { hidelinks }
 \bool_lazy_any:nT
-  { \sys_if_engine_pdftex_p: \sys_if_engine_luatex_p: \sys_if_engine_xetex_p: }
+  { \sys_if_engine_pdftex_p: \sys_if_engine_opentype_p: }
   { \RequirePackage { microtype } }
 \sys_if_engine_uptex:T
   {
