@@ -61,6 +61,16 @@
   \end{enumerate}
 \ENDTEST
 
+\BEGINTEST{Basic Usage of WestlakeThesis: Commitment}
+
+\commitment[
+  example-image-a.pdf, 2026 年 5 月 20 日,
+  example-image-a.pdf, 2026 年 5 月 21 日,
+  example-image-b.pdf, 2026 年 5 月 21 日,
+]
+
+\ENDTEST
+
 \END
 
 \end{document}

@@ -1411,3 +1411,1542 @@ LaTeX Font Info:    Font shape `TU/LXGWNeoXiHei(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LXGWNeoXiHei(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line ....
 ============================================================
+============================================================
+TEST 4: Basic Usage of WestlakeThesis: Commitment
+============================================================
+Completed box being shipped out [3]
+\vbox(730.50687+0.16861)x434.90039
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil
+..\kern 0.0
+..\kern -37.0
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil
+...\kern 0.0
+...\kern 18.0675
+...\kern -1.00374
+...\special{pdf:dest (page.3) [@thispage /XYZ @xpos @ypos null]}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.16861)x434.90039
+..\glue -37.0
+..\vbox(767.50687+0.16861)x416.83289, shifted 18.0675
+...\vbox(12.0+0.0)x416.83289, glue set 12.0fil
+....\glue 0.0 plus 1.0fil
+....\hbox(0.0+0.0)x416.83289
+.....\special{color push gray 0}
+.....\hbox(0.0+0.0)x416.83289
+.....\special{color pop}
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 314.43404fil
+....\write-{}
+....\special{pdf:dest (chapter.1) [@thispage /XYZ @xpos @ypos null]}
+....\write3{\protect \BOOKMARK [0][-]{chapter.1}{\376\377\155\131\154\137\167\001\000\040\000Z\000h\000e\000j\000i\000a\000n\000g}{}% 3}
+....\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \numberline {第1章}浙江省 Zhejiang}{\thepage }{chapter.1}\protected@file@percent }}
+....\marks2{\__mark_value:nn {1}{\MakeUppercase    []{第1章\hskip 1em\relax 浙江省 Zhejiang}}}
+....\marks3{\__mark_value:nn {2}{\MakeUppercase    []{第1章\hskip 1em\relax 浙江省 Zhejiang}}}
+....\write1{\@writefile{lof}{\protect \addvspace {10.0pt}}}
+....\write1{\@writefile{lot}{\protect \addvspace {10.0pt}}}
+....\glue(\topskip) 12.0
+....\rule(0.0+0.0)x*
+....\penalty 10000
+....\glue 28.0 plus -1.0
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(13.66042+3.27623)x416.83289, glue set 126.00456fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 第
+.....\glue 5.02678 plus 2.51338 minus 1.67558
+.....\TU/lmss/m/n/16.06 1
+.....\glue 5.02678 plus 2.51338 minus 1.67558
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 章
+.....\kern -0.00017
+.....\kern 0.00017
+.....\kern 8.03
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 浙
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 江
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 省
+.....\glue 5.02678 plus 2.51338 minus 1.67558
+.....\TU/lmss/m/n/16.06 Zhejiang
+.....\kern -0.0002
+.....\kern 0.0002
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty 10000
+....\glue 30.0 plus -1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(10.00417+2.6258)x416.83289, glue set 304.0917fil
+.....\hbox(0.0+0.0)x24.09
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 杭
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 州
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 市
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Hangzhou
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -300
+....\glue 18.0 plus -1.0
+....\special{pdf:dest (section.1.1) [@thispage /XYZ @xpos @ypos null]}
+....\penalty 10000
+....\glue -18.0 plus 1.0
+....\glue 18.0 plus -1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(11.36961+1.16646)x416.83289, glue set 272.44354fil
+.....\kern-0.35132 (left margin)
+.....\hbox(9.49948+0.0)x24.61996
+......\TU/lmss/m/n/14.05249 1.1
+......\kern -0.0002
+......\kern 0.0002
+......\kern 7.02625
+.....\TU/LXGWNeoXiHei(0)/m/n/14.05249 西
+.....\glue 0.0 plus 0.8653
+.....\TU/LXGWNeoXiHei(0)/m/n/14.05249 湖
+.....\glue 0.0 plus 0.8653
+.....\TU/LXGWNeoXiHei(0)/m/n/14.05249 区
+.....\glue 4.58112 plus 2.29056 minus 1.52704
+.....\TU/lmss/m/n/14.05249 Xihu
+.....\glue 4.58112 plus 2.29056 minus 1.52704
+.....\TU/lmss/m/n/14.05249 District
+.....\kern -0.0002
+.....\kern 0.0002
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write3{\protect \BOOKMARK [1][-]{section.1.1}{\376\377\211\177\156\126\123\072\000\040\000X\000i\000h\000u\000\040\000D\000i\000s\000t\000r\000i\000c\000t}{chapter.1}% 4}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1.1}西湖区 Xihu District}{\thepage }{section.1.1}\protected@file@percent }}
+....\penalty 10000
+....\glue 15.0 plus -1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(10.0571+0.96452)x416.83289, glue set 287.85506fil
+.....\hbox(0.0+0.0)x24.09
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 三
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 墩
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 镇
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Sandun
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Town
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -300
+....\glue 15.5 plus -1.0
+....\special{pdf:dest (subsection.1.1.1) [@thispage /XYZ @xpos @ypos null]}
+....\penalty 10000
+....\glue -15.5 plus 1.0
+....\glue 15.5 plus -1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(10.87354+2.65198)x416.83289, glue set 95.69342fil
+.....\kern-0.312 (left margin)
+.....\hbox(8.788+0.0)x39.182
+......\TU/lmss/m/n/13 1.1.1
+......\kern -0.0002
+......\kern 0.0002
+......\glue 13.0
+.....\TU/LXGWNeoXiHei(0)/m/n/13 墩
+.....\glue 0.0 plus 0.46109
+.....\TU/LXGWNeoXiHei(0)/m/n/13 余
+.....\glue 0.0 plus 0.46109
+.....\TU/LXGWNeoXiHei(0)/m/n/13 路
+.....\glue 4.238 plus 2.119 minus 1.41266
+.....\TU/lmss/m/n/13 600
+.....\glue 4.238 plus 2.119 minus 1.41266
+.....\TU/LXGWNeoXiHei(0)/m/n/13 号
+.....\glue 4.238 plus 2.119 minus 1.41266
+.....\TU/lmss/m/n/13 No.600,
+.....\glue 4.238 plus 2.64874 minus 1.13013
+.....\TU/lmss/m/n/13 Dunyu
+.....\glue 4.238 plus 2.119 minus 1.41266
+.....\TU/lmss/m/n/13 Rd.
+.....\kern -0.0002
+.....\kern 0.0002
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write3{\protect \BOOKMARK [2][-]{subsection.1.1.1}{\376\377\130\251\117\131\215\357\000\040\0006\0000\0000\000\040\123\367\000\040\000N\000o\000.\0006\0000\0000\000,\000\040\000D\000u\000n\000y\000u\000\040\000R\000d\000.}{section.1.1}% 5}
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {1.1.1}墩余路 600 号 No.600, Dunyu Rd.}{\thepage }{subsection.1.1.1}\protected@file@percent }}
+....\penalty 10000
+....\glue 13.5 plus -1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(10.0571+2.6258)x416.83289, glue set 91.11205fil
+.....\hbox(0.0+0.0)x24.09
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 西
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 湖
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 大
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\glue 7.82808 minus 6.75768
+.....\rule(0.0+0.0)x-7.82808
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 （云
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 谷
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 校
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 区
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ）
+.....\rule(0.0+0.0)x-7.82808
+.....\glue 7.82808 minus 6.75768
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Westlake
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 University
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 (Yungu
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Campus)
+.....\penalty 10000
+.....\kern-0.80702 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -300
+....\glue 13.0 plus -1.0
+....\special{pdf:dest (subsubsection.1.1.1.1) [@thispage /XYZ @xpos @ypos null]}
+....\penalty 10000
+....\glue -13.0 plus 1.0
+....\glue 13.0 plus -1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(9.963+2.33672)x416.83289, glue set 118.8679fil
+.....\kern-0.30113 (left margin)
+.....\hbox(8.14243+0.0)x45.48192
+......\TU/lmss/m/n/12.045 1.1.1.1
+......\kern -0.0002
+......\kern 0.0002
+......\glue 12.045
+.....\TU/LXGWNeoXiHei(0)/m/n/12.045 公
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoXiHei(0)/m/n/12.045 共
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoXiHei(0)/m/n/12.045 交
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoXiHei(0)/m/n/12.045 通
+.....\glue 3.92667 plus 1.96333 minus 1.30888
+.....\TU/lmss/m/n/12.045 Public
+.....\glue 3.92667 plus 1.96333 minus 1.30888
+.....\TU/lmss/m/n/12.045 Transport
+.....\kern -0.0002
+.....\kern 0.0002
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {1.1.1.1}公共交通 Public Transport}{\thepage }{subsubsection.1.1.1.1}\protected@file@percent }}
+....\penalty 10000
+....\glue 12.0 plus -1.0
+....\glue -12.0 plus 1.0
+....\glue 7.0 plus -2.5 minus -1.0
+....\special{pdf:dest (Item.1) [@thispage /XYZ @xpos @ypos null]}
+....\penalty 10000
+....\glue -7.0 plus 2.5 minus 1.0
+....\glue 7.0 plus -2.5 minus -1.0
+....\glue(\parskip) 5.0 plus 2.5 minus 1.0
+....\glue(\parskip) 0.0
+....\hbox(10.0571+2.6258)x386.83289, glue set 144.88501fil, shifted 30.0
+.....\hbox(8.14243+0.13248)x0.0
+......\glue 0.0
+......\glue -24.0
+......\glue -6.0
+......\hbox(8.14243+0.13248)x24.0, glue set 24.0fil
+.......\special{color push gray 0}
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\hbox(8.14243+0.13248)x0.0, glue set - 9.03375fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\TU/TeXGyreTermesX(0)/m/n/12.045 1.
+........\kern -0.0002
+........\kern 0.0002
+.......\special{color pop}
+......\glue 6.0
+.....\penalty 0
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 西
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 湖
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 大
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 站
+.....\glue 0.0 plus 0.60463
+.....\glue 7.82808 minus 6.75768
+.....\rule(0.0+0.0)x-7.82808
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 （在
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 建
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ）
+.....\rule(0.0+0.0)x-7.82808
+.....\glue 7.82808 minus 6.75768
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Westlake
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 University
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Station
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -51
+....\glue 5.0 plus 2.5 minus 1.0
+....\special{pdf:dest (Item.2) [@thispage /XYZ @xpos @ypos null]}
+....\penalty 10000
+....\glue -5.0 plus -2.5 minus -1.0
+....\glue 5.0 plus 2.5 minus 1.0
+....\glue(\parskip) 5.0 plus 2.5 minus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 8.9922
+....\hbox(10.06299+2.6258)x386.83289, glue set 0.25275, shifted 30.0
+.....\hbox(8.14243+0.13248)x0.0
+......\glue 0.0
+......\glue -24.0
+......\glue -6.0
+......\hbox(8.14243+0.13248)x24.0, glue set 24.0fil
+.......\special{color push gray 0}
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\hbox(8.14243+0.13248)x0.0, glue set - 9.03375fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\TU/TeXGyreTermesX(0)/m/n/12.045 2.
+........\kern -0.0002
+........\kern 0.0002
+.......\special{color pop}
+......\glue 6.0
+.....\penalty 0
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 349
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 路
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 /
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 349
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 路
+.....\glue 0.0 plus 0.60463
+.....\glue 7.82808 minus 6.75768
+.....\rule(0.0+0.0)x-7.82808
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 （留
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 石
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 高
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 架
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 快
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 线
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ）
+.....\rule(0.0+0.0)x-7.82808
+.....\kern 0.00047
+.....\kern -0.00047
+.....\kern -0.99623
+.....\kern 0.99623
+.....\glue 7.82808 minus 6.75768
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 No.349
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Bus
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 /
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 No.349
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Fast
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Bus
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 (Running
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 on
+.....\glue(\rightskip) 0.0
+....\penalty 300
+....\glue(\baselineskip) 10.82846
+....\hbox(8.22673+2.6258)x386.83289, glue set 306.33617fil, shifted 30.0
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Liushi
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Highway)
+.....\penalty 10000
+.....\kern-0.80702 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -51
+....\glue 10.0 plus 5.0 minus 2.0
+....\glue -10.0 plus -5.0 minus -2.0
+....\glue 7.5 plus 4.0 minus 1.0
+....\glue(\parskip) 2.5 plus 1.0 minus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 8.9981
+....\hbox(10.0571+0.96452)x360.43292, glue set 12.50917fil, shifted 56.39996
+.....\hbox(5.61298+0.0)x0.0
+......\glue 0.0
+......\glue -20.39996
+......\glue -6.0
+......\hbox(5.61298+0.0)x20.39996, glue set 20.39996fil
+.......\special{color push gray 0}
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\hbox(5.61298+0.0)x0.0, glue set - 4.21574fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\TU/TeXGyreTermesX(0)/m/n/12.045 •
+........\kern -0.0002
+........\kern 0.0002
+.......\special{color pop}
+......\glue 6.0
+.....\penalty 0
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 前
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 往
+.....\glue 0.0 plus 0.60463
+.....\glue 8.06921 minus 7.06938
+.....\rule(0.0+0.0)x-8.06921
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 「地
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 铁
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 三
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 墩
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 站
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 」
+.....\rule(0.0+0.0)x-8.06921
+.....\glue 8.06921 minus 7.06938
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Towards
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Sandun
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Metro
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Station:
+.....\glue 4.01498 plus 3.01123 minus 0.50186
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 5:00
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 –
+.....\discretionary
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 21:30
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 AM
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -51
+....\glue 2.5 plus 1.0 minus 1.0
+....\glue(\parskip) 2.5 plus 1.0 minus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 10.7417
+....\hbox(9.97476+2.6258)x360.43292, glue set 26.91498fil, shifted 56.39996
+.....\hbox(5.61298+0.0)x0.0
+......\glue 0.0
+......\glue -20.39996
+......\glue -6.0
+......\hbox(5.61298+0.0)x20.39996, glue set 20.39996fil
+.......\special{color push gray 0}
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\hbox(5.61298+0.0)x0.0, glue set - 4.21574fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+........\TU/TeXGyreTermesX(0)/m/n/12.045 •
+........\kern -0.0002
+........\kern 0.0002
+.......\special{color pop}
+......\glue 6.0
+.....\penalty 0
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 前
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 往
+.....\glue 0.0 plus 0.60463
+.....\glue 8.06921 minus 7.06938
+.....\rule(0.0+0.0)x-8.06921
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 「火
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 车
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 西
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 站
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 」
+.....\rule(0.0+0.0)x-8.06921
+.....\glue 8.06921 minus 7.06938
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Towards
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 West
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Railway
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 Station:
+.....\glue 4.01498 plus 3.01123 minus 0.50186
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 6:00
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 –
+.....\discretionary
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 19:30
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 AM
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -51
+....\glue 5.0 plus 2.5 minus 1.0
+....\glue -5.0 plus -2.5 minus -1.0
+....\glue 10.0 plus 4.0 minus 2.0
+....\glue -12.6258 plus -4.0 minus -2.0
+....\penalty -51
+....\glue 2.6258
+....\glue 10.0 plus 4.0 minus 2.0
+....\glue -10.0 plus -4.0 minus -2.0
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 21.85757
+...\hbox(8.14243+0.16861)x416.83289
+....\special{color push gray 0}
+....\hbox(8.14243+0.16861)x416.83289, glue set 205.4052fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/TeXGyreTermesX(0)/m/n/12.045 3
+.....\kern -0.0002
+.....\kern 0.0002
+.....\glue 0.0 plus 1.0fil
+....\special{color pop}
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+LaTeX Font Info:    Font shape `TU/LXGWWenKaiGBLite-Regular(0)/m/n' will be
+(Font)              scaled to size 12.045pt on input line ....
+File: example-image-a.pdf Graphic file (type pdf)
+<use example-image-a.pdf>
+File: example-image-b.pdf Graphic file (type pdf)
+<use example-image-b.pdf>
+Completed box being shipped out [1]
+\vbox(730.50687+0.0)x434.90039
+.\vbox(0.0+0.0)x0.0, glue set 38.00374fil
+..\kern 0.0
+..\kern -37.0
+..\kern -1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 17.06377fil
+...\kern 0.0
+...\kern 18.0675
+...\kern -1.00374
+...\special{pdf:dest (page.1) [@thispage /XYZ @xpos @ypos null]}
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(730.50687+0.0)x434.90039
+..\glue -37.0
+..\vbox(767.50687+0.0)x416.83289, shifted 18.0675
+...\vbox(12.0+0.0)x416.83289, glue set 12.0fil
+....\glue 0.0 plus 1.0fil
+....\hbox(0.0+0.0)x416.83289
+.....\special{color push gray 0}
+.....\hbox(0.0+0.0)x416.83289
+.....\special{color pop}
+...\glue 25.0
+...\glue(\lineskip) 0.0
+...\vbox(700.50687+0.0)x416.83289, glue set 114.40602fil
+....\glue(\topskip) 12.0
+....\hbox(0.0+0.0)x0.0
+....\glue 26.0171
+....\glue 0.0
+....\penalty -51
+....\glue 13.0 plus 7.0 minus 8.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 15.4358
+....\hbox(13.4722+1.36446)x416.83289, glue set 79.93646fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+......\glue 0.0
+......\glue 0.0
+......\glue -6.0
+......\hbox(0.0+0.0)x0.0
+.......\special{color push gray 0}
+.......\special{color pop}
+......\glue 6.0
+.....\penalty 0
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 西
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 湖
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 大
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 学
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 研
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 究
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 生
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 学
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 位
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 论
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 文
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 独
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 创
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 性
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 声
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 明
+.....\kern -0.00017
+.....\kern 0.00017
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 10.84048
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 10.25943
+....\hbox(10.0571+0.99982)x416.83289, glue set 0.40262
+.....\hbox(0.0+0.0)x24.09
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 人
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 声
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 明
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.....\rule(0.0+0.0)x-8.27505
+.....\glue 8.27505 minus 6.02249
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 所
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 呈
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 交
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 位
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 是
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 人
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 在
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 导
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 师
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 指
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 导
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 下
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 进
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 行
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 研
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 究
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 工
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 及
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 取
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 得
+.....\glue(\rightskip) 0.0
+....\penalty 150
+....\glue(\baselineskip) 10.63583
+....\hbox(10.04533+1.288)x416.83289, glue set - 0.2914
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 研
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 究
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 成
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 果
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\rule(0.0+0.0)x-8.53972
+.....\glue 8.53972 minus 8.04568
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 除
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 了
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 中
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 特
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 别
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 加
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 以
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 标
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 注
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 和
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 致
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 谢
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 地
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 方
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 外
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ，
+.....\rule(0.0+0.0)x-9.27489
+.....\glue 9.27489 minus 8.22801
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 中
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 不
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 包
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 含
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 其
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 他
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 人
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 已
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 经
+.....\glue(\rightskip) 0.0
+....\glue(\baselineskip) 10.33589
+....\hbox(10.0571+0.95276)x416.83289, glue set 0.37746
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 发
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 表
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 或
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 撰
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 写
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 过
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 研
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 究
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 成
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 果
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\rule(0.0+0.0)x-8.53972
+.....\glue 8.53972 minus 8.04568
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 与
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 人
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 一
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 同
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 参
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 与
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 研
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 究
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 工
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 合
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 者
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 所
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 做
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 任
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 何
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 贡
+.....\glue(\rightskip) 0.0
+....\penalty 150
+....\glue(\baselineskip) 10.5535
+....\hbox(10.17473+0.99982)x416.83289, glue set 15.84267fil
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 献
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 均
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 已
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 在
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 中
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 了
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 明
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 确
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 说
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 明
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 并
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 表
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 示
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 谢
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 意
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\rule(0.0+0.0)x-8.53972
+.....\glue 8.53972 minus 8.04568
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 声
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 明
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 法
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 律
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 结
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 果
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 由
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 人
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 承
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 担
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\rule(0.0+0.0)x-8.53972
+.....\kern 0.00052
+.....\kern -0.00052
+.....\kern -0.18753
+.....\kern 0.18753
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 43.36197
+....\glue 0.0
+....\glue 3.0 plus 1.0 minus 1.0
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.21591
+....\hbox(17.46526+11.44275)x416.83289, glue set 24.09fill
+.....\hbox(0.0+0.0)x24.09
+.....\mathon
+.....\vbox(17.46526+11.44275)x172.28145
+......\hbox(18.0675+10.8405)x172.28145, glue set 25.33414fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 位
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 者
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 名
+.......\penalty 10000
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
+.......\glue 8.27505 minus 6.02249
+.......\hbox(28.908+0.0)x38.54233, shifted 10.8405
+........\hbox(28.908+0.0)x38.54233
+.........\hbox(28.90681+0.0)x38.54242
+..........\hbox(28.90681+0.0)x38.54242
+...........\hbox(28.90681+0.0)x0.0
+............\special{pdf:btrans}
+............\special{x:scale 0.12 0.12}
+............\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
+.............\hbox(240.9+0.0)x321.20001
+..............\XeTeXpdffile "../example-image-a.pdf"
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+............\special{pdf:etrans}
+...........\kern 38.54242
+...........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\mathoff
+.....\glue 0.0 plus 1.0fill
+.....\mathon
+.....\vbox(8.48384+2.46133)x172.28145
+......\hbox(10.06886+0.87631)x172.28145, glue set 21.71898fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 字
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 日
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 期
+.......\penalty 10000
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
+.......\glue 8.27505 minus 6.02249
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 2026
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 年
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 5
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 月
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 20
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 日
+.......\kern -0.00017
+.......\kern 0.00017
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\mathoff
+.....\rule(*+*)x0.0
+.....\penalty 10000
+.....\glue 24.09
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 70.4632
+....\glue 0.0
+....\penalty -51
+....\glue 13.0 plus 7.0 minus 8.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.99306
+....\hbox(13.4722+1.35661)x416.83289, glue set 63.87646fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
+.....\hbox(0.0+0.0)x0.0
+......\glue 0.0
+......\glue 0.0
+......\glue -6.0
+......\hbox(0.0+0.0)x0.0
+.......\special{color push gray 0}
+.......\special{color pop}
+......\glue 6.0
+.....\penalty 0
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 西
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 湖
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 大
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 学
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 研
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 究
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 生
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 学
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 位
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 论
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 文
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 版
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 权
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 使
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 用
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 授
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 权
+.....\glue 0.0 plus 1.36491
+.....\TU/LXGWNeoXiHei(0)/m/n/16.06 书
+.....\kern -0.00017
+.....\kern 0.00017
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 13.0 plus 6.0 minus 8.0
+....\glue 10.84048
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 10.25551
+....\hbox(10.06886+3.1562)x416.83289, glue set 0.07063
+.....\hbox(0.0+0.0)x24.09
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 位
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 者
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 完
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 全
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 了
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 解
+.....\kern -0.00017
+.....\kern 0.00017
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\mathon
+.....\vbox(9.68417+3.1562)x48.18
+......\hbox(9.68417+1.15631)x48.18
+.......\TU/LXGWWenKaiGBLite-Regular(0)/m/n/12.045 西
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWWenKaiGBLite-Regular(0)/m/n/12.045 湖
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWWenKaiGBLite-Regular(0)/m/n/12.045 大
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWWenKaiGBLite-Regular(0)/m/n/12.045 学
+.......\kern -0.00017
+.......\kern 0.00017
+......\kern1.19994
+......\rule(0.39998+0.0)x*
+.....\mathoff
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 有
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 关
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 收
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 藏
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 和
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 利
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 用
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 博
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 士
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 、
+.....\rule(0.0+0.0)x-8.66911
+.....\glue 8.66911 minus 8.01628
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 硕
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 士
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 位
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue(\rightskip) 0.0
+....\penalty 150
+....\glue(\baselineskip) 8.3971
+....\hbox(10.12769+1.288)x416.83289, glue set - 0.21297
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 规
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 定
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ，
+.....\rule(0.0+0.0)x-9.27489
+.....\glue 9.27489 minus 8.22801
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 即
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.....\rule(0.0+0.0)x-8.27505
+.....\glue 8.27505 minus 6.02249
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 校
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 有
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 权
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 收
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 藏
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 、
+.....\rule(0.0+0.0)x-8.66911
+.....\glue 8.66911 minus 8.01628
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 使
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 用
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 并
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 向
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 国
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 家
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 有
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 关
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 部
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 门
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 或
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 机
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 构
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 送
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 交
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 印
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 刷
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 和
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 电
+.....\glue(\rightskip) 0.0
+....\glue(\baselineskip) 10.31824
+....\hbox(10.07475+1.288)x416.83289, glue set - 0.23228
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 子
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 版
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 本
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ；
+.....\rule(0.0+0.0)x-8.27505
+.....\glue 8.27505 minus 6.09308
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 允
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 许
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 被
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 查
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 阅
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 和
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 借
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 阅
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ；
+.....\rule(0.0+0.0)x-8.27505
+.....\glue 8.27505 minus 6.09308
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 校
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 可
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 以
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 公
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 布
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 的
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 全
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 部
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 或
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 部
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 分
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 内
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 容
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 ，
+.....\rule(0.0+0.0)x-9.27489
+.....\glue 9.27489 minus 8.22801
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 可
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 以
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 采
+.....\glue(\rightskip) 0.0
+....\penalty 150
+....\glue(\baselineskip) 10.31236
+....\hbox(10.08063+0.95276)x416.83289, glue set 208.56264fil
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 用
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 影
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 印
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 、
+.....\rule(0.0+0.0)x-8.66911
+.....\glue 8.66911 minus 8.01628
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 缩
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 印
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 或
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 其
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 它
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 复
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 制
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 手
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 段
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 保
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 存
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.....\glue 0.0 plus 0.60463
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.....\penalty 10000
+.....\TU/LXGWNeoZhiSong(0)/m/n/12.045 。
+.....\rule(0.0+0.0)x-8.53972
+.....\kern 0.00052
+.....\kern -0.00052
+.....\kern -0.18753
+.....\kern 0.18753
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 43.36197
+....\glue 0.0
+....\glue 3.0 plus 1.0 minus 1.0
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(34.16414+28.14165)x416.83289, glue set 24.09fill
+.....\hbox(0.0+0.0)x24.09
+.....\mathon
+.....\vbox(34.16414+28.14165)x172.28145
+......\hbox(18.0675+10.8405)x172.28145, glue set 25.33414fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 学
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 位
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 论
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 文
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 作
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 者
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 名
+.......\penalty 10000
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
+.......\glue 8.27505 minus 6.02249
+.......\hbox(28.908+0.0)x38.54233, shifted 10.8405
+........\hbox(28.908+0.0)x38.54233
+.........\hbox(28.90681+0.0)x38.54242
+..........\hbox(28.90681+0.0)x38.54242
+...........\hbox(28.90681+0.0)x0.0
+............\special{pdf:btrans}
+............\special{x:scale 0.12 0.12}
+............\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
+.............\hbox(240.9+0.0)x321.20001
+..............\XeTeXpdffile "../example-image-a.pdf"
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+............\special{pdf:etrans}
+...........\kern 38.54242
+...........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 21.68098
+......\glue 0.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\glue(\baselineskip) 0.77162
+......\hbox(10.06886+0.87631)x172.28145, glue set 18.70773fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 字
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 日
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 期
+.......\penalty 10000
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
+.......\glue 8.27505 minus 6.02249
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 2026
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 年
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 5
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 月
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 21
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 日
+.......\kern -0.00017
+.......\kern 0.00017
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\mathoff
+.....\glue 0.0 plus 1.0fill
+.....\mathon
+.....\vbox(34.16414+28.14165)x172.28145
+......\hbox(18.0675+10.8405)x172.28145, glue set 73.51413fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 导
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 师
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 名
+.......\penalty 10000
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
+.......\glue 8.27505 minus 6.02249
+.......\hbox(28.908+0.0)x38.54233, shifted 10.8405
+........\hbox(28.908+0.0)x38.54233
+.........\hbox(28.90681+0.0)x38.54242
+..........\hbox(28.90681+0.0)x38.54242
+...........\hbox(28.90681+0.0)x0.0
+............\special{pdf:btrans}
+............\special{x:scale 0.12 0.12}
+............\hbox(240.9+0.0)x0.0, glue set - 321.20001fil
+.............\hbox(240.9+0.0)x321.20001
+..............\XeTeXpdffile "../example-image-b.pdf"
+.............\glue 0.0 plus 1.0fil minus 1.0fil
+............\special{pdf:etrans}
+...........\kern 38.54242
+...........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 21.68098
+......\glue 0.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\glue(\baselineskip) 0.77162
+......\hbox(10.06886+0.87631)x172.28145, glue set 18.70773fil
+.......\hbox(0.0+0.0)x0.0
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 字
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 日
+.......\glue 0.0 plus 0.60463
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 期
+.......\penalty 10000
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
+.......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
+.......\glue 8.27505 minus 6.02249
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 2026
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 年
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 5
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 月
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/TeXGyreTermesX(0)/m/n/12.045 21
+.......\glue 3.01125 plus 1.50562 minus 1.00374
+.......\TU/LXGWNeoZhiSong(0)/m/n/12.045 日
+.......\kern -0.00017
+.......\kern 0.00017
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+.....\mathoff
+.....\rule(*+*)x0.0
+.....\penalty 10000
+.....\glue 24.09
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue -6.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\glue(\baselineskip) 30.0
+...\hbox(0.0+0.0)x416.83289
+....\special{color push gray 0}
+....\hbox(0.0+0.0)x416.83289
+....\special{color pop}
+============================================================
