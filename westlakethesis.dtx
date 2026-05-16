@@ -152,27 +152,30 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
-%     \cs{westlakeset} \marg{键值列表}
+%     \cs{westlakeset} \marg{\hbox{键值列表}}
 %   \end{syntax}
-% \end{function} 
+% \end{function}
 %
 % \end{documentation}
 % \clearpage
 % \begin{implementation}
 % \section{The source code}
+% We use |wlu| as the namespace.
 %    \begin{macrocode}
 %<@@=wlu>
 %    \end{macrocode}
 % \subsection{\texttt{westlakethesis.cls}}
+% Start the optionlist |wlu-class| for l3docstrip.
 %    \begin{macrocode}
 %<*wlu-class>
 %    \end{macrocode}
+% Define the date, version, and summary variables, and declare the class.
 %    \begin{macrocode}
-\def \wlu@date         {2026-05-12}
+\def \wlu@date         {2026-05-20}
 \def \wlu@version      {0.0.1}
 \def \wlu@maintainerid {myhsia}
-\ProvidesExplClass {westlakethesis} {\wlu@date} {\wlu@version}
-  {LaTeX Template Bundle for Westlake University}
+\def \wlu@tldr         {LaTeX Template Bundle for Westlake University}
+\ProvidesExplClass {westlakethesis} {\wlu@date} {\wlu@version} {\wlu@tldr}
 %    \end{macrocode}
 % \begin{macro}
 %   {
@@ -181,6 +184,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \@@_msg_warning:nn,
 %     \@@_msg_info:nn,
 %   }
+% Message management: private functions for creating new message and
+% broadcasting it as error, warning, or info.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_msg_new:nn #1#2
   { \msg_new:nnn     { WestlakeThesis } {#1} {#2} }
@@ -192,11 +197,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
   { \msg_info:nnn    { WestlakeThesis } {#1} {#2} }
 %    \end{macrocode}
 % \end{macro}
+% New message: |not found module|, will be used in \cs{@@_load_module:n}.
 %    \begin{macrocode}
 \@@_msg_new:nn { not found module }
   { The ~ WestlakeThesis ~ module ~ `#1' ~ not ~ found. }
 %    \end{macrocode}
 % \begin{macro}{\@@_load_module:n, \@@_provide_module:n}
+% Functions for loading module in \file{westlakethesis.cls} and providing module
+% in \file{wlu-*.code.tex}.
 %    \begin{macrocode}
 \cs_new_protected_nopar:Npn \@@_load_module:n #1
   {
@@ -213,15 +221,23 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
+% Load the |driver|, |kernel|, |params|, and |layout| respectively.
 %    \begin{macrocode}
-\@@_load_module:n { driver, kernel, params, layout, }
+\@@_load_module:n { driver, kernel, params, layout }
 %    \end{macrocode}
 % \begin{macro}{\westlakeset}
+% \hologo{LaTeX2e} user's interface for filling information,
+% only valid in preamble.
 %    \begin{macrocode}
 \@onlypreamble \westlakeset
 \NewDocumentCommand \westlakeset { m }
   {
     \keys_set:nn { @@ / set } {#1}
+%    \end{macrocode}
+% Parsing the bilingualism of the items |title|, |school|, |subject|, |author|,
+% and |PI| after filling information, then decide whether to load the
+% \pkg{gbt7714} package by setting the boolean \cs{l_@@_load_bib_bool}.
+%    \begin{macrocode}
     \clist_map_inline:nn { title, school, subject, author, PI }
       { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
     \str_if_empty:NF \l_@@_set_bib_str
@@ -239,6 +255,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \l_@@_set_master_bool,
 %     \l_@@_set_bib_str,
 %   }
+% Key–value definitions for the \cs{westlakeset} command.
 %    \begin{macrocode}
 \keys_define:nn { @@ / set }
   {
@@ -257,9 +274,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \end{variable}
 % \end{macro}
+% This is the end of \file{westlakethesis.cls}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
+% End the optionlist |wlu-class| for l3docstrip.
 %    \begin{macrocode}
 %</wlu-class>
 %    \end{macrocode}
