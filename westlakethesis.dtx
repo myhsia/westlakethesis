@@ -102,7 +102,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*driver>
-\documentclass[11pt, cs-break = true]{l3doc}
+\documentclass[11pt, letterpaper, cs-break = true]{l3doc}
 \ExplSyntaxOn
 \msg_redirect_module:nnn { l3doc } { warning } { none }
 \ExplSyntaxOff
@@ -133,7 +133,29 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \begin{syntax}
 %     \cs{westlakeset} \marg{key-value list}
 %   \end{syntax}
-% \end{function} 
+% \end{function}
+%
+% \begin{function}{\maketitle}
+%   \begin{syntax}
+%     \cs{maketitle}
+%   \end{syntax}
+%   This command is used to generate the cover page. One should add the line
+%   rightly after |\begin{document}|.
+%   \begin{quote}
+%     |\westlakeset{...}|\\
+%     |\begin{document}|\\
+%     |\maketitle|
+%   \end{quote}
+% \end{function}
+%
+% \begin{function}{\printbibliography}
+%   \begin{syntax}
+%     \cs{printbibliography}
+%   \end{syntax}
+%   This command is used to output the bibliography. If the users have not
+%   assigned the |bibsource| key in~\cs{westlakeset}, then only a chapter title
+%   \fbox{|参考文献|} will be outputted.
+% \end{function}
 %
 % \end{documentation}
 %
@@ -156,8 +178,29 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \end{syntax}
 % \end{function}
 %
+% \begin{function}{\maketitle}
+%   \begin{syntax}
+%     \cs{maketitle}
+%   \end{syntax}
+%   此命令用于生成封面页, 应在 |\begin{document}| 后使用.
+%   \begin{quote}
+%     |\westlakeset{...}|\\
+%     |\begin{document}|\\
+%     |\maketitle|
+%   \end{quote}
+% \end{function}
+%
+% \begin{function}{\printbibliography}
+%   \begin{syntax}
+%     \cs{printbibliography}
+%   \end{syntax}
+%   此命令用于输出参考文献. 若用户未在 \cs{westlakeset} 中指定 |bibsource| 键,
+%   则只会输出 \fbox{|参考文献|} 章节标题.
+% \end{function}
 % \end{documentation}
+%
 % \clearpage
+%
 % \begin{implementation}
 % \section{The source code}
 % We use |wlu| as the namespace.
@@ -165,7 +208,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<@@=wlu>
 %    \end{macrocode}
 % \subsection{\texttt{westlakethesis.cls}}
-% Start the optionlist |wlu-class| for l3docstrip.
+% Start the optionlist |wlu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-class>
 %    \end{macrocode}
@@ -216,12 +259,20 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 \cs_new_protected_nopar:Npn \@@_provide_module:n #1
   {
-    \ProvidesExplFile { wlu-#1.code.tex} { \wlu@date } { \wlu@version }
+    \ProvidesExplFile { wlu-#1.code.tex } { \wlu@date } { \wlu@version }
       {WestlakeThesis ~ \text_titlecase:n {#1} ~ Module}
   }
 %    \end{macrocode}
 % \end{macro}
-% Load the |driver|, |kernel|, |params|, and |layout| respectively.
+% Load the |driver|, |kernel|, |params|, and |layout| modules respectively.
+% \begin{itemize}
+%   \item |driver|: Loads the base class, required packages, and initially
+%   configure them.
+%   \item |kernel|: Provides inner functions, which will be used in the
+%   |layout| module.
+%   \item |params|: Stores all of the constant variables.
+%   \item |layout|: Provides the format of Westlake University dissertations.
+% \end{itemize}
 %    \begin{macrocode}
 \@@_load_module:n { driver, kernel, params, layout }
 %    \end{macrocode}
@@ -235,8 +286,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \keys_set:nn { @@ / set } {#1}
 %    \end{macrocode}
 % Parsing the bilingualism of the items |title|, |school|, |subject|, |author|,
-% and |PI| after filling information, then decide whether to load the
-% \pkg{gbt7714} package by setting the boolean \cs{l_@@_load_bib_bool}.
+% and |PI| after filling information, then decide
+% \hyperlink{bool:gbt7714_load}{whether to load the \pkg{gbt7714} package} by
+% \hypertarget{bool:gbt7714_set}{setting the boolean \cs{l_@@_load_bib_bool}}.
 %    \begin{macrocode}
     \clist_map_inline:nn { title, school, subject, author, PI }
       { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
@@ -278,30 +330,67 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
-% End the optionlist |wlu-class| for l3docstrip.
+% End the optionlist |wlu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wlu-class>
 %    \end{macrocode}
 % \subsection{\texttt{wlu-driver.code.tex}}
+% Start the optionlist |wlu-driver| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-driver>
 %    \end{macrocode}
+% Provide the |driver| module.
 %    \begin{macrocode}
 \@@_provide_module:n { driver }
 %    \end{macrocode}
+% Prevent the warnings raised by \pkg{xeCJK} (valid for \hologo{XeTeX})
+% when redefining fonts.
 %    \begin{macrocode}
 \sys_if_engine_xetex:T
   { \PassOptionsToPackage { quiet } { xeCJK } }
+%    \end{macrocode}
+% Load the base class: \cls{ctexrep}, with the options
+% \begin{multicols}{2}
+% \begin{itemize}
+%   \item Paper size: |a4paper|,
+%   \item Font size: |-4| (small 4 hao),
+%   \item Line spread: |1.5|, and
+%   \item Font set: \href{https://ctan.org/pkg/lxgw-fonts}{|lxgw|}.
+% \end{itemize}
+% \end{multicols}
+%    \begin{macrocode}
 \LoadClass [ a4paper, zihao = -4, linespread = 1.5, fontset = lxgw ]
   { ctexrep }
+%    \end{macrocode}
+% Load the required packages, where the |titles| option is passed to the
+% \pkg{tocloft} package to make ToC, LoF, and LoT lists to be typeset using the
+% default \hologo{LaTeX} methods.
+%    \begin{macrocode}
 \RequirePackage { graphicx, hyperref,  geometry, array,
                   lmodern,  newtxtext, lipsum,   zhlipsum }
 \RequirePackage [ titles ] { tocloft }
-\graphicspath { {./media} }
+%    \end{macrocode}
+% Configure the possible paths for searching figures.
+%    \begin{macrocode}
+\graphicspath
+  {
+    {./fig/}  {./pic/}  {./figure/}  {./picture/}  {./media/}
+    {./figs/} {./pics/} {./figures/} {./pictures/}
+  }
+%    \end{macrocode}
+% Configure the metadata of the document via \cs{hyperref}.
+%    \begin{macrocode}
 \hypersetup { hidelinks }
+%    \end{macrocode}
+% Loading the \pkg{microtype} package to obtain a better typeset effect
+% (only valid for \hologo{pdfTeX}, \hologo{XeTeX}, and~\hologo{LuaTeX}).
+%    \begin{macrocode}
 \bool_lazy_or:nnT { \sys_if_engine_pdftex_p: } { \sys_if_engine_opentype_p: }
   { \RequirePackage { microtype } }
 %    \end{macrocode}
+% \hypertarget{bool:gbt7714_load}{Determine whether to load the \pkg{gbt7714}
+%   package due to the boolean \cs{l_@@_load_bib_bool}}, which has been set via
+% \cs{westlakeset} \hyperlink{bool:gbt7714_set}{here}.
 %    \begin{macrocode}
 \hook_gput_code:nnn { env / document / before } { . }
   {
@@ -312,19 +401,27 @@ The Current Maintainer of this work is **Mingyu Xia**.
       }
   }
 %    \end{macrocode}
+% This is the end of \file{wlu-driver.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
+% End the optionlist |wlu-driver| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wlu-driver>
 %    \end{macrocode}
 % \subsection{\texttt{wlu-kernel.code.tex}}
+% Start the optionlist |wlu-kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-kernel>
 %    \end{macrocode}
+% Provide the |kernel| module.
 %    \begin{macrocode}
 \@@_provide_module:n { kernel }
 %    \end{macrocode}
+% \begin{macro}{\@@_parse_slash_ab:c}
+% This function is used for parsing the binary sequence variable \cs{\#1}
+% (delimited with |/|): store the first element in \cs{\#1_a},
+% store the second element in \cs{\#1_b}.
 %    \begin{macrocode}
 \cs_new:Npn \@@_parse_slash_ab:c #1
   {
@@ -335,17 +432,33 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \seq_get_left:Nc  \l_@@_set_tmpa_seq { #1_a }
     \seq_get_right:Nc \l_@@_set_tmpa_seq { #1_b }
   }
-\seq_clear_new:N \l_@@_set_tmpa_seq
 \cs_generate_variant:Nn \seq_get_left:NN  { Nc }
 \cs_generate_variant:Nn \seq_get_right:NN { Nc }
 %    \end{macrocode}
+% \begin{variable}{\l_@@_set_tmpa_seq}
+% Temporary variable used in \cs{\@@_parse_slash_ab:c}.
+%    \begin{macrocode}
+\seq_clear_new:N \l_@@_set_tmpa_seq
+%    \end{macrocode}
+% \end{variable}
+% \end{macro}
+% \begin{macro}{\@@_spread_box:nn}
+% This function is used for typesetting the content |#2| in a horizontal box to
+% the width |#1| by stretching the glue.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_spread_box:nn #1#2
   {
     \mode_leave_vertical:
     \hbox_to_wd:nn {#1}
-    { \exp_args:Nee \tl_map_inline:nn {#2} { ##1 \hfil } \unskip }
+      { \exp_args:Nee \tl_map_inline:nn {#2} { ##1 \hfil } \unskip }
   }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_center_box:nnn}
+% This function is used for typesetting the content |#2| centering within
+% several horizontal boxes with width |#1|, then underline every line with
+% thickness |#3|.
+%    \begin{macrocode}
 \cs_new_protected:Npn \@@_center_box:nnn #1#2#3
   {
     \mode_leave_vertical:
@@ -375,6 +488,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \group_end:
     \tex_box:D 1
   }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_signature_inline:n}
+% This function is used to include the signature image file inline, i.e.,
+% centering align to the text, in the text, with a height equal to 2.4 times
+% the current font size.
+%    \begin{macrocode}
 \cs_new:Npn \@@_signature_inline:n #1
   {
     \box_move_down:nn { \fp_eval:n { .9 * \f@size } \p@ }
@@ -389,15 +509,17 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \cs_new_nopar:Npn \@@_fontsize:nn #1#2
   {
     \@@_kernel_bilingual:nnn {#1}
-      { \ctex_zihao:n {#2}                                          }
       { \fontsize     {#2} { \fp_eval:n { #2 * 6 / 5 }} \selectfont }
+      { \ctex_zihao:n {#2}                                          }
   }
 %    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_kernel_month:n, \@@_kernel_year:n}
+% These functions are used to typeset month and year in English or Chinese.
 %    \begin{macrocode}
 \cs_new_protected_nopar:Npn \@@_kernel_month:n #1
   {
     \@@_kernel_bilingual:nnn {#1}
-      { \zhdigits { \int_value:w \c_sys_month_int } 月 }
       {
         \if_case:w \int_value:w \c_sys_month_int
           \or: January \or: February \or: March
@@ -406,16 +528,30 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \or: October \or: November \or: December
         \fi:
       }
+      { \zhdigits { \int_value:w \c_sys_month_int } 月 }
   }
 \cs_new_protected_nopar:Npn \@@_kernel_year:n #1
   {
     \@@_kernel_bilingual:nnn {#1}
-      { \zhdigits { \int_value:w \c_sys_year_int  } 年 }
       { \int_value:w \c_sys_year_int }
+      { \zhdigits { \int_value:w \c_sys_year_int  } 年 }
   }
-\cs_new_nopar:Npn \@@_kernel_bilingual:nnn #1#2#3
-  { \str_case:on {#1} { { cn } { #2 } { en } { #3 } } }
 %    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@@_kernel_bilingual:nnn}
+% This function will output |#2| when |#1| equals to |en|, output |#3|
+% when |#1| equals to |cn|.
+%    \begin{macrocode}
+\cs_new_nopar:Npn \@@_kernel_bilingual:nnn #1#2#3
+  { \str_case:on {#1} { { en } { #2 } { cn } { #3 } } }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\printbibliography}
+% \hologo{LaTeX2e} user's interface for printing the bibliography.
+% When the |bibsource| key is assigned in \cs{westlakeset},
+% it will output the complex bibliography;
+% when the |bibsource| key is not assigned,
+% it will output only a chapter title \fbox{|参考文献|}.
 %    \begin{macrocode}
 \hook_gput_code:nnn { env / document / before } { . }
   {
@@ -433,33 +569,31 @@ The Current Maintainer of this work is **Mingyu Xia**.
       } { \newcommand \printbibliography { \chapter* { 参考文献 } } }
   }
 %    \end{macrocode}
+% \end{macro}
+% This is the end of \file{wlu-kernel.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
+% End the optionlist |wlu-kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wlu-kernel>
 %    \end{macrocode}
 % \subsection{\texttt{wlu-params.code.tex}}
+% Start the optionlist |wlu-params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-params>
 %    \end{macrocode}
+% Provide the |params| module.
 %    \begin{macrocode}
 \@@_provide_module:n { params }
 %    \end{macrocode}
+% \begin{variable}{\l_@@_school_en_prop, \l_@@_school_cn_prop}
+% Storing the aliases of the English and Chinese names of schools into 
+% two property lists.
 %    \begin{macrocode}
-\prop_new:N \l_@@_cover_en_prop
-\prop_new:N \l_@@_cover_cn_prop
-\prop_set_from_keyval:Nn \l_@@_cover_cn_prop
-  {
-    science     = 理学院,
-    sci         = 理学院,
-    engineering = 工学院,
-    eng         = 工学院,
-    sls         = 生命科学学院,
-    medicine    = 医学院,
-    med         = 医学院,
-  }
-\prop_set_from_keyval:Nn \l_@@_cover_en_prop
+\prop_new:N \l_@@_school_en_prop
+\prop_new:N \l_@@_school_cn_prop
+\prop_set_from_keyval:Nn \l_@@_school_en_prop
   {
     science     = Science,
     sci         = Science,
@@ -469,9 +603,34 @@ The Current Maintainer of this work is **Mingyu Xia**.
     medicine    = Medicine,
     med         = Medicine,
   }
+\prop_set_from_keyval:Nn \l_@@_school_cn_prop
+  {
+    science     = 理学院,
+    sci         = 理学院,
+    engineering = 工学院,
+    eng         = 工学院,
+    sls         = 生命科学学院,
+    medicine    = 医学院,
+    med         = 医学院,
+  }
 %    \end{macrocode}
+% \end{variable}
+% \begin{variable}
+%   {
+%     \l_@@_cover_id_box,
+%     \l_@@_cover_code_box,
+%     \l_@@_cover_en_table_box,
+%   }
+% \begin{variable}
+%   {
+%     \l_@@_cover_id_dim,
+%     \l_@@_cover_code_dim,
+%     \l_@@_cover_en_table_dim
+%   }
+% Storing the dimension variables by setting the content of boxes:
+% The length of student ID, the length of university code,
+% the length of English cover items.
 %    \begin{macrocode}
-\tl_const:Nn \l_@@_cover_affilid_tl { 14626 }
 \box_new:N \l_@@_cover_id_box
 \box_new:N \l_@@_cover_code_box
 \box_new:N \l_@@_cover_en_table_box
@@ -486,9 +645,24 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \dim_const:Nn \l_@@_cover_en_table_dim
   { \box_wd:N \l_@@_cover_en_table_box }
 %    \end{macrocode}
+% \end{variable}
+% \end{variable}
+% \begin{variable}{\l_@@_cover_affilid_tl}
+% \begin{variable}
+%   {
+%     \l_@@_commitment_a_title_tl,
+%     \l_@@_commitment_b_title_tl,
+%     \l_@@_commitment_a_body_tl,
+%     \l_@@_commitment_b_body_tl
+%   }
+% Store the text contents: The school code, the titles and context of the
+% declaration page.
 %    \begin{macrocode}
+\tl_const:Nn \l_@@_cover_affilid_tl { 14626 }
 \tl_const:Nn \l_@@_commitment_a_title_tl
   { 西湖大学研究生学位论文独创性声明 }
+\tl_const:Nn \l_@@_commitment_b_title_tl
+  { 西湖大学研究生学位论文版权使用授权书 }
 \tl_const:Nn \l_@@_commitment_a_body_tl
   {
     本人声明：所呈交的学位论文是本人在导师指导下进行的研究工作及取得的研究成果。
@@ -496,8 +670,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
     与本人一同参与本研究工作的合作者所做的任何贡献均已在论文中作了明确的说明并表示谢意。
     本声明的法律结果由本人承担。
   }
-\tl_const:Nn \l_@@_commitment_b_title_tl
-  { 西湖大学研究生学位论文版权使用授权书 }
 \tl_const:Nn \l_@@_commitment_b_body_tl
   {
     本学位论文作者完全了解\ \underline{\kaishu 西湖大学}\ 有关收藏和利用博士、
@@ -507,45 +679,68 @@ The Current Maintainer of this work is **Mingyu Xia**.
     可以采用影印、缩印或其它复制手段保存论文。
   }
 %    \end{macrocode}
+% \end{variable}
+% \end{variable}
+% \begin{variable}{\l_@@_load_bib_bool}
+% Boolean for judging whether to load the \pkg{gbt7714} package.
 %    \begin{macrocode}
 \bool_new:N \l_@@_load_bib_bool
 %    \end{macrocode}
+% \end{variable}
+% This is the end of \file{wlu-params.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
+% End the optionlist |wlu-params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wlu-params>
 %    \end{macrocode}
 % \subsection{\texttt{wlu-layout.code.tex}}
+% Start the optionlist |wlu-layout| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-layout>
 %    \end{macrocode}
+% Provide the |layout| module.
 %    \begin{macrocode}
 \@@_provide_module:n { layout }
 %    \end{macrocode}
+% Configure the geometry.
 %    \begin{macrocode}
 \geometry{a4paper, hmargin = 1.25in, vmargin = 1in}
+%    \end{macrocode}
+% \begin{macro}{\maketitle}
+% \begin{macro}{\@@_maketitle_cn:, \@@_maketitle_en:}
+% \hologo{LaTeX2e} user's interface for generating cover page.
+%    \begin{macrocode}
 \RenewDocumentCommand \maketitle {}
+  {
+    \@@_maketitle_cn:
+    \@@_maketitle_en:
+  }
+%    \end{macrocode}
+% Auxiliary commands of \cs{maketitle}.
+%    \begin{macrocode}
+\cs_new_protected:Nn \@@_maketitle_cn:
   {
     \begin{titlepage}
       \group_begin:
-      \raggedleft \noindent
-      \fangsong
-      \linespread{1.0}\selectfont
-      \begin{tabular}
-        {
-          p { 4\ccwd } @{：}
-          p \l_@@_cover_id_dim
-        }
-        \@@_spread_box:nn  { 4\ccwd } { 单位代码 } &
-        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-          { \l_@@_cover_affilid_tl  } \\
-        \@@_spread_box:nn  { 4\ccwd } { 学号     } &
-        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-          { \l_@@_set_id_tl         } \\
-      \end{tabular}
-      \par \group_end:
-      \vspace{1.2\baselineskip}
+        \raggedleft \noindent
+        \fangsong
+        \linespread{1.0}\selectfont
+        \begin{tabular}
+          {
+            p { 4\ccwd } @{：}
+            p \l_@@_cover_id_dim
+          }
+          \@@_spread_box:nn  { 4\ccwd } { 单位代码 } &
+          \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+            { \l_@@_cover_affilid_tl  } \\
+          \@@_spread_box:nn  { 4\ccwd } { 学号     } &
+          \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+            { \l_@@_set_id_tl         } \\
+        \end{tabular}
+        \par \vspace{1.2\baselineskip}
+      \group_end:
       \begin{center}
         \includegraphics[height = 1.63cm]{westlake-badge-cn.pdf}
         \par \vspace{.65\baselineskip}
@@ -565,7 +760,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \@@_spread_box:nn  { 4\ccwd } { 培养单位 } &
           \@@_center_box:nnn {  15ex  } { -4.5pt   }
             {
-              \prop_item:No \l_@@_cover_cn_prop
+              \prop_item:No \l_@@_school_cn_prop
                 { \l_@@_set_school_tl }
             } \\
           \@@_spread_box:nn  { 4\ccwd } { 学科     } &
@@ -578,30 +773,33 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \@@_center_box:nnn {  15ex  } { -4.5pt   }
             { \l_@@_set_PI_tl_a       } \\
         \end{tabular}
-        \par\vspace{3.15\baselineskip}
+        \par \vspace{3.15\baselineskip}
         \@@_fontsize:nn { cn } { 3 }
         \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
       \end{center}
     \end{titlepage}
+  }
+\cs_new_protected:Nn \@@_maketitle_en:
+  {
     \begin{titlepage}
       \group_begin:
-      \raggedleft \noindent
-      \fangsong
-      \linespread{1.0}\selectfont
-      \begin{tabular}
-        {
-          p \l_@@_cover_code_dim @{~}
-          p \l_@@_cover_id_dim
-        }
-        School ~ Code: &
-        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-          { \l_@@_cover_affilid_tl    } \\
-        Student ~ ID:  &
-        \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
-          { \l_@@_set_id_tl           } \\
-      \end{tabular}
+        \raggedleft \noindent
+        \fangsong
+        \linespread{1.0}\selectfont
+        \begin{tabular}
+          {
+            p \l_@@_cover_code_dim @{~}
+            p \l_@@_cover_id_dim
+          }
+          School ~ Code: &
+          \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+            { \l_@@_cover_affilid_tl    } \\
+          Student ~ ID:  &
+          \@@_center_box:nnn { \l_@@_cover_id_dim } { -1.5pt }
+            { \l_@@_set_id_tl           } \\
+        \end{tabular}
+        \par \vspace{1.2\baselineskip}
       \group_end:
-      \par \vspace{1.2\baselineskip}
       \begin{center}
         \includegraphics[height = 1.63cm]{westlake-badge-cn.pdf}
         \par \vspace{2.5\baselineskip}
@@ -613,14 +811,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
               \@@_fontsize:nn { en } { 20 } \selectfont \bfseries \sffamily
               \l_@@_set_title_tl_b
             }
+            \par \vspace{1.1\baselineskip}
         \group_end:
-        \par \vspace{1.1\baselineskip}
         \group_begin:
-        \@@_fontsize:nn { cn } { 4 } \sffamily \bfseries
-          (
-            Degree ~ of ~
-            \bool_if:NTF \l_@@_set_master_bool { Master } { Doctor }
-          )
+          \@@_fontsize:nn { cn } { 4 } \sffamily \bfseries
+            (
+              Degree ~ of ~
+              \bool_if:NTF \l_@@_set_master_bool { Master } { Doctor }
+            )
         \group_end:
       \end{center}
       \vspace{5.15\baselineskip}
@@ -633,17 +831,19 @@ The Current Maintainer of this work is **Mingyu Xia**.
           }
           School:     &
           \@@_center_box:nnn {  15ex  } { -4.8pt   }
-            { \prop_item:No
-                \l_@@_cover_en_prop { \l_@@_set_school_tl }   }\\
+            {
+              \prop_item:No \l_@@_school_en_prop
+                { \l_@@_set_school_tl }
+            } \\
           Discipline: &
           \@@_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \l_@@_set_subject_tl_b   }\\
+            { \l_@@_set_subject_tl_b   } \\
           Candidate:  &
           \@@_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \l_@@_set_author_tl_b    }\\
+            { \l_@@_set_author_tl_b    } \\
           Supervisor: &
           \@@_center_box:nnn {  15ex  } { -4.8pt   }
-                                   { \l_@@_set_PI_tl_b        }\\
+            { \l_@@_set_PI_tl_b        } \\
         \end{tabular}
         \par \vspace{3.9\baselineskip}
         \@@_fontsize:nn { cn } { 3 }
@@ -651,6 +851,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
       \end{center}
     \end{titlepage}
   }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \begin{macro}{\makespine}
+% \hologo{LaTeX2e} user's interface for generating the spine (Chinese: 书脊).
+%    \begin{macrocode}
 \NewDocumentCommand \makespine {}
   {
     \begin{tikzpicture}[remember ~ picture, overlay]
@@ -661,6 +867,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
             (spine-cn) at (current ~ page ~ text ~ area.west) {};
     \end{tikzpicture}
   }
+%    \end{macrocode}
+% \end{macro}
+%    \begin{macrocode}
 \RenewDocumentEnvironment {abstract} { O{cn} }
   {
     \cleardoublepage
@@ -670,33 +879,37 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \noindent
     \@@_kernel_bilingual:nnn {#1}
       {
-        \textbf { 摘要： }
-        \addcontentsline { toc } { chapter } { 摘要     }
-      }
-      {
         \textbf { Abstract:~ }
         \addcontentsline { toc } { chapter } { Abstract }
+      }
+      {
+        \textbf { 摘要： }
+        \addcontentsline { toc } { chapter } { 摘要     }
       }
     \ignorespaces
   } { \@endparpenalty\@M }
 \hook_gput_code:nnn { env / abstract / before } { . }
   { \linespread{1.63}\selectfont }
+%    \end{macrocode}
+%    \begin{macrocode}
 \NewDocumentCommand \keywords { m }
   {
     \par \noindent
     \@@_kernel_bilingual:nnn { \l_@@_abstract_language_tl }
-      { \textbf { 关键词：    } \clist_use:nn {#1} { ； } }
       { \textbf { Keywords: ~ } \clist_use:nn {#1} { ;~ } }
+      { \textbf { 关键词：    } \clist_use:nn {#1} { ； } }
   }
+%    \end{macrocode}
+%    \begin{macrocode}
 \newif\if@mainmatter \@mainmattertrue
 \newcommand \frontmatter
-  {\cleardoublepage \@mainmatterfalse \pagenumbering {roman}}
+  { \cleardoublepage \@mainmatterfalse \pagenumbering {roman} }
 \newcommand \mainmatter
-  {
-    \cleardoublepage \@mainmattertrue \pagenumbering {arabic}
-  }
+  { \cleardoublepage \@mainmattertrue \pagenumbering {arabic} }
 % \hook_gput_code:nnn { cmd / @schapter / after } { . }
 %   { \addcontentsline{toc}{chapter}{\CTEX@chaptername} }
+%    \end{macrocode}
+%    \begin{macrocode}
 \NewDocumentCommand \commitment { O{} }
   {
     \begin{titlepage}
@@ -746,7 +959,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     format+    = \@@_fontsize:nn { cn } { 3 } \sffamily \mdseries,
     number     = \arabic{chapter},
-    beforeskip = 40pt, afterskip = 30pt,
+    beforeskip = 40pt,     afterskip = 30pt,
     aftername  = \enspace, fixskip,
     tocline    = \CTEXnumberline{#1}#2
   }
@@ -756,8 +969,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \ctex_set:nn { section }
   {
     format+    = \@@_fontsize:nn { cn } { 4 } \sffamily \mdseries \raggedright,
-    beforeskip = 18pt, afterskip = 15pt,
-    aftername  = \enspace, fixskip,
+    beforeskip = 18pt,     afterskip = 15pt,
+    aftername  = \enspace, fixskip
   }
 %    \end{macrocode}
 % Subsection (|Heading 3|) format.
@@ -765,17 +978,17 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \ctex_set:nn { subsection }
   {
     format+    = \@@_fontsize:nn { en } { 13 } \sffamily \mdseries \raggedright,
-    beforeskip = 15.5pt, afterskip = 13.5pt,
-    aftername = \quad, fixskip
+    beforeskip = 15.5pt,   afterskip = 13.5pt,
+    aftername  = \quad,    fixskip
   }
 %    \end{macrocode}
 % Susubsection (|Heading 4|) format.
 %    \begin{macrocode}
 \ctex_set:nn { subsubsection }
   {
-    format+ = \ctex_zihao:n { -4 } \sffamily \mdseries \raggedright,
-    beforeskip = 13pt, afterskip = 12pt,
-    aftername = \quad, fixskip
+    format+    = \ctex_zihao:n { -4 } \sffamily \mdseries \raggedright,
+    beforeskip = 13pt,     afterskip = 12pt,
+    aftername  = \quad,    fixskip
   }
 %    \end{macrocode}
 % Table of contents format.
@@ -793,12 +1006,15 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \renewcommand \cftdotsep       { .5                         }
 \renewcommand \@pnumwidth      { 2ex                        }
 %    \end{macrocode}
+% This is the end of \file{wlu-layout.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
+% End the optionlist |wlu-layout| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wlu-layout>
 %    \end{macrocode}
+% Restore the namespace.
 %    \begin{macrocode}
 %<@@=>
 %    \end{macrocode}

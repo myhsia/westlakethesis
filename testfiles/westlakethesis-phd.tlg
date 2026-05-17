@@ -73,7 +73,7 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 32.4811fil
+...\vbox(700.50687+0.0)x416.83289, glue set 41.15253fil
 ....\write-{}
 ....\special{pdf:majorversion 1}
 ....\special{pdf:minorversion 7}
@@ -219,7 +219,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0
-....\glue 26.0171
+....\glue 17.34474
 ....\glue 0.0
 ....\penalty -51
 ....\glue 13.0 plus 7.0 minus 8.0
@@ -746,9 +746,10 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 30.43684fil
+...\vbox(700.50687+0.0)x416.83289, glue set 9.81923fil
 ....\glue(\topskip) 0.0
 ....\hbox(26.06523+20.04274)x416.83289, glue set 257.93204fil
+.....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(26.06523+20.04274)x158.90085
 ......\mathon
 ......\vbox(26.06523+20.04274)x158.90085
@@ -853,9 +854,9 @@ Completed box being shipped out [1]
 ........\glue(\tabskip) 0.0
 ......\mathoff
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0
-....\glue 26.0171
+....\glue 17.34474
 ....\glue 0.0
 ....\penalty -51
 ....\glue 13.0 plus 7.0 minus 8.0
@@ -893,7 +894,7 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\lineskip) 1.0
+....\glue(\baselineskip) 9.35776
 ....\hbox(31.35442+18.30566)x416.83289, glue set 20.84293fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
@@ -952,7 +953,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue 23.84921
+....\glue 44.78363
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
