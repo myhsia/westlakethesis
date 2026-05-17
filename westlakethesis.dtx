@@ -110,6 +110,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
 \newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
+\makeindex
 \begin{document}
   \DocInput{\jobname.dtx}
 \end{document}
@@ -131,13 +132,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
-%     \cs{westlakeset} \marg{key-value list}
+%     \tn{westlakeset} \marg{key-value list}
 %   \end{syntax}
 % \end{function}
 %
 % \begin{function}{\maketitle}
 %   \begin{syntax}
-%     \cs{maketitle}
+%     \tn{maketitle}
 %   \end{syntax}
 %   This command is used to generate the cover page. One should add the line
 %   rightly after |\begin{document}|.
@@ -148,12 +149,20 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \end{quote}
 % \end{function}
 %
+% \begin{function}{\keywords}
+%   \begin{syntax}
+%     \tn{keywords} \marg{comma-separated list}.
+%   \end{syntax}
+%   This command is used to input keywords, which should be used within the
+%   \env{abstract} environment.
+% \end{function}
+%
 % \begin{function}{\printbibliography}
 %   \begin{syntax}
-%     \cs{printbibliography}
+%     \tn{printbibliography}
 %   \end{syntax}
 %   This command is used to output the bibliography. If the users have not
-%   assigned the |bibsource| key in~\cs{westlakeset}, then only a chapter title
+%   assigned the |bibsource| key in~\tn{westlakeset}, then only a chapter title
 %   \fbox{|参考文献|} will be outputted.
 % \end{function}
 %
@@ -174,13 +183,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
-%     \cs{westlakeset} \marg{\hbox{键值列表}}
+%     \tn{westlakeset} \marg{\hbox{键值列表}}
 %   \end{syntax}
 % \end{function}
 %
 % \begin{function}{\maketitle}
 %   \begin{syntax}
-%     \cs{maketitle}
+%     \tn{maketitle}
 %   \end{syntax}
 %   此命令用于生成封面页, 应在 |\begin{document}| 后使用.
 %   \begin{quote}
@@ -190,11 +199,18 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \end{quote}
 % \end{function}
 %
+% \begin{function}{\keywords}
+%   \begin{syntax}
+%     \tn{keywords} \marg{comma-separated list}.
+%   \end{syntax}
+%   此命令用于输入关键词, 需在 \env{abstract} 环境中使用.
+% \end{function}
+%
 % \begin{function}{\printbibliography}
 %   \begin{syntax}
-%     \cs{printbibliography}
+%     \tn{printbibliography}
 %   \end{syntax}
-%   此命令用于输出参考文献. 若用户未在 \cs{westlakeset} 中指定 |bibsource| 键,
+%   此命令用于输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource| 键,
 %   则只会输出 \fbox{|参考文献|} 章节标题.
 % \end{function}
 % \end{documentation}
@@ -307,7 +323,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \l_@@_set_master_bool,
 %     \l_@@_set_bib_str,
 %   }
-% Key–value definitions for the \cs{westlakeset} command.
+% Key–value definitions for the \tn{westlakeset} command.
 %    \begin{macrocode}
 \keys_define:nn { @@ / set }
   {
@@ -378,7 +394,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     {./figs/} {./pics/} {./figures/} {./pictures/}
   }
 %    \end{macrocode}
-% Configure the metadata of the document via \cs{hyperref}.
+% Configure the metadata of the document via \pkg{hyperref}.
 %    \begin{macrocode}
 \hypersetup { hidelinks }
 %    \end{macrocode}
@@ -390,7 +406,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \hypertarget{bool:gbt7714_load}{Determine whether to load the \pkg{gbt7714}
 %   package due to the boolean \cs{l_@@_load_bib_bool}}, which has been set via
-% \cs{westlakeset} \hyperlink{bool:gbt7714_set}{here}.
+% \tn{westlakeset} \hyperlink{bool:gbt7714_set}{here}.
 %    \begin{macrocode}
 \hook_gput_code:nnn { env / document / before } { . }
   {
@@ -436,7 +452,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \cs_generate_variant:Nn \seq_get_right:NN { Nc }
 %    \end{macrocode}
 % \begin{variable}{\l_@@_set_tmpa_seq}
-% Temporary variable used in \cs{\@@_parse_slash_ab:c}.
+% Temporary variable used in \cs{@@_parse_slash_ab:c}.
 %    \begin{macrocode}
 \seq_clear_new:N \l_@@_set_tmpa_seq
 %    \end{macrocode}
@@ -548,7 +564,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{macro}
 % \begin{macro}{\printbibliography}
 % \hologo{LaTeX2e} user's interface for printing the bibliography.
-% When the |bibsource| key is assigned in \cs{westlakeset},
+% When the |bibsource| key is assigned in \tn{westlakeset},
 % it will output the complex bibliography;
 % when the |bibsource| key is not assigned,
 % it will output only a chapter title \fbox{|参考文献|}.
@@ -718,7 +734,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \@@_maketitle_en:
   }
 %    \end{macrocode}
-% Auxiliary commands of \cs{maketitle}.
+% Auxiliary commands of \tn{maketitle}.
 %    \begin{macrocode}
 \cs_new_protected:Nn \@@_maketitle_cn:
   {
@@ -854,7 +870,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
-% \begin{macro}{\makespine}
+% \begin{macro}[int]{\makespine}
 % \hologo{LaTeX2e} user's interface for generating the spine (Chinese: 书脊).
 %    \begin{macrocode}
 \NewDocumentCommand \makespine {}
@@ -869,8 +885,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
+% \DescribeEnv{abstract}
+% Generate the abstract in English and Chinese, and the command \tn{keywords}
+% inside this environment will appear as English or Chinese version due to |#1|.
 %    \begin{macrocode}
-\RenewDocumentEnvironment {abstract} { O{cn} }
+\RenewDocumentEnvironment {abstract} { O{en} }
   {
     \cleardoublepage
     \tl_set:Nn \l_@@_abstract_language_tl {#1}
@@ -891,6 +910,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \hook_gput_code:nnn { env / abstract / before } { . }
   { \linespread{1.63}\selectfont }
 %    \end{macrocode}
+% \begin{macro}{\keywords}
+% \hologo{LaTeX2e} user's interface for typesetting keywords.
+% Language will be chosen automatically inside the \env{abstract} environment.
 %    \begin{macrocode}
 \NewDocumentCommand \keywords { m }
   {
@@ -900,8 +922,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
       { \textbf { 关键词：    } \clist_use:nn {#1} { ； } }
   }
 %    \end{macrocode}
+% \end{macro}
+% \begin{macro}[int]{\if@mainmatter, \frontmatter, \mainmatter}
+% Copy the commands from the \cls{book} class.
+% \end{macro}
 %    \begin{macrocode}
-\newif\if@mainmatter \@mainmattertrue
+\newif \if@mainmatter \@mainmattertrue
 \newcommand \frontmatter
   { \cleardoublepage \@mainmatterfalse \pagenumbering {roman} }
 \newcommand \mainmatter
@@ -909,6 +935,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \hook_gput_code:nnn { cmd / @schapter / after } { . }
 %   { \addcontentsline{toc}{chapter}{\CTEX@chaptername} }
 %    \end{macrocode}
+% \begin{macro}{\commitment}
+% \hologo{LaTeX2e} user's interface for typesetting the commitment page,
+% with signature image attached.
 %    \begin{macrocode}
 \NewDocumentCommand \commitment { O{} }
   {
@@ -953,6 +982,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \end{titlepage}
   }
 %    \end{macrocode}
+% \end{macro}
 % Chapter (|Heading 1|) format.
 %    \begin{macrocode}
 \ctex_set:nn { chapter }
@@ -1019,4 +1049,4 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<@@=>
 %    \end{macrocode}
 % \end{implementation}
-% 
+% \PrintIndex
