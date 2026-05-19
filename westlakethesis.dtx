@@ -101,10 +101,18 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \fi
 %</internal>
 %
-%<+wlu-class>\GetIdInfo$Id$
-%<+wlu-class>  {Automatically add pinyin to Chinese characters}
-%<+wlu-class>\ProvidesExplPackage{\ExplFileName}
-%<+wlu-class>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
+%<+!driver>\GetIdInfo$Id$
+%<wlu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
+%<wlu-class>\ProvidesExplClass {\ExplFileName}
+%<wlu-driver>  {Loading the base class and required packages (WESTLAKE)}
+%<wlu-driver>\ProvidesExplClass {wlu-driver.code.tex}
+%<wlu-kernel>  {Inner functions for the |layout| module (WESTLAKE)}
+%<wlu-kernel>\ProvidesExplClass {wlu-kernel.code.tex}
+%<wlu-params>  {Formats of Westlake University dissertations (WESTLAKE)}
+%<wlu-params>\ProvidesExplClass {wlu-params.code.tex}
+%<wlu-layout>  {Storing the constant variables (WESTLAKE)}
+%<wlu-layout>\ProvidesExplClass {wlu-layout.code.tex}
+%<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
 %<*driver>
 \documentclass[11pt, letterpaper, cs-break = true]{l3doc}
 \ExplSyntaxOn
@@ -234,15 +242,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 %<*wlu-class>
 %    \end{macrocode}
-% Define the date, version, and summary variables, and declare the class.
-%    \begin{macrocode}
-\def \wlu@date         {2026-05-20}
-\def \wlu@version      {0.0.1}
-\def \wlu@maintainerid {myhsia}
-\def \wlu@tldr         {LaTeX Template Bundle for Westlake University}
-\ProvidesExplClass {westlakethesis} {\ExplFileDate} {\ExplFileVersion}
-  {\ExplFileDescription}
-%    \end{macrocode}
 % \begin{macro}
 %   {
 %     \@@_msg_new:nn,
@@ -268,9 +267,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \@@_msg_new:nn { not found module }
   { The ~ WestlakeThesis ~ module ~ `#1' ~ not ~ found. }
 %    \end{macrocode}
-% \begin{macro}{\@@_load_module:n, \@@_provide_module:n}
-% Functions for loading module in \file{westlakethesis.cls} and providing module
-% in \file{wlu-*.code.tex}.
+% \begin{macro}{\@@_load_module:n}
+% Functions for loading module in \file{westlakethesis.cls}.
 %    \begin{macrocode}
 \cs_new_protected_nopar:Npn \@@_load_module:n #1
   {
@@ -280,21 +278,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
           { \@@_msg_error:nn { not found module } { ##1 } }
       }
   }
-\cs_new_protected_nopar:Npn \@@_provide_module:n #1
-  {
-    \ProvidesExplFile { wlu-#1.code.tex } { \wlu@date } { \wlu@version }
-      {WestlakeThesis ~ \text_titlecase:n {#1} ~ Module}
-  }
 %    \end{macrocode}
 % \end{macro}
 % Load the |driver|, |kernel|, |params|, and |layout| modules respectively.
 % \begin{itemize}
-%   \item |driver|: Loads the base class, required packages, and initially
-%   configure them.
-%   \item |kernel|: Provides inner functions, which will be used in the
-%   |layout| module.
-%   \item |params|: Stores all of the constant variables.
-%   \item |layout|: Provides the format of Westlake University dissertations.
+%   \item |driver|: Loading the base class and required packages.
+%   \item |kernel|: Inner functions for the |layout| module.
+%   \item |params|: Storing the constant variables.
+%   \item |layout|: Formats of Westlake University dissertations.
 % \end{itemize}
 %    \begin{macrocode}
 \@@_load_module:n { driver, kernel, params, layout }
@@ -361,10 +352,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Start the optionlist |wlu-driver| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-driver>
-%    \end{macrocode}
-% Provide the |driver| module.
-%    \begin{macrocode}
-\@@_provide_module:n { driver }
 %    \end{macrocode}
 % Prevent the warnings raised by \pkg{xeCJK} (valid for \hologo{XeTeX})
 % when redefining fonts.
@@ -436,10 +423,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Start the optionlist |wlu-kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-kernel>
-%    \end{macrocode}
-% Provide the |kernel| module.
-%    \begin{macrocode}
-\@@_provide_module:n { kernel }
 %    \end{macrocode}
 % \begin{macro}{\@@_parse_slash_ab:c}
 % This function is used for parsing the binary sequence variable \cs{\#1}
@@ -606,10 +589,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 %<*wlu-params>
 %    \end{macrocode}
-% Provide the |params| module.
-%    \begin{macrocode}
-\@@_provide_module:n { params }
-%    \end{macrocode}
 % \begin{variable}{\l_@@_school_en_prop, \l_@@_school_cn_prop}
 % Storing the aliases of the English and Chinese names of schools into 
 % two property lists.
@@ -722,10 +701,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Start the optionlist |wlu-layout| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*wlu-layout>
-%    \end{macrocode}
-% Provide the |layout| module.
-%    \begin{macrocode}
-\@@_provide_module:n { layout }
 %    \end{macrocode}
 % Configure the geometry.
 %    \begin{macrocode}
