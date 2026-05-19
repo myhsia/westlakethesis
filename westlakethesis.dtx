@@ -25,6 +25,7 @@
 %                                   wlu-kernel.code.tex,                *
 %                                   wlu-params.code.tex,                *
 %                                   wlu-layout.code.tex,                *
+%                                   wlu-l3xdoc.code.tex,                *
 %           the documentation files westlakethesis.pdf,                 *
 %                               and README.md.                          *
 % -----------------------------------------------------------------------
@@ -113,18 +114,39 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<wlu-params>\ProvidesExplFile {wlu-params.code.tex}
 %<wlu-layout>  {Storing the constant variables (WESTLAKE)}
 %<wlu-layout>\ProvidesExplFile {wlu-layout.code.tex}
+%<wlu-l3xdoc>  {Documentation (WESTLAKE)}
+%<wlu-l3xdoc>\ProvidesExplFile {wlu-l3xdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
 %</wlu-class|wlu-driver|wlu-kernel|wlu-params|wlu-layout>
 %<*driver>
 \documentclass[11pt, letterpaper, cs-break = true]{l3doc}
-\ExplSyntaxOn
+\ExplSyntaxOn \makeatletter
 \tl_greplace_all:Nnn \ExplFileDate {/} {-}
 \msg_redirect_module:nnn { l3doc } { warning } { none }
-\ExplSyntaxOff
+\newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
+\DeclareDocumentCommand \key { s m }
+  {
+    \IfBooleanTF {#1} { \textcolor{red}{\ttfamily \bfseries #2} }
+      {
+        \group_begin: \ttfamily
+        \seq_set_from_clist:Nn \l_tmpa_seq {#2}
+        \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
+          { \exp_not:n { \textcolor{red}{\bfseries ##1} } }
+        \seq_use:Nn \l_tmpb_seq { ,~ } \:=\:
+        \group_end:
+      }
+  }
+\DeclareCommandCopy \val \meta
+\def \TTF {\textup{\textbf{true}\makebox[0pt][r]{^^A
+  \underline {\phantom{\bfseries true}\kern-0.1em}}\textbar}false}
+\def \TFF {true\textup{\textbar\textbf{false}\makebox[0pt][r]{^^A
+  \underline {\phantom{\bfseries false}\kern-0.1em}}}}
+\newlist{keyval}{itemize}{10}
+\setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
+\makeatother \ExplSyntaxOff
 \usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
-\newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
 \makeindex
 \begin{document}
   \DocInput{\jobname.dtx}
@@ -144,24 +166,49 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \author{Mingyu Xia\thanks{\mail{xiamingyu@westlake.edu.cn}}}
 % \date{Released \ExplFileDate\quad \texttt{\ExplFileVersion}}
 % \maketitle
+% \begin{abstract}
+% \end{abstract}
+% \clearpage
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
 %     \tn{westlakeset} \marg{key-value list}
 %   \end{syntax}
-% This command is used to configure the information of the thesis.
-% Its mandatory argument accepts the following key-values:
-% \begin{texnote}
-% It is only allowed to use within the preamble.
-% \end{texnote}
+% Configure the information of the thesis, and shoulde be used only within the
+% preamble. Its mandatory argument accepts the following key-values:
+% \begin{keyval}
+%   \item[\key{id}] \val{token list}: Configure the student ID.
+%   \item[\key{title}] \val{token list}: Configure the title,
+%   with the bilingual separated with a slash |/|.
+%   \item[\key{school}] \val{key}: Configure the school,
+%   only the abbreviation is accepted. The template can map it to the full name
+%   automatically then output on the bilingual covers.
+%   \begin{multicols}{2}\small
+%   \begin{description}
+%     \item [|science|, |sci|]: School of Science
+%     \item [|engineering|, |eng|]: School of Engineering
+%     \item [|sls|]: School of Life Sciences
+%     \item [|medicine|, |med|]: School of Medicine
+%   \end{description}
+%   \end{multicols}
+%   \item[\key{subject}] \val{token list}: Configure the subject,
+%   with the bilingual separated with a slash |/|.
+%   \item[\key{author}] \val{token list}: Configure the author,
+%   with the bilingual separated with a slash |/|.
+%   \item[\key{PI}] \val{token list}: Configure the supervisor,
+%   with the bilingual separated with a slash |/|.
+%   \item[\key{master}] \val \TFF: Switch the format to Master.
+%   \item[\key{bibsource}] \val{string}: Configure the source of
+%   the bibliography.
+% \end{keyval}
 % \end{function}
 %
 % \begin{function}{\maketitle}
-%   This command is used to generate the cover page.
+%   Generates the cover page.
 % \end{function}
 %
 % \DescribeEnv{abstract}^^A
-% This environment is used to inputting the abstract.
+% Inputs the abstract.
 % It accepts one optional argument to determine the language of abstract.
 % \begin{syntax}
 %   |\begin{abstract}[en] ... \end{abstract}|\\
@@ -172,14 +219,28 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \begin{syntax}
 %     \tn{keywords} \marg{comma-separated list}.
 %   \end{syntax}
-%   This command is used to input keywords, which should be used within the
-%   \env{abstract} environment.
+%   Inputs the keywords, and should not outside the \env{abstract} environment.
 % \end{function}
 %
 % \begin{function}{\printbibliography}
-%   This command is used to output the bibliography. If the users have not
-%   assigned the |bibsource| key in~\tn{westlakeset}, then only a chapter title
-%   will be outputted.
+%   Print the bibliography. If the users have not assigned the |bibsource| key
+%   in~\tn{westlakeset}, then only a chapter title will be outputted.
+% \end{function}
+%
+% \begin{function}{\commitment}
+%   \begin{syntax}
+%   \tn{commitment} \oarg{Comma-separated list}
+%   \end{syntax}
+%   This command is used to generate the commitment page.
+%   It accepts one optional argument to include the signatures and dates, the
+%   signature file and data should be delimited with a half-width comma (|,|).
+%   The university requires 3 sets of signature and 3 sets of date on the
+%   commitment page. So, as an example, one can write
+%   \begin{quote}
+%   |\commitment [ example-image-a, June 2025,|\\
+%   |              example-image-a, July 2025,|\\
+%   |              example-image-b, July 2025 ]|
+%   \end{quote}
 % \end{function}
 %
 % \end{documentation}
@@ -196,24 +257,48 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \author{夏明宇\thanks{\mail{xiamingyu@westlake.edu.cn}}}
 % \date{发行于 2026-05-20\quad \texttt{v0.0.1}}
 % \maketitle
+% \begin{abstract}
+% \end{abstract}
+% \clearpage
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
 %     \tn{westlakeset} \marg{键值列表}
 %   \end{syntax}
-% 此命令用于设置论文信息,
+% 设置论文信息, 仅限在导言区使用.
 % 其强制参数接受如下键值对:
-% \begin{texnote}
-% 仅限在导言区使用.
-% \end{texnote}
+% \begin{keyval}
+%   \item[\key{id}] \val{token list}: 设置学号信息.
+%   \item[\key{title}] \val{token list}: 设置论文标题,
+%   中文标题与英文标题之间需以斜线 |/| 分割.
+%   \item[\key{school}] \val{key}: 设置所在学院,
+%   仅接受学院简称. 模板会自动将简称映射到全称并输出在对应的中英文封面上.
+%   \begin{multicols}{2}
+%   \begin{description}
+%     \item [|science|, |sci|]: 理学院
+%     \item [|engineering|, |eng|]: 工学院
+%     \item [|sls|]: 生命科学学院
+%     \item [|medicine|, |med|]: 医学院
+%   \end{description}
+%   \end{multicols}
+%   \item[\key{subject}] \val{token list}: 设置所属专业,
+%   中文专业名称与英文专业名称之间需以斜线 |/| 分割.
+%   \item[\key{author}] \val{token list}: 设置作者姓名.
+%   中文姓名与姓名之间需以斜线 |/| 分割.
+%   \item[\key{PI}] \val{token list}: 设置导师姓名.
+%   中文姓名与姓名之间需以斜线 |/| 分割.
+%   \item[\key{master}] \val \TFF: 切换至硕士学位论文格式.
+%   \item[\key{bibsource}] \val{string}: 设置参考文献源.
+% \end{keyval}
 % \end{function}
 %
 % \begin{function}{\maketitle}
-%   此命令用于生成封面页.
+%   生成封面页.
 % \end{function}
 %
 % \DescribeEnv{abstract}
-% 此环境用于输入摘要, 其接受一个可选参数用于选择摘要的语言.
+% 输入摘要.
+% 其接受一个可选参数用于选择摘要的语言.
 % \begin{syntax}
 %   |\begin{abstract}[en] ... \end{abstract}|\\
 %   |\begin{abstract}[cn] ... \end{abstract}|\\
@@ -221,18 +306,36 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\keywords}
 %   \begin{syntax}
-%     \tn{keywords} \marg{comma-separated list}.
+%     \tn{keywords} \marg{逗号分隔列表}.
 %   \end{syntax}
-%   此命令用于输入关键词, 需在 \env{abstract} 环境中使用.
+%   输入关键词, 需在 \env{abstract} 环境中使用.
 % \end{function}
 %
 % \begin{function}{\printbibliography}
-%   此命令用于输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource| 键,
+%   输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource| 键,
 %   则只会输出章节标题.
 % \end{function}
+%
+% \begin{function}{\commitment}
+%   \begin{syntax}
+%   \tn{commitment} \oarg{逗号分隔列表}
+%   \end{syntax}
+%   此命令用于生成承诺书.
+%   其接受一个可选参数用于插入签名和日期,
+%   签名文件和日期之间需以半角逗号 (|,|) 间隔.
+%   根据大学要求, 签名页上共有 3 组签名与日期.
+%   例如, 用户可以输入
+%   \begin{quote}
+%   |\commitment [ example-image-a, June 2025,|\\
+%   |              example-image-a, July 2025,|\\
+%   |              example-image-b, July 2025 ]|
+%   \end{quote}
+% \end{function}
+%
 % \end{documentation}
 %
 % \StopEventually{\PrintIndex}
+% \clearpage
 %
 % \begin{implementation}
 % \section{The source code}
@@ -661,7 +764,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \l_@@_commitment_b_body_tl
 %   }
 % Store the text contents: The school code, the titles and context of the
-% declaration page.
+% commitment page.
 %    \begin{macrocode}
 \tl_const:Nn \l_@@_cover_affilid_tl { 14626 }
 \tl_const:Nn \l_@@_commitment_a_title_tl
@@ -1037,4 +1140,4 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \end{implementation}
 % \clearpage
-% \PrintIndex
+^^A % \PrintIndex
