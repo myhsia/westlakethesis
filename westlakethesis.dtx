@@ -102,22 +102,23 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*wlu-class|wlu-driver|wlu-kernel|wlu-params|wlu-layout>
-%<+!driver>\GetIdInfo$Id$
+%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-20 myhsia<xiamingyu@westlake.edu.cn>$
 %<wlu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
 %<wlu-class>\ProvidesExplClass {\ExplFileName}
 %<wlu-driver>  {Loading the base class and required packages (WESTLAKE)}
-%<wlu-driver>\ProvidesExplClass {wlu-driver.code.tex}
+%<wlu-driver>\ProvidesExplFile {wlu-driver.code.tex}
 %<wlu-kernel>  {Inner functions for the |layout| module (WESTLAKE)}
-%<wlu-kernel>\ProvidesExplClass {wlu-kernel.code.tex}
+%<wlu-kernel>\ProvidesExplFile {wlu-kernel.code.tex}
 %<wlu-params>  {Formats of Westlake University dissertations (WESTLAKE)}
-%<wlu-params>\ProvidesExplClass {wlu-params.code.tex}
+%<wlu-params>\ProvidesExplFile {wlu-params.code.tex}
 %<wlu-layout>  {Storing the constant variables (WESTLAKE)}
-%<wlu-layout>\ProvidesExplClass {wlu-layout.code.tex}
+%<wlu-layout>\ProvidesExplFile {wlu-layout.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
 %</wlu-class|wlu-driver|wlu-kernel|wlu-params|wlu-layout>
 %<*driver>
 \documentclass[11pt, letterpaper, cs-break = true]{l3doc}
 \ExplSyntaxOn
+\tl_greplace_all:Nnn \ExplFileDate {/} {-}
 \msg_redirect_module:nnn { l3doc } { warning } { none }
 \ExplSyntaxOff
 \usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
@@ -141,7 +142,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   Westlake University Dissertation \LaTeX\ Template
 % }
 % \author{Mingyu Xia\thanks{\mail{xiamingyu@westlake.edu.cn}}}
-% \date{Released 2026-05-20\quad \texttt{v0.0.1}}
+% \date{Released \ExplFileDate\quad \texttt{\ExplFileVersion}}
 % \maketitle
 %
 % \begin{function}{\westlakeset}

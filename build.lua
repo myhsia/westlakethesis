@@ -15,7 +15,7 @@ date                = "2026-05-20"
 maintainer          = "Mingyu Xia"
 uploader            = "Mingyu Xia"
 maintainid          = "myhsia"
-email               = "myhsia@outlook.com"
+email               = "xiamingyu@westlake.edu.cn"
 repository          = "https://github.com/" .. maintainid .. "/" .. module
 summary             = "LaTeX bundle for Westlake University dissertations."
 description         = "The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations, including Ph.D. thesis and Beamer theme."
@@ -56,16 +56,12 @@ uploadconfig  = {
 function update_tag(file, content, tagname, tagdate)
   tagname = version
   tagdate = date
-  if string.match(file, "%.dtx$") then
+  if string.match(file, module .. ".dtx$") then
     content = string.gsub(content,
-      "\\def \\wlu@date    %{[^}]+%}",
-      "\\def \\wlu@date    {" .. tagdate .. "}")
-    content = string.gsub(content,
-      "\\def \\wlu@version %{[^}]+%}",
-      "\\def \\wlu@version {" .. tagname .. "}")
-    content = string.gsub(content,
-      "\\date{Released %d+%-%d+%-%d+\\quad \\texttt{v([%d%.A-Z]+)}}",
-      "\\date{Released " .. tagdate .. "\\quad \\texttt{" .. tagname .. "}}")
+      "%%<++!driver>\\GetIdInfo $Id: " .. module .. ".dtx " ..
+      "v%d+%.%d+%.%d+ %d+%-%d+%-%d+ [^<]+<[^>]+>",
+      "%%<+!driver>\\GetIdInfo $Id: "  .. module .. ".dtx " ..
+      tagname .. " " .. tagdate .. " " .. maintainid .. "<" .. email .. ">")
   end
   return content
 end
