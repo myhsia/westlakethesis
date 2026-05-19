@@ -101,12 +101,16 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \fi
 %</internal>
 %
+%<+wlu-class>\GetIdInfo$Id$
+%<+wlu-class>  {Automatically add pinyin to Chinese characters}
+%<+wlu-class>\ProvidesExplPackage{\ExplFileName}
+%<+wlu-class>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %<*driver>
 \documentclass[11pt, letterpaper, cs-break = true]{l3doc}
 \ExplSyntaxOn
 \msg_redirect_module:nnn { l3doc } { warning } { none }
 \ExplSyntaxOff
-\usepackage[scheme = plain, fontset = lxgw, linespread = 1.2]{ctex}
+\usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
 \newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
@@ -134,20 +138,24 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \begin{syntax}
 %     \tn{westlakeset} \marg{key-value list}
 %   \end{syntax}
+% This command is used to configure the information of the thesis.
+% Its mandatory argument accepts the following key-values:
+% \begin{texnote}
+% It is only allowed to use within the preamble.
+% \end{texnote}
 % \end{function}
 %
 % \begin{function}{\maketitle}
-%   \begin{syntax}
-%     \tn{maketitle}
-%   \end{syntax}
-%   This command is used to generate the cover page. One should add the line
-%   rightly after |\begin{document}|.
-%   \begin{quote}
-%     |\westlakeset{...}|\\
-%     |\begin{document}|\\
-%     |\maketitle|
-%   \end{quote}
+%   This command is used to generate the cover page.
 % \end{function}
+%
+% \DescribeEnv{abstract}^^A
+% This environment is used to inputting the abstract.
+% It accepts one optional argument to determine the language of abstract.
+% \begin{syntax}
+%   |\begin{abstract}[en] ... \end{abstract}|\\
+%   |\begin{abstract}[cn] ... \end{abstract}|\\
+% \end{syntax}
 %
 % \begin{function}{\keywords}
 %   \begin{syntax}
@@ -158,12 +166,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{function}
 %
 % \begin{function}{\printbibliography}
-%   \begin{syntax}
-%     \tn{printbibliography}
-%   \end{syntax}
 %   This command is used to output the bibliography. If the users have not
 %   assigned the |bibsource| key in~\tn{westlakeset}, then only a chapter title
-%   \fbox{|参考文献|} will be outputted.
+%   will be outputted.
 % \end{function}
 %
 % \end{documentation}
@@ -183,21 +188,25 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
-%     \tn{westlakeset} \marg{\hbox{键值列表}}
+%     \tn{westlakeset} \marg{键值列表}
 %   \end{syntax}
+% 此命令用于设置论文信息,
+% 其强制参数接受如下键值对:
+% \begin{texnote}
+% 仅限在导言区使用.
+% \end{texnote}
 % \end{function}
 %
 % \begin{function}{\maketitle}
-%   \begin{syntax}
-%     \tn{maketitle}
-%   \end{syntax}
-%   此命令用于生成封面页, 应在 |\begin{document}| 后使用.
-%   \begin{quote}
-%     |\westlakeset{...}|\\
-%     |\begin{document}|\\
-%     |\maketitle|
-%   \end{quote}
+%   此命令用于生成封面页.
 % \end{function}
+%
+% \DescribeEnv{abstract}
+% 此环境用于输入摘要, 其接受一个可选参数用于选择摘要的语言.
+% \begin{syntax}
+%   |\begin{abstract}[en] ... \end{abstract}|\\
+%   |\begin{abstract}[cn] ... \end{abstract}|\\
+% \end{syntax}
 %
 % \begin{function}{\keywords}
 %   \begin{syntax}
@@ -207,15 +216,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{function}
 %
 % \begin{function}{\printbibliography}
-%   \begin{syntax}
-%     \tn{printbibliography}
-%   \end{syntax}
 %   此命令用于输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource| 键,
-%   则只会输出 \fbox{|参考文献|} 章节标题.
+%   则只会输出章节标题.
 % \end{function}
 % \end{documentation}
 %
-% \clearpage
+% \StopEventually{\PrintIndex}
 %
 % \begin{implementation}
 % \section{The source code}
@@ -234,7 +240,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \def \wlu@version      {0.0.1}
 \def \wlu@maintainerid {myhsia}
 \def \wlu@tldr         {LaTeX Template Bundle for Westlake University}
-\ProvidesExplClass {westlakethesis} {\wlu@date} {\wlu@version} {\wlu@tldr}
+\ProvidesExplClass {westlakethesis} {\ExplFileDate} {\ExplFileVersion}
+  {\ExplFileDescription}
 %    \end{macrocode}
 % \begin{macro}
 %   {
@@ -567,7 +574,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % When the |bibsource| key is assigned in \tn{westlakeset},
 % it will output the complex bibliography;
 % when the |bibsource| key is not assigned,
-% it will output only a chapter title \fbox{|参考文献|}.
+% it will output only a chapter title.
 %    \begin{macrocode}
 \hook_gput_code:nnn { env / document / before } { . }
   {
@@ -769,7 +776,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \parbox { 10\ccwd } { \centering \l_@@_set_title_tl_a }
         \group_end:
       \end{center}
-      \vspace{4.35\baselineskip}
+      \vfill
       \begin{center}
         \linespread{1.35} \@@_fontsize:nn { cn } { 3 }
         \begin{tabular} { p { 4\ccwd } @{：} p { 15ex } }
@@ -789,10 +796,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \@@_center_box:nnn {  15ex  } { -4.5pt   }
             { \l_@@_set_PI_tl_a       } \\
         \end{tabular}
-        \par \vspace{3.15\baselineskip}
+        \par \vspace{3.5\baselineskip}
         \@@_fontsize:nn { cn } { 3 }
         \@@_kernel_year:n { cn } \@@_kernel_month:n { cn }
       \end{center}
+      \vspace*{1.25\baselineskip}
     \end{titlepage}
   }
 \cs_new_protected:Nn \@@_maketitle_en:
@@ -837,7 +845,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
             )
         \group_end:
       \end{center}
-      \vspace{5.15\baselineskip}
+      \vfill
       \begin{center}
         \linespread{1.35} \@@_fontsize:nn { cn } { 3 } \sffamily \selectfont
         \begin{tabular}
@@ -861,10 +869,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \@@_center_box:nnn {  15ex  } { -4.8pt   }
             { \l_@@_set_PI_tl_b        } \\
         \end{tabular}
-        \par \vspace{3.9\baselineskip}
+        \par \vspace{3.5\baselineskip}
         \@@_fontsize:nn { cn } { 3 }
         \@@_kernel_month:n { en }, \space \@@_kernel_year:n  { en }
       \end{center}
+      \vspace*{1.25\baselineskip}
     \end{titlepage}
   }
 %    \end{macrocode}
@@ -1049,4 +1058,5 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<@@=>
 %    \end{macrocode}
 % \end{implementation}
+% \clearpage
 % \PrintIndex

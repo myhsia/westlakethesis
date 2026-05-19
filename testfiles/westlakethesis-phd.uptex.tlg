@@ -72,7 +72,7 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 36.26733fil
+...\vbox(700.50687+0.0)x416.83289, glue set 94.37617fill
 ....\write-{}
 ....\special{pdf:majorversion 1}
 ....\special{pdf:minorversion 7}
@@ -317,8 +317,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 13.0 plus 6.0 minus 8.0
-....\glue 94.31241
-....\glue 0.0
+....\glue 0.0 plus 1.0fill
 ....\penalty -51
 ....\glue 13.0 plus 7.0 minus 8.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -562,7 +561,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue 81.95439
+....\glue 91.06061
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -584,6 +583,10 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 13.0 plus 6.0 minus 8.0
+....\rule(0.0+0.0)x*
+....\penalty 10000
+....\glue 27.10123
+....\glue 0.0
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
@@ -634,7 +637,7 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 9.96716fil
+...\vbox(700.50687+0.0)x416.83289, glue set 104.93071fill
 ....\glue(\topskip) 0.0
 ....\hbox(26.06523+20.04274)x416.83289, glue set 258.00136fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
@@ -922,8 +925,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 13.0 plus 6.0 minus 8.0
-....\glue 111.65694
-....\glue 0.0
+....\glue 0.0 plus 1.0fill
 ....\penalty -51
 ....\glue 13.0 plus 7.0 minus 8.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -1197,7 +1199,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue 101.46738
+....\glue 91.06061
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -1221,6 +1223,10 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 13.0 plus 6.0 minus 8.0
+....\rule(0.0+0.0)x*
+....\penalty 10000
+....\glue 27.10123
+....\glue 0.0
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
