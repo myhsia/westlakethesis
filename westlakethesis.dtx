@@ -474,9 +474,38 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \item Font set: \href{https://ctan.org/pkg/lxgw-fonts}{|lxgw|}.
 % \end{itemize}
 % \end{multicols}
+% \begin{macro}{\@@_unknown_option:n}
+% Function for passing unknown options to the basic class.
 %    \begin{macrocode}
-\LoadClass [ a4paper, zihao = -4, linespread = 1.5, fontset = lxgw ]
-  { ctexrep }
+\cs_new_protected_nopar:Npn \@@_unknown_option:n #1
+  {
+    \tl_if_empty:nTF { #1 }
+      {
+        \clist_gput_right:NV \g_@@_base_class_opt_clist \l_keys_key_str
+      }
+      {
+        \exp_args:NNx \clist_gput_right:Nn \g_@@_base_class_opt_clist
+          { \l_keys_key_str = \exp_not:n {#1} }
+      }
+}
+%    \end{macrocode}
+% \begin{variable}{\g_@@_base_class_opt_clist}
+% Variable for storing basic class options.
+%    \begin{macrocode}
+\clist_clear_new:N \g_@@_base_class_opt_clist
+\clist_gset:Nn \g_@@_base_class_opt_clist
+  { a4paper, zihao = -4, linespread = 1.5, fontset = lxgw }
+%    \end{macrocode}
+% \end{variable}
+% \end{macro}
+%    \begin{macrocode}
+\keys_define:nn { @@ / classoption }
+  {
+    mode    .str:N     = \g_@@_mode_str,
+      mode  .initial:n = { thesis }
+    unknown .code:n    = \@@_unknown_option:n { #1 },
+  }
+\exp_args:NNV \LoadClass [ \g_@@_base_class_opt_clist ] { ctexrep }
 %    \end{macrocode}
 % Load the required packages, where the |titles| option is passed to the
 % \pkg{tocloft} package to make ToC, LoF, and LoT lists to be typeset using the
