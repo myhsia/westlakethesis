@@ -21,11 +21,11 @@
 %   This work consists of the files westlakethesis.dtx,                 *
 %                                   westlakethesis.ins,                 *
 %                 the derived files westlakethesis.cls,                 *
-%                                   wlu-driver.code.tex,                *
-%                                   wlu-kernel.code.tex,                *
-%                                   wlu-params.code.tex,                *
-%                                   wlu-layout.code.tex,                *
-%                                   wlu-l3xdoc.code.tex,                *
+%                                   wu-driver.code.tex,                 *
+%                                   wu-kernel.code.tex,                 *
+%                                   wu-params.code.tex,                 *
+%                                   wu-layout.code.tex,                 *
+%                                   wu-l3xdoc.code.tex,                 *
 %           the documentation files westlakethesis.pdf,                 *
 %                               and README.md.                          *
 % -----------------------------------------------------------------------
@@ -46,10 +46,10 @@
 [![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
-The `WestlakeThesis` LaTeX bundle
+The `WESTLAKEthesis` LaTeX bundle
 =================================
 
-The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
+The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations,
 including Ph.D. thesis and Beamer theme.
 
 Overview
@@ -102,22 +102,22 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \fi
 %</internal>
 %
-%<*wlu-class|wlu-driver|wlu-kernel|wlu-params|wlu-layout>
+%<*wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-l3xdoc>
 %<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-20 myhsia<xiamingyu@westlake.edu.cn>$
-%<wlu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
-%<wlu-class>\ProvidesExplClass {\ExplFileName}
-%<wlu-driver>  {Loading the base class and required packages (WESTLAKE)}
-%<wlu-driver>\ProvidesExplFile {wlu-driver.code.tex}
-%<wlu-kernel>  {Inner functions for the |layout| module (WESTLAKE)}
-%<wlu-kernel>\ProvidesExplFile {wlu-kernel.code.tex}
-%<wlu-params>  {Formats of Westlake University dissertations (WESTLAKE)}
-%<wlu-params>\ProvidesExplFile {wlu-params.code.tex}
-%<wlu-layout>  {Storing the constant variables (WESTLAKE)}
-%<wlu-layout>\ProvidesExplFile {wlu-layout.code.tex}
-%<wlu-l3xdoc>  {Documentation (WESTLAKE)}
-%<wlu-l3xdoc>\ProvidesExplFile {wlu-l3xdoc.code.tex}
+%<wu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
+%<wu-class>\ProvidesExplClass {\ExplFileName}
+%<wu-driver>  {Loading the base class and required packages (WESTLAKE)}
+%<wu-driver>\ProvidesExplFile {wu-driver.code.tex}
+%<wu-kernel>  {Inner functions for the |layout| module (WESTLAKE)}
+%<wu-kernel>\ProvidesExplFile {wu-kernel.code.tex}
+%<wu-params>  {Formats of Westlake University dissertations (WESTLAKE)}
+%<wu-params>\ProvidesExplFile {wu-params.code.tex}
+%<wu-layout>  {Storing the constant variables (WESTLAKE)}
+%<wu-layout>\ProvidesExplFile {wu-layout.code.tex}
+%<wu-l3xdoc>  {Documentation (WESTLAKE)}
+%<wu-l3xdoc>\ProvidesExplFile {wu-l3xdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
-%</wlu-class|wlu-driver|wlu-kernel|wlu-params|wlu-layout>
+%</wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-l3xdoc>
 %<*driver>
 \documentclass[11pt, letterpaper, cs-break = true]{l3doc}
 \ExplSyntaxOn \makeatletter
@@ -339,14 +339,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{implementation}
 % \section{The source code}
-% We use |wlu| as the namespace.
+% We use |wu| as the namespace.
 %    \begin{macrocode}
-%<@@=wlu>
+%<@@=wu>
 %    \end{macrocode}
 % \subsection{\texttt{westlakethesis.cls}}
-% Start the optionlist |wlu-class| for \pkg{l3docstrip}.
+% Start the optionlist |wu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wlu-class>
+%<*wu-class>
 %    \end{macrocode}
 % \begin{macro}
 %   {
@@ -380,7 +380,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     \clist_map_inline:nn {#1}
       {
-        \file_if_exist_input:nF { wlu-##1.code.tex }
+        \file_if_exist_input:nF { wu-##1.code.tex }
           { \@@_msg_error:nn { not found module } { ##1 } }
       }
   }
@@ -450,14 +450,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
-% End the optionlist |wlu-class| for \pkg{l3docstrip}.
+% End the optionlist |wu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wlu-class>
+%</wu-class>
 %    \end{macrocode}
-% \subsection{\texttt{wlu-driver.code.tex}}
-% Start the optionlist |wlu-driver| for \pkg{l3docstrip}.
+% \subsection{\texttt{wu-driver.code.tex}}
+% Start the optionlist |wu-driver| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wlu-driver>
+%<*wu-driver>
 %    \end{macrocode}
 % Prevent the warnings raised by \pkg{xeCJK} (valid for \hologo{XeTeX})
 % when redefining fonts.
@@ -517,18 +517,18 @@ The Current Maintainer of this work is **Mingyu Xia**.
       }
   }
 %    \end{macrocode}
-% This is the end of \file{wlu-driver.code.tex}.
+% This is the end of \file{wu-driver.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
-% End the optionlist |wlu-driver| for \pkg{l3docstrip}.
+% End the optionlist |wu-driver| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wlu-driver>
+%</wu-driver>
 %    \end{macrocode}
-% \subsection{\texttt{wlu-kernel.code.tex}}
-% Start the optionlist |wlu-kernel| for \pkg{l3docstrip}.
+% \subsection{\texttt{wu-kernel.code.tex}}
+% Start the optionlist |wu-kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wlu-kernel>
+%<*wu-kernel>
 %    \end{macrocode}
 % \begin{macro}{\@@_parse_slash_ab:c}
 % This function is used for parsing the binary sequence variable \cs{\#1}
@@ -682,18 +682,18 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% This is the end of \file{wlu-kernel.code.tex}.
+% This is the end of \file{wu-kernel.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
-% End the optionlist |wlu-kernel| for \pkg{l3docstrip}.
+% End the optionlist |wu-kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wlu-kernel>
+%</wu-kernel>
 %    \end{macrocode}
-% \subsection{\texttt{wlu-params.code.tex}}
-% Start the optionlist |wlu-params| for \pkg{l3docstrip}.
+% \subsection{\texttt{wu-params.code.tex}}
+% Start the optionlist |wu-params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wlu-params>
+%<*wu-params>
 %    \end{macrocode}
 % \begin{variable}{\l_@@_school_en_prop, \l_@@_school_cn_prop}
 % Storing the aliases of the English and Chinese names of schools into 
@@ -795,18 +795,18 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \bool_new:N \l_@@_load_bib_bool
 %    \end{macrocode}
 % \end{variable}
-% This is the end of \file{wlu-params.code.tex}.
+% This is the end of \file{wu-params.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
-% End the optionlist |wlu-params| for \pkg{l3docstrip}.
+% End the optionlist |wu-params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wlu-params>
+%</wu-params>
 %    \end{macrocode}
-% \subsection{\texttt{wlu-layout.code.tex}}
-% Start the optionlist |wlu-layout| for \pkg{l3docstrip}.
+% \subsection{\texttt{wu-layout.code.tex}}
+% Start the optionlist |wu-layout| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wlu-layout>
+%<*wu-layout>
 %    \end{macrocode}
 % Configure the geometry.
 %    \begin{macrocode}
@@ -1126,13 +1126,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \renewcommand \cftdotsep       { .5                         }
 \renewcommand \@pnumwidth      { 2ex                        }
 %    \end{macrocode}
-% This is the end of \file{wlu-layout.code.tex}.
+% This is the end of \file{wu-layout.code.tex}.
 %    \begin{macrocode}
 \file_input_stop:
 %    \end{macrocode}
-% End the optionlist |wlu-layout| for \pkg{l3docstrip}.
+% End the optionlist |wu-layout| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wlu-layout>
+%</wu-layout>
 %    \end{macrocode}
 % Restore the namespace.
 %    \begin{macrocode}

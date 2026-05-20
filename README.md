@@ -4,10 +4,10 @@
 [![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
-The `WestlakeThesis` LaTeX bundle
+The `WESTLAKEthesis` LaTeX bundle
 =================================
 
-The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
+The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations,
 including Ph.D. thesis and Beamer theme.
 
 Overview
@@ -54,3 +54,4 @@ version 2008 or later.
 This work has the LPPL maintenance status `maintained`.
 
 The Current Maintainer of this work is **Mingyu Xia**.
+^^A % \PrintIndex

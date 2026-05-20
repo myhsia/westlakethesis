@@ -21,11 +21,11 @@ File: westlakethesis.dtx
   This work consists of the files westlakethesis.dtx,                 *
                                   westlakethesis.ins,                 *
                 the derived files westlakethesis.cls,                 *
-                                  wlu-driver.code.tex,                *
-                                  wlu-kernel.code.tex,                *
-                                  wlu-params.code.tex,                *
-                                  wlu-layout.code.tex,                *
-                                  wlu-l3xdoc.code.tex,                *
+                                  wu-driver.code.tex,                 *
+                                  wu-kernel.code.tex,                 *
+                                  wu-params.code.tex,                 *
+                                  wu-layout.code.tex,                 *
+                                  wu-l3xdoc.code.tex,                 *
           the documentation files westlakethesis.pdf,                 *
                               and README.md.                          *
 -----------------------------------------------------------------------
@@ -65,11 +65,11 @@ File: westlakethesis.dtx
   This work consists of the files westlakethesis.dtx,                 *
                                   westlakethesis.ins,                 *
                 the derived files westlakethesis.cls,                 *
-                                  wlu-driver.code.tex,                *
-                                  wlu-kernel.code.tex,                *
-                                  wlu-params.code.tex,                *
-                                  wlu-layout.code.tex,                *
-                                  wlu-l3xdoc.code.tex,                *
+                                  wu-driver.code.tex,                 *
+                                  wu-kernel.code.tex,                 *
+                                  wu-params.code.tex,                 *
+                                  wu-layout.code.tex,                 *
+                                  wu-l3xdoc.code.tex,                 *
           the documentation files westlakethesis.pdf,                 *
                               and README.md.                          *
 -----------------------------------------------------------------------
@@ -79,15 +79,15 @@ File: westlakethesis.dtx
 
 \generate{
   \usedir{tex/latex/westlakethesis}
-    \file{westlakethesis.cls}        {\from{\jobname.dtx}{wlu-class}  }
-    \file{wlu-driver.code.tex}       {\from{\jobname.dtx}{wlu-driver} }
-    \file{wlu-kernel.code.tex}       {\from{\jobname.dtx}{wlu-kernel} }
-    \file{wlu-params.code.tex}       {\from{\jobname.dtx}{wlu-params} }
-    \file{wlu-layout.code.tex}       {\from{\jobname.dtx}{wlu-layout} }
-    \file{wlu-l3xdoc.code.tex}       {\from{\jobname.dtx}{wlu-l3xdoc} }
+    \file{westlakethesis.cls}         {\from{\jobname.dtx}{wu-class}  }
+    \file{wu-driver.code.tex}         {\from{\jobname.dtx}{wu-driver} }
+    \file{wu-kernel.code.tex}         {\from{\jobname.dtx}{wu-kernel} }
+    \file{wu-params.code.tex}         {\from{\jobname.dtx}{wu-params} }
+    \file{wu-layout.code.tex}         {\from{\jobname.dtx}{wu-layout} }
+    \file{wu-l3xdoc.code.tex}         {\from{\jobname.dtx}{wu-l3xdoc} }
   \usedir{doc/latex/westlakethesis}
   \nopreamble\nopostamble
-    \file{README.md}                 {\from{\jobname.dtx}{readme}     }
+    \file{README.md}                  {\from{\jobname.dtx}{readme}    }
 }
 
 \endbatchfile

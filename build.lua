@@ -18,7 +18,7 @@ maintainid          = "myhsia"
 email               = "xiamingyu@westlake.edu.cn"
 repository          = "https://github.com/" .. maintainid .. "/" .. module
 summary             = "LaTeX bundle for Westlake University dissertations."
-description         = "The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations, including Ph.D. thesis and Beamer theme."
+description         = "The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations, including Ph.D. thesis and Beamer theme."
 
 --[==========================================[--
           Build, Pack, Tag, and Upload
@@ -59,7 +59,7 @@ function update_tag(file, content, tagname, tagdate)
   if string.match(file, module .. ".dtx$") then
     content = string.gsub(content,
       "%%<++!driver>\\GetIdInfo $Id: " .. module .. ".dtx " ..
-      "v%d+%.%d+%.%d+ %d+%-%d+%-%d+ [^<]+<[^>]+>",
+      "v%d+%.%d+%.%d+ %d+%-%d+%-%d+ (.-)<(.-)>",
       "%%<+!driver>\\GetIdInfo $Id: "  .. module .. ".dtx " ..
       tagname .. " " .. tagdate .. " " .. maintainid .. "<" .. email .. ">")
   end
