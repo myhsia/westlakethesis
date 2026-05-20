@@ -50,7 +50,7 @@ The `WESTLAKEthesis` LaTeX bundle
 =================================
 
 The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations,
-including Ph.D. thesis and Beamer theme.
+including Ph.D. thesis format, Beamer theme, and Poster template.
 
 Overview
 --------
@@ -102,7 +102,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \fi
 %</internal>
 %
-%<*wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-l3xdoc>
+%<*wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-beamer|wu-poster|wu-l3xdoc>
 %<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-20 myhsia<xiamingyu@westlake.edu.cn>$
 %<wu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
 %<wu-class>\ProvidesExplClass {\ExplFileName}
@@ -114,36 +114,16 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<wu-params>\ProvidesExplFile {wu-params.code.tex}
 %<wu-layout>  {Storing the constant variables (WESTLAKE)}
 %<wu-layout>\ProvidesExplFile {wu-layout.code.tex}
+%<wu-beamer>  {Documentation (WESTLAKE)}
+%<wu-beamer>\ProvidesExplFile {wu-beamer.code.tex}
+%<wu-poster>  {Documentation (WESTLAKE)}
+%<wu-poster>\ProvidesExplFile {wu-poster.code.tex}
 %<wu-l3xdoc>  {Documentation (WESTLAKE)}
 %<wu-l3xdoc>\ProvidesExplFile {wu-l3xdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
-%</wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-l3xdoc>
+%</wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-beamer|wu-poster|wu-l3xdoc>
 %<*driver>
-\documentclass[11pt, letterpaper, cs-break = true]{l3doc}
-\ExplSyntaxOn \makeatletter
-\tl_greplace_all:Nnn \ExplFileDate {/} {-}
-\msg_redirect_module:nnn { l3doc } { warning } { none }
-\newcommand \mail[1]{\href{mailto:#1}{\ttfamily #1}}
-\DeclareDocumentCommand \key { s m }
-  {
-    \IfBooleanTF {#1} { \textcolor{red}{\ttfamily \bfseries #2} }
-      {
-        \group_begin: \ttfamily
-        \seq_set_from_clist:Nn \l_tmpa_seq {#2}
-        \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
-          { \exp_not:n { \textcolor{red}{\bfseries ##1} } }
-        \seq_use:Nn \l_tmpb_seq { ,~ } \:=\:
-        \group_end:
-      }
-  }
-\DeclareCommandCopy \val \meta
-\def \TTF {\textup{\textbf{true}\makebox[0pt][r]{^^A
-  \underline {\phantom{\bfseries true}\kern-0.1em}}\textbar}false}
-\def \TFF {true\textup{\textbar\textbf{false}\makebox[0pt][r]{^^A
-  \underline {\phantom{\bfseries false}\kern-0.1em}}}}
-\newlist{keyval}{itemize}{10}
-\setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
-\makeatother \ExplSyntaxOff
+\documentclass[mode = l3xdoc]{westlakethesis}
 \usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
@@ -169,6 +149,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \begin{abstract}
 % \end{abstract}
 % \clearpage
+%
+% \section{User's Interfaces}
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
@@ -237,8 +219,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   The university requires 3 sets of signature and 3 sets of date on the
 %   commitment page. So, as an example, one can write
 %   \begin{quote}
-%   |\commitment [ example-image-a, June 2025,|\\
-%   |              example-image-a, July 2025,|\\
+%   |\commitment [ example-image-a, June 2025, |\\
+%   |              example-image-a, July 2025, |\\
 %   |              example-image-b, July 2025 ]|
 %   \end{quote}
 % \end{function}
@@ -260,6 +242,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \begin{abstract}
 % \end{abstract}
 % \clearpage
+%
+% \section{用户接口}
 %
 % \begin{function}{\westlakeset}
 %   \begin{syntax}
@@ -326,8 +310,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   根据大学要求, 签名页上共有 3 组签名与日期.
 %   例如, 用户可以输入
 %   \begin{quote}
-%   |\commitment [ example-image-a, June 2025,|\\
-%   |              example-image-a, July 2025,|\\
+%   |\commitment [ example-image-a, June 2025, |\\
+%   |              example-image-a, July 2025, |\\
 %   |              example-image-b, July 2025 ]|
 %   \end{quote}
 % \end{function}
@@ -335,7 +319,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{documentation}
 %
 % \StopEventually{\PrintIndex}
-% \clearpage
+% \clearpage \appendix
 %
 % \begin{implementation}
 % \section{The source code}
@@ -359,26 +343,53 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % broadcasting it as error, warning, or info.
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_msg_new:nn #1#2
-  { \msg_new:nnn     { WestlakeThesis } {#1} {#2} }
+  { \msg_new:nnn     { WESTLAKEthesis } {#1} {#2} }
 \cs_new_protected:Npn \@@_msg_error:nn #1#2
-  { \msg_error:nnn   { WestlakeThesis } {#1} {#2} }
+  { \msg_error:nnn   { WESTLAKEthesis } {#1} {#2} }
 \cs_new_protected:Npn \@@_msg_warning:nn #1#2
-  { \msg_warning:nnn { WestlakeThesis } {#1} {#2} }
+  { \msg_warning:nnn { WESTLAKEthesis } {#1} {#2} }
 \cs_new_protected:Npn \@@_msg_info:nn #1#2
-  { \msg_info:nnn    { WestlakeThesis } {#1} {#2} }
+  { \msg_info:nnn    { WESTLAKEthesis } {#1} {#2} }
 %    \end{macrocode}
 % \end{macro}
 % New message: |not found module|, will be used in \cs{@@_load_module:n}.
 %    \begin{macrocode}
 \@@_msg_new:nn { not found module }
-  { The ~ WestlakeThesis ~ module ~ `#1' ~ not ~ found. }
+  { The ~ WESTLAKEthesis ~ module ~ `#1' ~ not ~ found. }
 %    \end{macrocode}
-% \begin{macro}{\@@_load_module:n}
+% New message: |unknown mode| for global option |mode| key.
+%    \begin{macrocode}
+\@@_msg_new:nn { unknown mode }
+  { Couldn't ~ load ~ the ~ `#1' ~ mode ~ of ~ WESTLAKEthesis. }
+%    \end{macrocode}
+% \begin{macro}{\@@_unknown_option:n}
+% Function for passing unknown options to the basic class.
+%    \begin{macrocode}
+\cs_new_protected_nopar:Npn \@@_unknown_option:n #1
+  {
+    \tl_if_empty:nTF {#1}
+      {
+        \clist_gput_right:NV \g_@@_base_class_opt_clist \l_keys_key_str
+      }
+      {
+        \exp_args:NNx \clist_gput_right:Nn \g_@@_base_class_opt_clist
+          { \l_keys_key_str = \exp_not:n {#1} }
+      }
+}
+%    \end{macrocode}
+% \begin{variable}{\g_@@_base_class_opt_clist}
+% Variable for storing basic class options.
+%    \begin{macrocode}
+\clist_clear_new:N \g_@@_base_class_opt_clist
+%    \end{macrocode}
+% \end{variable}
+% \end{macro}
+% \begin{macro}{\@@_load_module:N}
 % Functions for loading module in \file{westlakethesis.cls}.
 %    \begin{macrocode}
-\cs_new_protected_nopar:Npn \@@_load_module:n #1
+\cs_new_protected_nopar:Npn \@@_load_module:N #1
   {
-    \clist_map_inline:nn {#1}
+    \clist_map_inline:Nn #1
       {
         \file_if_exist_input:nF { wu-##1.code.tex }
           { \@@_msg_error:nn { not found module } { ##1 } }
@@ -386,7 +397,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% Load the |driver|, |kernel|, |params|, and |layout| modules respectively.
+% Load the modules respectively under different modes.
 % \begin{itemize}
 %   \item |driver|: Loading the base class and required packages.
 %   \item |kernel|: Inner functions for the |layout| module.
@@ -394,7 +405,29 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \item |layout|: Formats of Westlake University dissertations.
 % \end{itemize}
 %    \begin{macrocode}
-\@@_load_module:n { driver, kernel, params, layout }
+\clist_new:N \g_@@_required_modules_clist
+\keys_define:nn { @@ / classoption }
+  {
+    mode          .choices:nn = { thesis, l3xdoc, beamer, poster } {},
+    mode          .default:n  = { thesis },
+    mode / thesis .code:n     =
+      {
+        \clist_gset:Nn \g_@@_required_modules_clist
+          { driver, kernel, params, layout }
+      },
+    mode / l3xdoc .code:n     =
+      { \clist_gset:Nn \g_@@_required_modules_clist { l3xdoc } },
+    mode / beamer .code:n     =
+      { \clist_gset:Nn \g_@@_required_modules_clist { beamer } },
+    mode / poster .code:n     =
+      { \clist_gset:Nn \g_@@_required_modules_clist { poster } },
+    mode / unknown.code:n     =
+      { \@@_msg_error:nn { unknown mode } {#1}                 },
+    unknown .code:n           = \@@_unknown_option:n {#1},
+  }
+\keys_set:nn { @@ / classoption } { mode = thesis }
+\ProcessKeyOptions [ @@ / classoption ]
+\@@_load_module:N \g_@@_required_modules_clist
 %    \end{macrocode}
 % \begin{macro}{\westlakeset}
 % \hologo{LaTeX2e} user's interface for filling information,
@@ -446,10 +479,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \end{variable}
 % \end{macro}
-% This is the end of \file{westlakethesis.cls}.
-%    \begin{macrocode}
-\file_input_stop:
-%    \end{macrocode}
 % End the optionlist |wu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wu-class>
@@ -474,37 +503,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \item Font set: \href{https://ctan.org/pkg/lxgw-fonts}{|lxgw|}.
 % \end{itemize}
 % \end{multicols}
-% \begin{macro}{\@@_unknown_option:n}
-% Function for passing unknown options to the basic class.
 %    \begin{macrocode}
-\cs_new_protected_nopar:Npn \@@_unknown_option:n #1
-  {
-    \tl_if_empty:nTF { #1 }
-      {
-        \clist_gput_right:NV \g_@@_base_class_opt_clist \l_keys_key_str
-      }
-      {
-        \exp_args:NNx \clist_gput_right:Nn \g_@@_base_class_opt_clist
-          { \l_keys_key_str = \exp_not:n {#1} }
-      }
-}
-%    \end{macrocode}
-% \begin{variable}{\g_@@_base_class_opt_clist}
-% Variable for storing basic class options.
-%    \begin{macrocode}
-\clist_clear_new:N \g_@@_base_class_opt_clist
 \clist_gset:Nn \g_@@_base_class_opt_clist
   { a4paper, zihao = -4, linespread = 1.5, fontset = lxgw }
 %    \end{macrocode}
-% \end{variable}
-% \end{macro}
 %    \begin{macrocode}
-\keys_define:nn { @@ / classoption }
-  {
-    mode    .str:N     = \g_@@_mode_str,
-      mode  .initial:n = { thesis }
-    unknown .code:n    = \@@_unknown_option:n { #1 },
-  }
 \exp_args:NNV \LoadClass [ \g_@@_base_class_opt_clist ] { ctexrep }
 %    \end{macrocode}
 % Load the required packages, where the |titles| option is passed to the
@@ -545,10 +548,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \bibliographystyle { gbt7714-numeric }
       }
   }
-%    \end{macrocode}
-% This is the end of \file{wu-driver.code.tex}.
-%    \begin{macrocode}
-\file_input_stop:
 %    \end{macrocode}
 % End the optionlist |wu-driver| for \pkg{l3docstrip}.
 %    \begin{macrocode}
@@ -711,10 +710,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% This is the end of \file{wu-kernel.code.tex}.
-%    \begin{macrocode}
-\file_input_stop:
-%    \end{macrocode}
 % End the optionlist |wu-kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wu-kernel>
@@ -824,10 +819,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \bool_new:N \l_@@_load_bib_bool
 %    \end{macrocode}
 % \end{variable}
-% This is the end of \file{wu-params.code.tex}.
-%    \begin{macrocode}
-\file_input_stop:
-%    \end{macrocode}
 % End the optionlist |wu-params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wu-params>
@@ -1155,13 +1146,56 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \renewcommand \cftdotsep       { .5                         }
 \renewcommand \@pnumwidth      { 2ex                        }
 %    \end{macrocode}
-% This is the end of \file{wu-layout.code.tex}.
-%    \begin{macrocode}
-\file_input_stop:
-%    \end{macrocode}
 % End the optionlist |wu-layout| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wu-layout>
+%    \end{macrocode}
+% \subsection{\texttt{wu-l3xdoc.code.tex}}
+% Start the optionlist |wu-l3xdoc| for \pkg{l3docstrip}.
+%    \begin{macrocode}
+%<*wu-l3xdoc>
+%    \end{macrocode}
+% Loading the \cls{l3doc} class.
+%    \begin{macrocode}
+\clist_gset:Nn \g_@@_base_class_opt_clist
+  { 11pt, letterpaper, cs-break = true }
+\exp_args:NNV \LoadClass [ \g_@@_base_class_opt_clist ] { l3doc }
+%    \end{macrocode}
+% Then suppress the warning, and patch the \tn{ExplFileDate} variable.
+%    \begin{macrocode}
+\tl_greplace_all:Nnn \ExplFileDate {/} {-}
+\tl_gset_eq:NN \g_@@_date_tl \ExplFileDate
+\tl_gset_eq:NN \g_@@_version_tl \ExplFileVersion
+\hook_gput_code:nnn { env / document / before } {.}
+  {
+    \tl_gset_eq:NN \ExplFileDate    \g_@@_date_tl
+    \tl_gset_eq:NN \ExplFileVersion \g_@@_version_tl
+  }
+\msg_redirect_module:nnn { l3doc } { warning } { none }
+\DeclareDocumentCommand \mail { m } { \href{mailto:#1}{\ttfamily #1} }
+\DeclareDocumentCommand \key { s m }
+  {
+    \IfBooleanTF {#1} { \textcolor{red}{\ttfamily \bfseries #2} }
+      {
+        \group_begin: \ttfamily
+        \seq_set_from_clist:Nn \l_tmpa_seq {#2}
+        \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
+          { \exp_not:n { \textcolor{red}{\bfseries ##1} } }
+        \seq_use:Nn \l_tmpb_seq { ,~ } \:=\:
+        \group_end:
+      }
+  }
+\DeclareCommandCopy \val \meta
+\def \TTF {\textup{\textbf{true}\makebox[0pt][r]{^^A
+  \underline {\phantom{\bfseries true}\kern-0.1em}}\textbar}false}
+\def \TFF {true\textup{\textbar\textbf{false}\makebox[0pt][r]{^^A
+  \underline {\phantom{\bfseries false}\kern-0.1em}}}}
+\newlist{keyval}{itemize}{10}
+\setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
+%    \end{macrocode}
+% End the optionlist |wu-l3xdoc| for \pkg{l3docstrip}.
+%    \begin{macrocode}
+%</wu-l3xdoc>
 %    \end{macrocode}
 % Restore the namespace.
 %    \begin{macrocode}
@@ -1169,4 +1203,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \end{implementation}
 % \clearpage
-^^A % \PrintIndex
+% \PrintIndex
+% \iffalse
+%<*wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-beamer|wu-poster|wu-l3xdoc>
+%<!driver>\file_input_stop:
+%</wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-beamer|wu-poster|wu-l3xdoc>
+% \fi

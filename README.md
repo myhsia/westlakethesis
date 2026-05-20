@@ -8,7 +8,7 @@ The `WESTLAKEthesis` LaTeX bundle
 =================================
 
 The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations,
-including Ph.D. thesis and Beamer theme.
+including Ph.D. thesis format, Beamer theme, and Poster template.
 
 Overview
 --------
@@ -54,4 +54,3 @@ version 2008 or later.
 This work has the LPPL maintenance status `maintained`.
 
 The Current Maintainer of this work is **Mingyu Xia**.
-^^A % \PrintIndex
