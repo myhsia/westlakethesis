@@ -675,13 +675,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
           \or: October \or: November \or: December
         \fi:
       }
-      { \zhdigits { \int_value:w \c_sys_month_int } 月 }
+      { \zhnum_digits:Nn \c_false_bool { \int_value:w \c_sys_month_int } 月 }
   }
 \cs_new_protected_nopar:Npn \@@_kernel_year:n #1
   {
     \@@_kernel_bilingual:nnn {#1}
       { \int_value:w \c_sys_year_int }
-      { \zhdigits { \int_value:w \c_sys_year_int  } 年 }
+      { \zhnum_digits:Nn \c_false_bool { \int_value:w \c_sys_year_int  } 年 }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1170,6 +1170,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % Loading the \pkg{westlake} beamer theme.
 %    \begin{macrocode}
+\RequirePackage{libertine}
 \usetheme [ logobg = westlake-logo.pdf,    lbadge = westlake-badge-cn.pdf,
             mainbg = westlake-paint-a.png, basebg = westlake-paint-b.png]
           { westlake }
