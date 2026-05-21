@@ -714,13 +714,13 @@ Completed box being shipped out [1]
 .\kern 0.0
 File: westlake-badge-cn.pdf Graphic file (type pdf)
 <use westlake-badge-cn.pdf>
-LaTeX Font Info:    Calculating math sizes for size <20> on input line ....
+LaTeX Font Info:    Calculating math sizes for size <20.075> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20> on input line ....
+(Font)              <20.075> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.99994> on input line ....
+(Font)              <14.05243> on input line ....
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line ....
+(Font)              <10.03749> on input line ....
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 14.05249pt on input line ....
 Completed box being shipped out [1]
@@ -749,7 +749,7 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 104.78276fill
+...\vbox(700.50687+0.0)x416.83289, glue set 104.68965fill
 ....\glue(\topskip) 0.0
 ....\hbox(26.06523+20.04274)x416.83289, glue set 257.93204fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
@@ -897,56 +897,56 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 9.35776
-....\hbox(31.35442+18.30566)x416.83289, glue set 20.84293fil
+....\glue(\baselineskip) 9.26466
+....\hbox(31.44751+18.39877)x416.83289, glue set 20.84293fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(0.0+0.0)x0.0
 .....\mathon
-.....\vbox(31.35442+18.30566)x375.14705
-......\hbox(13.88+4.09999)x375.14705, glue set 18.75352fil
+.....\vbox(31.44751+18.39877)x375.14705
+......\hbox(13.93205+4.11536)x375.14705, glue set 18.12047fil
 .......\glue(\leftskip) 0.0 plus 1.0fil
-.......\kern-1.04 (left margin)
+.......\kern-1.0439 (left margin)
 .......\hbox(0.0+0.0)x0.0
-.......\TU/lmss/bx/n/20 Westlake
-.......\glue 7.34 plus 3.67 minus 2.44666
-.......\TU/lmss/bx/n/20 University
-.......\glue 7.34 plus 3.67 minus 2.44666
-.......\TU/lmss/bx/n/20 Thesis
-.......\glue 7.34 plus 3.67 minus 2.44666
-.......\TU/lmss/bx/n/20 Template
+.......\TU/lmss/bx/n/20.075 Westlake
+.......\glue 7.36752 plus 3.68376 minus 2.45584
+.......\TU/lmss/bx/n/20.075 University
+.......\glue 7.36752 plus 3.68376 minus 2.45584
+.......\TU/lmss/bx/n/20.075 Thesis
+.......\glue 7.36752 plus 3.68376 minus 2.45584
+.......\TU/lmss/bx/n/20.075 Template
 .......\glue(\rightskip) 0.0 plus 1.0fil
 ......\penalty 300
-......\glue(\baselineskip) 12.78008
-......\hbox(14.32+4.58)x375.14705, glue set 75.69951fil
+......\glue(\baselineskip) 12.828
+......\hbox(14.3737+4.59717)x375.14705, glue set 75.28fil
 .......\glue(\leftskip) 0.0 plus 1.0fil
-.......\TU/lmss/bx/n/20 Constructed
-.......\glue 7.34 plus 3.67 minus 2.44666
-.......\TU/lmss/bx/n/20 with
-.......\glue 7.34 plus 3.67 minus 2.44666
-.......\TU/lmss/bx/n/20 L
+.......\TU/lmss/bx/n/20.075 Constructed
+.......\glue 7.36752 plus 3.68376 minus 2.45584
+.......\TU/lmss/bx/n/20.075 with
+.......\glue 7.36752 plus 3.68376 minus 2.45584
+.......\TU/lmss/bx/n/20.075 L
 .......\kern -0.0002
 .......\kern 0.0002
-.......\kern -7.20001
-.......\vbox(13.76+0.0)x10.26196, glue set 4.04404fil
-........\hbox(9.71596+0.0)x10.26196
-.........\TU/lmss/bx/n/13.99994 A
+.......\kern -7.227
+.......\vbox(13.8116+0.0)x10.30043, glue set 4.05922fil
+........\hbox(9.75238+0.0)x10.30043
+.........\TU/lmss/bx/n/14.05243 A
 .........\kern -0.0002
 .........\kern 0.0002
 ........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern -2.99988
-.......\TU/lmss/bx/n/20 T
+.......\kern -3.01112
+.......\TU/lmss/bx/n/20.075 T
 .......\kern -0.0002
 .......\kern 0.0002
-.......\kern -3.33405
-.......\hbox(13.82+0.0)x12.84, shifted 4.58
-........\TU/lmss/bx/n/20 E
+.......\kern -3.34654
+.......\hbox(13.87183+0.0)x12.88815, shifted 4.59717
+........\TU/lmss/bx/n/20.075 E
 ........\kern -0.0002
 ........\kern 0.0002
-.......\kern -2.5
-.......\TU/lmss/bx/n/20 X
+.......\kern -2.50937
+.......\TU/lmss/bx/n/20.075 X
 .......\kern -0.0002
 .......\kern 0.0002
-.......\TU/lmss/bx/n/20 3
+.......\TU/lmss/bx/n/20.075 3
 .......\kern -0.0002
 .......\kern 0.0002
 .......\penalty 10000
@@ -1412,9 +1412,9 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 15.05624pt on input line ....
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 13.0pt on input line ....
+(Font)              scaled to size 13.04874pt on input line ....
 LaTeX Font Info:    Font shape `TU/LXGWNeoXiHei(0)/m/n' will be
-(Font)              scaled to size 13.0pt on input line ....
+(Font)              scaled to size 13.04874pt on input line ....
 LaTeX Font Info:    Font shape `TU/LXGWNeoXiHei(0)/m/n' will be
 (Font)              scaled to size 12.045pt on input line ....
 ============================================================
@@ -1447,7 +1447,7 @@ Completed box being shipped out [3]
 .....\special{color pop}
 ...\glue 25.0
 ...\glue(\lineskip) 0.0
-...\vbox(700.50687+0.0)x416.83289, glue set 314.43404fil
+...\vbox(700.50687+0.0)x416.83289, glue set 314.38332fil
 ....\write-{}
 ....\special{pdf:dest (chapter.1) [@thispage /XYZ @xpos @ypos null]}
 ....\write3{\protect \BOOKMARK [0][-]{chapter.1}{\376\377\155\131\154\137\167\001\000\040\000Z\000h\000e\000j\000i\000a\000n\000g}{}% 3}
@@ -1558,28 +1558,28 @@ Completed box being shipped out [3]
 ....\glue 15.5 plus -1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(10.87354+2.65198)x416.83289, glue set 95.69342fil
-.....\kern-0.312 (left margin)
-.....\hbox(8.788+0.0)x39.182
-......\TU/lmss/m/n/13 1.1.1
+....\hbox(10.9143+2.66193)x416.83289, glue set 95.27084fil
+.....\kern-0.31317 (left margin)
+.....\hbox(8.82095+0.0)x39.32889
+......\TU/lmss/m/n/13.04874 1.1.1
 ......\kern -0.0002
 ......\kern 0.0002
-......\glue 13.0
-.....\TU/LXGWNeoXiHei(0)/m/n/13 墩
-.....\glue 0.0 plus 0.46109
-.....\TU/LXGWNeoXiHei(0)/m/n/13 余
-.....\glue 0.0 plus 0.46109
-.....\TU/LXGWNeoXiHei(0)/m/n/13 路
-.....\glue 4.238 plus 2.119 minus 1.41266
-.....\TU/lmss/m/n/13 600
-.....\glue 4.238 plus 2.119 minus 1.41266
-.....\TU/LXGWNeoXiHei(0)/m/n/13 号
-.....\glue 4.238 plus 2.119 minus 1.41266
-.....\TU/lmss/m/n/13 No.600,
-.....\glue 4.238 plus 2.64874 minus 1.13013
-.....\TU/lmss/m/n/13 Dunyu
-.....\glue 4.238 plus 2.119 minus 1.41266
-.....\TU/lmss/m/n/13 Rd.
+......\glue 13.04874
+.....\TU/LXGWNeoXiHei(0)/m/n/13.04874 墩
+.....\glue 0.0 plus 0.87485
+.....\TU/LXGWNeoXiHei(0)/m/n/13.04874 余
+.....\glue 0.0 plus 0.87485
+.....\TU/LXGWNeoXiHei(0)/m/n/13.04874 路
+.....\glue 4.25389 plus 2.12694 minus 1.41795
+.....\TU/lmss/m/n/13.04874 600
+.....\glue 4.25389 plus 2.12694 minus 1.41795
+.....\TU/LXGWNeoXiHei(0)/m/n/13.04874 号
+.....\glue 4.25389 plus 2.12694 minus 1.41795
+.....\TU/lmss/m/n/13.04874 No.600,
+.....\glue 4.25389 plus 2.65866 minus 1.13435
+.....\TU/lmss/m/n/13.04874 Dunyu
+.....\glue 4.25389 plus 2.12694 minus 1.41795
+.....\TU/lmss/m/n/13.04874 Rd.
 .....\kern -0.0002
 .....\kern 0.0002
 .....\penalty 10000

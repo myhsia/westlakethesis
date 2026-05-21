@@ -418,7 +418,10 @@ The Current Maintainer of this work is **Mingyu Xia**.
     mode / l3xdoc .code:n     =
       { \clist_gset:Nn \g_@@_required_modules_clist { l3xdoc } },
     mode / beamer .code:n     =
-      { \clist_gset:Nn \g_@@_required_modules_clist { beamer } },
+      {
+        \clist_gset:Nn \g_@@_required_modules_clist
+          { beamer, kernel, params }
+      },
     mode / poster .code:n     =
       { \clist_gset:Nn \g_@@_required_modules_clist { poster } },
     mode / unknown.code:n     =
@@ -649,7 +652,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \cs_new_nopar:Npn \@@_fontsize:nn #1#2
   {
     \@@_kernel_bilingual:nnn {#1}
-      { \fontsize     {#2} { \fp_eval:n { #2 * 6 / 5 }} \selectfont }
+      {
+        \fontsize
+        { \dim_to_decimal:n { #2 bp } }
+        { \dim_to_decimal:n { (#2 bp) * 6 / 5 } } \selectfont
+      }
       { \ctex_zihao:n {#2}                                          }
   }
 %    \end{macrocode}
@@ -769,7 +776,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \hbox_gset:Nn \l_@@_cover_id_box { 0 }
 \hbox_gset:Nn \l_@@_cover_code_box { School ~ Code: }
 \hbox_gset:Nn \l_@@_cover_en_table_box
-  { \@@_fontsize:nn { cn } { 3 } \sffamily Supervisor: }
+  { \@@_fontsize:nn { en } { 16 } \sffamily Supervisor: }
 \dim_const:Nn \l_@@_cover_id_dim
   { 13 \box_wd:N \l_@@_cover_id_box }
 \dim_const:Nn \l_@@_cover_code_dim
