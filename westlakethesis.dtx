@@ -25,6 +25,8 @@
 %                                   wu-kernel.code.tex,                 *
 %                                   wu-params.code.tex,                 *
 %                                   wu-layout.code.tex,                 *
+%                                   wu-beamer.code.tex,                 *
+%                                   wu-poster.code.tex,                 *
 %                                   wu-l3xdoc.code.tex,                 *
 %           the documentation files westlakethesis.pdf,                 *
 %                               and README.md.                          *
@@ -408,7 +410,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \clist_new:N \g_@@_required_modules_clist
 \keys_define:nn { @@ / classoption }
   {
-    mode          .choices:nn = { thesis, l3xdoc, beamer, poster } {},
+    mode          .choices:nn =
+      { thesis, l3xdoc, beamer, poster } {},
     mode          .default:n  = { thesis },
     mode / thesis .code:n     =
       {
@@ -439,7 +442,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \@onlypreamble \westlakeset
 \NewDocumentCommand \westlakeset { m }
   {
-    \keys_set:nn { @@ / set } {#1}
+    \keys_set:nn { thesis / set } {#1}
 %    \end{macrocode}
 % Parsing the bilingualism of the items |title|, |school|, |subject|, |author|,
 % and |PI| after filling information, then decide
@@ -463,9 +466,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \l_@@_set_master_bool,
 %     \l_@@_set_bib_str,
 %   }
-% Key–value definitions for the \tn{westlakeset} command.
+% Key–value definitions for the |thesis| mode.
 %    \begin{macrocode}
-\keys_define:nn { @@ / set }
+\keys_define:nn { thesis / set }
   {
     id        .tl_set:N   = \l_@@_set_id_tl,
       id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
