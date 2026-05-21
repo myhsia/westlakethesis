@@ -32,7 +32,7 @@ installfiles        = {"*.sty", "*.cls", "*.code.tex", "*.pdf", "*.png"}
 sourcefiles         = {"*.dtx", "*.ins", "./media/*.pdf", "./media/*.png"}
 textfiles           = {"README.md", "LICENSE", "*.lua"}
 typesetdemofiles    = {module .. "-*-demo.tex"}
-typesetexe          = "latexmk -pdfxe"
+typesetexe          = "latexmk -pdfxe -xelatex=xelatex-dev"
 typesetruns         = 1
 uploadconfig  = {
   announcement_file = "announcement.md",
