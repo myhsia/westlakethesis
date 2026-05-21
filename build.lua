@@ -11,7 +11,7 @@
 
 module              = "westlakethesis"
 version             = "v0.0.1"
-date                = "2026-05-20"
+date                = "2026-05-30"
 maintainer          = "Mingyu Xia"
 uploader            = "Mingyu Xia"
 maintainid          = "myhsia"
@@ -24,7 +24,6 @@ description         = "The `WESTLAKEthesis` is a LaTeX bundle for Westlake Unive
           Build, Pack, Tag, and Upload
          Do not Modify Unless Necessary
 --]==========================================]--
-
 checkengines        = {"xetex", "uptex"}
 ctanzip             = module
 cleanfiles          = {"*.log", "*.pdf", "*.zip", "*.curlopt"}
@@ -32,7 +31,7 @@ excludefiles        = {"*~"}
 installfiles        = {"*.sty", "*.cls", "*.code.tex", "*.pdf", "*.png"}
 sourcefiles         = {"*.dtx", "*.ins", "./media/*.pdf", "./media/*.png"}
 textfiles           = {"README.md", "LICENSE", "*.lua"}
-typesetdemofiles    = {module .. "-demo.tex"}
+typesetdemofiles    = {module .. "-*-demo.tex"}
 typesetexe          = "latexmk -pdfxe"
 typesetruns         = 1
 uploadconfig  = {

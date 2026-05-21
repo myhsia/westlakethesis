@@ -103,7 +103,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-beamer|wu-poster|wu-l3xdoc>
-%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-20 myhsia<xiamingyu@westlake.edu.cn>$
+%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<xiamingyu@westlake.edu.cn>$
 %<wu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
 %<wu-class>\ProvidesExplClass {\ExplFileName}
 %<wu-driver>  {Loading the base class and required packages (WESTLAKE)}
@@ -720,7 +720,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<*wu-params>
 %    \end{macrocode}
 % \begin{variable}{\l_@@_school_en_prop, \l_@@_school_cn_prop}
-% Storing the aliases of the English and Chinese names of schools into 
+% Storing the aliases of the English and Chinese names of schools into
 % two property lists.
 %    \begin{macrocode}
 \prop_new:N \l_@@_school_en_prop
@@ -830,7 +830,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % Configure the geometry.
 %    \begin{macrocode}
-\geometry{a4paper, hmargin = 1.25in, vmargin = 1in}
+\geometry { a4paper, hmargin = 1.25in, vmargin = 1in }
 %    \end{macrocode}
 % \begin{macro}{\maketitle}
 % \begin{macro}{\@@_maketitle_cn:, \@@_maketitle_en:}
@@ -1150,6 +1150,27 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 %</wu-layout>
 %    \end{macrocode}
+% \subsection{\texttt{wu-beamer.code.tex}}
+% Start the optionlist |wu-beamer| for \pkg{l3docstrip}.
+%    \begin{macrocode}
+%<*wu-beamer>
+%    \end{macrocode}
+% Loading the \cls{beamer} class.
+%    \begin{macrocode}
+\clist_gset:Nn \g_@@_base_class_opt_clist
+  { aspectratio = 1610 }
+\exp_args:NNV \LoadClass [ \g_@@_base_class_opt_clist ] { beamer }
+%    \end{macrocode}
+% Loading the \pkg{westlake} beamer theme.
+%    \begin{macrocode}
+\usetheme [ logobg = westlake-logo.pdf,    lbadge = westlake-badge-cn.pdf,
+            mainbg = westlake-paint-a.png, basebg = westlake-paint-b.png]
+          { westlake }
+%    \end{macrocode}
+% End the optionlist |wu-beamer| for \pkg{l3docstrip}.
+%    \begin{macrocode}
+%</wu-beamer>
+%    \end{macrocode}
 % \subsection{\texttt{wu-l3xdoc.code.tex}}
 % Start the optionlist |wu-l3xdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
@@ -1193,6 +1214,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \newlist{keyval}{itemize}{10}
 \setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
 %    \end{macrocode}
+% \begin{macro}[int]{\HoLogo@Westlake}
+%    \begin{macrocode}
+\def \HoLogo@Westlake #1
+  {
+    WESTLAKE
+  }
+%    \end{macrocode}
+% \end{macro}
 % End the optionlist |wu-l3xdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wu-l3xdoc>
