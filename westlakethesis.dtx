@@ -118,9 +118,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<wu-layout>\ProvidesExplFile {wu-layout.code.tex}
 %<wu-beamer>  {Documentation (WESTLAKE)}
 %<wu-beamer>\ProvidesExplFile {wu-beamer.code.tex}
-%<wu-poster>  {Documentation (WESTLAKE)}
+%<wu-poster>  {Westlake University Beamer Template (WESTLAKE)}
 %<wu-poster>\ProvidesExplFile {wu-poster.code.tex}
-%<wu-l3xdoc>  {Documentation (WESTLAKE)}
+%<wu-l3xdoc>  {Westlake University Poster Template (WESTLAKE)}
 %<wu-l3xdoc>\ProvidesExplFile {wu-l3xdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
 %</wu-class|wu-driver|wu-kernel|wu-params|wu-layout|wu-beamer|wu-poster|wu-l3xdoc>
@@ -405,13 +405,22 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \item |kernel|: Inner functions for the |layout| module.
 %   \item |params|: Storing the constant variables.
 %   \item |layout|: Formats of Westlake University dissertations.
+%   \item |l3xdoc|: WESTLAKEthesis Documentation.
+%   \item |beamer|: Westlake University Beamer Template.
+%   \item |poster|: Westlake University Poster Template.
 % \end{itemize}
+% \begin{variable}{\g_@@_classoption_mode_str, \g_@@_required_modules_clist}
+% 
+% Loading the |thesis| mode by default.
 %    \begin{macrocode}
+\str_new:N \g_@@_classoption_mode_str
 \clist_new:N \g_@@_required_modules_clist
 \keys_define:nn { @@ / classoption }
   {
     mode          .choices:nn =
-      { thesis, l3xdoc, beamer, poster } {},
+      { thesis, l3xdoc, beamer, poster }
+      { \str_gset_eq:NN \g_@@_classoption_mode_str \l_keys_choice_str },
+    mode          .initial:n  = { thesis },
     mode          .default:n  = { thesis },
     mode / thesis .code:n     =
       {
@@ -432,17 +441,22 @@ The Current Maintainer of this work is **Mingyu Xia**.
     unknown .code:n           = \@@_unknown_option:n {#1},
   }
 \keys_set:nn { @@ / classoption } { mode = thesis }
+%    \end{macrocode}
+% Process the class options and loading the corresponding modules.
+%    \begin{macrocode}
 \ProcessKeyOptions [ @@ / classoption ]
 \@@_load_module:N \g_@@_required_modules_clist
 %    \end{macrocode}
+% \end{variable}
 % \begin{macro}{\westlakeset}
 % \hologo{LaTeX2e} user's interface for filling information,
-% only valid in preamble.
+% only valid in preamble. The keys it accepts will be different under
+% different modes.
 %    \begin{macrocode}
 \@onlypreamble \westlakeset
 \NewDocumentCommand \westlakeset { m }
   {
-    \keys_set:nn { thesis / set } {#1}
+    \exp_args:No \keys_set:nn { \g_@@_classoption_mode_str / set } {#1}
 %    \end{macrocode}
 % Parsing the bilingualism of the items |title|, |school|, |subject|, |author|,
 % and |PI| after filling information, then decide
@@ -455,36 +469,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
       { \bool_gset_true:N \l_@@_load_bib_bool }
   }
 %    \end{macrocode}
-% \begin{variable}
-%   {
-%     \l_@@_set_id_tl,
-%     \l_@@_set_title_tl,
-%     \l_@@_set_school_tl,
-%     \l_@@_set_subject_tl,
-%     \l_@@_set_author_tl,
-%     \l_@@_set_PI_tl,
-%     \l_@@_set_master_bool,
-%     \l_@@_set_bib_str,
-%   }
-% Key–value definitions for the |thesis| mode.
-%    \begin{macrocode}
-\keys_define:nn { thesis / set }
-  {
-    id        .tl_set:N   = \l_@@_set_id_tl,
-      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
-    title     .tl_set:N   = \l_@@_set_title_tl,
-    school    .tl_set:N   = \l_@@_set_school_tl,
-    subject   .tl_set:N   = \l_@@_set_subject_tl,
-    author    .tl_set:N   = \l_@@_set_author_tl,
-    PI        .tl_set:N   = \l_@@_set_PI_tl,
-    master    .bool_set:N = \l_@@_set_master_bool,
-      master  .initial:n  = false,
-      master  .default:n  = true,
-    bibsource .str_set:N  = \l_@@_set_bib_str,
-  }
-%    \end{macrocode}
-% \end{variable}
-% \end{macro}
 % End the optionlist |wu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %</wu-class>
@@ -729,6 +713,78 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 %<*wu-params>
 %    \end{macrocode}
+% \begin{variable}
+%   {
+%     \l_@@_set_id_tl,
+%     \l_@@_set_title_tl,
+%     \l_@@_set_school_tl,
+%     \l_@@_set_subject_tl,
+%     \l_@@_set_author_tl,
+%     \l_@@_set_PI_tl,
+%     \l_@@_set_master_bool,
+%     \l_@@_set_bib_str,
+%   }
+% Key–value definitions for different modes.
+%    \begin{macrocode}
+\keys_define:nn { thesis / set }
+  {
+    id        .tl_set:N   = \l_@@_set_id_tl,
+      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
+    title     .tl_set:N   = \l_@@_set_title_tl,
+    school    .tl_set:N   = \l_@@_set_school_tl,
+    subject   .tl_set:N   = \l_@@_set_subject_tl,
+    author    .tl_set:N   = \l_@@_set_author_tl,
+    PI        .tl_set:N   = \l_@@_set_PI_tl,
+    master    .bool_set:N = \l_@@_set_master_bool,
+      master  .initial:n  = false,
+      master  .default:n  = true,
+    bibsource .str_set:N  = \l_@@_set_bib_str,
+  }
+\keys_define:nn { beamer / set }
+  {
+    id        .tl_set:N   = \l_@@_set_id_tl,
+      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
+    title     .tl_set:N   = \l_@@_set_title_tl,
+    school    .tl_set:N   = \l_@@_set_school_tl,
+    subject   .tl_set:N   = \l_@@_set_subject_tl,
+    author    .tl_set:N   = \l_@@_set_author_tl,
+    PI        .tl_set:N   = \l_@@_set_PI_tl,
+    master    .bool_set:N = \l_@@_set_master_bool,
+      master  .initial:n  = false,
+      master  .default:n  = true,
+    bibsource .str_set:N  = \l_@@_set_bib_str,
+  }
+\keys_define:nn { poster / set }
+  {
+    id        .tl_set:N   = \l_@@_set_id_tl,
+      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
+    title     .tl_set:N   = \l_@@_set_title_tl,
+    school    .tl_set:N   = \l_@@_set_school_tl,
+    subject   .tl_set:N   = \l_@@_set_subject_tl,
+    author    .tl_set:N   = \l_@@_set_author_tl,
+    PI        .tl_set:N   = \l_@@_set_PI_tl,
+    master    .bool_set:N = \l_@@_set_master_bool,
+      master  .initial:n  = false,
+      master  .default:n  = true,
+    bibsource .str_set:N  = \l_@@_set_bib_str,
+  }
+\keys_define:nn { l3xdoc / set }
+  {
+    id        .tl_set:N   = \l_@@_set_id_tl,
+      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
+    title     .tl_set:N   = \l_@@_set_title_tl,
+    school    .tl_set:N   = \l_@@_set_school_tl,
+    subject   .tl_set:N   = \l_@@_set_subject_tl,
+    author    .tl_set:N   = \l_@@_set_author_tl,
+    PI        .tl_set:N   = \l_@@_set_PI_tl,
+    master    .bool_set:N = \l_@@_set_master_bool,
+      master  .initial:n  = false,
+      master  .default:n  = true,
+    bibsource .str_set:N  = \l_@@_set_bib_str,
+  }
+%    \end{macrocode}
+% \end{variable}
+% \end{macro}
 % \begin{variable}{\l_@@_school_en_prop, \l_@@_school_cn_prop}
 % Storing the aliases of the English and Chinese names of schools into
 % two property lists.
