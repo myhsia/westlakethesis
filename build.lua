@@ -86,3 +86,23 @@ function tex(file,dir,cmd)
   return run(dir, sandbox_aux .. " " .. cmd         .. " " ..
                   upretex_aux .. " " .. makeidx_aux .. " " .. file)
 end
+
+-- %<*wu-beamer|wu-poster|wu-l3xdoc>
+-- %<wu-thesis>\keys_define:nn { thesis / set }
+-- %<wu-beamer>\keys_define:nn { beamer / set }
+-- %<wu-poster>\keys_define:nn { poster / set }
+-- %<wu-l3xdoc>\keys_define:nn { l3xdoc / set }
+--   {
+-- %<wu-thesis>    id        .tl_set:N   = \l_@@_set_id_tl,
+-- %<wu-thesis>      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
+--     title     .tl_set:N   = \l_@@_set_title_tl,
+-- %<wu-thesis>    school    .tl_set:N   = \l_@@_set_school_tl,
+-- %<wu-thesis|wu-beamer|wu-poster>    subject   .tl_set:N   = \l_@@_set_subject_tl,
+--     author    .tl_set:N   = \l_@@_set_author_tl,
+-- %<wu-thesis|wu-beamer|wu-poster>    PI        .tl_set:N   = \l_@@_set_PI_tl,
+-- %<wu-thesis>    master    .bool_set:N = \l_@@_set_master_bool,
+-- %<wu-thesis>      master  .initial:n  = false,
+-- %<wu-thesis>      master  .default:n  = true,
+--     bibsource .str_set:N  = \l_@@_set_bib_str,
+--   }
+-- %</wu-beamer|wu-poster|wu-l3xdoc>
