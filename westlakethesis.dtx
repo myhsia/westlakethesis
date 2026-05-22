@@ -344,14 +344,10 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Message management: private functions for creating new message and
 % broadcasting it as error, warning, or info.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_msg_new:nn #1#2
-  { \msg_new:nnn     { WESTLAKEthesis } {#1} {#2} }
-\cs_new_protected:Npn \@@_msg_error:nn #1#2
-  { \msg_error:nnn   { WESTLAKEthesis } {#1} {#2} }
-\cs_new_protected:Npn \@@_msg_warning:nn #1#2
-  { \msg_warning:nnn { WESTLAKEthesis } {#1} {#2} }
-\cs_new_protected:Npn \@@_msg_info:nn #1#2
-  { \msg_info:nnn    { WESTLAKEthesis } {#1} {#2} }
+\cs_new_protected:Npn \@@_msg_new:nn     { \msg_new:nnn     { WESTLAKEthesis } }
+\cs_new_protected:Npn \@@_msg_error:nn   { \msg_error:nnn   { WESTLAKEthesis } }
+\cs_new_protected:Npn \@@_msg_warning:nn { \msg_warning:nnn { WESTLAKEthesis } }
+\cs_new_protected:Npn \@@_msg_info:nn    { \msg_info:nnn    { WESTLAKEthesis } }
 %    \end{macrocode}
 % \end{macro}
 % New message: |not found module|, will be used in \cs{@@_load_module:n}.
@@ -643,8 +639,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \fontsize
         { \dim_to_decimal:n { #2 bp } }
         { \dim_to_decimal:n { (#2 bp) * 6 / 5 } } \selectfont
-      }
-      { \ctex_zihao:n {#2}                                          }
+      } { \ctex_zihao:n {#2} }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1192,7 +1187,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \ctex_set:nn { subsubsection }
   {
-    format+    = \ctex_zihao:n { -4 } \sffamily \mdseries \raggedright,
+    format+    = \@@_fontsize:nn { cn } { -4 } \sffamily \mdseries \raggedright,
     beforeskip = 13pt,     afterskip = 12pt,
     aftername  = \quad,    fixskip
   }
@@ -1231,7 +1226,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \RequirePackage{libertine}
 \usetheme [ logobg = westlake-logo.pdf,    lbadge = westlake-badge-cn.pdf,
-            mainbg = westlake-paint-a.png, basebg = westlake-paint-b.png]
+            mainbg = westlake-paint-a.png, basebg = westlake-paint-b.png  ]
           { westlake }
 %    \end{macrocode}
 % End the optionlist |wu-beamer| for \pkg{l3docstrip}.
