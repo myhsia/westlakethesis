@@ -2370,7 +2370,7 @@ Completed box being shipped out [1]
 .......\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fill
 .....\vbox(8.48384+2.46133)x172.28145
-......\hbox(10.06886+0.87631)x172.28145, glue set 21.71898fil
+......\hbox(10.06886+0.87631)x172.28145, glue set 18.70773fil
 .......\hbox(0.0+0.0)x0.0
 .......\TU/LXGWNeoZhiSong(0)/m/n/12.045 签
 .......\glue 0.0 plus 0.60463
@@ -2382,9 +2382,13 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
 .......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
 .......\glue 8.27505 minus 6.02249
 .......\TU/TeXGyreTermesX(0)/m/n/12.045 2026
-.......\glue 0.0 plus 0.60463
+.......\glue 3.01125 plus 1.50562 minus 1.00374
 .......\TU/LXGWNeoZhiSong(0)/m/n/12.045 年
 .......\glue 3.01125 plus 1.50562 minus 1.00374
 .......\TU/TeXGyreTermesX(0)/m/n/12.045 5
@@ -2822,6 +2826,10 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
 .......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
 .......\glue 8.27505 minus 6.02249
 .......\TU/TeXGyreTermesX(0)/m/n/12.045 2026
 .......\glue 3.01125 plus 1.50562 minus 1.00374
@@ -2892,6 +2900,10 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\TU/LXGWNeoZhiSong(0)/m/n/12.045 ：
 .......\rule(0.0+0.0)x-8.27505
+.......\kern 0.0005
+.......\kern -0.0005
+.......\kern -0.99649
+.......\kern 0.99649
 .......\glue 8.27505 minus 6.02249
 .......\TU/TeXGyreTermesX(0)/m/n/12.045 2026
 .......\glue 3.01125 plus 1.50562 minus 1.00374

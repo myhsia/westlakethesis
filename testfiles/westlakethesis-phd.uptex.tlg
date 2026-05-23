@@ -2446,17 +2446,17 @@ Completed box being shipped out [1]
 .......\OT1/ntxtlf/m/n/12.045 0
 .......\OT1/ntxtlf/m/n/12.045 2
 .......\OT1/ntxtlf/m/n/12.045 6
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 年
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\OT1/ntxtlf/m/n/12.045 5
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 月
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\OT1/ntxtlf/m/n/12.045 2
 .......\OT1/ntxtlf/m/n/12.045 0
 .......\penalty 500(for \jcharwidowpenalty)
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 日
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2742,17 +2742,17 @@ Completed box being shipped out [1]
 .......\OT1/ntxtlf/m/n/12.045 0
 .......\OT1/ntxtlf/m/n/12.045 2
 .......\OT1/ntxtlf/m/n/12.045 6
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 年
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\OT1/ntxtlf/m/n/12.045 5
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 月
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\OT1/ntxtlf/m/n/12.045 2
 .......\OT1/ntxtlf/m/n/12.045 1
 .......\penalty 500(for \jcharwidowpenalty)
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 日
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2798,17 +2798,17 @@ Completed box being shipped out [1]
 .......\OT1/ntxtlf/m/n/12.045 0
 .......\OT1/ntxtlf/m/n/12.045 2
 .......\OT1/ntxtlf/m/n/12.045 6
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 年
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\OT1/ntxtlf/m/n/12.045 5
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 月
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\OT1/ntxtlf/m/n/12.045 2
 .......\OT1/ntxtlf/m/n/12.045 1
 .......\penalty 500(for \jcharwidowpenalty)
-.......\glue 3.01125 plus 2.40895 minus 1.20456
+.......\glue(\xkanjiskip) 3.01125 plus 1.0 minus 1.0
 .......\JY2/zhrm/m/n/12.045 日
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
