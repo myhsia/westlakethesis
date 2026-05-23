@@ -105,7 +105,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
-%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<xiamingyu@westlake.edu.cn>$
+%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<myhsia@outlook.com>$
+% ^^A 高起点 小而精 研究型
+% ^^A High Starting Point, Small and Elite, Research-oriented
 %<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
 %<class>\ProvidesExplClass {\ExplFileName}
 %<depend>  {Loading the base class and required packages (WESTLAKE)}
@@ -586,12 +588,15 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \cs_new:Npn \@@_parse_slash_ab:c #1
   {
-    \tl_clear_new:c { #1_a }
-    \tl_clear_new:c { #1_b }
-    \seq_clear:N \l_@@_set_tmpa_seq
-    \seq_set_split:Nne \l_@@_set_tmpa_seq { / } { \cs:w #1 \cs_end: }
-    \seq_get_left:Nc  \l_@@_set_tmpa_seq { #1_a }
-    \seq_get_right:Nc \l_@@_set_tmpa_seq { #1_b }
+    \exp_args:Nc \tl_if_blank:VF {#1}
+      {
+        \tl_clear_new:c { #1_a }
+        \tl_clear_new:c { #1_b }
+        \seq_clear:N \l_@@_set_tmpa_seq
+        \seq_set_split:Nne \l_@@_set_tmpa_seq { / } { \cs:w #1 \cs_end: }
+        \seq_get_left:Nc  \l_@@_set_tmpa_seq { #1_a }
+        \seq_get_right:Nc \l_@@_set_tmpa_seq { #1_b }
+      }
   }
 \cs_generate_variant:Nn \seq_get_left:NN  { Nc }
 \cs_generate_variant:Nn \seq_get_right:NN { Nc }
