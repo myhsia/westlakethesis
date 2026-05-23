@@ -21,7 +21,7 @@
 %   This work consists of the files westlakethesis.dtx,                 *
 %                                   westlakethesis.ins,                 *
 %                 the derived files westlakethesis.cls,                 *
-%                                   wu-driver.code.tex,                 *
+%                                   wu-depend.code.tex,                 *
 %                                   wu-kernel.code.tex,                 *
 %                                   wu-params.code.tex,                 *
 %                                   wu-thesis.code.tex,                 *
@@ -104,26 +104,26 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \fi
 %</internal>
 %
-%<*wu-class|wu-driver|wu-kernel|wu-params|wu-thesis|wu-beamer|wu-poster|wu-l3xdoc>
+%<*class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
 %<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<xiamingyu@westlake.edu.cn>$
-%<wu-class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
-%<wu-class>\ProvidesExplClass {\ExplFileName}
-%<wu-driver>  {Loading the base class and required packages (WESTLAKE)}
-%<wu-driver>\ProvidesExplFile {wu-driver.code.tex}
-%<wu-kernel>  {Inner functions for different modes (WESTLAKE)}
-%<wu-kernel>\ProvidesExplFile {wu-kernel.code.tex}
-%<wu-params>  {Storing the constant variables (WESTLAKE)}
-%<wu-params>\ProvidesExplFile {wu-params.code.tex}
-%<wu-thesis>  {Formats of Westlake University dissertations (WESTLAKE)}
-%<wu-thesis>\ProvidesExplFile {wu-thesis.code.tex}
-%<wu-beamer>  {Westlake University Beamer Template (WESTLAKE)}
-%<wu-beamer>\ProvidesExplFile {wu-beamer.code.tex}
-%<wu-poster>  {Westlake University Poster Template (WESTLAKE)}
-%<wu-poster>\ProvidesExplFile {wu-poster.code.tex}
-%<wu-l3xdoc>  {Documentation (WESTLAKE)}
-%<wu-l3xdoc>\ProvidesExplFile {wu-l3xdoc.code.tex}
+%<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
+%<class>\ProvidesExplClass {\ExplFileName}
+%<depend>  {Loading the base class and required packages (WESTLAKE)}
+%<depend>\ProvidesExplFile {wu-depend.code.tex}
+%<kernel>  {Inner functions for different modes (WESTLAKE)}
+%<kernel>\ProvidesExplFile {wu-kernel.code.tex}
+%<params>  {Storing the constant variables (WESTLAKE)}
+%<params>\ProvidesExplFile {wu-params.code.tex}
+%<thesis>  {Formats of Westlake University dissertations (WESTLAKE)}
+%<thesis>\ProvidesExplFile {wu-thesis.code.tex}
+%<beamer>  {Westlake University Beamer Template (WESTLAKE)}
+%<beamer>\ProvidesExplFile {wu-beamer.code.tex}
+%<poster>  {Westlake University Poster Template (WESTLAKE)}
+%<poster>\ProvidesExplFile {wu-poster.code.tex}
+%<l3xdoc>  {Documentation (WESTLAKE)}
+%<l3xdoc>\ProvidesExplFile {wu-l3xdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
-%</wu-class|wu-driver|wu-kernel|wu-params|wu-thesis|wu-beamer|wu-poster|wu-l3xdoc>
+%</class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
 %<*driver>
 \documentclass[mode = l3xdoc]{westlakethesis}
 \usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
@@ -325,14 +325,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{implementation}
 % \section{The source code}
-% We use |wu| as the namespace.
+% Using |wu| as the namespace.
 %    \begin{macrocode}
 %<@@=wu>
 %    \end{macrocode}
 % \subsection{\texttt{westlakethesis.cls}}
-% Start the optionlist |wu-class| for \pkg{l3docstrip}.
+% Start the optionlist |class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-class>
+%<*class>
 %    \end{macrocode}
 % \begin{macro}
 %   {
@@ -397,7 +397,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{macro}
 % Load the modules respectively under different modes.
 % \begin{itemize}
-%   \item |driver|: Loading the base class and required packages.
+%   \item |depend|: Loading the dependencies: class and packages.
 %   \item |kernel|: Inner functions for the |thesis| module.
 %   \item |params|: Storing the constant variables.
 %   \item |thesis|: Formats of Westlake University dissertations.
@@ -421,7 +421,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     mode / thesis .code:n     =
       {
         \clist_gset:Nn \g_@@_required_modules_clist
-          { driver, kernel, params, thesis }
+          { depend, kernel, params, thesis }
       },
     mode / l3xdoc .code:n     =
       { \clist_gset:Nn \g_@@_required_modules_clist { l3xdoc } },
@@ -466,6 +466,10 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
+% End the optionlist |class| for \pkg{l3docstrip}.
+%    \begin{macrocode}
+%</class>
+%    \end{macrocode}
 % \begin{variable}
 %   {
 %     \l_@@_set_id_tl,
@@ -477,32 +481,33 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \l_@@_set_master_bool,
 %     \l_@@_set_bib_str,
 %   }
-% Key–value definitions for different modes.
+% Key–value definitions for different modes. Using the namespace for filtering.
+%    \begin{macrocode}
+%<*thesis|beamer|poster|l3xdoc>
+%    \end{macrocode}
 %    \begin{macrocode}
 \keys_define:nn { thesis / set }
   {
-    id        .tl_set:N   = \l_@@_set_id_tl,
-      id      .initial:n  = { \int_value:w \c_sys_year_int 0000000 },
     title     .tl_set:N   = \l_@@_set_title_tl,
-    school    .tl_set:N   = \l_@@_set_school_tl,
-    subject   .tl_set:N   = \l_@@_set_subject_tl,
     author    .tl_set:N   = \l_@@_set_author_tl,
-    PI        .tl_set:N   = \l_@@_set_PI_tl,
-    master    .bool_set:N = \l_@@_set_master_bool,
-      master  .initial:n  = false,
-      master  .default:n  = true,
     bibsource .str_set:N  = \l_@@_set_bib_str,
+%<thesis|beamer|poster>    subject   .tl_set:N   = \l_@@_set_subject_tl,
+%<thesis|beamer|poster>    school    .tl_set:N   = \l_@@_set_school_tl,
+%<thesis|beamer|poster>    PI        .tl_set:N   = \l_@@_set_PI_tl,
+%<thesis>    id        .tl_set:N   = \l_@@_set_id_tl,
+%<thesis>    master    .bool_set:N = \l_@@_set_master_bool,
+%<thesis>      master  .initial:n  = false,
+%<thesis>      master  .default:n  = true,
   }
 %    \end{macrocode}
-% \end{variable}
-% End the optionlist |wu-class| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-class>
+%</thesis|beamer|poster|l3xdoc>
 %    \end{macrocode}
-% \subsection{\texttt{wu-driver.code.tex}}
-% Start the optionlist |wu-driver| for \pkg{l3docstrip}.
+% \end{variable}
+% \subsection{\texttt{wu-depend.code.tex}}
+% Start the optionlist |depend| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-driver>
+%<*depend>
 %    \end{macrocode}
 % Prevent the warnings raised by \pkg{xeCJK} (valid for \hologo{XeTeX})
 % when redefining fonts.
@@ -565,14 +570,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
       }
   }
 %    \end{macrocode}
-% End the optionlist |wu-driver| for \pkg{l3docstrip}.
+% End the optionlist |depend| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-driver>
+%</depend>
 %    \end{macrocode}
 % \subsection{\texttt{wu-kernel.code.tex}}
-% Start the optionlist |wu-kernel| for \pkg{l3docstrip}.
+% Start the optionlist |kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-kernel>
+%<*kernel>
 %    \end{macrocode}
 % \begin{macro}{\@@_parse_slash_ab:c}
 % This function is used for parsing the binary sequence variable \cs{\#1}
@@ -648,8 +653,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{macro}
 % \begin{macro}{\@@_signature_inline:n}
 % This function is used to include the signature image file inline, i.e.,
-% centering align to the text, in the text, with a height equal to 2.4 times
-% the current font size.
+% centering align to the text with a height equal to 2.4 times the current
+% font size.
 %    \begin{macrocode}
 \cs_new:Npn \@@_signature_inline:n #1
   {
@@ -729,14 +734,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% End the optionlist |wu-kernel| for \pkg{l3docstrip}.
+% End the optionlist |kernel| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-kernel>
+%</kernel>
 %    \end{macrocode}
 % \subsection{\texttt{wu-params.code.tex}}
-% Start the optionlist |wu-params| for \pkg{l3docstrip}.
+% Start the optionlist |params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-params>
+%<*params>
 %    \end{macrocode}
 % \begin{variable}{\l_@@_school_en_prop, \l_@@_school_cn_prop}
 % Storing the aliases of the English and Chinese names of schools into
@@ -838,14 +843,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \bool_new:N \l_@@_load_bib_bool
 %    \end{macrocode}
 % \end{variable}
-% End the optionlist |wu-params| for \pkg{l3docstrip}.
+% End the optionlist |params| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-params>
+%</params>
 %    \end{macrocode}
 % \subsection{\texttt{wu-thesis.code.tex}}
-% Start the optionlist |wu-thesis| for \pkg{l3docstrip}.
+% Start the optionlist |thesis| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-thesis>
+%<*thesis>
 %    \end{macrocode}
 % Configure the geometry.
 %    \begin{macrocode}
@@ -1165,14 +1170,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \renewcommand \cftdotsep       { .5                         }
 \renewcommand \@pnumwidth      { 2ex                        }
 %    \end{macrocode}
-% End the optionlist |wu-thesis| for \pkg{l3docstrip}.
+% End the optionlist |thesis| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-thesis>
+%</thesis>
 %    \end{macrocode}
 % \subsection{\texttt{wu-beamer.code.tex}}
-% Start the optionlist |wu-beamer| for \pkg{l3docstrip}.
+% Start the optionlist |beamer| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-beamer>
+%<*beamer>
 %    \end{macrocode}
 % Loading the \cls{beamer} class.
 %    \begin{macrocode}
@@ -1182,19 +1187,19 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % Loading the \pkg{westlake} beamer theme.
 %    \begin{macrocode}
-\RequirePackage{libertine}
+\RequirePackage { libertine }
 \usetheme [ logobg = westlake-logo.pdf,    lbadge = westlake-badge-cn.pdf,
             mainbg = westlake-paint-a.png, basebg = westlake-paint-b.png  ]
           { westlake }
 %    \end{macrocode}
-% End the optionlist |wu-beamer| for \pkg{l3docstrip}.
+% End the optionlist |beamer| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-beamer>
+%</beamer>
 %    \end{macrocode}
 % \subsection{\texttt{wu-l3xdoc.code.tex}}
-% Start the optionlist |wu-l3xdoc| for \pkg{l3docstrip}.
+% Start the optionlist |l3xdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*wu-l3xdoc>
+%<*l3xdoc>
 %    \end{macrocode}
 % Loading the \cls{l3doc} class.
 %    \begin{macrocode}
@@ -1242,9 +1247,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% End the optionlist |wu-l3xdoc| for \pkg{l3docstrip}.
+% End the optionlist |l3xdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</wu-l3xdoc>
+%</l3xdoc>
 %    \end{macrocode}
 % Restore the namespace.
 %    \begin{macrocode}
@@ -1254,7 +1259,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \clearpage
 % \PrintIndex
 % \iffalse
-%<*wu-class|wu-driver|wu-kernel|wu-params|wu-thesis|wu-beamer|wu-poster|wu-l3xdoc>
+%<*class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
 %<!driver>\file_input_stop:
-%</wu-class|wu-driver|wu-kernel|wu-params|wu-thesis|wu-beamer|wu-poster|wu-l3xdoc>
+%</class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
 % \fi

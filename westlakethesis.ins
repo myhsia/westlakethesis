@@ -21,7 +21,7 @@ File: westlakethesis.dtx
   This work consists of the files westlakethesis.dtx,                 *
                                   westlakethesis.ins,                 *
                 the derived files westlakethesis.cls,                 *
-                                  wu-driver.code.tex,                 *
+                                  wu-depend.code.tex,                 *
                                   wu-kernel.code.tex,                 *
                                   wu-params.code.tex,                 *
                                   wu-thesis.code.tex,                 *
@@ -67,7 +67,7 @@ File: westlakethesis.dtx
   This work consists of the files westlakethesis.dtx,                 *
                                   westlakethesis.ins,                 *
                 the derived files westlakethesis.cls,                 *
-                                  wu-driver.code.tex,                 *
+                                  wu-depend.code.tex,                 *
                                   wu-kernel.code.tex,                 *
                                   wu-params.code.tex,                 *
                                   wu-thesis.code.tex,                 *
@@ -83,17 +83,17 @@ File: westlakethesis.dtx
 
 \generate{
   \usedir{tex/latex/westlakethesis}
-    \file{westlakethesis.cls}         {\from{\jobname.dtx}{wu-class}  }
-    \file{wu-driver.code.tex}         {\from{\jobname.dtx}{wu-driver} }
-    \file{wu-kernel.code.tex}         {\from{\jobname.dtx}{wu-kernel} }
-    \file{wu-params.code.tex}         {\from{\jobname.dtx}{wu-params} }
-    \file{wu-thesis.code.tex}         {\from{\jobname.dtx}{wu-thesis} }
-    \file{wu-beamer.code.tex}         {\from{\jobname.dtx}{wu-beamer} }
-    \file{wu-poster.code.tex}         {\from{\jobname.dtx}{wu-poster} }
-    \file{wu-l3xdoc.code.tex}         {\from{\jobname.dtx}{wu-l3xdoc} }
+    \file{westlakethesis.cls}            {\from{\jobname.dtx}{class}  }
+    \file{wu-depend.code.tex}            {\from{\jobname.dtx}{depend} }
+    \file{wu-kernel.code.tex}            {\from{\jobname.dtx}{kernel} }
+    \file{wu-params.code.tex}            {\from{\jobname.dtx}{params} }
+    \file{wu-thesis.code.tex}            {\from{\jobname.dtx}{thesis} }
+    \file{wu-beamer.code.tex}            {\from{\jobname.dtx}{beamer} }
+    \file{wu-poster.code.tex}            {\from{\jobname.dtx}{poster} }
+    \file{wu-l3xdoc.code.tex}            {\from{\jobname.dtx}{l3xdoc} }
   \usedir{doc/latex/westlakethesis}
   \nopreamble\nopostamble
-    \file{README.md}                  {\from{\jobname.dtx}{readme}    }
+    \file{README.md}                     {\from{\jobname.dtx}{readme} }
 }
 
 \endbatchfile
