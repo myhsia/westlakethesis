@@ -516,12 +516,12 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
 %<thesis>    \clist_map_inline:nn { title, author, subject, school, PI }
 %<beamer|poster>    \clist_map_inline:nn { title, author, subject }
-%<!l3doc>      { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
+%<!l3xdoc>      { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
 %<beamer>    \title  [ \l_@@_set_title_tl_b  ] { \l_@@_set_title_tl_a  }
 %<beamer>    \author [ \l_@@_set_author_tl_b ] { \l_@@_set_author_tl_a }
 %<beamer>    \date   { \l_@@_set_date_tl    }
-%<!l3doc>    \str_if_empty:NF \l_@@_set_bib_str
-%<!l3doc>      { \bool_gset_true:N \l_@@_load_bib_bool }
+%<!l3xdoc>    \str_if_empty:NF \l_@@_set_bib_str
+%<!l3xdoc>      { \bool_gset_true:N \l_@@_load_bib_bool }
   }
 %    \end{macrocode}
 %    \begin{macrocode}
