@@ -106,7 +106,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 %<*class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
 %<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<myhsia@outlook.com>$
-% ^^A 高起点 小而精 研究型
+% ^^A «西湖大学» 高起点 小而精 研究型 https://westlake.edu.cn
 % ^^A High Starting Point, Small and Elite, Research-oriented
 %<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
 %<class>\ProvidesExplClass {\ExplFileName}
@@ -461,7 +461,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \hyperlink{bool:gbt7714_load}{whether to load the \pkg{gbt7714} package} by
 % \hypertarget{bool:gbt7714_set}{setting the boolean \cs{l_@@_load_bib_bool}}.
 %    \begin{macrocode}
-    \clist_map_inline:nn { title, school, subject, author, PI }
+    \clist_map_inline:nn { title, author, subject, school, PI }
       { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
     \str_if_empty:NF \l_@@_set_bib_str
       { \bool_gset_true:N \l_@@_load_bib_bool }
@@ -474,14 +474,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % \begin{variable}
 %   {
-%     \l_@@_set_id_tl,
 %     \l_@@_set_title_tl,
-%     \l_@@_set_school_tl,
-%     \l_@@_set_subject_tl,
 %     \l_@@_set_author_tl,
-%     \l_@@_set_PI_tl,
-%     \l_@@_set_master_bool,
 %     \l_@@_set_bib_str,
+%     \l_@@_set_subject_tl,
+%     \l_@@_set_school_tl,
+%     \l_@@_set_PI_tl,
+%     \l_@@_set_id_tl,
+%     \l_@@_set_master_bool,
 %   }
 % Key–value definitions for different modes. Using the namespace for filtering.
 %    \begin{macrocode}
@@ -492,6 +492,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     title     .tl_set:N   = \l_@@_set_title_tl,
     author    .tl_set:N   = \l_@@_set_author_tl,
+    date      .tl_set:N   = \l_@@_set_date_tl,
     bibsource .str_set:N  = \l_@@_set_bib_str,
 %<thesis|beamer|poster>    subject   .tl_set:N   = \l_@@_set_subject_tl,
 %<thesis|beamer|poster>    school    .tl_set:N   = \l_@@_set_school_tl,
