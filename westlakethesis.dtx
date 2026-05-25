@@ -27,7 +27,7 @@
 %                                   wu-thesis.code.tex,                 *
 %                                   wu-beamer.code.tex,                 *
 %                                   wu-poster.code.tex,                 *
-%                                   wu-l3xdoc.code.tex,                 *
+%                                   wu-usrdoc.code.tex,                 *
 %           the documentation files westlakethesis.pdf,                 *
 %                               and README.md.                          *
 % -----------------------------------------------------------------------
@@ -104,9 +104,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \fi
 %</internal>
 %
-%<*class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
+%<*class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 %<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<myhsia@outlook.com>$
-% ^^A «西湖大学» 高起点 小而精 研究型 https://westlake.edu.cn
+% ^^A «Westlake University»  «西湖大学»  高起点 小而精 研究型
 % ^^A High Starting Point, Small and Elite, Research-oriented
 %<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
 %<class>\ProvidesExplClass {\ExplFileName}
@@ -122,18 +122,20 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<beamer>\ProvidesExplFile {wu-beamer.code.tex}
 %<poster>  {Westlake University Poster Template (WESTLAKE)}
 %<poster>\ProvidesExplFile {wu-poster.code.tex}
-%<l3xdoc>  {Documentation (WESTLAKE)}
-%<l3xdoc>\ProvidesExplFile {wu-l3xdoc.code.tex}
+%<usrdoc>  {Documentation (WESTLAKE)}
+%<usrdoc>\ProvidesExplFile {wu-usrdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
-%</class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
+%</class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 %<*driver>
-\documentclass[mode = l3xdoc]{westlakethesis}
+\documentclass[mode = usrdoc]{westlakethesis}
 \usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
 \makeindex
 \begin{document}
   \DocInput{\jobname.dtx}
+  \clearpage
+  \PrintIndex
 \end{document}
 %</driver>
 % \fi
@@ -193,12 +195,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   Generates the cover page.
 % \end{function}
 %
-% \DescribeEnv{abstract}^^A
+% \noindent \DescribeEnv{abstract}^^A
 % Inputs the abstract.
-% It accepts one optional argument to determine the language of abstract.
+% It accepts one optional argument to choose the language.
 % \begin{syntax}
-%   |\begin{abstract}[en] ... \end{abstract}|\\
-%   |\begin{abstract}[cn] ... \end{abstract}|\\
+%   \cs{begin}|{abstract}| \oarg{language} \meta{context} \cs{end}|{abstract}|
 % \end{syntax}
 %
 % \begin{function}{\keywords}
@@ -215,7 +216,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\commitment}
 %   \begin{syntax}
-%   \tn{commitment} \oarg{Comma-separated list}
+%   \tn{commitment} \oarg{comma-separated list}
 %   \end{syntax}
 %   This command is used to generate the commitment page.
 %   It accepts one optional argument to include the signatures and dates, the
@@ -284,12 +285,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   生成封面页.
 % \end{function}
 %
-% \DescribeEnv{abstract}
+% \noindent \DescribeEnv{abstract}^^A
 % 输入摘要.
 % 其接受一个可选参数用于选择摘要的语言.
 % \begin{syntax}
-%   |\begin{abstract}[en] ... \end{abstract}|\\
-%   |\begin{abstract}[cn] ... \end{abstract}|\\
+%   \cs{begin}|{abstract}| \oarg{language} \meta{context} \cs{end}|{abstract}|
 % \end{syntax}
 %
 % \begin{function}{\keywords}
@@ -408,18 +408,17 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% Load the modules respectively under different modes.
+% Under different modes, the required modules will be loaded.
 % \begin{itemize}
 %   \item |depend|: Loading the dependencies: class and packages.
 %   \item |kernel|: Inner functions for the |thesis| module.
 %   \item |params|: Storing the constant variables.
 %   \item |thesis|: Formats of Westlake University dissertations.
-%   \item |l3xdoc|: WESTLAKEthesis Documentation.
 %   \item |beamer|: Westlake University Beamer Template.
 %   \item |poster|: Westlake University Poster Template.
+%   \item |usrdoc|: WESTLAKEthesis Documentation.
 % \end{itemize}
 % \begin{variable}{\g_@@_classoption_mode_str, \g_@@_required_modules_clist}
-% 
 % Loading the |thesis| mode by default.
 %    \begin{macrocode}
 \str_new:N \g_@@_classoption_mode_str
@@ -427,7 +426,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \keys_define:nn { @@ / classoption }
   {
     mode          .choices:nn =
-      { thesis, l3xdoc, beamer, poster }
+      { thesis, usrdoc, beamer, poster }
       { \str_gset_eq:NN \g_@@_classoption_mode_str \l_keys_choice_str },
     mode          .initial:n  = { thesis },
     mode          .default:n  = { thesis },
@@ -436,8 +435,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \clist_gset:Nn \g_@@_required_modules_clist
           { depend, kernel, params, thesis }
       },
-    mode / l3xdoc .code:n     =
-      { \clist_gset:Nn \g_@@_required_modules_clist { l3xdoc } },
+    mode / usrdoc .code:n     =
+      { \clist_gset:Nn \g_@@_required_modules_clist { usrdoc } },
     mode / beamer .code:n     =
       {
         \clist_gset:Nn \g_@@_required_modules_clist
@@ -488,7 +487,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   }
 % Key–value definitions for different modes. Using the namespace for filtering.
 %    \begin{macrocode}
-%<*thesis|beamer|poster|l3xdoc>
+%<*thesis|beamer|poster|usrdoc>
 %    \end{macrocode}
 %    \begin{macrocode}
 \keys_define:nn { thesis / set }
@@ -496,8 +495,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
     title     .tl_set:N   = \l_@@_set_title_tl,
     author    .tl_set:N   = \l_@@_set_author_tl,
     date      .tl_set:N   = \l_@@_set_date_tl,
-%<!l3xdoc>    bibsource .str_set:N  = \l_@@_set_bib_str,
-%<!l3xdoc>    subject   .tl_set:N   = \l_@@_set_subject_tl,
+%<!usrdoc>    bibsource .str_set:N  = \l_@@_set_bib_str,
+%<!usrdoc>    subject   .tl_set:N   = \l_@@_set_subject_tl,
 %<thesis>    school    .tl_set:N   = \l_@@_set_school_tl,
 %<thesis>    PI        .tl_set:N   = \l_@@_set_PI_tl,
 %<thesis>    id        .tl_set:N   = \l_@@_set_id_tl,
@@ -516,16 +515,16 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
 %<thesis>    \clist_map_inline:nn { title, author, subject, school, PI }
 %<beamer|poster>    \clist_map_inline:nn { title, author, subject }
-%<!l3xdoc>      { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
+%<!usrdoc>      { \@@_parse_slash_ab:c { l_@@_set_##1_tl } }
 %<beamer>    \title  [ \l_@@_set_title_tl_b  ] { \l_@@_set_title_tl_a  }
 %<beamer>    \author [ \l_@@_set_author_tl_b ] { \l_@@_set_author_tl_a }
 %<beamer>    \date   { \l_@@_set_date_tl    }
-%<!l3xdoc>    \str_if_empty:NF \l_@@_set_bib_str
-%<!l3xdoc>      { \bool_gset_true:N \l_@@_load_bib_bool }
+%<!usrdoc>    \str_if_empty:NF \l_@@_set_bib_str
+%<!usrdoc>      { \bool_gset_true:N \l_@@_load_bib_bool }
   }
 %    \end{macrocode}
 %    \begin{macrocode}
-%</thesis|beamer|poster|l3xdoc>
+%</thesis|beamer|poster|usrdoc>
 %    \end{macrocode}
 % \end{variable}
 % \subsection{\texttt{wu-depend.code.tex}}
@@ -1046,7 +1045,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% \DescribeEnv{abstract}
+% \noindent \DescribeEnv{abstract}^^A
 % Generate the abstract in English and Chinese, and the command \tn{keywords}
 % inside this environment will appear as English or Chinese version due to |#1|.
 %    \begin{macrocode}
@@ -1227,10 +1226,10 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 %</beamer>
 %    \end{macrocode}
-% \subsection{\texttt{wu-l3xdoc.code.tex}}
-% Start the optionlist |l3xdoc| for \pkg{l3docstrip}.
+% \subsection{\texttt{wu-usrdoc.code.tex}}
+% Start the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%<*l3xdoc>
+%<*usrdoc>
 %    \end{macrocode}
 % Loading the \cls{l3doc} class.
 %    \begin{macrocode}
@@ -1270,19 +1269,17 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% End the optionlist |l3xdoc| for \pkg{l3docstrip}.
+% End the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
-%</l3xdoc>
+%</usrdoc>
 %    \end{macrocode}
 % Restore the namespace.
 %    \begin{macrocode}
 %<@@=>
 %    \end{macrocode}
-% \end{implementation}
-% \clearpage
-% \PrintIndex
 % \iffalse
-%<*class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
+%<*class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 %<!driver>\file_input_stop:
-%</class|depend|kernel|params|thesis|beamer|poster|l3xdoc>
+%</class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 % \fi
+% \end{implementation}
