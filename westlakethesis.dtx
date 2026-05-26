@@ -341,7 +341,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \tl_greplace_all:Nnn \ExplFileDate {/} {-}
 \tl_gset_eq:NN \g_@@_date_tl \ExplFileDate
 \tl_gset_eq:NN \g_@@_version_tl \ExplFileVersion
-\hook_gput_code:nnn { env / document / before } {.}
+\hook_gput_code:nnn { begindocument / before } { . }
   {
     \tl_gset_eq:NN \ExplFileDate    \g_@@_date_tl
     \tl_gset_eq:NN \ExplFileVersion \g_@@_version_tl
@@ -584,7 +584,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   package due to the boolean \cs{l_@@_load_bib_bool}}, which has been set via
 % \tn{westlakeset} \hyperlink{bool:gbt7714_set}{here}.
 %    \begin{macrocode}
-\hook_gput_code:nnn { env / document / before } { . }
+\hook_gput_code:nnn { begindocument / before } { . }
   {
     \bool_if:NT \l_@@_load_bib_bool
       {
@@ -743,7 +743,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % when the |bibsource| key is not assigned,
 % it will output only a chapter title.
 %    \begin{macrocode}
-\hook_gput_code:nnn { env / document / before } { . }
+\hook_gput_code:nnn { begindocument / before } { . }
   {
     \bool_if:NTF \l_@@_load_bib_bool
       {
