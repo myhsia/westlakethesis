@@ -89,7 +89,6 @@ Completed box being shipped out [1]
 ....\hbox(26.54707+20.52458)x416.83289, glue set 270.95871fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(26.54707+20.52458)x145.87418
-......\mathon
 ......\vbox(26.54707+20.52458)x145.87418
 .......\hbox(10.5996+12.93623)x145.87418
 ........\glue(\tabskip) 0.0
@@ -208,7 +207,6 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
-......\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0
@@ -335,7 +333,6 @@ Completed box being shipped out [1]
 ......\glue 5.87494
 .....\penalty 0
 .....\hbox(67.24962+59.21962)x196.68983
-......\mathon
 ......\vbox(67.24962+59.21962)x196.68983
 .......\hbox(18.21204+13.40527)x196.68983
 ........\glue(\tabskip) 0.0
@@ -557,7 +554,6 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
-......\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -642,7 +638,6 @@ Completed box being shipped out [1]
 ....\hbox(26.06523+20.04274)x416.83289, glue set 258.00136fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
 .....\hbox(26.06523+20.04274)x158.83153
-......\mathon
 ......\vbox(26.06523+20.04274)x158.83153
 .......\hbox(10.11775+12.93623)x158.83153
 ........\glue(\tabskip) 0.0
@@ -768,7 +763,6 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
-......\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0
@@ -943,7 +937,6 @@ Completed box being shipped out [1]
 ......\glue 5.87494
 .....\penalty 0
 .....\hbox(66.64961+58.61961)x189.71594
-......\mathon
 ......\vbox(66.64961+58.61961)x189.71594
 .......\hbox(18.21204+13.10527)x189.71594
 ........\glue(\tabskip) 0.0
@@ -1195,7 +1188,6 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil
 .........\glue 6.0
 ........\glue(\tabskip) 0.0
-......\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
