@@ -558,8 +558,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \pkg{tocloft} package to make ToC, LoF, and LoT lists to be typeset using the
 % default \hologo{LaTeX} methods.
 %    \begin{macrocode}
-\RequirePackage { graphicx, hyperref,  geometry, array,
-                  lmodern,  newtxtext, lipsum,   zhlipsum }
+\RequirePackage { graphicx,  hyperref,    geometry, array,
+                  lmodern,   newtxtext,   lipsum,   zhlipsum }
 \RequirePackage [ titles ] { tocloft }
 %    \end{macrocode}
 % Configure the possible paths for searching figures.
@@ -698,7 +698,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \@@_kernel_bilingual:nnn {#1}
       {
         \fontsize
-        { \dim_to_decimal:n { #2 bp } }
+        { \dim_to_decimal:n {  #2 bp          } }
         { \dim_to_decimal:n { (#2 bp) * 6 / 5 } } \selectfont
       } { \ctex_zihao:n {#2} }
   }
