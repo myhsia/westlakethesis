@@ -1618,6 +1618,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Suppress the warning.
 %    \begin{macrocode}
 \msg_redirect_module:nnn { l3doc } { warning } { none }
+\cs_set_eq:NN \__codedoc_patchxe_meta:n \__codedoc_meta:n
+\cs_set_protected:Npn \__codedoc_meta:n #1
+  { \__codedoc_patchxe_meta:n { \hbox:n {#1} } }
 \DeclareDocumentCommand \mail { m } { \href{mailto:#1}{\ttfamily #1} }
 \DeclareDocumentCommand \key { s m }
   {
@@ -1638,8 +1641,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
   \underline {\phantom{\bfseries false}\kern-0.1em}}}}
 \newlist{keyval}{itemize}{10}
 \setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
-\DeclareDocumentCommand \meta { m }
-  { \texttt{ \__codedoc_meta:n { \hbox:n {#1} } } }
 %    \end{macrocode}
 % End the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
