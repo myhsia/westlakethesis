@@ -177,8 +177,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % preamble. Its mandatory argument accepts the following key-values:
 % \begin{keyval}
 %   \item[\key{id}] \val{token list}: Configure the student ID.
-%   \item[\key{title}] \val{token list}: Configure the title,
-%   with the bilingual separated with a slash |/|.
 %   \item[\key{school}] \val{key}: Configure the school,
 %   only the abbreviation is accepted. The template can map it to the full name
 %   automatically then output on the bilingual covers.
@@ -190,11 +188,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \item [|medicine|, |med|]: School of Medicine
 %   \end{description}
 %   \end{multicols}
-%   \item[\key{subject}] \val{token list}: Configure the subject,
-%   with the bilingual separated with a slash |/|.
-%   \item[\key{author}] \val{token list}: Configure the author,
-%   with the bilingual separated with a slash |/|.
-%   \item[\key{PI}] \val{token list}: Configure the supervisor,
+%   \item[\key{title, subject, author, PI}] \val{token list}:
+%   Configure the title, subject, author, supervisor,
 %   with the bilingual separated with a slash |/|.
 %   \item[\key{master}] \val \TFF: Switch the format to Master.
 %   \item[\key{bibsource}] \val{string}: Configure the source of
@@ -269,8 +264,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % 其强制参数接受如下键值对:
 % \begin{keyval}
 %   \item[\key{id}] \val{token list}: 设置学号信息.
-%   \item[\key{title}] \val{token list}: 设置论文标题,
-%   中文标题与英文标题之间需以斜线 |/| 分割.
 %   \item[\key{school}] \val{key}: 设置所在学院,
 %   仅接受学院简称. 模板会自动将简称映射到全称并输出在对应的中英文封面上.
 %   \begin{multicols}{2}
@@ -281,12 +274,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \item [|medicine|, |med|]: 医学院
 %   \end{description}
 %   \end{multicols}
-%   \item[\key{subject}] \val{token list}: 设置所属专业,
-%   中文专业名称与英文专业名称之间需以斜线 |/| 分割.
-%   \item[\key{author}] \val{token list}: 设置作者姓名.
-%   中文姓名与姓名之间需以斜线 |/| 分割.
-%   \item[\key{PI}] \val{token list}: 设置导师姓名.
-%   中文姓名与姓名之间需以斜线 |/| 分割.
+%   \item[\key{title, subject, author, PI}] \val{token list}:
+%   设置标题, 所属专业, 作者姓名, 导师姓名,
+%   中英文版本之间需以斜线 |/| 分割.
 %   \item[\key{master}] \val \TFF: 切换至硕士学位论文格式.
 %   \item[\key{bibsource}] \val{string}: 设置参考文献源.
 % \end{keyval}
@@ -1637,7 +1627,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \seq_set_from_clist:Nn \l_tmpa_seq {#2}
         \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
           { \exp_not:n { \textcolor{red}{\bfseries ##1} } }
-        \seq_use:Nn \l_tmpb_seq { ,~ } \:=\:
+        \seq_use:Nn \l_tmpb_seq { ,~ } ~ = ~
         \group_end:
       }
   }
