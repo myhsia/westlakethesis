@@ -127,8 +127,19 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
 %</class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 %<*driver>
+\PassOptionsToPackage{quiet}{xeCJK}
 \documentclass[mode = usrdoc]{westlakethesis}
 \usepackage[scheme = plain, linespread = 1.3, fontset = lxgw]{ctex}
+\setCJKmonofont [ Extension = .ttf, Scale = .76,
+  BoldFont       = MapleMono-CN-Bold,
+  ItalicFont     = MapleMono-CN-Italic,
+  BoldItalicFont = MapleMono-CN-BoldItalic
+] {MapleMono-CN-Regular}
+\setmonofont    [ Extension = .ttf, Scale = .76,
+  BoldFont       = MapleMono-CN-Bold,
+  ItalicFont     = MapleMono-CN-Italic,
+  BoldItalicFont = MapleMono-CN-BoldItalic
+] {MapleMono-CN-Regular}
 \usepackage[osf, mono = false]{libertine}
 \usepackage{pdfpages}
 \makeindex
@@ -421,9 +432,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \item |kernel|: Inner functions for the |thesis| module.
 %   \item |params|: Storing the constant variables.
 %   \item |thesis|: Formats of Westlake University dissertations.
-%   \item |beamer|: Westlake University Beamer Template.
-%   \item |poster|: Westlake University Poster Template.
-%   \item |usrdoc|: \hologo{WESTLAKEthesis} Documentation.
+%   \item |beamer|: Westlake University \cls{beamer} template.
+%   \item |poster|: Westlake University \cls{poster} template.
+%   \item |usrdoc|: \hologo{WESTLAKEthesis} documentation.
 % \end{itemize}
 % \begin{variable}{\g_@@_clsoption_mode_str, \g_@@_module_usage_clist}
 % Loading the |thesis| mode by default.
@@ -552,8 +563,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \begin{multicols}{2}
 % \begin{itemize}
 %   \item Paper size: |a4paper|,
-%   \item Font size: |-4| (small 4 hao),
-%   \item Line spread: |1.5|, and
+%   \item Font size: |-4| (small 4 h\`ao),
+%   \item Line spread: |1.5|,
 %   \item Font set: \href{https://ctan.org/pkg/lxgw-fonts}{|lxgw|}.
 % \end{itemize}
 % \end{multicols}

@@ -68,6 +68,9 @@ end
 --[== "Hacks" to `l3build` | Do not Modify ==]--
 
 function docinit_hook()
+  run(typesetdir, "curl -O -L " ..
+    "\"https://github.com/subframe7536/maple-font/releases/latest/download/MapleMono-CN-unhinted.zip\"")
+  run(typesetdir, "unzip MapleMono-CN-unhinted.zip")
   cp(ctanreadme, unpackdir, currentdir)
   return 0
 end
