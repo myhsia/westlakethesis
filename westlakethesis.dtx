@@ -176,7 +176,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Configure the information of the thesis, and shoulde be used only within the
 % preamble. Its mandatory argument accepts the following key-values:
 % \begin{keyval}
-%   \item[\key{id}] \val{token list}: Configure the student ID.
+%   \item[\key{id}] \val{text}: Configure the student ID.
 %   \item[\key{school}] \val{key}: Configure the school,
 %   only the abbreviation is accepted. The template can map it to the full name
 %   automatically then output on the bilingual covers.
@@ -188,7 +188,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \item [|medicine|, |med|]: School of Medicine
 %   \end{description}
 %   \end{multicols}
-%   \item[\key{title, subject, author, PI}] \val{token list}:
+%   \item[\key{title, subject, author, PI}] \val{text}:
 %   Configure the title, subject, author, supervisor,
 %   with the bilingual separated with a slash |/|.
 %   \item[\key{master}] \val \TFF: Switch the format to Master.
@@ -263,7 +263,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % 设置论文信息, 仅限在导言区使用.
 % 其强制参数接受如下键值对:
 % \begin{keyval}
-%   \item[\key{id}] \val{token list}: 设置学号信息.
+%   \item[\key{id}] \val{text}: 设置学号信息.
 %   \item[\key{school}] \val{key}: 设置所在学院,
 %   仅接受学院简称. 模板会自动将简称映射到全称并输出在对应的中英文封面上.
 %   \begin{multicols}{2}
@@ -274,11 +274,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \item [|medicine|, |med|]: 医学院
 %   \end{description}
 %   \end{multicols}
-%   \item[\key{title, subject, author, PI}] \val{token list}:
+%   \item[\key{title, subject, author, PI}] \val{text}:
 %   设置标题, 所属专业, 作者姓名, 导师姓名,
 %   中英文版本之间需以斜线 |/| 分割.
 %   \item[\key{master}] \val \TFF: 切换至硕士学位论文格式.
-%   \item[\key{bibsource}] \val{string}: 设置参考文献源.
+%   \item[\key{bibsource}] \val{string}: 设置参考文献文件源.
 % \end{keyval}
 % \end{function}
 %
@@ -301,7 +301,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{function}
 %
 % \begin{function}{\printbibliography}
-%   输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource| 键,
+%   输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource|,
 %   则只会输出章节标题.
 % \end{function}
 %
@@ -1638,6 +1638,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
   \underline {\phantom{\bfseries false}\kern-0.1em}}}}
 \newlist{keyval}{itemize}{10}
 \setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
+\DeclareDocumentCommand \meta { m }
+  { \texttt{ \__codedoc_meta:n { \hbox:n {#1} } } }
 %    \end{macrocode}
 % End the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
