@@ -204,9 +204,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \noindent \DescribeEnv{abstract}^^A
 % Inputs the abstract.
 % It accepts one optional argument to choose the language.
-% \begin{syntax}
+% \begin{quote}
 %   \cs{begin}|{abstract}| \oarg{language} \meta{context} \cs{end}|{abstract}|
-% \end{syntax}
+% \end{quote}
 %
 % \begin{function}{\keywords}
 %   \begin{syntax}
@@ -289,9 +289,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \noindent \DescribeEnv{abstract}^^A
 % 输入摘要.
 % 其接受一个可选参数用于选择摘要的语言.
-% \begin{syntax}
+% \begin{quote}
 %   \cs{begin}|{abstract}| \oarg{language} \meta{context} \cs{end}|{abstract}|
-% \end{syntax}
+% \end{quote}
 %
 % \begin{function}{\keywords}
 %   \begin{syntax}
@@ -365,10 +365,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Message management: private functions for creating new message and
 % broadcasting it as error, warning, or info.
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_msg_new:nn     { \msg_new:nnn     { WESTLAKEthesis } }
-\cs_new_protected:Npn \@@_msg_error:nn   { \msg_error:nnn   { WESTLAKEthesis } }
-\cs_new_protected:Npn \@@_msg_warning:nn { \msg_warning:nnn { WESTLAKEthesis } }
-\cs_new_protected:Npn \@@_msg_info:nn    { \msg_info:nnn    { WESTLAKEthesis } }
+\clist_map_inline:nn { new, error, warning, info }
+  {
+    \cs_new_protected:cpn { @@_msg_#1:nn }
+      { \cs:w msg_#1:nnn \cs_end: { WESTLAKEthesis } }
+  }
 %    \end{macrocode}
 % \end{macro}
 % New message: |not found module|, will be used in \cs{@@_load_module:n}.
@@ -563,15 +564,15 @@ The Current Maintainer of this work is **Mingyu Xia**.
   { a4paper, zihao = -4, linespread = 1.5, fontset = lxgw }
 %    \end{macrocode}
 %    \begin{macrocode}
-\exp_args:NNV \LoadClass [ \g_@@_base_cls_opt_clist ] { ctexrep }
+\str_case:en { \g_@@_clsoption_mode_str }
+  {
+    { thesis }
+    { \exp_args:NNV \LoadClass [ \g_@@_base_cls_opt_clist ] { ctexrep } }
+  }
 %    \end{macrocode}
-% Load the required packages, where the |titles| option is passed to the
-% \pkg{tocloft} package to make ToC, LoF, and LoT lists to be typeset using the
-% default \hologo{LaTeX} methods.
+% Load the required packages.
 %    \begin{macrocode}
-\RequirePackage { graphicx, hyperref,  geometry, array,
-                  lmodern,  newtxtext, lipsum,   zhlipsum }
-\RequirePackage [ titles ] { tocloft }
+\RequirePackage { graphicx, hyperref,  lipsum,   zhlipsum }
 %    \end{macrocode}
 % Configure the possible paths for searching figures.
 %    \begin{macrocode}
@@ -585,14 +586,20 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \hypersetup { hidelinks }
 %    \end{macrocode}
-% Loading the \pkg{microtype} package to obtain a better typeset effect
+% Load the \pkg{microtype} package to obtain a better typeset effect
 % (only valid for \hologo{pdfTeX}, \hologo{XeTeX}, and~\hologo{LuaTeX}).
 %    \begin{macrocode}
 \bool_lazy_or:nnT { \sys_if_engine_pdftex_p: } { \sys_if_engine_opentype_p: }
   { \RequirePackage { microtype } }
 %    \end{macrocode}
+% The |titles| option is passed to the \pkg{tocloft} package to make ToC, LoF,
+% and LoT lists to be typeset using the default \hologo{LaTeX} methods.
+%    \begin{macrocode}
+\RequirePackage { geometry, array,     lmodern,  newtxtext }
+\RequirePackage [ titles ] { tocloft }
+%    \end{macrocode}
 % \hypertarget{bool:gbt7714_load}{Determine whether to load the \pkg{gbt7714}
-%   package due to the boolean \cs{l_@@_load_bib_bool}}, which has been set via
+%   package according to \cs{l_@@_load_bib_bool}}, which has been set via
 % \tn{westlakeset} \hyperlink{bool:gbt7714_set}{here}.
 %    \begin{macrocode}
 \hook_gput_code:nnn { begindocument / before } { . }
@@ -1046,21 +1053,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
   }
 %    \end{macrocode}
 % \end{macro}
-% \end{macro}
-% \begin{macro}[int]{\makespine}
-% \hologo{LaTeX2e} user's interface for generating the spine (Chinese: 书脊).
-%    \begin{macrocode}
-\NewDocumentCommand \makespine {}
-  {
-    \begin{tikzpicture}[remember ~ picture, overlay]
-      % \node [opacity = .4] at ([xshift = -4.65cm, yshift = .87cm]current ~ page.center)
-      %   {\includegraphics[width = \paperwidth, page = 3]{source/3-研发〔2025〕14号西湖大学研究生学位论文编写指南（附件2-学位论文参考模板）.pdf}};
-      \node [minimum ~ width = 2.3cm,        inner ~ sep = 0pt, draw,
-             minimum ~ height = \textheight, outer ~ sep = 0pt, right]
-            (spine-cn) at (current ~ page ~ text ~ area.west) {};
-    \end{tikzpicture}
-  }
-%    \end{macrocode}
 % \end{macro}
 % \noindent \DescribeEnv{abstract}^^A
 % Generate the abstract in English and Chinese, and the command \tn{keywords}
@@ -1624,12 +1616,24 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \DeclareDocumentCommand \mail { m } { \href{mailto:#1}{\ttfamily #1} }
 \DeclareDocumentCommand \key { s m }
   {
-    \IfBooleanTF {#1} { \textcolor{red}{\ttfamily \bfseries #2} }
+    \IfBooleanTF {#1}
+      {
+        \color_group_begin:
+        \color_select:n { Exploration Blue } \ttfamily \bfseries #2
+        \color_group_end:
+      }
       {
         \group_begin: \ttfamily
         \seq_set_from_clist:Nn \l_tmpa_seq {#2}
         \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
-          { \exp_not:n { \textcolor{red}{\bfseries ##1} } }
+          {
+            \exp_not:n
+              {
+                \color_group_begin:
+                \color_select:n { Exploration Blue } \bfseries ##1
+                \color_group_end:
+              }
+          }
         \seq_use:Nn \l_tmpb_seq { ,~ } ~ = ~
         \group_end:
       }
