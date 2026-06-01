@@ -25,8 +25,8 @@ description         = "The `WESTLAKEthesis` is a LaTeX bundle for Westlake Unive
          Do not Modify Unless Necessary
 --]==========================================]--
 checkengines        = {"xetex", "uptex"}
-ctanzip             = module
 cleanfiles          = {"*.log", "*.pdf", "*.zip", "*.curlopt"}
+ctanzip             = module
 excludefiles        = {"*~"}
 installfiles        = {"*.sty", "*.cls", "*.code.tex", "*.pdf", "*.png"}
 sourcefiles         = {"*.dtx", "*.ins", "./media/*.pdf", "./media/*.png"}
@@ -35,6 +35,7 @@ typesetdemofiles    = {module .. "-*-demo.tex"}
 typesetexe          = "latexmk -pdfxe -xelatex=xelatex-dev"
 typesetruns         = 1
 uploadconfig  = {
+  note              = "",
   announcement_file = "announcement.md",
   pkg               = module,
   version           = version .. " " .. date,

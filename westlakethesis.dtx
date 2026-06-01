@@ -28,6 +28,11 @@
 %                                   wu-beamer.code.tex,                 *
 %                                   wu-poster.code.tex,                 *
 %                                   wu-usrdoc.code.tex,                 *
+%                                   westlake-logo.pdf,                  *
+%                                   westlake-badge-en.pdf,              *
+%                                   westlake-badge-cn.pdf,              *
+%                                   westlake-paint-a.pdf,               *
+%                                   westlake-paint-b.pdf,               *
 %           the documentation files westlakethesis.pdf,                 *
 %                               and README.md.                          *
 % -----------------------------------------------------------------------
@@ -125,6 +130,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<usrdoc>  {Documentation (WESTLAKE)}
 %<usrdoc>\ProvidesExplFile {wu-usrdoc.code.tex}
 %<!driver>  {\ExplFileDate} {\ExplFileVersion} {\ExplFileDescription}
+%<class>\edef \WUFileDate        {\ExplFileDate}
+%<class>\edef \WUFileVersion     {\ExplFileVersion}
+%<class>\edef \WUFileDescription {\ExplFileDescription}
 %</class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 %<*driver>
 \PassOptionsToPackage{quiet}{xeCJK}
@@ -161,7 +169,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   Westlake University Dissertation \LaTeX\ Template
 % }
 % \author{Mingyu Xia\thanks{\mail{xiamingyu@westlake.edu.cn}}}
-% \date{Released \ExplFileDate\quad \texttt{\ExplFileVersion}}
+% \date{Released \WUFileDate\quad \texttt{\WUFileVersion}}
 % \maketitle
 % \begin{abstract}
 % \end{abstract}
@@ -344,17 +352,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \color_set:nnn { Exploration Blue } { HTML } { 00498F }
 %    \end{macrocode}
 % \end{variable}
-% Save the SVN field variables.
-%    \begin{macrocode}
-\tl_greplace_all:Nnn \ExplFileDate {/} {-}
-\tl_gset_eq:NN \g_@@_date_tl \ExplFileDate
-\tl_gset_eq:NN \g_@@_version_tl \ExplFileVersion
-\hook_gput_code:nnn { begindocument / before } { . }
-  {
-    \tl_gset_eq:NN \ExplFileDate    \g_@@_date_tl
-    \tl_gset_eq:NN \ExplFileVersion \g_@@_version_tl
-  }
-%    \end{macrocode}
 % \begin{macro}
 %   {
 %     \@@_msg_new:nn,
@@ -1614,17 +1611,17 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \cs_set_protected:Npn \__codedoc_meta:n #1
   { \__codedoc_patchxe_meta:n { \hbox:n {#1} } }
 \DeclareDocumentCommand \mail { m } { \href{mailto:#1}{\ttfamily #1} }
-\DeclareDocumentCommand \key { s m }
+\DeclareDocumentCommand \key { s O { \ttfamily } m }
   {
     \IfBooleanTF {#1}
       {
         \color_group_begin:
-        \color_select:n { Exploration Blue } \ttfamily \bfseries #2
+        \color_select:n { Exploration Blue } \bfseries #2 #3
         \color_group_end:
       }
       {
-        \group_begin: \ttfamily
-        \seq_set_from_clist:Nn \l_tmpa_seq {#2}
+        \group_begin: #2
+        \seq_set_from_clist:Nn \l_tmpa_seq {#3}
         \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
           {
             \exp_not:n
@@ -1645,6 +1642,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   \underline {\phantom{\bfseries false}\kern-0.1em}}}}
 \newlist{keyval}{itemize}{10}
 \setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
+\tl_greplace_all:Nnn \WUFileDate {/} {-}
 %    \end{macrocode}
 % End the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
