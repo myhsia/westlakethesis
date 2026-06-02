@@ -1233,6 +1233,8 @@ TEST 2: Basic Usage of WestlakeThesis: Abstract
 ============================================================
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.045pt on input line ....
+LaTeX Font Warning: Font shape `JY2/zhrm/m/sl' undefined
+(Font)              using `JY2/zhrm/m/it' instead on input line ....
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sl' will be
 (Font)              scaled to size 12.045pt on input line ....
 Completed box being shipped out [1]
@@ -1309,6 +1311,8 @@ Completed box being shipped out [1]
 ============================================================
 TEST 3: Basic Usage of WestlakeThesis: Body
 ============================================================
+LaTeX Font Warning: Font shape `JY2/zhrm/m/sl' undefined
+(Font)              using `JY2/zhrm/m/it' instead on input line ....
 Completed box being shipped out [2]
 \vbox(730.50687+0.0)x434.90039
 .\vbox(0.0+0.0)x0.0, glue set 38.00374fil
