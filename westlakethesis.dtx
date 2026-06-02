@@ -433,7 +433,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     mode          .choices:nn =
       { thesis, beamer, poster, usrdoc }
-      { \str_gset_eq:NN \g_@@_clsoption_mode_str \l_keys_choice_str },
+      { \str_gset:Nn \g_@@_clsoption_mode_str {#1} },
     mode          .initial:n  = { thesis },
     mode          .default:n  = { thesis },
     mode / thesis .code:n     =
@@ -751,7 +751,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % when |#1| equals to |cn|.
 %    \begin{macrocode}
 \cs_new_nopar:Npn \@@_kernel_bilingual:nnn #1#2#3
-  { \str_case:on {#1} { { en } { #2 } { cn } { #3 } } }
+  { \str_case:on {#1} { { en } {#2} { cn } {#3} } }
 %    \end{macrocode}
 % \end{macro}
 % \begin{macro}{\printbibliography}
@@ -1055,7 +1055,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Generate the abstract in English and Chinese, and the command \tn{keywords}
 % inside this environment will appear as English or Chinese version due to |#1|.
 %    \begin{macrocode}
-\RenewDocumentEnvironment {abstract} { O{en} }
+\RenewDocumentEnvironment {abstract} { O { en } }
   {
     \cleardoublepage
     \tl_set:Nn \l_@@_abstract_language_tl {#1}
