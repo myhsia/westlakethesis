@@ -557,7 +557,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{itemize}
 % \end{multicols}
 %    \begin{macrocode}
-\clist_gset:Nn \g_@@_base_cls_opt_clist
+\clist_gput_right:Nn \g_@@_base_cls_opt_clist
   { a4paper, zihao = -4, linespread = 1.5, fontset = lxgw }
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -1216,7 +1216,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \end{macrocode}
 % Loading the \cls{beamer} class.
 %    \begin{macrocode}
-\clist_gset:Nn \g_@@_base_cls_opt_clist
+\clist_gput_right:Nn \g_@@_base_cls_opt_clist
   { aspectratio = 1610 }
 \exp_args:NNV \LoadClass [ \g_@@_base_cls_opt_clist ] { beamer }
 %    \end{macrocode}
@@ -1240,7 +1240,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Loading the \cls{l3doc} class.
 %    \begin{macrocode}
 \RequirePackage { l3draw }
-\clist_gset:Nn \g_@@_base_cls_opt_clist
+\clist_gput_right:Nn \g_@@_base_cls_opt_clist
   { 11pt, letterpaper, cs-break = true }
 \exp_args:NNV \LoadClass [ \g_@@_base_cls_opt_clist ] { l3doc }
 %    \end{macrocode}
