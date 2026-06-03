@@ -433,7 +433,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     mode          .choices:nn =
       { thesis, beamer, poster, usrdoc }
-      { \str_gset:Nn \g_@@_clsoption_mode_str {#1} },
+      { \str_gset:Ne \g_@@_clsoption_mode_str {#1} },
     mode          .initial:n  = { thesis },
     mode          .default:n  = { thesis },
     mode / thesis .code:n     =
@@ -869,17 +869,16 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \tl_const:Nn \l_@@_commitment_a_body_tl
   {
     本人声明：所呈交的学位论文是本人在导师指导下进行的研究工作及取得的研究成果。
-    除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究成果。
-    与本人一同参与本研究工作的合作者所做的任何贡献均已在论文中作了明确的说明并表示谢意。
-    本声明的法律结果由本人承担。
+    除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究
+    成果。与本人一同参与本研究工作的合作者所做的任何贡献均已在论文中作了明确的说
+    明并表示谢意。本声明的法律结果由本人承担。
   }
 \tl_const:Nn \l_@@_commitment_b_body_tl
   {
-    本学位论文作者完全了解\ \underline{\kaishu 西湖大学}\ 有关收藏和利用博士、
-    硕士学位论文的规定，即：学校有权收藏、
-    使用并向国家有关部门或机构送交论文的印刷本和电子版本；
-    允许论文被查阅和借阅；学校可以公布论文的全部或部分内容，
-    可以采用影印、缩印或其它复制手段保存论文。
+    本学位论文作者完全了解\ \underline{\kaishu 西湖大学}\ 有关收藏和利用博士、硕
+    士学位论文的规定，即：学校有权收藏、使用并向国家有关部门或机构送交论文的印刷
+    本和电子版本；允许论文被查阅和借阅；学校可以公布论文的全部或部分内容，可以采
+    用影印、缩印或其它复制手段保存论文。
   }
 %    \end{macrocode}
 % \end{variable}
@@ -1607,6 +1606,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Suppress the warning.
 %    \begin{macrocode}
 \msg_redirect_module:nnn { l3doc } { warning } { none }
+%    \end{macrocode}
+% Patch the font of the \env{macrocode} environment.
+%    \begin{macrocode}
+\hook_gput_code:nnn { cmd / macro@font / after } { . }
+  { \ttfamily }
+%    \end{macrocode}
+%    \begin{macrocode}
 \cs_set_eq:NN \__codedoc_patchxe_meta:n \__codedoc_meta:n
 \cs_set_protected:Npn \__codedoc_meta:n #1
   { \__codedoc_patchxe_meta:n { \hbox:n {#1} } }
