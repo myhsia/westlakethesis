@@ -110,7 +110,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*class|depend|kernel|params|thesis|beamer|poster|usrdoc>
-%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-05-30 myhsia<myhsia@outlook.com>$
+%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-06-18 myhsia<myhsia@outlook.com>$
 % ^^A «Westlake University»  «西湖大学»  高起点 小而精 研究型
 % ^^A High Starting Point, Small and Elite, Research-oriented
 %<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
@@ -372,12 +372,21 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{macro}
 % New message: |not found module|, will be used in \cs{@@_load_module:n}.
 %    \begin{macrocode}
-\@@_msg_new:nn { not found module }
+\@@_msg_new:nn { not ~ found ~ module }
   { The ~ WESTLAKEthesis ~ module ~ `#1' ~ not ~ found. }
+%    \end{macrocode}
+% New message: |not recommended fontset|, will be used in the |thesis| mode.
+%    \begin{macrocode}
+\@@_msg_new:nn { not ~ recommended ~ fontset }
+  {
+    The ~ fontset ~ `#1' ~ is ~ not ~ recommended, ~ using ~ `windows' ~
+    fontset ~ to ~ achieve ~ a ~ maximum ~ compliance ~ of ~ the ~ official ~
+    requirement.
+  }
 %    \end{macrocode}
 % New message: |unknown mode| for global option |mode| key.
 %    \begin{macrocode}
-\@@_msg_new:nn { unknown mode }
+\@@_msg_new:nn { unknown ~ mode }
   { Couldn't ~ load ~ the ~ `#1' ~ mode ~ of ~ WESTLAKEthesis. }
 %    \end{macrocode}
 % \begin{macro}{\@@_unknown_option:n}
@@ -410,7 +419,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \clist_map_inline:Nn #1
       {
         \file_if_exist_input:nF { wu-##1.code.tex }
-          { \@@_msg_error:nn { not found module } { ##1 } }
+          { \@@_msg_error:nn { not ~ found ~ module } { ##1 } }
       }
   }
 %    \end{macrocode}
@@ -564,11 +573,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     { thesis }
     {
-      \clist_gput_right:Nn \g_@@_base_cls_opt_clist
-        { a4paper, zihao = -4, fontset = lxgw }
+      \clist_gput_right:Nn \g_@@_base_cls_opt_clist { a4paper, zihao = -4 }
       \exp_args:NNV \LoadClass [ \g_@@_base_cls_opt_clist ] { ctexrep }
-      \RequirePackage [ UseMSWordMultipleLineSpacing,
-                        MSWordLineSpacingMultiple = 1.5 ] { zhlineskip }
+      \RequirePackage [ bodytextleadingratio = 1.5 ] { zhlineskip }
       \RequirePackage { geometry, lmodern, newtxtext }
       \RequirePackage [ titles ] { tocloft }
       \bool_lazy_or:nnT { \sys_if_engine_pdftex_p:      }
@@ -913,6 +920,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Start the optionlist |thesis| for \pkg{l3docstrip}.
 %    \begin{macrocode}
 %<*thesis>
+%    \end{macrocode}
+% Check if current fontset is the officially recommended one.
+%    \begin{macrocode}
+\tl_if_eq:nVF { windows } \g__ctex_fontset_tl
+  {
+    \exp_args:Nno \@@_msg_warning:nn
+      { not ~ recommended ~ fontset } { \g__ctex_fontset_tl }
+  }
 %    \end{macrocode}
 % Configure the geometry.
 %    \begin{macrocode}

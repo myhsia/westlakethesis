@@ -1,5 +1,5 @@
 \input regression-test.tex
-\documentclass{westlakethesis}
+\documentclass[mode = thesis, fontset = lxgw]{westlakethesis}
 
 \usepackage{hologo}
 
