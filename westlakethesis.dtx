@@ -1633,9 +1633,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
   { \ttfamily }
 %    \end{macrocode}
 %    \begin{macrocode}
-\cs_set_eq:NN \__codedoc_patchxe_meta:n \__codedoc_meta:n
-\cs_set_protected:Npn \__codedoc_meta:n #1
-  { \__codedoc_patchxe_meta:n { \hbox:n {#1} } }
+\cs_set_eq:NN \__codedoc_meta_patch:n \__codedoc_meta_original:n
+\cs_set_protected:Npn \__codedoc_meta_original:n #1
+  { \__codedoc_meta_patch:n { \hbox:n {#1} } }
 \DeclareDocumentCommand \mail { m } { \href{mailto:#1}{\ttfamily #1} }
 \DeclareDocumentCommand \key { s O { \ttfamily } m }
   {
