@@ -34,6 +34,9 @@ textfiles           = {"README.md", "LICENSE", "*.lua"}
 typesetdemofiles    = {module .. "-*-demo.tex"}
 typesetexe          = "latexmk -pdfxe -xelatex=xelatex-dev"
 typesetruns         = 1
+specialtypesetting  = specialtypesetting or {}
+specialtypesetting["westlakethesis-pre-demo.tex"]
+                    = {cmd = "latexmk -pdf -pdflatex=pdflatex-dev"}
 uploadconfig  = {
   note              = "",
   announcement_file = "announcement.md",
