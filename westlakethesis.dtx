@@ -133,6 +133,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<class>\edef \WUFileDate        {\ExplFileDate}
 %<class>\edef \WUFileVersion     {\ExplFileVersion}
 %<class>\edef \WUFileDescription {\ExplFileDescription}
+%<class>\tl_greplace_all:Nnn \WUFileDate { / } { - }
 %</class|depend|kernel|params|thesis|beamer|poster|usrdoc>
 %<*driver>
 \PassOptionsToPackage{quiet}{xeCJK}
@@ -1654,7 +1655,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
   \color_select:n { Exploration Blue } false}}}}
 \newlist{keyval}{itemize}{10}
 \setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
-\tl_greplace_all:Nnn \WUFileDate { / } { - }
 %    \end{macrocode}
 % End the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
