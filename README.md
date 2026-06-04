@@ -13,11 +13,9 @@ including Ph.D. thesis format, Beamer theme, and Poster template.
 Overview
 --------
 
-To load this template, write the line
+To load this class, write the line
 
     \documentclass[<options>]{westlakethesis}
-
-to set the theme color and graphics.
 
 See `westlakethesis.pdf` for more. Happy TeXing!
 
