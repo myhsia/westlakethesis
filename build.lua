@@ -1,14 +1,10 @@
---[==========================================[--
-        L3BUILD FILE FOR WESTLAKETHESIS
-      Once Pushed With This File Modified
-        A New Release Will Be Published
---]==========================================]--
+--[==========================================================================[--
+    L3BUILD FILE FOR WESTLAKETHESIS              Copyright (C) by Mingyu Xia
+--]==========================================================================]--
 
---[==========================================[--
-               Basic Information
-             Do Check Before Push
---]==========================================]--
-
+--[==========================================================================[--
+    Basic Information: Do Check Before Push
+--]==========================================================================]--
 module              = "westlakethesis"
 version             = "v0.0.1"
 date                = "2026-06-18"
@@ -20,10 +16,10 @@ repository          = "https://github.com/" .. maintainid .. "/" .. module
 summary             = "LaTeX bundle for Westlake University dissertations."
 description         = "The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations, including Ph.D. thesis and Beamer theme."
 
---[==========================================[--
-          Build, Pack, Tag, and Upload
-         Do not Modify Unless Necessary
---]==========================================]--
+
+--[==========================================================================[--
+    Configuration: Check, Tag, Pack, Upload     Do NOT Modify if Unnecessary
+--]==========================================================================]--
 checkengines        = {"xetex", "uptex"}
 cleanfiles          = {"*.log", "*.pdf", "*.zip", "*.curlopt"}
 ctanzip             = module
@@ -69,8 +65,7 @@ function update_tag(file, content, tagname, tagdate)
   return content
 end
 
---[== "Hacks" to `l3build` | Do not Modify ==]--
-
+--[================== "Hacks" to `l3build` | Do not Modify ==================]--
 function docinit_hook()
   run(typesetdir, "curl -O -L " ..
     "\"https://github.com/subframe7536/maple-font/releases/latest/download/MapleMono-CN-unhinted.zip\"")

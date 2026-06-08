@@ -28,11 +28,12 @@ The issue tracker for `westlakethesis` is currently located
 Build status
 ------------
 
-This project uses [GitHub Actions](https://github.com/features/actions)
-as a hosted continuous integration service. For each commit, the build status
-is tested using the current release of TeX Live.
+This project uses [GitHub Actions](https://github.com/features/actions) as a
+hosted continuous integration service. For each commit, the build status is
+tested using the current release of TeX Live.
 
-_Current build status:_ ![build status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)
+_Current build status:_
+![build status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)
 
 Copyright and License
 ---------------------
