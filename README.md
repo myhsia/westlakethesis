@@ -38,7 +38,8 @@ _Current build status:_
 Copyright and License
 ---------------------
 
-Copyright (C) 2026 by Mingyu Xia \<xiamingyu@westlake.edu.cn\>
+Copyright (C) 2026 by Mingyu Xia
+[`<xiamingyu@westlake.edu.cn>`](mailto:xiamingyu@westlake.edu.cn)
 
 This work may be distributed and/or modified under the conditions
 of the LaTeX Project Public License (LPPL), either version 1.3c of

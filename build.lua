@@ -7,7 +7,7 @@
 --]==========================================================================]--
 module              = "westlakethesis"
 version             = "v0.0.1"
-date                = "2026-06-18"
+date                = "2026-06-10"
 maintainer          = "Mingyu Xia"
 uploader            = "Mingyu Xia"
 maintainid          = "myhsia"
