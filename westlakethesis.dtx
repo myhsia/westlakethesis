@@ -110,7 +110,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*class|depend|kernel|params|thesis|beamer|poster|usrdoc>
-%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-06-18 myhsia<myhsia@outlook.com>$
+%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-06-10 myhsia<myhsia@outlook.com>$
 % ^^A «Westlake University»  «西湖大学»  高起点 小而精 研究型
 % ^^A High Starting Point, Small and Elite, Research-oriented
 %<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
@@ -176,6 +176,15 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{abstract}
 % \clearpage
 %
+% \section{Loading the template}
+%
+% Write down the line
+% \begin{quote}
+%   \cs{documentclass}"[mode = (thesis|beamer|poster)]{westlakethesis}"
+% \end{quote}
+% to use the interfaces provided by the corresponding \keys{mode} in this
+% template.
+%
 % \section{User's Interfaces}
 %
 % \begin{function}{\westlakeset}
@@ -185,8 +194,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Configure the information of the thesis, and shoulde be used only within the
 % preamble. Its mandatory argument accepts the following key-values:
 % \begin{keyval}
-%   \item[\key{id}] \val{text}: Configure the student ID.
-%   \item[\key{school}] \val{key}: Configure the school,
+%   \item[\keys{id}] \meta{text}: Configure the student ID.
+%   \item[\keys{school}] \meta{key}: Configure the school,
 %   only the abbreviation is accepted. The template can map it to the full name
 %   automatically then output on the bilingual covers.
 %   \begin{multicols}{2}\small
@@ -197,11 +206,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \item [|medicine|, |med|]: School of Medicine
 %   \end{description}
 %   \end{multicols}
-%   \item[\key{title, subject, author, PI}] \val{text}:
+%   \item[\keys{title, subject, author, PI}] \meta{text}:
 %   Configure the title, subject, author, supervisor,
 %   with the bilingual separated with a slash |/|.
-%   \item[\key{master}] \val \TFF: Switch the format to Master.
-%   \item[\key{bibsource}] \val{string}: Configure the source of
+%   \item[\keys{master}] \meta \TFF: Switch the format to Master.
+%   \item[\keys{bibsource}] \meta{string}: Configure the source of
 %   the bibliography.
 % \end{keyval}
 % \end{function}
@@ -263,6 +272,15 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \end{abstract}
 % \clearpage
 %
+% \section{载入此模板}
+%
+% 只需写下
+% \begin{quote}
+%   \cs{documentclass}"[mode = (thesis|beamer|poster)]{westlakethesis}"
+% \end{quote}
+% 即可使用此模板中对应 \keys{mode} (模式)
+% 中提供的接口.
+%
 % \section{用户接口}
 %
 % \begin{function}{\westlakeset}
@@ -272,8 +290,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % 设置论文信息, 仅限在导言区使用.
 % 其强制参数接受如下键值对:
 % \begin{keyval}
-%   \item[\key{id}] \val{text}: 设置学号信息.
-%   \item[\key{school}] \val{key}: 设置所在学院,
+%   \item[\keys{id}] \meta{text}: 设置学号信息.
+%   \item[\keys{school}] \meta{key}: 设置所在学院,
 %   仅接受学院简称. 模板会自动将简称映射到全称并输出在对应的中英文封面上.
 %   \begin{multicols}{2}
 %   \begin{description}
@@ -283,11 +301,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %     \item [|medicine|, |med|]: 医学院
 %   \end{description}
 %   \end{multicols}
-%   \item[\key{title, subject, author, PI}] \val{text}:
+%   \item[\keys{title, subject, author, PI}] \meta{text}:
 %   设置标题, 所属专业, 作者姓名, 导师姓名,
-%   中英文版本之间需以斜线 |/| 分割.
-%   \item[\key{master}] \val \TFF: 切换至硕士学位论文格式.
-%   \item[\key{bibsource}] \val{string}: 设置参考文献文件源.
+%   中英文版本之间以斜线 |/| 分割.
+%   \item[\keys{master}] \meta \TFF: 切换至硕士学位论文格式.
+%   \item[\keys{bibsource}] \meta{string}: 设置参考文献文件源.
 % \end{keyval}
 % \end{function}
 %
@@ -311,7 +329,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \begin{function}{\printbibliography}
 %   输出参考文献. 若用户未在 \tn{westlakeset} 中指定 |bibsource|,
-%   则只会输出章节标题.
+%   则只输出章节标题.
 % \end{function}
 %
 % \begin{function}{\commitment}
@@ -336,7 +354,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \clearpage \appendix
 %
 % \begin{implementation}
-% \section{The source code}
+% \section{The Source Code}
 % Using |wu| as the namespace.
 %    \begin{macrocode}
 %<@@=wu>
@@ -1625,51 +1643,10 @@ The Current Maintainer of this work is **Mingyu Xia**.
   \draw_end:
 }
 %    \end{macrocode}
-% Suppress the warning.
+% Load the \pkg{docext} package.
 %    \begin{macrocode}
-\msg_redirect_module:nnn { l3doc } { warning } { none }
-%    \end{macrocode}
-% Patch the font of the \env{macrocode} environment.
-%    \begin{macrocode}
-\hook_gput_code:nnn { cmd / macro@font / after } { . }
-  { \ttfamily }
-%    \end{macrocode}
-%    \begin{macrocode}
-\cs_set_eq:NN \__codedoc_meta_patch:n \__codedoc_meta_original:n
-\cs_set_protected:Npn \__codedoc_meta_original:n #1
-  { \__codedoc_meta_patch:n { \hbox:n {#1} } }
+\RequirePackage [ color = Exploration Blue ] { docext }
 \DeclareDocumentCommand \mail { m } { \href{mailto:#1}{\ttfamily #1} }
-\DeclareDocumentCommand \key { s O { \ttfamily } m }
-  {
-    \IfBooleanTF {#1}
-      {
-        \color_group_begin:
-        \color_select:n { Exploration Blue } \bfseries #2 #3
-        \color_group_end:
-      }
-      {
-        \group_begin: #2
-        \seq_set_from_clist:Nn \l_tmpa_seq {#3}
-        \seq_set_map:NNn \l_tmpb_seq \l_tmpa_seq
-          {
-            \exp_not:n
-              {
-                \color_group_begin:
-                \color_select:n { Exploration Blue } \bfseries #2 ##1
-                \color_group_end:
-              }
-          }
-        \seq_use:Nn \l_tmpb_seq { ,~ } ~ = ~
-        \group_end:
-      }
-  }
-\DeclareCommandCopy \val \meta
-\def \TTF {\textup{\underline{\textbf{
-  \color_select:n { Exploration Blue } true}}\textbar}false}
-\def \TFF {true\textup{\textbar \underline{\textbf{
-  \color_select:n { Exploration Blue } false}}}}
-\newlist{keyval}{itemize}{10}
-\setlist[keyval]{leftmargin = 0pt, labelsep = 0pt}
 %    \end{macrocode}
 % End the optionlist |usrdoc| for \pkg{l3docstrip}.
 %    \begin{macrocode}
