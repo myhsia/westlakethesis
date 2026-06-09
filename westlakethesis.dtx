@@ -518,6 +518,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   {
 %     \l_@@_set_title_tl,
 %     \l_@@_set_author_tl,
+%     \l_@@_set_date_tl,
 %     \l_@@_set_bib_str,
 %     \l_@@_set_subject_tl,
 %     \l_@@_set_school_tl,
@@ -571,7 +572,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \hypersetup
   {
     hidelinks,
-%<!thesis>    colorlinks,
+%<usrdoc>    colorlinks,
   }
 %    \end{macrocode}
 %    \begin{macrocode}
@@ -713,7 +714,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
   {
     \mode_leave_vertical:
     \dim_set:Nn \l_tmpa_dim {#1}
-    \box_gset_eq_drop:NN 1\voidb@x
+    \box_gset_eq_drop:NN 1 \voidb@x
     \group_begin:
     \vbox_set:Nn 0
       {
@@ -761,8 +762,8 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \@@_kernel_bilingual:nnn {#1}
       {
         \fontsize
-        { \dim_to_decimal:n {  #2 bp          } }
-        { \dim_to_decimal:n { (#2 bp) * 6 / 5 } } \selectfont
+          { \dim_to_decimal:n {  #2 bp          } }
+          { \dim_to_decimal:n { (#2 bp) * 6 / 5 } } \selectfont
       } { \ctex_zihao:n {#2} }
   }
 %    \end{macrocode}
