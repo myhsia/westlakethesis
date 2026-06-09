@@ -566,6 +566,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %<!usrdoc>      { \bool_gset_true:N \l_@@_load_bib_bool }
   }
 %    \end{macrocode}
+% Configure the metadata of the document via \pkg{hyperref}.
+%    \begin{macrocode}
+\hypersetup
+  {
+    hidelinks,
+%<!thesis>    colorlinks,
+  }
+%    \end{macrocode}
 %    \begin{macrocode}
 %</thesis|beamer|poster|usrdoc>
 %    \end{macrocode}
@@ -631,10 +639,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
     {./fig/}  {./pic/}  {./figure/}  {./picture/}  {./media/}
     {./figs/} {./pics/} {./figures/} {./pictures/}
   }
-%    \end{macrocode}
-% Configure the metadata of the document via \pkg{hyperref}.
-%    \begin{macrocode}
-\hypersetup { hidelinks }
 %    \end{macrocode}
 % \hypertarget{bool:gbt7714_load}{Determine whether to load the \pkg{gbt7714}
 %   package according to \cs{l_@@_load_bib_bool}}, which has been set via
