@@ -384,7 +384,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \clist_map_inline:nn { new, error, warning, info }
   {
     \cs_new_protected:cpn { @@_msg_#1:nn }
-      { \cs:w msg_#1:nnn \cs_end: { WESTLAKEthesis } }
+      { \use:c { msg_#1:nnn } { WESTLAKEthesis } }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -677,7 +677,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
         \tl_clear_new:c { #1_a }
         \tl_clear_new:c { #1_b }
         \seq_clear:N \l_@@_set_tmpa_seq
-        \seq_set_split:Nne \l_@@_set_tmpa_seq { / } { \cs:w #1 \cs_end: }
+        \seq_set_split:Nne \l_@@_set_tmpa_seq { / } { \use:c {#1} }
         \seq_get_left:Nc  \l_@@_set_tmpa_seq { #1_a }
         \seq_get_right:Nc \l_@@_set_tmpa_seq { #1_b }
       }
