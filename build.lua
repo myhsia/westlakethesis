@@ -5,7 +5,7 @@
 --[==========================================================================[--
     Basic Information: Do Check Before Push
 --]==========================================================================]--
-module              = "WestlakeThesis"
+module              = "westlakethesis"
 version             = "v0.0.1"
 date                = "2026-06-14"
 maintainer          = "Mingyu Xia"
@@ -50,7 +50,7 @@ uploadconfig  = {
   support           = repository .. "/issues",
   repository        = repository,
   development       = "https://github.com/" .. maintainid,
-  update            = true
+  update            = false
 }
 function update_tag(file, content, tagname, tagdate)
   tagname = version

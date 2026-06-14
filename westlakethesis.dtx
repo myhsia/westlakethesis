@@ -110,7 +110,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</internal>
 %
 %<*class|depend|kernel|params|thesis|beamer|poster|usrdoc>
-%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-06-10 myhsia<myhsia@outlook.com>$
+%<+!driver>\GetIdInfo $Id: westlakethesis.dtx v0.0.1 2026-06-14 myhsia<myhsia@outlook.com>$
 % ^^A «Westlake University»  «西湖大学»  高起点 小而精 研究型
 % ^^A High Starting Point, Small and Elite, Research-oriented
 %<class>  {LaTeX Template Bundle for Westlake University (WESTLAKE)}
@@ -175,11 +175,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % \vspace{-.5\baselineskip}
 % \renewcommand*\abstractname{Abstract \texttt\textbar\ 摘要}
 % \begin{abstract}
-% The \cls{WestlakeThesis} is a \LaTeX\ bundle for Westlake University
+% The \hologo{westlakethesis} is a \LaTeX\ bundle for Westlake University
 % dissertations, including Ph.D. thesis format, \cls{beamer} theme, and poster
 % template.
 % \setlength \parindent {1.5em}\par
-% \cls{WestlakeThesis} 是西湖大学学位论文 \LaTeX\ 套装,
+% \hologo{westlakethesis} 是西湖大学学位论文 \LaTeX\ 套装,
 % 其中包含博士论文格式, \cls{beamer} 主题与 \pkg{poster} 模板.
 % \end{abstract}
 %
@@ -187,31 +187,27 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \small\bfseries User Agreement \texttt\textbar\ 用户协议
 % \end{center}
 % \begin{enumerate}[itemsep = 2em, itemsep = 0pt]\small
-%   \item 本模板通过 LPPL 1.3c 协议开放源代码,
-%   您可以随意使用编译出的 PDF 文件.
-%   \item 本模板根据^^A
-%   \href{https://graduateschool.westlake.edu.cn/}^^A
-%     {西湖大学研究生院}颁发的^^A
-%   \href{https://graduateschool.westlake.edu.cn/Download/DegreeApplication/202604/t20260401_65549.html}^^A
-%     {学位论文参考模板}编写而成, 作者不对使用本模板产生的格式审查问题负责.
-%   \item 本模板目前处于高度测试阶段, 可能存在格式风险.
-%   欢迎前往
-%   \href{https://github.com/myhsia/westlakethesis/}{GitHub}
-%   提交反馈意见或拉取请求，为推动规范化 \cls{WestlakeThesis} 贡献力量.
-% \end{enumerate}
-% \begin{enumerate}[itemsep = 2em, itemsep = 0pt]\small
-%   \item This template is open source under the LPPL 1.3c license,
-%   and you are free to use the compiled PDF file.
+%   \item This template is open source under the LPPL 1.3c license, and you are
+%   free to use the compiled PDF file.\par
+%   本模板通过 LPPL 1.3c 协议开放源代码, 您可以随意使用编译出的 PDF 文件.
 %   \item This template is built from
 %   \href{https://graduateschool.westlake.edu.cn/Download/DegreeApplication/202604/t20260401_65549.html}^^A
 %     {Reference Template for Degree Dissertations} distributed by
 %   \href{https://graduateschool.westlake.edu.cn/}^^A
 %     {Westlake University Graduate School},
-%   the maintainer will not be responsible to the trouble of format review.
+%   the maintainer will not be responsible to the trouble of format review.\par
+%   本模板根据^^A
+%   \href{https://graduateschool.westlake.edu.cn/}^^A
+%     {西湖大学研究生院}颁发的^^A
+%   \href{https://graduateschool.westlake.edu.cn/Download/DegreeApplication/202604/t20260401_65549.html}^^A
+%     {学位论文参考模板}编写而成, 作者不对使用本模板产生的格式审查问题负责.
 %   \item This template is highly experimental currently, use at own risk.
 %   Welcome to submit issues or PR on
 %   \href{https://github.com/myhsia/westlakethesis/issues}{GitHub}
-%   to contribute to the standardization of \cls{WestlakeThesis}.
+%   to contribute to the standardization of \hologo{westlakethesis}.\par
+%   本模板目前处于高度测试阶段, 可能存在格式风险. 欢迎前往
+%   \href{https://github.com/myhsia/westlakethesis/}{GitHub}
+%   提交反馈意见或拉取请求，为推动规范化 \hologo{westlakethesis} 贡献力量.
 % \end{enumerate}
 % \end{titlepage}
 %
@@ -1323,7 +1319,13 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 \RequirePackage { l3draw }
 %    \end{macrocode}
-% Define \pkg{hologo} for \hologo{WestlakeThesis}.
+% \begin{macro}[int]
+%   {
+%     \draw_lineto_tikz_w:,
+%     \draw_moveto_tikz_w:,
+%     \draw_curveto_tikz_w:
+%   }
+% Auxiliary functions for parsing Ti\textit k\/Z B\'ezier coordinates.
 %    \begin{macrocode}
 \cs_new_protected:Npn \draw_lineto_tikz_w: (#1, #2)
   { \draw_path_lineto:n { (#1 cm, #2 cm) } }
@@ -1335,6 +1337,21 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \draw_path_curveto:nnn
       { (#1 cm, #2 cm) } { (#3 cm, #4 cm) } {(#5 cm, #6cm)}
   }
+%    \end{macrocode}
+% \end{macro}
+% \begin{variable}
+%   {
+%     \l_WESTLAKE_hologo_box,
+%     \l_UNIVERSITY_hologo_box,
+%   }
+% \begin{variable}
+%   {
+%     \l_@@_WESTLAKE_hologo_box,
+%     \l_@@_UNIVERSITY_hologo_box
+%   }
+% Boxes for saving \hologo{WESTLAKE} and \hologo{UNIVERSITY}.
+%    \begin{macrocode}
+%    \begin{macrocode}
 \box_new:N \l_WESTLAKE_hologo_box
 \box_new:N \l_UNIVERSITY_hologo_box
 \box_new:N \l_@@_WESTLAKE_hologo_box
@@ -1633,6 +1650,17 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \draw_path_use_clear:n { fill }
     \draw_end:
   }
+%    \end{macrocode}
+% \end{variable}
+% \end{variable}
+% \begin{macro}[int]
+%   {
+%     \HoLogo@WESTLAKE,       \HoLogo@UNIVERSITY,
+%     \HoLogo@thesis,
+%     \HoLogo@westlakethesis, \HoLogo@WestlakeThesis
+%   }
+% Define \pkg{hologo}s for \hologo{WestlakeThesis}.
+%    \begin{macrocode}
 \def \HoLogo@WESTLAKE #1
   {
     \box_gset_eq:NN \l_@@_WESTLAKE_hologo_box \l_WESTLAKE_hologo_box
@@ -1660,28 +1688,35 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \color_select:n { Knowledge Orange }
     \box_use_drop:N \l_tmpa_box
   }
-\def \HoLogo@WestlakeThesis #1{%
-  \draw_begin:
-  \hbox_set:Nn \l_tmpb_box
-    {
-      \hologo{WESTLAKE}
-      \HOLOGO@discretionary
-      \hologo{thesis}
-    }
-  \draw_path_moveto:n
-    { \f@size * .15pt/2,                         1.3\box_ht:N \l_tmpb_box }
-  \draw_path_curveto:nnn
-    {  \box_wd:N \l_tmpb_box/3,                  1.9\box_ht:N \l_tmpb_box }
-    { 2\box_wd:N \l_tmpb_box/3,                  1.9\box_ht:N \l_tmpb_box }
-    { \box_wd:N \l_tmpb_box - \f@size * .15pt/2, 1.3\box_ht:N \l_tmpb_box }
-  \color_select:n { Knowledge Orange }
-  \draw_set_cap_round:
-  \draw_set_linewidth:n  { \f@size * .15pt }
-  \draw_path_use_clear:n { stroke }
-  \draw_box_use:N \l_tmpb_box
-  \draw_end:
-}
+\def \HoLogo@westlakethesis #1
+  {
+    \scshape
+    \tl_map_inline:nn { westlak{e\kern-.1em}{T\kern-.05em}hesis } {##1\kern-.05em}
+  }
+\def \HoLogo@WestlakeThesis #1
+  {
+    \draw_begin:
+    \hbox_set:Nn \l_tmpb_box
+      {
+        \hologo{WESTLAKE}
+        \HOLOGO@discretionary
+        \hologo{thesis}
+      }
+    \draw_path_moveto:n
+      { \f@size * .15pt/2,                         1.3\box_ht:N \l_tmpb_box }
+    \draw_path_curveto:nnn
+      {  \box_wd:N \l_tmpb_box/3,                  1.9\box_ht:N \l_tmpb_box }
+      { 2\box_wd:N \l_tmpb_box/3,                  1.9\box_ht:N \l_tmpb_box }
+      { \box_wd:N \l_tmpb_box - \f@size * .15pt/2, 1.3\box_ht:N \l_tmpb_box }
+    \color_select:n { Knowledge Orange }
+    \draw_set_cap_round:
+    \draw_set_linewidth:n  { \f@size * .15pt }
+    \draw_path_use_clear:n { stroke }
+    \draw_box_use:N \l_tmpb_box
+    \draw_end:
+  }
 %    \end{macrocode}
+% \end{macro}
 % Load the \pkg{docext} package.
 %    \begin{macrocode}
 \RequirePackage [ color = Exploration Blue ] { docext }
