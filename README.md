@@ -1,7 +1,7 @@
 [![CTAN Version](https://img.shields.io/ctan/v/westlakethesis)](https://ctan.org/pkg/westlakethesis)
 [![GitHub Release](https://img.shields.io/github/v/release/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis/releases/latest)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis/commits)
-[![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
+[![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
 The `WestlakeThesis` LaTeX bundle
