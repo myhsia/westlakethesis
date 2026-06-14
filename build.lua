@@ -5,16 +5,16 @@
 --[==========================================================================[--
     Basic Information: Do Check Before Push
 --]==========================================================================]--
-module              = "westlakethesis"
+module              = "WestlakeThesis"
 version             = "v0.0.1"
-date                = "2026-06-10"
+date                = "2026-06-14"
 maintainer          = "Mingyu Xia"
 uploader            = "Mingyu Xia"
 maintainid          = "myhsia"
 email               = "myhsia@outlook.com"
 repository          = "https://github.com/" .. maintainid .. "/" .. module
 summary             = "LaTeX bundle for Westlake University dissertations."
-description         = "The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations, including Ph.D. thesis and Beamer theme."
+description         = "The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations, including Ph.D. thesis and Beamer theme."
 
 
 --[==========================================================================[--

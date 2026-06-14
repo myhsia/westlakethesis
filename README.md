@@ -4,11 +4,11 @@
 [![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
-The `WESTLAKEthesis` LaTeX bundle
+The `WestlakeThesis` LaTeX bundle
 =================================
 
-The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations,
-including Ph.D. thesis format, Beamer theme, and Poster template.
+The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
+including Ph.D. thesis format, beamer theme, and poster template.
 
 Overview
 --------
@@ -22,7 +22,7 @@ See `westlakethesis.pdf` for more. Happy TeXing!
 Issues
 ------
 
-The issue tracker for `westlakethesis` is currently located
+The issue tracker for `WestlakeThesis` is currently located
 [on GitHub](https://github.com/myhsia/westlakethesis/issues).
 
 Build status

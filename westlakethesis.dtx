@@ -53,11 +53,11 @@
 [![Actions Status](https://github.com/myhsia/westlakethesis/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/myhsia/westlakethesis/actions)
 [![GitHub Repo stars](https://img.shields.io/github/stars/myhsia/westlakethesis)](https://github.com/myhsia/westlakethesis)
 
-The `WESTLAKEthesis` LaTeX bundle
+The `WestlakeThesis` LaTeX bundle
 =================================
 
-The `WESTLAKEthesis` is a LaTeX bundle for Westlake University dissertations,
-including Ph.D. thesis format, Beamer theme, and Poster template.
+The `WestlakeThesis` is a LaTeX bundle for Westlake University dissertations,
+including Ph.D. thesis format, beamer theme, and poster template.
 
 Overview
 --------
@@ -71,7 +71,7 @@ See `westlakethesis.pdf` for more. Happy TeXing!
 Issues
 ------
 
-The issue tracker for `westlakethesis` is currently located
+The issue tracker for `WestlakeThesis` is currently located
 [on GitHub](https://github.com/myhsia/westlakethesis/issues).
 
 Build status
@@ -160,21 +160,62 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %</driver>
 % \fi
 %
-% \begin{documentation}
-%
+% \begin{titlepage}
+% \pagestyle{empty}
 % \title{\bfseries
-%   The \hologo{WESTLAKEthesis} Class\thanks{^^A
+%   The \hologo{WestlakeThesis} Class\thanks{^^A
 %     \url{https://ctan.org/pkg/westlakethesis},\
 %     \url{https://github.com/myhsia/westlakethesis}^^A
 %   }\\
-%   Westlake University Dissertation \LaTeX\ Template^^A
+%   西湖大学学位论文 \LaTeX\ 模板^^A
 % }
 % \author{Mingyu Xia\thanks{\mail{xiamingyu@westlake.edu.cn}}}
 % \date{Released \WUFileDate\quad \texttt{\WUFileVersion}}
 % \maketitle
+% \vspace{-.5\baselineskip}
+% \renewcommand*\abstractname{Abstract \texttt\textbar\ 摘要}
 % \begin{abstract}
+% The \cls{WestlakeThesis} is a \LaTeX\ bundle for Westlake University
+% dissertations, including Ph.D. thesis format, \cls{beamer} theme, and poster
+% template.
+% \setlength \parindent {1.5em}^^A
+% \cls{WestlakeThesis} 是西湖大学学位论文 \LaTeX\ 套装,
+% 其中包含博士论文格式, \cls{beamer} 主题与 \pkg{poster} 模板.
 % \end{abstract}
-% \clearpage
+%
+% \begin{center}
+%   \small\bfseries User Agreement \texttt\textbar\ 用户协议
+% \end{center}
+% \begin{enumerate}[itemsep = 2em, itemsep = 0pt]\small
+%   \item 本模板通过 LPPL 1.3c 协议开放源代码,
+%   您可以随意使用编译出的 PDF 文件.
+%   \item 本模板根据^^A
+%   \href{https://graduateschool.westlake.edu.cn/}^^A
+%     {西湖大学研究生院}颁发的^^A
+%   \href{https://graduateschool.westlake.edu.cn/Download/DegreeApplication/202604/t20260401_65549.html}^^A
+%     {学位论文参考模板}编写而成, 作者不对使用本模板产生的格式审查问题负责.
+%   \item 本模板目前处于高度测试阶段, 可能存在格式风险.
+%   欢迎前往
+%   \href{https://github.com/myhsia/westlakethesis/}{GitHub}
+%   提交反馈意见或拉取请求，为推动规范化 \cls{WestlakeThesis} 贡献力量.
+% \end{enumerate}
+% \begin{enumerate}[itemsep = 2em, itemsep = 0pt]\small
+%   \item This template is open source under the LPPL 1.3c license,
+%   and you are free to use the compiled PDF file.
+%   \item This template is built from
+%   \href{https://graduateschool.westlake.edu.cn/Download/DegreeApplication/202604/t20260401_65549.html}^^A
+%     {Reference Template for Degree Dissertations} distributed by
+%   \href{https://graduateschool.westlake.edu.cn/}^^A
+%     {Westlake University Graduate School},
+%   the maintainer will not be responsible to the trouble of format review.
+%   \item This template is highly experimental currently, use at own risk.
+%   Welcome to submit issues or PR on
+%   \href{https://github.com/myhsia/westlakethesis/issues}{GitHub}
+%   To contribute to the standardization of \cls{WestlakeThesis}.
+% \end{enumerate}
+% \end{titlepage}
+%
+% \begin{documentation}
 %
 % \section{Loading the template}
 %
@@ -194,24 +235,26 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % Configure the information of the thesis, and shoulde be used only within the
 % preamble. Its mandatory argument accepts the following key-values:
 % \begin{keyval}
-%   \item[\keys{id}] \meta{text}: Configure the student ID.
-%   \item[\keys{school}] \meta{key}: Configure the school,
-%   only the abbreviation is accepted. The template can map it to the full name
-%   automatically then output on the bilingual covers.
+%   \item [\keys{id}]                         \val{text}:
+%   Configure the student ID.
+%   \item [\keys{school}]                     \val{key}:
+%   Configure the school, only the abbreviation is accepted. The template can
+%   map it to the full name automatically then output on the bilingual covers.
 %   \begin{multicols}{2}\small
 %   \begin{description}
-%     \item [|science|, |sci|]: School of Science
+%     \item [|science|, |sci|]:     School of Science
 %     \item [|engineering|, |eng|]: School of Engineering
-%     \item [|sls|]: School of Life Sciences
-%     \item [|medicine|, |med|]: School of Medicine
+%     \item [|sls|]:                School of Life Sciences
+%     \item [|medicine|, |med|]:    School of Medicine
 %   \end{description}
 %   \end{multicols}
-%   \item[\keys{title, subject, author, PI}] \meta{text}:
+%   \item [\keys{title, subject, author, PI}] \val{text}:
 %   Configure the title, subject, author, supervisor,
 %   with the bilingual separated with a slash |/|.
-%   \item[\keys{master}] \meta \TFF: Switch the format to Master.
-%   \item[\keys{bibsource}] \meta{string}: Configure the source of
-%   the bibliography.
+%   \item [\keys{master}]                     \val \TFF:
+%   Switch the format to Master.
+%   \item [\keys{bibsource}]                  \val{string}:
+%   Configure the source of the bibliography.
 % \end{keyval}
 % \end{function}
 %
@@ -256,21 +299,9 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %
 % \end{documentation}
 %
-% \begin{documentation}
-%
-% \title{\bfseries
-%   \hologo{WESTLAKEthesis} 文档类\thanks{^^A
-%     \url{https://ctan.org/pkg/westlakethesis},\
-%     \url{https://github.com/myhsia/westlakethesis}^^A
-%   }\\
-%   西湖大学学位论文 \LaTeX\ 模板^^A
-% }
-% \author{夏明宇\thanks{\mail{xiamingyu@westlake.edu.cn}}}
-% \date{发行于 \WUFileDate\quad \texttt{\WUFileVersion}}
-% \maketitle
-% \begin{abstract}
-% \end{abstract}
 % \clearpage
+%
+% \begin{documentation}
 %
 % \section{载入此模板}
 %
@@ -290,22 +321,26 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % 设置论文信息, 仅限在导言区使用.
 % 其强制参数接受如下键值对:
 % \begin{keyval}
-%   \item[\keys{id}] \meta{text}: 设置学号信息.
-%   \item[\keys{school}] \meta{key}: 设置所在学院,
-%   仅接受学院简称. 模板会自动将简称映射到全称并输出在对应的中英文封面上.
+%   \item [\keys{id}]                         \val{text}:
+%   设置学号信息.
+%   \item [\keys{school}]                     \val{key}:
+%   设置所在学院, 仅接受学院简称.
+%   模板会自动将简称映射到全称并输出在对应的中英文封面上.
 %   \begin{multicols}{2}
 %   \begin{description}
-%     \item [|science|, |sci|]: 理学院
+%     \item [|science|, |sci|]:     理学院
 %     \item [|engineering|, |eng|]: 工学院
-%     \item [|sls|]: 生命科学学院
-%     \item [|medicine|, |med|]: 医学院
+%     \item [|sls|]:                生命科学学院
+%     \item [|medicine|, |med|]:    医学院
 %   \end{description}
 %   \end{multicols}
-%   \item[\keys{title, subject, author, PI}] \meta{text}:
+%   \item [\keys{title, subject, author, PI}] \val{text}:
 %   设置标题, 所属专业, 作者姓名, 导师姓名,
 %   中英文版本之间以斜线 |/| 分割.
-%   \item[\keys{master}] \meta \TFF: 切换至硕士学位论文格式.
-%   \item[\keys{bibsource}] \meta{string}: 设置参考文献文件源.
+%   \item [\keys{master}]                     \val \TFF:
+%   切换至硕士学位论文格式.
+%   \item [\keys{bibsource}]                  \val{string}:
+%   设置参考文献文件源.
 % \end{keyval}
 % \end{function}
 %
@@ -384,14 +419,14 @@ The Current Maintainer of this work is **Mingyu Xia**.
 \clist_map_inline:nn { new, error, warning, info }
   {
     \cs_new_protected:cpn { @@_msg_#1:nn }
-      { \use:c { msg_#1:nnn } { WESTLAKEthesis } }
+      { \use:c { msg_#1:nnn } { westlakethesis } }
   }
 %    \end{macrocode}
 % \end{macro}
 % New message: |not found module|, will be used in \cs{@@_load_module:n}.
 %    \begin{macrocode}
 \@@_msg_new:nn { not ~ found ~ module }
-  { The ~ WESTLAKEthesis ~ module ~ `#1' ~ not ~ found. }
+  { The ~ WestlakeThesis ~ module ~ `#1' ~ not ~ found. }
 %    \end{macrocode}
 % New message: |not recommended fontset|, will be used in the |thesis| mode.
 %    \begin{macrocode}
@@ -405,7 +440,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 % New message: |unknown mode| for global option |mode| key.
 %    \begin{macrocode}
 \@@_msg_new:nn { unknown ~ mode }
-  { Couldn't ~ load ~ the ~ `#1' ~ mode ~ of ~ WESTLAKEthesis. }
+  { Couldn't ~ load ~ the ~ `#1' ~ mode ~ of ~ WestlakeThesis. }
 %    \end{macrocode}
 % \begin{macro}{\@@_unknown_option:n}
 % Function for passing unknown options to the basic class.
@@ -450,7 +485,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %   \item |thesis|: Formats of Westlake University dissertations.
 %   \item |beamer|: Westlake University \cls{beamer} template.
 %   \item |poster|: Westlake University \cls{poster} template.
-%   \item |usrdoc|: \hologo{WESTLAKEthesis} documentation.
+%   \item |usrdoc|: \hologo{WestlakeThesis} documentation.
 % \end{itemize}
 % \begin{variable}{\g_@@_clsoption_mode_str, \g_@@_module_usage_clist}
 % Loading the |thesis| mode by default.
@@ -1284,11 +1319,11 @@ The Current Maintainer of this work is **Mingyu Xia**.
 %    \begin{macrocode}
 %<*usrdoc>
 %    \end{macrocode}
-% Loading the \cls{l3draw} package.
+% Loading the \pkg{l3draw} package.
 %    \begin{macrocode}
 \RequirePackage { l3draw }
 %    \end{macrocode}
-% Define \pkg{hologo} for \hologo{WESTLAKEthesis}.
+% Define \pkg{hologo} for \hologo{WestlakeThesis}.
 %    \begin{macrocode}
 \cs_new_protected:Npn \draw_lineto_tikz_w: (#1, #2)
   { \draw_path_lineto:n { (#1 cm, #2 cm) } }
@@ -1434,7 +1469,6 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \draw_path_use_clear:n { fill }
     \draw_end:
   }
-  
 \hbox_gset:Nn \l_UNIVERSITY_hologo_box
   {
     \draw_begin:
@@ -1626,7 +1660,7 @@ The Current Maintainer of this work is **Mingyu Xia**.
     \color_select:n { Knowledge Orange }
     \box_use_drop:N \l_tmpa_box
   }
-\def \HoLogo@WESTLAKEthesis #1{%
+\def \HoLogo@WestlakeThesis #1{%
   \draw_begin:
   \hbox_set:Nn \l_tmpb_box
     {
